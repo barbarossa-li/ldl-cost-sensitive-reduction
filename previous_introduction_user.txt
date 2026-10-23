@@ -1,0 +1,64 @@
+\section{\bf Introduction}
+
+\subsection{\bf Research background and the related work}
+
+In multi-label learning (MLL), each instance corresponds to multiple labels. This means that each instance is associated with multiple semantics, and the importance or interpretation of these semantics are different. For example,  the recommended categories based on user preferences can be endowed with the following labels: technology, fashion and emotional content in a video recommendation system. The degrees of importance on these labels are different. To address this issue, Geng \cite{G1} proposed  label distribution learning (LDL), which is a novel model in machine learning. Within this model, the label of each instance corresponds to a real number in interval [0,1], which is called importance or descriptive degree, and all descriptive degrees on same instance form a probability distribution.  Compared to MLL, LDL exhibits stronger versatility, flexibility, and expressiveness. Therefore, LDL is more suitable for practical applications that require consideration of label importance, such as image processing \cite{ZW1} and facial expression recognition \cite{LS}.
+
+With the development of information technology, data has high dimension. If all data is directly input into classifier during classification processing, it will increase  computational cost and  output result may be inferior. Feature selection, as a preprocessing method of data, can effectively solve the curse of dimensionality by removing redundant and irrelevant data while preserving physical meaning of data. In other words, attribute reduction can effectively reduce  memory requirements of algorithms, improve computational speed, avoid overfitting, and thus enhance generalization ability of algorithms. In general, it can be divided into three categories: filter, wrapper and embedded. Filter method \cite{HX} are executed based on the differences or correlations of each attribute, and attribute subsets are selected by setting thresholds or ranking. The wrapper method \cite{NG} uses objective function to train and select subset with the best performance. The embedded method \cite{AL} selects attributes based on weight coefficients obtained from model training, and then selects attribute subsets from high to low according to the weights.
+
+Feature selection  is a very important step in data preprocessing. In machine learning and data mining, high-quality and available datasets can greatly improve the accuracy of classification and prediction.
+Feature selection algorithms can be described from four perspectives:(a) Feature and sub-attribute reduction for classification using correlation coefficient and fuzzy model, (b) Analysis of sub-attribute for classification in data mining, (c) Privacy preserving sub-attribute reduction based on fuzzy probabilities, (d) Wide-ranging approach-based attribute reduction for classification. Some scholars have done excellent work in these areas.
+For example, Bhuyan et al. \cite{BC} used correlation coefficients and fuzzy models to distinguish traditional categories in data for attribute reduction and sub-attribute classification; Zhou  et al. \cite{ZW2} proposed a CCMI algorithm, which uses Pearson correlation coefficient and mutual information  to measure the relationship between attributes; Bhuyan et al. \cite{BK1} proposed an optimization model based on Lagrangian multipliers, which excavates sub-attributes of classification and analyze them; Kamila et al. \cite{BK2} combined with data mining technology, adopted fuzzy optimization gain ratio to select sub-attributes of distributed data; Hu et al. \cite{ZG} introduced a third-party participant to process and integrate the optimal attribute subset of the multi-participant, and proposed a federated evolutionary attribute reduction algorithm based on particle swarm optimization.
+Intelligent algorithms can be used to perform attribute reduction.
+Sometimes, attribute reduction based on intelligent algorithms may
+achieve a good effect. Some scholars proposed attribute reduction algorithms by combing intelligent algorithms, such as
+ dwarf mongoose optimization algorithm \cite{AE}, crow search algorithm \cite{OM}, firefly algorithm \cite{ZS} and dandelion optimizer \cite{ZZ}.
+
+
+The basic function of information is to eliminate uncertainty in people's understanding of things, for which many scholars have made meaningful contributions. The commonly used methods include mutual information, information entropy, conditional entropy and D-S evidence theory. Miao et al. \cite{M1} established a relationship representation between knowledge and information, proved the equivalence between information reduction and algebraic representation. Lee et al. \cite{LK} proposed a multi-label  attribute reduction method based on mutual information.
+Dai et al. \cite{DW} constructed a new form of conditional entropy to measure uncertainty in incomplete decision systems and successfully applied it in sorting attributes and attribute reduction. Zhang et al. \cite{ZM} studied incremental attribute reduction based on the information entropy of fuzzy rough sets and incoming instances, and designed an active incremental attribute reduction algorithm.
+
+
+Rough set theory proposed by Pawlak \cite {P1} is a mathematical tool for dealing with  uncertainty and incompleteness of information.
+This theory does not require any prior knowledge, but uses upper and lower approximations to describe objective concepts. It understands classification as equivalent relationships in a specific space, constitutes the division of that space. With more scholars paying attention, different rough set models have been developed. In the field of artificial intelligence, it is widely applied for attribute reduction. Yang et al. \cite{YC} introduced the use of rough sets for attribute reduction in dealing with dynamic datasets with large data set. Stanczykd et al. \cite{SZ} induced decision rules using classical rough set methods and applied a greedy heuristic for attribute reduction. Xia et al. \cite{XW} proposed non incremental approximation attribute reduction. It builds increments by adding or removing objects in dynamic ISFD and develops acceleration mechanisms to eliminate redundancy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{\bf Motivation and contributions}
+
+LDL data differs from multi-label data as each instance does not correspond to a deterministic label but is associated with a label distribution. In LDL data, the memberships of labels are described by real values instead of binary values. The use of multi-label attribute reduction algorithms has limitations in LDL data. MLL assumes labels have a uniform distribution, but ignores the differences among labels, which may lead to the loss of supervised information. The main challenges faced by LDL can be summarized into the following three aspects: label uncertainty, distribution imbalance and correlation between attributes.
+
+``Curse of dimensionality" also exists in LDL, thus attribute reduction  for a LDL data is necessary.
+ Some scholars have done significant work on this issue. For instance, Qin et al. \cite{QH} researched  attribute reduction  for a LDL data based on mutual information; Qian et al. \cite{QX} utilized  Pearson correlation coefficient for identifying label correlations, calculated attribute similarity based on information granularity and directed the model to choose a subset of discriminant attributes; Qian et al. \cite{QD} coped with the challenge of attribute reduction for incomplete label distribution in a LDL data through neighborhood tolerance relations. In attribute reduction, hierarchical structures are often accompanied by class imbalance problems. To alleviate this problem, Lin et al. \cite{LH} transformed hierarchical labels into hierarchical label distributions to represent the correlation between different categories, and proposed an attribute reduction method based on LDL. Lin et al. \cite{LW} trained a model through classic LDL loss function, where  weights of function were enhanced using the $l_{21}$ norm and label correlation, finally mutual information was introduced to reduce attribute redundancy. To address  issue of label uncertainty, Deng et al. \cite{DL} introduced dual similarity to measure similarity between the attribute space and the label space, and proposed an LDL attribute reduction algorithm based on neighborhood rough set. Wang et al. \cite{WH2} proposed  LDFS algorithm, which considers the correlation between attributes and labels, but it needs to train classifiers for each attribute to improve performance, resulting increased the time complexity of the algorithm. Xiong et al. \cite{XQ} introduced  FSLFM algorithm, which requires calculating the importance of each attribute and consumes a lot of time.
+
+
+The dependence function based on rough set theory can be used for measuring  uncertainty of data. This function only considers lower approximation of  decision, but in reality, the uncertainty of information is linked to not only lower approximation but also  upper approximation. In order to measure the uncertainty of event occurrence, Shannon \cite{SE} proposed  a concept of self information, which focuses on  classification information provided by the upper and lower approximations of the decision.  Wang et al. \cite{WH1} constructed decision self information for attribute reduction in neighborhood rough set.
+Xu et al. \cite{XJ} proposed approximate self information to evaluate the uncertainty of attribute subset classification information and constructed a heuristic attribute reduction algorithm. Jiang et al. \cite{JZ} introduced absolute rate and correlation coefficient of decision categories, and designed self information measurement for attribute reduction.
+
+
+
+Feature selection based on self information helps to understand and quantify the redundancy of data, as well as solve the problem of uncertain decision. Thus, we apply self information to carry out attribute reduction in a LDL data, which can identify attributes with significant discriminative and stable abilities. This improves performance and generalization ability of a LDL data. Therefore, this article introduces self information in a LDL data and designs an attribute reduction algorithm based on self information.
+
+Based on the above research motivation, the main contributions of this paper are summarized as follows:
+
+ (1) For LDL data, we define a distance function in the attribute space to calculate the distance between two  instances under each attribute, construct a distance matrix to establish  neighborhood relation on instance sets, and build  neighborhood classes where a variable parameter is picked to adjust the size of the neighborhood classes.
+
+(2) In the label space, we also define a distance function to construct a distance matrix and obtain a decision relation. The decision relation induces decision classes. Differently, when the decision classes are obtained, we set a  parameter to the minimum standard deviation of each label to obtain the smaller decision classes. This approach not only improves  tolerance of labels for different attributes, but also ensures a more stable guiding role of labels.
+
+(3)  Based on the neighborhood classes and decision classes induced by the decision relation, we construct  upper and lower approximations with respect to label set in a LDL data. Therefore, we introduce four kinds
+of decision self-information measures as attribute evaluation
+functions, and  select self information with the best performing: relative $\alpha$-self information through experiment analysis.  We apply it to attribute reduction in a LDL data and design corresponding algorithm.
+
+
+(4)  We conduct a series of experiments  on 9  LDL datasets, compare the designed algorithm with 5 other attribute reduction algorithms in performance of various aspects. The experimental evaluation applies 6 indicators. And experiment results validate  effectiveness and advantages of this algorithm in dealing with  high-dimensional LDL data.

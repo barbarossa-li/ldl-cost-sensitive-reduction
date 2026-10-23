@@ -1,0 +1,1 @@
+PASS: 30 completed fresh-dataset splits, 150 main method evaluations; 30 joint outputs feasible; 3-fold coverage, train/test separation, nested sizes, common costs and checkpoints verified. Audit failures retained. Labels preserved, including genuine zeros.

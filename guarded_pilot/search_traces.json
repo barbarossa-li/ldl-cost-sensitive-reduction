@@ -1,0 +1,175 @@
+{
+  "Dependency-only": {
+    "seconds": 9.087216538000575,
+    "trace": [
+      [
+        [],
+        52,
+        0.08430350699313849,
+        "positive cost-weighted gain"
+      ]
+    ],
+    "dependency_target": 0.013749977904717412,
+    "distinct_dependency_evaluations_this_search": 296,
+    "new_shared_dependency_evaluations": 296,
+    "new_inner_loss_evaluations": 0
+  },
+  "Guarded heuristic": {
+    "seconds": 9.726865868999084,
+    "trace": [
+      [
+        [],
+        52,
+        0.08430350699313849,
+        "dependency: positive cost-weighted gain"
+      ],
+      [
+        [
+          52
+        ],
+        98,
+        0.04098971785073974,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          52,
+          98
+        ],
+        152,
+        0.01235921054485073,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          52,
+          98,
+          152
+        ],
+        99,
+        0.015147226549873688,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          52,
+          98,
+          99,
+          152
+        ],
+        84,
+        0.011200543163803978,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          52,
+          84,
+          98,
+          99,
+          152
+        ],
+        252,
+        0.0047727596805302586,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          52,
+          84,
+          98,
+          99,
+          152,
+          252
+        ],
+        213,
+        0.14239926089191504,
+        "dependency: positive cost-weighted gain"
+      ],
+      [
+        [
+          52,
+          84,
+          98,
+          99,
+          152,
+          213,
+          252
+        ],
+        220,
+        0.013899649692126786,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          52,
+          84,
+          98,
+          99,
+          152,
+          213,
+          220,
+          252
+        ],
+        213,
+        0.00846321449900176,
+        "delete"
+      ]
+    ],
+    "dependency_target": 0.013749977904717412,
+    "distinct_dependency_evaluations_this_search": 601,
+    "new_shared_dependency_evaluations": 305,
+    "new_inner_loss_evaluations": 1753
+  },
+  "Prediction-only ablation": {
+    "seconds": 1.1996199170007458,
+    "trace": [
+      [
+        [],
+        201,
+        0.009745617205047519,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          201
+        ],
+        281,
+        0.020220913197047108,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          201,
+          281
+        ],
+        282,
+        0.007076606715624906,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          201,
+          281,
+          282
+        ],
+        52,
+        0.0066105164035391295,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          52,
+          201,
+          281,
+          282
+        ],
+        122,
+        0.011401970017133584,
+        "prediction loss: positive cost-weighted gain"
+      ]
+    ],
+    "dependency_target": 0.0,
+    "new_inner_loss_evaluations": 1462
+  }
+}

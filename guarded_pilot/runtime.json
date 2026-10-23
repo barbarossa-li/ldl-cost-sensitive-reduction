@@ -1,0 +1,6 @@
+{
+  "geometry_fit_seconds": 0.24902761400153395,
+  "inner_cache_size": 3223,
+  "dependency_cache_size": 673,
+  "note": "Timing shares caches across multiple searches; not an isolated runtime competition."
+}

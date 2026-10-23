@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Movie",
+    "repeat": 1,
+    "alpha": 100.0,
+    "ridge_inner_full": 0.04924655346438751,
+    "ridge_inner_empty": 0.049816614874662574,
+    "inner_gain": 0.0005700614102750606,
+    "audit_brier_ridge": 0.051550121245587624,
+    "audit_brier_empty": 0.05387818597703713,
+    "audit_gain": 0.002328064731449503,
+    "revived": true,
+    "seconds": 5.031221600016579
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "dataset": "Yeast_dtt",
+    "repeat": 1,
+    "alpha": 100.0,
+    "method": "Full",
+    "attributes": 24,
+    "cost": 127,
+    "audit_brier": 0.003013426918332064,
+    "test_brier": 0.003021191056053355
+  },
+  {
+    "dataset": "Yeast_dtt",
+    "repeat": 1,
+    "alpha": 100.0,
+    "method": "Empty",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.003070547235875472,
+    "test_brier": 0.0030512271488362117
+  },
+  {
+    "dataset": "Yeast_dtt",
+    "repeat": 1,
+    "alpha": 100.0,
+    "method": "Prediction only after",
+    "attributes": 1,
+    "cost": 4,
+    "audit_brier": 0.0030686324050424652,
+    "test_brier": 0.003018993540974437
+  },
+  {
+    "dataset": "Yeast_dtt",
+    "repeat": 1,
+    "alpha": 100.0,
+    "method": "Guided after",
+    "attributes": 1,
+    "cost": 4,
+    "audit_brier": 0.0030686324050424652,
+    "test_brier": 0.003018993540974437
+  }
+]

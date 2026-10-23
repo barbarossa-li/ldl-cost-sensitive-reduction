@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering\small
+\caption{Repeat-one nested scale diagnostic. P and G denote refined prediction-only and guided outputs; positive gaps are worse than full attributes.}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\hline
+Dataset & Search/audit & P cost & G cost & Full Brier & P Brier & G Brier\\
+\hline
+Natural Scene & 144/48 & 3 & 3 & 0.297118 & 0.350932 & 0.350932\\
+Natural Scene & 288/96 & 4 & 6 & 0.270108 & 0.296424 & 0.295116\\
+Natural Scene & 432/144 & 7 & 8 & 0.260429 & 0.266346 & 0.265392\\
+SBU\_3DFE & 144/48 & 6 & 5 & 0.024114 & 0.025245 & 0.025669\\
+SBU\_3DFE & 288/96 & 4 & 7 & 0.029612 & 0.034410 & 0.034198\\
+SBU\_3DFE & 432/144 & 5 & 4 & 0.027560 & 0.034661 & 0.030331\\
+Yeast\_cold & 144/48 & 0 & 0 & 0.007912 & 0.006477 & 0.006477\\
+Yeast\_cold & 288/96 & 0 & 0 & 0.007352 & 0.006100 & 0.006100\\
+Yeast\_cold & 432/144 & 0 & 0 & 0.007254 & 0.006143 & 0.006143\\
+\hline
+\end{tabular}}
+\end{table}

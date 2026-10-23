@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 192,
+    "method": "DSIM k",
+    "attributes": 2,
+    "cost": 7,
+    "inner_brier": 0.006999482361685284,
+    "test_brier": 0.00796225114595675,
+    "test_kl": 0.016062933965134984,
+    "test_tv": 0.06937812460571985,
+    "test_js": 0.0040374357085696325
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 192,
+    "method": "DSIM budget",
+    "attributes": 2,
+    "cost": 4,
+    "inner_brier": 0.006300691418788536,
+    "test_brier": 0.007913330997324393,
+    "test_kl": 0.016000266904527213,
+    "test_tv": 0.06962682653250762,
+    "test_js": 0.004034001396766162
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 192,
+    "method": "FSLC k",
+    "attributes": 2,
+    "cost": 10,
+    "inner_brier": 0.006548639171199514,
+    "test_brier": 0.007733026628004971,
+    "test_kl": 0.01560855926514318,
+    "test_tv": 0.06779126008429397,
+    "test_js": 0.003931831835370759
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 192,
+    "method": "FSLC budget",
+    "attributes": 2,
+    "cost": 4,
+    "inner_brier": 0.006300691418788536,
+    "test_brier": 0.007913330997324393,
+    "test_kl": 0.016000266904527213,
+    "test_tv": 0.06962682653250762,
+    "test_js": 0.004034001396766162
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 192,
+    "method": "GBFRS k",
+    "attributes": 2,
+    "cost": 17,
+    "inner_brier": 0.006994352164294223,
+    "test_brier": 0.007449228428446806,
+    "test_kl": 0.015038488677593944,
+    "test_tv": 0.06600462883704704,
+    "test_js": 0.0037881697926233438
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 192,
+    "method": "GBFRS budget",
+    "attributes": 2,
+    "cost": 3,
+    "inner_brier": 0.0070666168577686985,
+    "test_brier": 0.007281867626614079,
+    "test_kl": 0.014711909973874726,
+    "test_tv": 0.06563760515469559,
+    "test_js": 0.003708268880220452
+  }
+]

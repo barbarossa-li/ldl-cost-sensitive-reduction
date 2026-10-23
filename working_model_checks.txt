@@ -1,0 +1,7 @@
+Adopted working model checks passed:
+Bounds, zero diagonal, subset monotonicity, genuine direction difference.
+Numerical triangle failure at zeta=.001,.1,.5,.99.
+Numerical/categorical signal, inactive label and constant-padding checks.
+Repeated-XOR joint dependency 1; both searches reach the pair through a zero-gain bridge.
+Saved negative gain reproduced: [0.09224027609466404, 0.0]
+Synthetic mechanism evidence only.

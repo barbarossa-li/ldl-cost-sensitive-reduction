@@ -1,0 +1,40 @@
+[
+  {
+    "phase": "prefix",
+    "selected": [],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "inner_brier": 0.032354030288299106,
+    "gamma": 0.0
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      232
+    ],
+    "risk_pass": true,
+    "gamma_pass": true,
+    "inner_brier": 0.030456971703198842,
+    "gamma": 0.17015229178450797
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      203,
+      232
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "inner_brier": 0.030824685678148306,
+    "gamma": 0.10818444200894335
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint on",
+    "removed": 232,
+    "selected": [],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "accepted": false
+  }
+]

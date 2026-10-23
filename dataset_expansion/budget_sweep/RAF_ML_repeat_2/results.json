@@ -1,0 +1,122 @@
+[
+  {
+    "dataset": "RAF_ML",
+    "repeat": 2,
+    "cap": 1,
+    "method": "Prediction ranking",
+    "attributes": 0,
+    "spent": 0,
+    "audit_brier": 0.23801053233573402,
+    "feasible": false
+  },
+  {
+    "dataset": "RAF_ML",
+    "repeat": 2,
+    "cap": 1,
+    "method": "Dependency guidance",
+    "attributes": 0,
+    "spent": 0,
+    "audit_brier": 0.23801053233573402,
+    "feasible": false
+  },
+  {
+    "dataset": "RAF_ML",
+    "repeat": 2,
+    "cap": 2,
+    "method": "Prediction ranking",
+    "attributes": 0,
+    "spent": 0,
+    "audit_brier": 0.23801053233573402,
+    "feasible": false
+  },
+  {
+    "dataset": "RAF_ML",
+    "repeat": 2,
+    "cap": 2,
+    "method": "Dependency guidance",
+    "attributes": 0,
+    "spent": 0,
+    "audit_brier": 0.23801053233573402,
+    "feasible": false
+  },
+  {
+    "dataset": "RAF_ML",
+    "repeat": 2,
+    "cap": 5,
+    "method": "Prediction ranking",
+    "attributes": 2,
+    "spent": 5,
+    "audit_brier": 0.1835167714259449,
+    "feasible": true
+  },
+  {
+    "dataset": "RAF_ML",
+    "repeat": 2,
+    "cap": 5,
+    "method": "Dependency guidance",
+    "attributes": 2,
+    "spent": 5,
+    "audit_brier": 0.20290368082777085,
+    "feasible": false
+  },
+  {
+    "dataset": "RAF_ML",
+    "repeat": 2,
+    "cap": 10,
+    "method": "Prediction ranking",
+    "attributes": 2,
+    "spent": 5,
+    "audit_brier": 0.1835167714259449,
+    "feasible": true
+  },
+  {
+    "dataset": "RAF_ML",
+    "repeat": 2,
+    "cap": 10,
+    "method": "Dependency guidance",
+    "attributes": 4,
+    "spent": 8,
+    "audit_brier": 0.1982617027640448,
+    "feasible": true
+  },
+  {
+    "dataset": "RAF_ML",
+    "repeat": 2,
+    "cap": 20,
+    "method": "Prediction ranking",
+    "attributes": 2,
+    "spent": 5,
+    "audit_brier": 0.1835167714259449,
+    "feasible": true
+  },
+  {
+    "dataset": "RAF_ML",
+    "repeat": 2,
+    "cap": 20,
+    "method": "Dependency guidance",
+    "attributes": 5,
+    "spent": 12,
+    "audit_brier": 0.2056064217791546,
+    "feasible": true
+  },
+  {
+    "dataset": "RAF_ML",
+    "repeat": 2,
+    "cap": 50,
+    "method": "Prediction ranking",
+    "attributes": 2,
+    "spent": 5,
+    "audit_brier": 0.1835167714259449,
+    "feasible": true
+  },
+  {
+    "dataset": "RAF_ML",
+    "repeat": 2,
+    "cap": 50,
+    "method": "Dependency guidance",
+    "attributes": 5,
+    "spent": 12,
+    "audit_brier": 0.2056064217791546,
+    "feasible": true
+  }
+]

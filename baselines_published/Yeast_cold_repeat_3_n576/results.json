@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "train_n": 576,
+    "method": "DSIM k",
+    "attributes": 3,
+    "cost": 19,
+    "inner_brier": 0.007250246222978713,
+    "test_brier": 0.007533554509959713,
+    "test_kl": 0.015170563464235062,
+    "test_tv": 0.06649645106525072,
+    "test_js": 0.003808703638301989
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "train_n": 576,
+    "method": "DSIM budget",
+    "attributes": 3,
+    "cost": 8,
+    "inner_brier": 0.007235225203119354,
+    "test_brier": 0.00766508785304749,
+    "test_kl": 0.01549727644292217,
+    "test_tv": 0.06718970924764198,
+    "test_js": 0.0038846716559240648
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "train_n": 576,
+    "method": "FSLC k",
+    "attributes": 3,
+    "cost": 14,
+    "inner_brier": 0.00746117158846168,
+    "test_brier": 0.007667752312460294,
+    "test_kl": 0.015463576861982143,
+    "test_tv": 0.06722308695406119,
+    "test_js": 0.003884071369118281
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "train_n": 576,
+    "method": "FSLC budget",
+    "attributes": 3,
+    "cost": 8,
+    "inner_brier": 0.007235225203119354,
+    "test_brier": 0.00766508785304749,
+    "test_kl": 0.01549727644292217,
+    "test_tv": 0.06718970924764198,
+    "test_js": 0.0038846716559240648
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "train_n": 576,
+    "method": "GBFRS k",
+    "attributes": 3,
+    "cost": 10,
+    "inner_brier": 0.00694495951408762,
+    "test_brier": 0.007767966338589565,
+    "test_kl": 0.015620683035124497,
+    "test_tv": 0.06670770989232175,
+    "test_js": 0.003920484374381051
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "train_n": 576,
+    "method": "GBFRS budget",
+    "attributes": 4,
+    "cost": 8,
+    "inner_brier": 0.00711228584573222,
+    "test_brier": 0.007753273450693683,
+    "test_kl": 0.01562213504726674,
+    "test_tv": 0.06704394525587563,
+    "test_js": 0.0039224699183480465
+  }
+]

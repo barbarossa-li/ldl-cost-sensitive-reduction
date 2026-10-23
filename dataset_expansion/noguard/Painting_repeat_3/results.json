@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Painting",
+    "repeat": 3,
+    "method": "NoGuard",
+    "attributes": 1,
+    "cost": 4,
+    "inner_loss": 0.15355664818934317,
+    "inner_loss_empty": 0.1445747468415895,
+    "audit_brier_sel": 0.15274822333718285,
+    "audit_brier_empty": 0.14399342416302555,
+    "audit_brier_full": 0.14144243589414984,
+    "seconds": 0.15704690001439303
+  }
+]

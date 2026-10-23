@@ -1,0 +1,22 @@
+{
+  "scope": "One addition/deletion per attribute on two saved fixed bases per dataset; same three development splits and folds. Identical empty Yeast contexts duplicate semantically, not independent.",
+  "bases": [
+    "Prediction only",
+    "Guided"
+  ],
+  "learners": [
+    "Euclidean",
+    "Manhattan",
+    "Incoming directed"
+  ],
+  "gain": "Add: base_loss-candidate_loss; delete: candidate_loss-base_loss, positive means deletion harms prediction",
+  "association": "Saved observed-minus-permutation mean W; descriptive correlation with additions",
+  "no_changes": [
+    "subsets",
+    "parameters",
+    "test usage",
+    "search rules"
+  ],
+  "comparison_tolerance": 1e-12,
+  "note": "Positive addition gain increases acquisition cost and is not by itself a better reduct"
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "M2B",
+    "repeat": 2,
+    "method": "NoGuard",
+    "attributes": 1,
+    "cost": 6,
+    "inner_loss": 0.3058450708357255,
+    "inner_loss_empty": 0.281862410143144,
+    "audit_brier_sel": 0.37398924200597927,
+    "audit_brier_empty": 0.2809988329865192,
+    "audit_brier_full": 0.30617504523891986,
+    "seconds": 0.39222709997557104
+  }
+]

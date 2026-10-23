@@ -1,0 +1,54 @@
+[
+  {
+    "removed": 9,
+    "selected": [
+      11,
+      21,
+      22
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "gamma_only_block": true,
+    "inner_brier": 0.006906665474864099,
+    "gamma": 0.011021561341510167
+  },
+  {
+    "removed": 11,
+    "selected": [
+      9,
+      21,
+      22
+    ],
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false,
+    "inner_brier": 0.0074963143659891205,
+    "gamma": 0.016047315090218846
+  },
+  {
+    "removed": 21,
+    "selected": [
+      9,
+      11,
+      22
+    ],
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false,
+    "inner_brier": 0.007081570799527717,
+    "gamma": 0.02256474249802601
+  },
+  {
+    "removed": 22,
+    "selected": [
+      9,
+      11,
+      21
+    ],
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false,
+    "inner_brier": 0.00718913740505826,
+    "gamma": 0.02188683049784004
+  }
+]

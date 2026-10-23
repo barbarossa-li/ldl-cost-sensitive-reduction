@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "M2B",
+    "repeat": 2,
+    "train_n": 192,
+    "method": "DSIM k",
+    "attributes": 1,
+    "cost": 6,
+    "inner_brier": 0.32177217460300145,
+    "test_brier": 0.314784811127517,
+    "test_kl": 0.6459282011361532,
+    "test_tv": 0.3988536469415309,
+    "test_js": 0.14606031327109975
+  },
+  {
+    "dataset": "M2B",
+    "repeat": 2,
+    "train_n": 192,
+    "method": "DSIM budget",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.32686352997858314,
+    "test_brier": 0.32517981722546535,
+    "test_kl": 0.6531989128459219,
+    "test_tv": 0.4101991335599917,
+    "test_js": 0.14837472841298704
+  },
+  {
+    "dataset": "M2B",
+    "repeat": 2,
+    "train_n": 192,
+    "method": "FSLC k",
+    "attributes": 1,
+    "cost": 4,
+    "inner_brier": 0.3400101360033636,
+    "test_brier": 0.3083618321044319,
+    "test_kl": 0.6075184200195521,
+    "test_tv": 0.39682625700068086,
+    "test_js": 0.1420419520535232
+  },
+  {
+    "dataset": "M2B",
+    "repeat": 2,
+    "train_n": 192,
+    "method": "FSLC budget",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.3347593729725446,
+    "test_brier": 0.32501732887815704,
+    "test_kl": 0.6170171499928317,
+    "test_tv": 0.4165624710781263,
+    "test_js": 0.14967287016001898
+  },
+  {
+    "dataset": "M2B",
+    "repeat": 2,
+    "train_n": 192,
+    "method": "GBFRS k",
+    "attributes": 1,
+    "cost": 5,
+    "inner_brier": 0.3160610783242395,
+    "test_brier": 0.3320340496578689,
+    "test_kl": 0.6682650511090797,
+    "test_tv": 0.4078797369149144,
+    "test_js": 0.14859457330262607
+  },
+  {
+    "dataset": "M2B",
+    "repeat": 2,
+    "train_n": 192,
+    "method": "GBFRS budget",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.35216785019932245,
+    "test_brier": 0.3197385839426906,
+    "test_kl": 0.6255351126153812,
+    "test_tv": 0.4105813049861823,
+    "test_js": 0.14685334566831887
+  }
+]

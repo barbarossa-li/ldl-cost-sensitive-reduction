@@ -1,0 +1,115 @@
+{
+  "before": [
+    52,
+    98,
+    220
+  ],
+  "after": [
+    52,
+    98,
+    220
+  ],
+  "initial_trace": [
+    [
+      [],
+      98,
+      0.0007068420851553681,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        98
+      ],
+      52,
+      0.03181388305605998,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        52,
+        98
+      ],
+      220,
+      0.016646374199533354,
+      "prediction loss: positive cost-weighted gain"
+    ]
+  ],
+  "refinement": {
+    "evaluations": 3,
+    "scans": 1,
+    "accepted": [],
+    "candidates": [
+      {
+        "scan": 1,
+        "before": [
+          52,
+          98,
+          220
+        ],
+        "removed": 52,
+        "added": -1,
+        "cost": 2,
+        "loss": 0.2784428751524967,
+        "feasible": false,
+        "subset": [
+          98,
+          220
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          52,
+          98,
+          220
+        ],
+        "removed": 98,
+        "added": -1,
+        "cost": 2,
+        "loss": 0.29923715794683264,
+        "feasible": false,
+        "subset": [
+          52,
+          220
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          52,
+          98,
+          220
+        ],
+        "removed": 220,
+        "added": -1,
+        "cost": 2,
+        "loss": 0.25259659887416946,
+        "feasible": false,
+        "subset": [
+          52,
+          98
+        ]
+      }
+    ],
+    "stop_reason": "neighbourhood exhausted without feasible move"
+  },
+  "results": {
+    "dataset": "Natural Scene",
+    "repeat": 1,
+    "method": "Prediction only",
+    "before_attributes": 3,
+    "after_attributes": 3,
+    "before_cost": 3,
+    "after_cost": 3,
+    "before_loss": 0.2359502246746361,
+    "after_loss": 0.2359502246746361,
+    "full_reference": 0.24627807139450913,
+    "refinement_evaluations": 3,
+    "accepted_moves": 0,
+    "stop_reason": "neighbourhood exhausted without feasible move",
+    "initial_unique_loss_evaluations": 882,
+    "total_unique_loss_evaluations": 882,
+    "initial_seconds": 0.39155301800019515,
+    "refinement_seconds": 0.0001473480006097816
+  }
+}

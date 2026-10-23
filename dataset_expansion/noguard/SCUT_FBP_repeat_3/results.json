@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "SCUT_FBP",
+    "repeat": 3,
+    "method": "NoGuard",
+    "attributes": 1,
+    "cost": 3,
+    "inner_loss": 0.13365232973988578,
+    "inner_loss_empty": 0.13186153051136731,
+    "audit_brier_sel": 0.17100080394643252,
+    "audit_brier_empty": 0.13851007696751733,
+    "audit_brier_full": 0.1704791395816565,
+    "seconds": 0.5728387999115512
+  }
+]

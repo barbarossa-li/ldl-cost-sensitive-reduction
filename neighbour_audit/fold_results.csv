@@ -1,0 +1,136 @@
+dataset,fold,subset,learner,validation_n,brier
+Natural Scene,0,Full,Euclidean,64,0.2388817542121797
+Natural Scene,0,Full,Manhattan,64,0.23882615118419512
+Natural Scene,0,Full,Incoming directed,64,0.24629601216284142
+Natural Scene,0,Original joint,Euclidean,64,0.20038226989486513
+Natural Scene,0,Original joint,Manhattan,64,0.2119879334122356
+Natural Scene,0,Original joint,Incoming directed,64,0.21410022873538712
+Natural Scene,0,Prediction only,Euclidean,64,0.24314509933168824
+Natural Scene,0,Prediction only,Manhattan,64,0.2585893745344409
+Natural Scene,0,Prediction only,Incoming directed,64,0.2626597269992067
+Natural Scene,0,Guided,Euclidean,64,0.22882080269220184
+Natural Scene,0,Guided,Manhattan,64,0.22491054333279425
+Natural Scene,0,Guided,Incoming directed,64,0.23520227547739972
+Natural Scene,0,Empty,Euclidean,64,0.27475345944697493
+Natural Scene,0,Empty,Manhattan,64,0.27475345944697493
+Natural Scene,0,Empty,Incoming directed,64,0.27475345944697493
+Natural Scene,1,Full,Euclidean,64,0.2303889946135137
+Natural Scene,1,Full,Manhattan,64,0.20951552665680803
+Natural Scene,1,Full,Incoming directed,64,0.21499055898515718
+Natural Scene,1,Original joint,Euclidean,64,0.2908685546737926
+Natural Scene,1,Original joint,Manhattan,64,0.28046480780556515
+Natural Scene,1,Original joint,Incoming directed,64,0.28026923176719865
+Natural Scene,1,Prediction only,Euclidean,64,0.241589037006814
+Natural Scene,1,Prediction only,Manhattan,64,0.25454492645163684
+Natural Scene,1,Prediction only,Incoming directed,64,0.26499426688856303
+Natural Scene,1,Guided,Euclidean,64,0.24564430056834033
+Natural Scene,1,Guided,Manhattan,64,0.27948155843634837
+Natural Scene,1,Guided,Incoming directed,64,0.26989616512570225
+Natural Scene,1,Empty,Euclidean,64,0.2940326594869075
+Natural Scene,1,Empty,Manhattan,64,0.2940326594869075
+Natural Scene,1,Empty,Incoming directed,64,0.2940326594869075
+Natural Scene,2,Full,Euclidean,64,0.3095051942801245
+Natural Scene,2,Full,Manhattan,64,0.28753122513659285
+Natural Scene,2,Full,Incoming directed,64,0.2990279452660086
+Natural Scene,2,Original joint,Euclidean,64,0.2836100521446177
+Natural Scene,2,Original joint,Manhattan,64,0.26491504541143696
+Natural Scene,2,Original joint,Incoming directed,64,0.25594561281657713
+Natural Scene,2,Prediction only,Euclidean,64,0.2676048315446138
+Natural Scene,2,Prediction only,Manhattan,64,0.27034017610288086
+Natural Scene,2,Prediction only,Incoming directed,64,0.27110595737057813
+Natural Scene,2,Guided,Euclidean,64,0.30332773244510924
+Natural Scene,2,Guided,Manhattan,64,0.28697053177023024
+Natural Scene,2,Guided,Incoming directed,64,0.2947229800608717
+Natural Scene,2,Empty,Euclidean,64,0.3340804285690272
+Natural Scene,2,Empty,Manhattan,64,0.3340804285690272
+Natural Scene,2,Empty,Incoming directed,64,0.3340804285690272
+SBU_3DFE,0,Full,Euclidean,64,0.027762902263435356
+SBU_3DFE,0,Full,Manhattan,64,0.028637196770531045
+SBU_3DFE,0,Full,Incoming directed,64,0.028700299375367177
+SBU_3DFE,0,Original joint,Euclidean,64,0.029698212379249956
+SBU_3DFE,0,Original joint,Manhattan,64,0.03002699094690562
+SBU_3DFE,0,Original joint,Incoming directed,64,0.030026873315065986
+SBU_3DFE,0,Prediction only,Euclidean,64,0.02829192383700167
+SBU_3DFE,0,Prediction only,Manhattan,64,0.029970509170549928
+SBU_3DFE,0,Prediction only,Incoming directed,64,0.030023292056987522
+SBU_3DFE,0,Guided,Euclidean,64,0.027001251758753154
+SBU_3DFE,0,Guided,Manhattan,64,0.027589069311836443
+SBU_3DFE,0,Guided,Incoming directed,64,0.02760161135521804
+SBU_3DFE,0,Empty,Euclidean,64,0.031880484687619004
+SBU_3DFE,0,Empty,Manhattan,64,0.031880484687619004
+SBU_3DFE,0,Empty,Incoming directed,64,0.031880484687619004
+SBU_3DFE,1,Full,Euclidean,64,0.026414149301985147
+SBU_3DFE,1,Full,Manhattan,64,0.02814350991533849
+SBU_3DFE,1,Full,Incoming directed,64,0.02815906513332237
+SBU_3DFE,1,Original joint,Euclidean,64,0.026459544984341544
+SBU_3DFE,1,Original joint,Manhattan,64,0.02790777084743388
+SBU_3DFE,1,Original joint,Incoming directed,64,0.02790777084743388
+SBU_3DFE,1,Prediction only,Euclidean,64,0.024371852450187498
+SBU_3DFE,1,Prediction only,Manhattan,64,0.026440895040788615
+SBU_3DFE,1,Prediction only,Incoming directed,64,0.026501862345025065
+SBU_3DFE,1,Guided,Euclidean,64,0.030127571964760923
+SBU_3DFE,1,Guided,Manhattan,64,0.030486669149297985
+SBU_3DFE,1,Guided,Incoming directed,64,0.030537021828617023
+SBU_3DFE,1,Empty,Euclidean,64,0.03396641596228957
+SBU_3DFE,1,Empty,Manhattan,64,0.03396641596228957
+SBU_3DFE,1,Empty,Incoming directed,64,0.03396641596228957
+SBU_3DFE,2,Full,Euclidean,64,0.028247555247374274
+SBU_3DFE,2,Full,Manhattan,64,0.02694387585330258
+SBU_3DFE,2,Full,Incoming directed,64,0.02683453257647754
+SBU_3DFE,2,Original joint,Euclidean,64,0.02617777505317269
+SBU_3DFE,2,Original joint,Manhattan,64,0.028870390859248196
+SBU_3DFE,2,Original joint,Incoming directed,64,0.02878344186721983
+SBU_3DFE,2,Prediction only,Euclidean,64,0.0282115550079882
+SBU_3DFE,2,Prediction only,Manhattan,64,0.02997116993567176
+SBU_3DFE,2,Prediction only,Incoming directed,64,0.03000520418387735
+SBU_3DFE,2,Guided,Euclidean,64,0.024974129667426057
+SBU_3DFE,2,Guided,Manhattan,64,0.02461802172636561
+SBU_3DFE,2,Guided,Incoming directed,64,0.024594127710178784
+SBU_3DFE,2,Empty,Euclidean,64,0.031364557989770815
+SBU_3DFE,2,Empty,Manhattan,64,0.031364557989770815
+SBU_3DFE,2,Empty,Incoming directed,64,0.031364557989770815
+Yeast_cold,0,Full,Euclidean,64,0.007632638242568313
+Yeast_cold,0,Full,Manhattan,64,0.0075284570761667
+Yeast_cold,0,Full,Incoming directed,64,0.0075284570761667
+Yeast_cold,0,Original joint,Euclidean,64,0.005656640540303095
+Yeast_cold,0,Original joint,Manhattan,64,0.005656640540303095
+Yeast_cold,0,Original joint,Incoming directed,64,0.005656640540303095
+Yeast_cold,0,Prediction only,Euclidean,64,0.0054315919239040795
+Yeast_cold,0,Prediction only,Manhattan,64,0.0054315919239040795
+Yeast_cold,0,Prediction only,Incoming directed,64,0.0054315919239040795
+Yeast_cold,0,Guided,Euclidean,64,0.0054315919239040795
+Yeast_cold,0,Guided,Manhattan,64,0.0054315919239040795
+Yeast_cold,0,Guided,Incoming directed,64,0.0054315919239040795
+Yeast_cold,0,Empty,Euclidean,64,0.0054315919239040795
+Yeast_cold,0,Empty,Manhattan,64,0.0054315919239040795
+Yeast_cold,0,Empty,Incoming directed,64,0.0054315919239040795
+Yeast_cold,1,Full,Euclidean,64,0.009086091978512779
+Yeast_cold,1,Full,Manhattan,64,0.008630931877344965
+Yeast_cold,1,Full,Incoming directed,64,0.00863772151619303
+Yeast_cold,1,Original joint,Euclidean,64,0.008988661107942313
+Yeast_cold,1,Original joint,Manhattan,64,0.008988661107942313
+Yeast_cold,1,Original joint,Incoming directed,64,0.009008262858175922
+Yeast_cold,1,Prediction only,Euclidean,64,0.007268308623330309
+Yeast_cold,1,Prediction only,Manhattan,64,0.007268308623330309
+Yeast_cold,1,Prediction only,Incoming directed,64,0.007268308623330309
+Yeast_cold,1,Guided,Euclidean,64,0.007268308623330309
+Yeast_cold,1,Guided,Manhattan,64,0.007268308623330309
+Yeast_cold,1,Guided,Incoming directed,64,0.007268308623330309
+Yeast_cold,1,Empty,Euclidean,64,0.007268308623330309
+Yeast_cold,1,Empty,Manhattan,64,0.007268308623330309
+Yeast_cold,1,Empty,Incoming directed,64,0.007268308623330309
+Yeast_cold,2,Full,Euclidean,64,0.007070297524519185
+Yeast_cold,2,Full,Manhattan,64,0.00707735122680647
+Yeast_cold,2,Full,Incoming directed,64,0.00707735122680647
+Yeast_cold,2,Original joint,Euclidean,64,0.006992449864303968
+Yeast_cold,2,Original joint,Manhattan,64,0.006992449864303968
+Yeast_cold,2,Original joint,Incoming directed,64,0.007019258330242179
+Yeast_cold,2,Prediction only,Euclidean,64,0.005992041456072141
+Yeast_cold,2,Prediction only,Manhattan,64,0.005992041456072141
+Yeast_cold,2,Prediction only,Incoming directed,64,0.005992041456072141
+Yeast_cold,2,Guided,Euclidean,64,0.005992041456072141
+Yeast_cold,2,Guided,Manhattan,64,0.005992041456072141
+Yeast_cold,2,Guided,Incoming directed,64,0.005992041456072141
+Yeast_cold,2,Empty,Euclidean,64,0.005992041456072141
+Yeast_cold,2,Empty,Manhattan,64,0.005992041456072141
+Yeast_cold,2,Empty,Incoming directed,64,0.005992041456072141

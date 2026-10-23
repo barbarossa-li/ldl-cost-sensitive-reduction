@@ -1,0 +1,57 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 384,
+    "removed": 4,
+    "original_cost": 21,
+    "candidate_cost": 16,
+    "original_test_brier": 0.007342805051052,
+    "candidate_test_brier": 0.007503552978122454,
+    "candidate_minus_original": 0.00016074792707045354
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 384,
+    "removed": 6,
+    "original_cost": 21,
+    "candidate_cost": 20,
+    "original_test_brier": 0.007342805051052,
+    "candidate_test_brier": 0.007700194850877848,
+    "candidate_minus_original": 0.00035738979982584754
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 384,
+    "removed": 10,
+    "original_cost": 21,
+    "candidate_cost": 17,
+    "original_test_brier": 0.007342805051052,
+    "candidate_test_brier": 0.0072813816464029095,
+    "candidate_minus_original": -6.142340464909083e-05
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 384,
+    "removed": 11,
+    "original_cost": 21,
+    "candidate_cost": 18,
+    "original_test_brier": 0.007342805051052,
+    "candidate_test_brier": 0.007332110905151062,
+    "candidate_minus_original": -1.069414590093836e-05
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 384,
+    "removed": 22,
+    "original_cost": 21,
+    "candidate_cost": 19,
+    "original_test_brier": 0.007342805051052,
+    "candidate_test_brier": 0.007633211166001953,
+    "candidate_minus_original": 0.00029040611494995233
+  }
+]

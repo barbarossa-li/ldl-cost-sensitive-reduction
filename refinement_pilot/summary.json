@@ -1,0 +1,62 @@
+[
+  {
+    "dataset": "Natural Scene",
+    "method": "Prediction only",
+    "before_mean_cost": 9.666666666666666,
+    "after_mean_cost": 6.0,
+    "improved": 2,
+    "budget_limited": 1,
+    "mean_initial_seconds": 1.3536778433329648,
+    "mean_refinement_seconds": 0.10176446033316704
+  },
+  {
+    "dataset": "Natural Scene",
+    "method": "Guided",
+    "before_mean_cost": 13.333333333333334,
+    "after_mean_cost": 9.666666666666666,
+    "improved": 3,
+    "budget_limited": 2,
+    "mean_initial_seconds": 10.259505508999913,
+    "mean_refinement_seconds": 0.12007502633362795
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "method": "Prediction only",
+    "before_mean_cost": 9.0,
+    "after_mean_cost": 8.333333333333334,
+    "improved": 1,
+    "budget_limited": 2,
+    "mean_initial_seconds": 0.4548078426663172,
+    "mean_refinement_seconds": 0.10157650900085476
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "method": "Guided",
+    "before_mean_cost": 13.666666666666666,
+    "after_mean_cost": 7.666666666666667,
+    "improved": 2,
+    "budget_limited": 2,
+    "mean_initial_seconds": 2.0237915173335446,
+    "mean_refinement_seconds": 0.044102136999451126
+  },
+  {
+    "dataset": "Yeast_cold",
+    "method": "Prediction only",
+    "before_mean_cost": 0.0,
+    "after_mean_cost": 0.0,
+    "improved": 0,
+    "budget_limited": 0,
+    "mean_initial_seconds": 0.0013124933338986011,
+    "mean_refinement_seconds": 6.26566664626201e-06
+  },
+  {
+    "dataset": "Yeast_cold",
+    "method": "Guided",
+    "before_mean_cost": 0.0,
+    "after_mean_cost": 0.0,
+    "improved": 0,
+    "budget_limited": 0,
+    "mean_initial_seconds": 0.011920702333251635,
+    "mean_refinement_seconds": 1.4184333243368505e-05
+  }
+]

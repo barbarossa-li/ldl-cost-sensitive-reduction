@@ -1,0 +1,82 @@
+{
+  "Dependency-only": {
+    "trace": [
+      [
+        [],
+        51,
+        0.15969748660889996,
+        "dependency: positive cost-weighted gain"
+      ],
+      [
+        [
+          51
+        ],
+        84,
+        0.01423211250838513,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          51,
+          84
+        ],
+        74,
+        0.01874358782872798,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          51,
+          74,
+          84
+        ],
+        84,
+        0.03564258377864504,
+        "delete"
+      ]
+    ],
+    "seconds": 4.1054985000082524
+  },
+  "Joint guard": {
+    "trace": [
+      [
+        [],
+        51,
+        0.15969748660889996,
+        "dependency: positive cost-weighted gain"
+      ],
+      [
+        [
+          51
+        ],
+        84,
+        0.01423211250838513,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          51,
+          84
+        ],
+        74,
+        0.01874358782872798,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          51,
+          74,
+          84
+        ],
+        84,
+        0.03564258377864504,
+        "delete"
+      ]
+    ],
+    "seconds": 0.0008596999978180975
+  },
+  "Prediction-only": {
+    "trace": [],
+    "seconds": 0.0001588000013725832
+  }
+}

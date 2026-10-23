@@ -1,0 +1,15 @@
+{
+  "scope": "Decompose fitted weights in the same nine inner fitting folds, each 128 training objects; no validation/test labels used",
+  "parameters": "All original: beta=1, Gaussian bandwidth median positive pairwise scaled differences, original common KL normalizer, zeta=.1",
+  "measures": "Raw KL, support-shrunk KL, normalised W; kernel effective size, support, eta, Jensen-averaging baseline",
+  "interpretation": "Averaging retention is a descriptive convexity ratio, not a causal bandwidth effect or predictive accuracy metric",
+  "no_change": [
+    "subset selection",
+    "bandwidths",
+    "beta",
+    "zeta",
+    "normalizer",
+    "prediction mapping"
+  ],
+  "unit": "KL in bits"
+}

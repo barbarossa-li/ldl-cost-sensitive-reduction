@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Yeast_diau",
+    "repeat": 1,
+    "method": "NoGuard",
+    "attributes": 1,
+    "cost": 5,
+    "inner_loss": 0.004128858547922161,
+    "inner_loss_empty": 0.003595363432623046,
+    "audit_brier_sel": 0.005008866388923243,
+    "audit_brier_empty": 0.004016469499443613,
+    "audit_brier_full": 0.004472059427244286,
+    "seconds": 0.06851400004234165
+  }
+]

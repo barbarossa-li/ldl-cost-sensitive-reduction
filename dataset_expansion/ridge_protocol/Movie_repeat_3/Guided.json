@@ -1,0 +1,29 @@
+{
+  "before": [
+    883,
+    890,
+    976,
+    1087,
+    1848
+  ],
+  "after": [
+    883,
+    890,
+    1087,
+    1848,
+    1866
+  ],
+  "results": {
+    "method": "Guided",
+    "before_attributes": 5,
+    "after_attributes": 5,
+    "before_cost": 10,
+    "after_cost": 8,
+    "full_cost": 10168,
+    "full_inner": 0.04569652248231145,
+    "after_loss": 0.04561446168361262,
+    "evaluations": 200,
+    "accepted": 1,
+    "initial_seconds": 0.027983999927528203
+  }
+}

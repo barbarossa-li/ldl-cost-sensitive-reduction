@@ -1,0 +1,27 @@
+{
+  "datasets": [
+    "Natural Scene",
+    "SBU_3DFE",
+    "Yeast_cold"
+  ],
+  "repeats": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "train_n": 192,
+  "test_n": 256,
+  "methods": [
+    "Full",
+    "Empty",
+    "Prediction only before",
+    "Prediction only after",
+    "Guided before",
+    "Guided after"
+  ],
+  "predictor": "Original Euclidean 5NN, full-training minmax, stable fitting-row-order ties, arithmetic mean label vectors",
+  "metrics": "Brier primary; TV, KL, JS secondary; lower is better; natural logarithms for KL/JS; prediction floor1e-12 and renormalization matches prior test reports",
+  "status": "Exploratory reused-test evaluation, not new confirmation; checkpoint all selections before predictions; no retuning or subset updates"
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "emotion6",
+    "repeat": 3,
+    "alpha": 100.0,
+    "ridge_inner_full": 0.22889811882993602,
+    "ridge_inner_empty": 0.2022188940983702,
+    "inner_gain": -0.02667922473156581,
+    "audit_brier_ridge": 0.18661197545530453,
+    "audit_brier_empty": 0.18046436168420685,
+    "audit_gain": -0.006147613771097682,
+    "revived": false,
+    "seconds": 0.2744773000013083
+  }
+]

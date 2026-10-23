@@ -1,0 +1,290 @@
+\section{Experimental evaluation}
+\label{sec:paper-experiments}
+\subsection{Experimental Setup, Benchmark Datasets, and Partitioning Protocol}
+\label{subsec:exp-setup}
+
+To rigorously evaluate the empirical performance of the proposed framework, we execute a multi-faceted experimental suite comprising: (1) internal holdout replication under strict test-cost constraints, (2) comparison against label-free matched controls, (3) common-budget ablation analysis, and (4) competitive benchmarking against state-of-the-art Label Distribution Learning (LDL) feature selection mechanisms.
+
+\paragraph{Benchmark Datasets}
+The empirical evaluation covers twenty-five native LDL benchmark datasets spanning diverse real-world application domains (Table~\ref{tab:datasets}): scene annotation (\textit{Natural Scene}), facial expression analysis (\textit{SBU-3DFE}, \textit{SJAFFE}), gene expression temporal dynamics under ten stress conditions (\textit{Yeast-$\alpha$/cdc/cold/diau/dtt/elu/heat/spo/spo5/spoem}), biological aging (\textit{FG-Net}, \textit{MOR-PH}), facial beauty prediction (\textit{SCUT-FBP}, \textit{fbp5500}), emotion recognition in images (\textit{emotion6}, \textit{RAF-ML}), multimedia annotation (\textit{Movie}, \textit{Flickr}, \textit{Twitter}, \textit{Music}, \textit{Painting}), and high-dimensional label stress testing (\textit{Human Gene}). The four datasets examined in the initial frozen replication (\textit{Natural Scene}, \textit{SBU-3DFE}, \textit{Yeast-cold}, and \textit{Yeast-spo}) anchor the protocol; the remaining twenty datasets form the multi-domain expansion reported in Section~\ref{subsec:expansion}. \textit{M2B} is retained as a predictor-suitability boundary case.
+
+\input{paper_datasets_table.tex}
+
+\paragraph{Predictor Applicability Boundary Analysis}
+During the preliminary evaluation, the \textit{M2B} dataset (1,240 instances, 250 attributes, 5 labels) was evaluated under the identical protocol. Experimental results revealed that an uninformative global mean-distribution predictor achieves a mean test Brier score of $0.286$, whereas all non-empty feature subsets yield inferior Brier scores ranging from $0.325$ to $0.343$. This indicates that local $k$-NN Euclidean geometry is incompatible with the underlying feature manifold of \textit{M2B}. Rather than reporting this as a baseline entry, we document \textit{M2B} as an empirical boundary case illustrating the structural requirement of matching neighborhood distance metrics with local feature topology. As Section~\ref{subsec:expansion} shows, this boundary regime is not an isolated curiosity: on a substantial share of native LDL benchmarks the full-attribute $k$-NN predictor itself fails to beat the global mean, and the internal feasibility guard is what prevents unnecessary acquisition in exactly those cases.
+
+\paragraph{Nested Data Partitioning and Audit Isolation Protocol}
+To ensure strict isolation between model selection and evaluation, we design a nested validation protocol repeated across three independent randomized runs:
+\begin{enumerate}[label=(\arabic*), leftmargin=*]
+	\item \textbf{Search--Audit Splitting:} For each run, a fixed development subset of $576$ instances is partitioned into $432$ search instances and $144$ strictly reserved audit instances. The partition is constructed by block-wise permutation (three $192$-instance blocks, each split into $144$ search and $48$ audit positions) using deterministic seeds.
+	\item \textbf{Inner Cross-Validation:} The $432$ search instances are subdivided into $K=3$ equal inner validation folds ($144$ validation and $288$ fitting instances per fold) to evaluate candidate validation loss $R_{\mathrm{inner}}(P)$ and establish the feasibility boundary $L_{\max}$.
+	\item \textbf{Audit Reservation:} Reserved audit labels are completely excluded during both feature subset search and model fitting. All candidate feature subsets are frozen and saved prior to evaluating their corresponding audit losses $R_{\mathrm{audit}}(P)$, guaranteeing unbiased performance comparisons across competing methods.
+\end{enumerate}
+For datasets with at least $832$ objects, the development subset comprises $576$ instances; the three datasets with fewer than $832$ objects (\textit{SJAFFE}, \textit{Music}, \textit{Painting}) use a single $192$-instance block ($144$ search, $48$ audit) under the identical nested rules. This size adaptation is fixed before any evaluation and applies uniformly to every method compared on a given dataset.
+\subsection{Evaluated Algorithms, Parameter Configurations, and Metrics}
+\label{subsec:exp-metrics}
+
+To validate the individual components and relative superiority of the proposed framework, we structure the comparative evaluation around specific algorithm variants, standardized hyperparameter settings, and rigorous performance metrics.
+
+\paragraph{Evaluated Algorithm Variants}
+We evaluate two core implementations of our test-cost-sensitive feature selection framework alongside structural reference baselines:
+\begin{enumerate}[label=(\arabic*), leftmargin=*]
+	\item \textbf{Granular-Guided Search ($G$ / $G+$):} The primary two-stage constructive search guided by granular dependency gains $v_a(P)$ (Section~\ref{sub-sec:dependency}). $G$ represents the baseline greedy search, whereas $G+$ incorporates the post-hoc lower-cost exchange refinement phase capped at $B_{\mathrm{budget}} = 200$ evaluations (Section~\ref{sub-sec:optional}).
+	\item \textbf{Prediction-Only Search ($P$ / $P+$):} A baseline variant that disables granular dependency guidance ($v_a(P) = 0$), selecting features strictly based on immediate predictive loss reduction per unit cost ($u_a(P) / c_a$). $P+$ includes the identical exchange refinement phase as $G+$.
+	\item \textbf{Reference Baselines (\textit{Full} / \textit{Empty}):} \textit{Full} utilizes all $m$ features ($C(A)$); \textit{Empty} yields zero acquisition cost ($C(\varnothing) = 0$) by constantly predicting the global training label distribution $\bar{\boldsymbol{\ell}}$.
+\end{enumerate}
+
+\paragraph{Learner Protocol and Parameter Configurations}
+All feature selection algorithms employ a standard non-parametric $k$-nearest neighbor ($k$-NN, $k=5$) regressor under Euclidean distance as the evaluation predictor. Feature min-max normalization parameters are refitted strictly within each training fold to avoid data leakage. 
+
+Attribute acquisition costs $c_a \in \{1, \dots, 10\}$ are deterministically assigned integers held constant across all randomized runs for a given dataset. Hyperparameters governing directed geometry, granular dependencies, and cost-loss trade-offs are held fixed across all comparisons: shrinkage parameter $\beta = 1.0$, mixture coefficient $\zeta = 0.1$, consistency threshold $\kappa = 0.1$, minimum ball cardinality $s_{\min} = 2$, radius tolerance $\alpha = 1.0$, and cost exponent $\lambda = -1.0$.
+
+\paragraph{Evaluation Metrics and Feasibility Criteria}
+Algorithm performance is evaluated on the reserved audit set $I_{\mathrm{audit}}$ using two primary criteria: total attribute acquisition cost $C(P)$ and reserved audit loss $R_{\mathrm{audit}}(P)$:
+\begin{equation}
+	C(P) = \sum_{a \in P} c_a, \qquad R_{\mathrm{audit}}(P) = \frac{1}{|I_{\mathrm{audit}}|} \sum_{i \in I_{\mathrm{audit}}} \left\| \boldsymbol{\ell}_i - \widehat{\boldsymbol{\ell}}_P(x_i) \right\|_2^2,
+	\label{eq:audit-metrics}
+\end{equation}
+where $\widehat{\boldsymbol{\ell}}_P(x_i)$ represents the label distribution predicted by the $k$-NN regressor trained on the full $432$ search instances using subset $P$. A selected subset $P$ achieves an \textbf{audit pass} if its audit loss satisfies $R_{\mathrm{audit}}(P) \le R_{\mathrm{audit}}(A)$, indicating that cost reduction was achieved without compromising predictive generalization compared to the full attribute set.
+
+\subsection{Acquisition Cost Reduction and Predictive Feasibility Transfer}
+\label{subsec:cost-reduction-results}
+
+\input{paper_results_table.tex}
+
+Table~\ref{tab:main-results} presents the quantitative empirical comparison of attribute acquisition costs $C(P)$ and reserved audit losses $R_{\mathrm{audit}}(P)$ on the initial frozen replication datasets; the twenty-dataset expansion follows in Section~\ref{subsec:expansion}.
+
+\paragraph{Cost Reduction and Feasibility Preservation}
+Across all experimental runs ($100\%$ success rate), the subsets selected by both $G+$ and $P+$ successfully satisfy the inner prediction-feasibility constraint ($R_{\mathrm{inner}}(P) \le L_{\max}$). 
+
+On the high-dimensional \textit{Natural Scene} benchmark, the proposed framework achieves a dramatic acquisition cost reduction of over \textbf{99.3\%}. Specifically, $P+$ and $G+$ reduce the total cost from the full set cost of $1,648$ to mean costs of $9.67$ and $10.33$, respectively. Crucially, this massive $99.3\%$ cost reduction is achieved with minimal decay in predictive accuracy, maintaining audit losses ($0.2445$ and $0.2491$) in close competitive proximity to the full feature baseline ($0.2330$). This underscores the practical utility of the framework in resource-constrained environments where cost efficiency is paramount.
+
+\paragraph{Comparative Guidance Efficacy}
+On \textit{SBU-3DFE}, granular dependency guidance ($G+$) demonstrates superior cost-efficiency and predictive accuracy compared to prediction-only search ($P+$). $G+$ achieves a lower average acquisition cost ($7.33$ vs. $12.33$) alongside a lower audit loss ($0.0326$ vs. $0.0342$). This empirical separation confirms that incorporating granular dependency gains $v_a(P)$ aids the constructive search in identifying structural feature interactions under tight cost constraints.
+
+\paragraph{Self-Adaptive Guard Mechanism on Uninformative Domains}
+On \textit{Yeast-cold}, both algorithms systematically reduce to the empty attribute set ($P = \varnothing$) across all independent runs, incurring zero feature acquisition cost ($C(\varnothing) = 0$). Remarkably, the empty set yields a mean audit loss of $0.0060$, which strictly outperforms the full attribute set ($0.0071$). This demonstrates the efficacy of the internal feasibility guard ($L_{\max}$): when raw attribute spaces contain substantial noise or weak discriminative signal relative to the sample size, the framework automatically suppresses unnecessary feature acquisition, avoiding redundant economic expenditures while safeguarding predictive generalization.
+
+
+
+
+
+\begin{figure}[htbp]\centering
+	\includegraphics[width=\linewidth,height=.78\textheight,keepaspectratio]{paper_figures/transfer_large.pdf}
+	\caption{Audit-loss gaps after refinement relative to full attributes in the three saved repeats. Positive gaps fail the audit reference. Identical empty Yeast outputs overlap.}
+	\label{fig:paper-transfer}
+\end{figure}
+
+\begin{figure}[htbp]\centering
+	\includegraphics[width=.78\linewidth,height=.45\textheight,keepaspectratio]{paper_figures/audit_test.pdf}
+	\caption{Validity of the reserved audit as a selection-free performance proxy: reserved-audit Brier versus held-out test Brier for all frozen selections of the dataset expansion ($G+$, $P+$, and full references; $r = 0.997$). Test scores are recorded once per frozen selection and never influence any selection decision.}
+	\label{fig:audit-test}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Multi-Domain Dataset Expansion}
+\label{subsec:expansion}
+
+To assess generality beyond the initial frozen replication, we executed the identical nested audit protocol (identical guard, refinement cap, predictor, and cost-assignment rule) on twenty additional native LDL benchmarks, with three randomized repeats per dataset. Table~\ref{tab:expansion-main} reports per-dataset means; Figures~\ref{fig:expansion-cost} and \ref{fig:expansion-gap} visualize the cost and audit-loss profiles across all datasets.
+
+\input{paper_expansion_table.tex}
+
+\begin{figure}[htbp]\centering
+	\includegraphics[width=\linewidth,height=.85\textheight,keepaspectratio]{paper_figures/expansion_cost.pdf}
+	\caption{Full-set acquisition cost versus $G+$ selected cost per dataset (three-repeat means, log scale). Datasets where the guard certifies the empty set appear with unit half-cost bars.}
+	\label{fig:expansion-cost}
+\end{figure}
+
+\begin{figure}[htbp]\centering
+	\includegraphics[width=\linewidth,height=.85\textheight,keepaspectratio]{paper_figures/expansion_gap.pdf}
+	\caption{Reserved-audit Brier of $G+$ minus the full-attribute reference per dataset (mean $\pm$ SD over three repeats). Non-positive gaps indicate that the low-cost selection is at least as accurate as acquiring everything.}
+	\label{fig:expansion-gap}
+\end{figure}
+
+\paragraph{Cost Reduction on Informative Domains}
+On the five datasets whose full-attribute geometry carries transferable local signal (\textit{Natural Scene}, \textit{SBU-3DFE}, \textit{SJAFFE}, \textit{fbp5500}, \textit{RAF-ML}), the framework reduces acquisition costs by $97.9\%$--$99.5\%$: from $1{,}648$ to $10.3$ on \textit{Natural Scene}, from $1{,}373$ to $7.3$ on \textit{SBU-3DFE}, from $1{,}373$ to $28.3$ on \textit{SJAFFE}, from $2{,}841$ to $19.3$ on \textit{fbp5500}, and from $1{,}162$ to $7.0$ on \textit{RAF-ML}. On \textit{RAF-ML} the prediction-only variant even attains a lower mean audit loss than the full attribute set ($0.1927$ vs.\ $0.1945$) at $0.5\%$ of its cost.
+
+\paragraph{Prevalence of the Near-Degenerate Regime}
+On the remaining twenty native benchmarks---including all ten \textit{Yeast} stress conditions, the high-cardinality media datasets (\textit{Movie}, \textit{Flickr}, \textit{Twitter}), and the biological aging corpora (\textit{FG-Net}, \textit{MOR-PH}, \textit{Human Gene})---the full-attribute $k$-NN predictor fails to beat the global mean distribution on the reserved audit partition, and the internal guard consequently certifies the empty set in every repeat. Two properties of this regime deserve emphasis. First, the suppression is \emph{correct rather than conservative}: the empty set achieves strictly lower audit loss than the full attribute set on every one of these datasets, so zero-cost prediction dominates wholesale acquisition. Second, the decision is made \emph{without ever observing audit labels}, relying solely on inner-fold validation, which is precisely the feasibility guarantee the framework is designed to provide. The prevalence of this regime across twenty of twenty-five native LDL benchmarks under a Euclidean $k$-NN predictor is itself a finding: published LDL feature-selection evaluations that force non-empty selections on such domains are paying acquisition costs for attributes whose local geometry does not transfer.
+
+\begin{figure}[htbp]\centering
+	\includegraphics[width=\linewidth,height=.6\textheight,keepaspectratio]{paper_figures/expansion_pareto.pdf}
+	\caption{Normalized cost--loss plane across all expansion repeats. Horizontal axis: selected cost relative to the full set (log scale); vertical axis: reserved-audit Brier relative to the full-attribute reference. The dashed line marks full-set accuracy.}
+	\label{fig:expansion-pareto}
+\end{figure}
+
+\begin{figure}[htbp]\centering
+	\includegraphics[width=.9\linewidth,height=.75\textheight,keepaspectratio]{paper_figures/full_empty.pdf}
+	\caption{Prevalence of the near-degenerate regime: full-attribute audit Brier versus the free global-mean predictor across all twenty-five native benchmarks (three-repeat means). On twenty datasets the free mean is at least as accurate as acquiring everything.}
+	\label{fig:full-empty}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Guard Ablation and Predictor Sensitivity}
+\label{subsec:guard-ablation}
+
+The near-degenerate regime raises two questions: what would a conventional selector \emph{without} the feasibility guard pay on these domains, and is the empty-set certification an artifact of the Euclidean $k$-NN predictor? We address both with frozen ablations on the twenty guard-empty datasets.
+
+\paragraph{Guard-Disabled Selection}
+We re-ran the selection procedure with the guard removed: classic greedy forward selection with early stopping when no attribute improves the inner validation loss, followed by cost-descending deletion, and a forced acquisition of the single best attribute when no attribute improves the loss (published selectors always return non-empty sets). Figure~\ref{fig:noguard-guard} reports the outcome. The guard-disabled variant acquires a mean of $1.5$ attributes per run and spends $424$ cost units across the sixty dataset--repeat runs, yet its reserved-audit loss is \emph{worse than the free global mean} in $53$ of $60$ runs (mean excess up to $+0.054$ on \textit{Flickr} and $+0.039$ on \textit{emotion6}). The two systematic exceptions, \textit{FG-Net} ($2/3$) and \textit{MOR-PH} ($3/3$), are exactly the domains flagged by the predictor probe below. On the remaining eighteen datasets the guard's zero-cost answer is not merely cheaper but strictly more accurate than what a conventional selection budget would buy.
+
+\begin{figure}[htbp]\centering
+	\includegraphics[width=\linewidth,height=.62\textheight,keepaspectratio]{paper_figures/noguard_guard.pdf}
+	\caption{Guard-disabled ablation on the twenty guard-empty datasets (three repeats). Left: acquisition cost spent by the forced non-empty selection. Right: reserved-audit Brier of that selection minus the free global-mean predictor (positive $=$ paying for worse predictions than the free default).}
+	\label{fig:noguard-guard}
+\end{figure}
+
+\paragraph{Predictor-Sensitivity Probe}
+The guard compares candidate subsets under whatever predictor is deployed; its empty-set certificates on twenty datasets are therefore statements about Euclidean $k$-NN geometry, not about the data. Repeating the guard decision with a ridge-regression predictor (regularization selected by inner cross-validation from a fixed grid, training data only) revives nine of the twenty datasets---\textit{Yeast-diau/dtt/heat/spoem}, \textit{FG-Net}, \textit{Painting}, \textit{SCUT-FBP}, \textit{Movie}, and \textit{MOR-PH}---in at least two of three repeats (Figure~\ref{fig:ridge-probe}). The remaining eleven, including the high-cardinality media benchmarks and the M2B boundary case, stay degenerate under both predictors.
+
+\begin{figure}[htbp]\centering
+	\includegraphics[width=.82\linewidth,height=.5\textheight,keepaspectratio]{paper_figures/ridge_probe.pdf}
+	\caption{Predictor-sensitivity probe: reserved-audit Brier of the full-attribute ridge predictor versus the free global mean, one point per dataset repeat. Orange points mark datasets revived under ridge; the dashed line is parity.}
+	\label{fig:ridge-probe}
+\end{figure}
+
+\paragraph{Full Protocol under the Ridge Predictor}
+For the nine revived datasets we re-executed the complete nested protocol---identical frozen splits, folds, costs, granular guidance, and $200$-evaluation refinement---with the ridge predictor substituted into the inner loss, the guard, and the audit evaluation. Table~\ref{tab:ridge-protocol} reports the per-dataset outcome. On six of the nine datasets (\textit{Yeast-diau}, \textit{Yeast-heat}, \textit{Yeast-spoem}, \textit{FG-Net}, \textit{SCUT-FBP}, \textit{MOR-PH}) the $G+$ selection is no worse than \emph{both} the zero-cost and the full-cost reference under the same predictor, at $1.1\%$--$5.9\%$ of the full acquisition cost. The strongest cases are \textit{FG-Net} (audit $0.0628$ at cost $5$ versus $0.0643$ for all $251$ attributes costing $1{,}412$) and \textit{MOR-PH} ($0.0707$ at cost $1.7$ versus $0.0740$ for all $200$ attributes costing $1{,}162$), where a handful of attributes dominate wholesale acquisition. On the remaining three datasets the selection matches one reference but not both. The guard's behavior thus tracks the deployed predictor rather than freezing the $k$-NN verdict: datasets certified degenerate under one predictor become informative under another, and the framework extracts the corresponding low-cost subsets without any protocol change.
+
+\input{paper_ridge_table.tex}
+
+\FloatBarrier
+
+\subsection{Cost-Profile Analyses on Informative Domains}
+\label{subsec:cost-profiles}
+
+\paragraph{Budget-Sweep Trajectories}
+Figure~\ref{fig:budget-sweep} traces the audit loss of budget-constrained ranking outputs (no deletion or exchange refinement) as the cap grows from $1$ to $50$ on the three informative expansion datasets. Both ranking rules saturate rapidly: most of the attainable loss reduction is realized within the first few cost units, and additional budget beyond the guard-certified spending yields little or no audit improvement, visually confirming the cost--loss profiles behind Tables~\ref{tab:main-results} and \ref{tab:expansion-main}.
+
+\begin{figure}[htbp]\centering
+	\includegraphics[width=\linewidth,height=.32\textheight,keepaspectratio]{paper_figures/budget_sweep.pdf}
+	\caption{Budget-sweep trajectories on the informative expansion datasets (three-repeat means, log spending axis). Prediction ranking (blue) and dependency guidance (orange) saturate within a few cost units; the dotted line marks the largest-cap prediction-ranking level.}
+	\label{fig:budget-sweep}
+\end{figure}
+
+\paragraph{Refinement Convergence and Cost Strata}
+Two further structural observations (Figures~\ref{fig:refine-convergence} and \ref{fig:cost-strata}). First, the exchange refinement lowers cost monotonically by construction and typically converges within a handful of accepted moves---its entire effect materializes in the first few of the $200$ candidate evaluations, which explains why the refinement budget cap is rarely binding. Second, the attributes acquired by $G+$ are not systematically the cheapest ones: the selected-cost histograms overlap the population cost distribution rather than concentrating in the low strata, indicating that the selection buys informative attributes instead of merely cheap ones.
+
+\begin{figure}[htbp]\centering
+	\includegraphics[width=\linewidth,height=.3\textheight,keepaspectratio]{paper_figures/refine_convergence.pdf}
+	\caption{Cost trajectories of accepted refinement moves on the informative datasets ($G+$ orange, $P+$ blue; one line per repeat). Monotone decrease is guaranteed by the exchange rule.}
+	\label{fig:refine-convergence}
+\end{figure}
+
+\begin{figure}[htbp]\centering
+	\includegraphics[width=\linewidth,height=.3\textheight,keepaspectratio]{paper_figures/cost_strata.pdf}
+	\caption{Cost distribution of all attributes versus those selected by $G+$ on the informative datasets (three repeats overlaid). Selections do not collapse onto the cheapest attributes.}
+	\label{fig:cost-strata}
+\end{figure}
+
+\begin{figure}[htbp]\centering
+	\includegraphics[width=.8\linewidth,height=.5\textheight,keepaspectratio]{paper_figures/method_heatmap.pdf}
+	\caption{Mean reserved-audit Brier of all scoring cores on the informative datasets. The 2024--2025 cores (NRS, FMI) cluster with the 2022--2023 generation rather than changing the picture.}
+	\label{fig:method-heatmap}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Comparative Analysis against Label-Free Matched Controls}
+\label{subsec:matched-controls}
+
+To verify whether the predictive capability of the selected low-cost attribute subsets stems from genuine discriminative information acquisition rather than trivial sparsity or cost-stratification biases, we evaluate performance against label-free random control baseline distributions.
+
+\paragraph{Matched Control Generation Protocol}
+For every non-empty refined feature subset $P$ generated by $G+$ or $P+$, we construct $20$ distinct label-free random control subsets $Q$. To ensure rigorous comparability, each control subset $Q$ is generated under strict constraint matching:
+\begin{enumerate}[label=(\arabic*), leftmargin=*]
+	\item \textbf{Exact Cardinality Matching:} $|Q| = |P|$;
+	\item \textbf{Exact Stratified Cost Profile Matching:} $\sum_{a \in Q} c_a = C(P)$, with attribute sampling performed strictly within matching cost strata without observing label information or audit performance.
+\end{enumerate}
+This protocol isolates the specific informative contribution of our local information-driven selection criteria under identical budget constraint profiles.
+
+\input{paper_matched_table.tex}
+
+\paragraph{Empirical Superiority over Random Stratification}
+Table~\ref{tab:reserved} and Figures~\ref{fig:paper-controls}--\ref{fig:paper-controls-sbu} detail the empirical comparison between the refined subsets ($G+$ and $P+$) and their corresponding matched-control distributions across independent randomized runs.
+
+On \textit{Natural Scene}, both $G+$ and $P+$ consistently outperform the mean of their corresponding matched control distributions across $100\%$ of the experimental repeats. On \textit{SBU-3DFE}, $G+$ achieves strict dominance over the matched control mean in all repeats, whereas $P+$ outperforms the control mean in $66.7\%$ of repeats. 
+
+Across all $240$ generated control subsets, the subsets selected by our granular information metric lie at the superior extreme of the empirical control loss distributions. This decisive empirical separation confirms that the local relative information weight $W_a(o_i)$ successfully identifies highly discriminative feature-label dependencies, providing statistically meaningful predictive gains over arbitrary low-cost attribute combinations.
+
+\begin{figure}[p]\centering
+	
+	\includegraphics[width=\linewidth,height=.78\textheight,keepaspectratio]{paper_figures/matched_natural.pdf}
+	
+	\caption{Natural Scene: refined selections (diamonds) versus 20 label-free cost-profile-matched controls per repeat. $P+$ and $G+$ include refinement. Boxplots describe control distributions, not confidence intervals.}
+	
+	\label{fig:paper-controls}
+	
+\end{figure}
+
+\begin{figure}[p]\centering
+	
+	\includegraphics[width=\linewidth,height=.78\textheight,keepaspectratio]{paper_figures/matched_sbu.pdf}
+	
+	\caption{SBU-3DFE: the same matched-cost comparison and plotting conventions. All controls are retained; no best control is selected using audit loss.}
+	
+	\label{fig:paper-controls-sbu}
+	
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Common-Budget Ablation and Pareto Frontier Dominance}
+\label{subsec:budget-ablation}
+
+To isolate the guidance capability of the proposed granular dependency gain $v_a(P)$ from the post-hoc exchange refinement phase, we conduct a common-budget ablation study. In this experiment, feature selection is executed under fixed acquisition budget caps $C_{\mathrm{cap}} \in \{5, 10, 20\}$ comparing granular-guided search ($G$) directly against prediction-only search ($P$).
+
+\paragraph{Ablation Protocol and Budget-Constrained Dynamics}
+Both methods operate under identical budget caps, evaluating candidate attributes up to the specified limit $C_{\mathrm{cap}}$ without invoking post-hoc deletion or exchange steps. This isolates the intrinsic heuristic ranking capability of $v_a(P)$ under tight cost constraints.
+
+\input{paper_budget_tables.tex}
+
+Table~\ref{tab:budget-natural} andTable~\ref{tab:budget-sbu}  summarize the performance across budget caps. On \textit{SBU-3DFE}, granular guidance ($G$) consistently achieves lower average audit losses across all three budget caps ($C_{\mathrm{cap}} = 5, 10, 20$) compared to prediction-only search ($P$). On \textit{Natural Scene}, $G$ yields superior predictive performance under higher budget caps ($C_{\mathrm{cap}} = 20$).
+
+\paragraph{Pareto Frontier Analysis and Cost-Loss Trade-offs}
+To evaluate realized spending and predictive accuracy simultaneously, we analyze candidates within a Pareto dominance framework. A feature subset $P_1$ Pareto-dominates $P_2$ if $P_1$ achieves no worse performance in both acquisition cost and audit loss while being strictly superior in at least one metric.
+
+Figures~\ref{fig:paper-frontier} and \ref{fig:paper-frontier-sbu} map the actual acquisition cost versus reserved audit loss trajectories across independent runs on \textit{Natural Scene} and \textit{SBU-3DFE}.
+
+On \textit{SBU-3DFE}, granular dependency guidance ($G$) demonstrates consistent Pareto dominance over prediction-only search ($P$) in the majority of evaluated budget caps, effectively steering the constructive search toward superior cost-loss trade-off bounds. The empirical results demonstrate that integrating local structural dependency gains provides vital information guidance in ultra-low cost regimes before pure predictive loss gains reach saturation.
+\FloatBarrier
+\begin{figure}[p]\centering
+\includegraphics[width=\linewidth,height=.78\textheight,keepaspectratio]{paper_figures/pareto_natural.pdf}
+\caption{Natural Scene: actual cost versus audit loss of frozen budget-ranking outputs in each repeat. Dotted segments join same-cap pairs; gray lines describe the finite assessed frontier. The high-cost full-set loss is a dashed reference. These outputs omit deletion/exchange refinement.}
+\label{fig:paper-frontier}
+\end{figure}
+\begin{figure}[p]\centering
+\includegraphics[width=\linewidth,height=.78\textheight,keepaspectratio]{paper_figures/pareto_sbu.pdf}
+\caption{SBU-3DFE: actual-cost comparison with the same conventions. The three panels are saved repeats, not independent confirmations of a globally optimal frontier.}
+\label{fig:paper-frontier-sbu}
+\end{figure}
+\FloatBarrier
+
+
+
+\input{paper_baselines_section.tex}
+
+\input{paper_published_baselines.tex}
+
+\subsection{Algorithmic Verification and Methodological Scope}
+\label{subsec:logic-verification}
+
+To confirm the operational integrity and implementation fidelity of the proposed optimization framework, we perform systematic verification across synthetic benchmark structures and delineate the methodological scope of the empirical evaluations.
+
+\paragraph{Exact Search Verification on Synthetic Benchmark Topologies}
+We benchmarked the exact branch-and-bound optimization implementation (Section~\ref{subsec:exact-search}) against exhaustive minimum-cost enumeration across $80$ synthetic non-monotone loss-dependency profiles ($m=6$ attributes). The algorithm achieved $100\%$ exact solution agreement across all evaluation scenarios. Specific stress-test configurations confirmed the algorithmic handling of critical boundary cases:
+\begin{enumerate}[label=(\arabic*), leftmargin=*]
+	\item \textbf{Sub-Floor Singletons:} Correct identification of highly predictive individual attributes situated below the historical dependency threshold;
+	\item \textbf{Synergistic Feature Pairs:} Accurate traversal of multi-attribute interactions across non-monotonic loss plateaus via the signed predictive bridge;
+	\item \textbf{Degenerate Zero-Cost Optima:} Provable convergence to the empty attribute set ($P^* = \varnothing$) when structural feature signals fail to surpass the uninformative baseline.
+\end{enumerate}
+These formal checks confirm that the branch pruning logic and feasibility enforcement operate in exact conformance with the theoretical minimum-cost formulation.
+
+\paragraph{Methodological Scope and Evaluation Boundaries}
+To maintain rigorous methodological transparency, we explicitly define the operational boundaries of the reported experiments:
+\begin{enumerate}[label=(\arabic*), leftmargin=*]
+	\item \textbf{Scoring Core Evaluation:} In Section~\ref{sec:paper-published}, competing methods are benchmarked by isolating their core representation scoring metrics within a unified, standardized evaluation pipeline. While this controls for extraneous algorithmic discrepancies (e.g., heterogeneous stopping criteria or auxiliary preprocessing), broader end-to-end pipeline comparisons under diverse downstream learners represent a valuable direction for future multi-center studies.
+	\item \textbf{Scalability and Exact Optimality Gaps:} The branch-and-bound solver provides theoretical exactness for compact problem instances, but exhaustive exploration becomes computationally prohibitive on high-dimensional datasets. In large-scale real-world deployments, the guided heuristic search ($G/G+$) serves as an effective, polynomial-time surrogate, balancing feature acquisition costs against predictive loss feasibility.
+\end{enumerate}

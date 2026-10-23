@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Yeast_elu",
+    "repeat": 3,
+    "method": "NoGuard",
+    "attributes": 1,
+    "cost": 1,
+    "inner_loss": 0.0010022365100334444,
+    "inner_loss_empty": 0.0008835651681732149,
+    "audit_brier_sel": 0.001056334953850118,
+    "audit_brier_empty": 0.0008645587122458566,
+    "audit_brier_full": 0.0010026780949118179,
+    "seconds": 0.06983630009926856
+  }
+]

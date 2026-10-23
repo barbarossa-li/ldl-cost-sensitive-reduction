@@ -1,0 +1,42 @@
+[
+  {
+    "dataset": "Yeast_diau",
+    "repeat": 2,
+    "alpha": 100.0,
+    "method": "Full",
+    "attributes": 24,
+    "cost": 127,
+    "audit_brier": 0.003357357462659354,
+    "test_brier": 0.004069070696282906
+  },
+  {
+    "dataset": "Yeast_diau",
+    "repeat": 2,
+    "alpha": 100.0,
+    "method": "Empty",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.0035422171381770118,
+    "test_brier": 0.003964554997368413
+  },
+  {
+    "dataset": "Yeast_diau",
+    "repeat": 2,
+    "alpha": 100.0,
+    "method": "Prediction only after",
+    "attributes": 3,
+    "cost": 12,
+    "audit_brier": 0.0034322861826043775,
+    "test_brier": 0.003943847234539882
+  },
+  {
+    "dataset": "Yeast_diau",
+    "repeat": 2,
+    "alpha": 100.0,
+    "method": "Guided after",
+    "attributes": 3,
+    "cost": 12,
+    "audit_brier": 0.0034322861826043775,
+    "test_brier": 0.003943847234539882
+  }
+]

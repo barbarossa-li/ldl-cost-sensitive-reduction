@@ -1,0 +1,18 @@
+{
+  "datasets": [
+    "Natural Scene",
+    "SBU_3DFE",
+    "Yeast_cold"
+  ],
+  "repeats": [
+    1,
+    2,
+    3
+  ],
+  "training_size": 192,
+  "refinement_budget": 200,
+  "scope": "Development-only repeated-split pilot; original searches rerun, common refinement appended; no outer-test evaluation",
+  "rules": "Strictly lower cost and same exact prediction guard; deletions and cheaper one-for-one exchanges, descending saving/removed/added order; best evaluated feasible cost then loss then indices; restart after acceptance; total 200 candidate requests per variant, including repeated/cache-hit requests",
+  "fairness": "Identical refinement cap, not equal total initial search work or runtime",
+  "parameters": "Unchanged beta1,zeta.1,kappa.1,smin2,alpha1,lambda-1,k5,three folds,prediction tolerance0"
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "train_n": 384,
+    "method": "DSIM k",
+    "attributes": 1,
+    "cost": 7,
+    "inner_brier": 0.007041534789885632,
+    "test_brier": 0.0076300148211560235,
+    "test_kl": 0.015344022539422027,
+    "test_tv": 0.06724074286674,
+    "test_js": 0.0038501848815236687
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "train_n": 384,
+    "method": "DSIM budget",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.007273087563577603,
+    "test_brier": 0.007641015170407387,
+    "test_kl": 0.015408536269521881,
+    "test_tv": 0.06712560521425996,
+    "test_js": 0.00386182529581332
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "train_n": 384,
+    "method": "FSLC k",
+    "attributes": 1,
+    "cost": 5,
+    "inner_brier": 0.007192171931654609,
+    "test_brier": 0.007600487714441377,
+    "test_kl": 0.015271893310014745,
+    "test_tv": 0.06712226116388384,
+    "test_js": 0.003833821166338619
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "train_n": 384,
+    "method": "FSLC budget",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.007273087563577603,
+    "test_brier": 0.007641015170407387,
+    "test_kl": 0.015408536269521881,
+    "test_tv": 0.06712560521425996,
+    "test_js": 0.00386182529581332
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "train_n": 384,
+    "method": "GBFRS k",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.007273087563577603,
+    "test_brier": 0.007641015170407387,
+    "test_kl": 0.015408536269521881,
+    "test_tv": 0.06712560521425996,
+    "test_js": 0.00386182529581332
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "train_n": 384,
+    "method": "GBFRS budget",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.007273087563577603,
+    "test_brier": 0.007641015170407387,
+    "test_kl": 0.015408536269521881,
+    "test_tv": 0.06712560521425996,
+    "test_js": 0.00386182529581332
+  }
+]

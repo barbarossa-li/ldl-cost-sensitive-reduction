@@ -1,0 +1,170 @@
+{
+  "Joint guard": [
+    [
+      [],
+      84,
+      0.14977318891232944,
+      "dependency: positive cost-weighted gain"
+    ],
+    [
+      [
+        84
+      ],
+      173,
+      0.017053417907401586,
+      "dependency: positive cost-weighted gain"
+    ],
+    [
+      [
+        84,
+        173
+      ],
+      200,
+      0.02426427488385985,
+      "dependency: positive cost-weighted gain"
+    ],
+    [
+      [
+        84,
+        173,
+        200
+      ],
+      9,
+      0.00242773094066992,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        9,
+        84,
+        173,
+        200
+      ],
+      128,
+      0.0007582567251803833,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        9,
+        84,
+        128,
+        173,
+        200
+      ],
+      70,
+      0.09382484231250565,
+      "dependency: positive cost-weighted gain"
+    ],
+    [
+      [
+        9,
+        70,
+        84,
+        128,
+        173,
+        200
+      ],
+      177,
+      0.0008485038684246972,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        9,
+        70,
+        84,
+        128,
+        173,
+        177,
+        200
+      ],
+      6,
+      0.0006586103111136318,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        6,
+        9,
+        70,
+        84,
+        128,
+        173,
+        177,
+        200
+      ],
+      225,
+      0.09779019033808856,
+      "dependency: positive cost-weighted gain"
+    ],
+    [
+      [
+        6,
+        9,
+        70,
+        84,
+        128,
+        173,
+        177,
+        200,
+        225
+      ],
+      54,
+      0.00165457036254682,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        6,
+        9,
+        54,
+        70,
+        84,
+        128,
+        173,
+        177,
+        200,
+        225
+      ],
+      77,
+      0.09473293046273354,
+      "dependency: positive cost-weighted gain"
+    ]
+  ],
+  "Prediction-only": [
+    [
+      [],
+      223,
+      0.002802490611950991,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        223
+      ],
+      0,
+      0.001355861822579879,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        0,
+        223
+      ],
+      17,
+      0.00020067190306456706,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        0,
+        17,
+        223
+      ],
+      9,
+      0.0010863514439052278,
+      "prediction loss: positive cost-weighted gain"
+    ]
+  ]
+}

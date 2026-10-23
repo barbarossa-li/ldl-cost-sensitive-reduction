@@ -1,0 +1,199 @@
+[
+  {
+    "phase": "common prefix",
+    "index": 0,
+    "selected": [],
+    "cost": 0,
+    "inner_brier": 0.28296768811600626,
+    "gamma": 0.0,
+    "risk_pass": false,
+    "gamma_pass": false
+  },
+  {
+    "phase": "common prefix",
+    "index": 1,
+    "selected": [
+      106
+    ],
+    "cost": 4,
+    "inner_brier": 0.2943149069590922,
+    "gamma": 0.06158938919845107,
+    "risk_pass": false,
+    "gamma_pass": false
+  },
+  {
+    "phase": "common prefix",
+    "index": 2,
+    "selected": [
+      6,
+      106
+    ],
+    "cost": 5,
+    "inner_brier": 0.265180883582562,
+    "gamma": 0.09652023823268632,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 3,
+    "selected": [
+      6,
+      106,
+      188
+    ],
+    "cost": 6,
+    "inner_brier": 0.2439891623232296,
+    "gamma": 0.1331304043656086,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 4,
+    "selected": [
+      6,
+      104,
+      106,
+      188
+    ],
+    "cost": 7,
+    "inner_brier": 0.23800320740829056,
+    "gamma": 0.12485950516606624,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 5,
+    "selected": [
+      6,
+      104,
+      106,
+      144,
+      188
+    ],
+    "cost": 10,
+    "inner_brier": 0.23080648324610842,
+    "gamma": 0.09234778075375889,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 6,
+    "selected": [
+      6,
+      47,
+      104,
+      106,
+      144,
+      188
+    ],
+    "cost": 11,
+    "inner_brier": 0.22999955595659857,
+    "gamma": 0.1319575469332179,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 7,
+    "selected": [
+      6,
+      47,
+      99,
+      104,
+      106,
+      144,
+      188
+    ],
+    "cost": 12,
+    "inner_brier": 0.22839491877730606,
+    "gamma": 0.039332740384028474,
+    "risk_pass": false,
+    "gamma_pass": false
+  },
+  {
+    "phase": "common prefix",
+    "index": 8,
+    "selected": [
+      6,
+      18,
+      47,
+      99,
+      104,
+      106,
+      144,
+      188
+    ],
+    "cost": 15,
+    "inner_brier": 0.22629513194172793,
+    "gamma": 0.11748046474973618,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 9,
+    "selected": [
+      6,
+      18,
+      19,
+      47,
+      99,
+      104,
+      106,
+      144,
+      188
+    ],
+    "cost": 21,
+    "inner_brier": 0.22053130215675418,
+    "gamma": 0.11483825174168588,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 10,
+    "selected": [
+      6,
+      18,
+      19,
+      47,
+      99,
+      104,
+      106,
+      144,
+      173,
+      188
+    ],
+    "cost": 22,
+    "inner_brier": 0.21964062117948444,
+    "gamma": 0.13276193202901387,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 11,
+    "selected": [
+      6,
+      18,
+      19,
+      47,
+      99,
+      104,
+      106,
+      144,
+      173,
+      177,
+      188
+    ],
+    "cost": 23,
+    "inner_brier": 0.21992174993431224,
+    "gamma": 0.1414280774129387,
+    "risk_pass": false,
+    "gamma_pass": true
+  }
+]

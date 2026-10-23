@@ -1,0 +1,167 @@
+[
+  {
+    "dataset": "Natural Scene",
+    "subset": "Full",
+    "learner": "Euclidean",
+    "attributes": 294,
+    "cost": 1648,
+    "inner_brier": 0.25959198103527265,
+    "full_reference": 0.25959198103527265,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "Natural Scene",
+    "subset": "Full",
+    "learner": "Manhattan",
+    "attributes": 294,
+    "cost": 1648,
+    "inner_brier": 0.2452909676591987,
+    "full_reference": 0.2452909676591987,
+    "passes_own_reference": true,
+    "relative_to_euclidean": -0.055090351092666356
+  },
+  {
+    "dataset": "Natural Scene",
+    "subset": "Full",
+    "learner": "Incoming directed",
+    "attributes": 294,
+    "cost": 1648,
+    "inner_brier": 0.2534381721380024,
+    "full_reference": 0.2534381721380024,
+    "passes_own_reference": true,
+    "relative_to_euclidean": -0.0237056971973032
+  },
+  {
+    "dataset": "Natural Scene",
+    "subset": "Original joint",
+    "learner": "Euclidean",
+    "attributes": 5,
+    "cost": 6,
+    "inner_brier": 0.25828695890442516,
+    "full_reference": 0.25959198103527265,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "Natural Scene",
+    "subset": "Original joint",
+    "learner": "Manhattan",
+    "attributes": 5,
+    "cost": 6,
+    "inner_brier": 0.25245592887641255,
+    "full_reference": 0.2452909676591987,
+    "passes_own_reference": false,
+    "relative_to_euclidean": -0.02257578180774622
+  },
+  {
+    "dataset": "Natural Scene",
+    "subset": "Original joint",
+    "learner": "Incoming directed",
+    "attributes": 5,
+    "cost": 6,
+    "inner_brier": 0.25010502443972094,
+    "full_reference": 0.2534381721380024,
+    "passes_own_reference": true,
+    "relative_to_euclidean": -0.03167769096592987
+  },
+  {
+    "dataset": "Natural Scene",
+    "subset": "Prediction only",
+    "learner": "Euclidean",
+    "attributes": 5,
+    "cost": 9,
+    "inner_brier": 0.2507796559610387,
+    "full_reference": 0.25959198103527265,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "Natural Scene",
+    "subset": "Prediction only",
+    "learner": "Manhattan",
+    "attributes": 5,
+    "cost": 9,
+    "inner_brier": 0.26115815902965284,
+    "full_reference": 0.2452909676591987,
+    "passes_own_reference": false,
+    "relative_to_euclidean": 0.04138494818824756
+  },
+  {
+    "dataset": "Natural Scene",
+    "subset": "Prediction only",
+    "learner": "Incoming directed",
+    "attributes": 5,
+    "cost": 9,
+    "inner_brier": 0.26625331708611594,
+    "full_reference": 0.2534381721380024,
+    "passes_own_reference": false,
+    "relative_to_euclidean": 0.061702218490487404
+  },
+  {
+    "dataset": "Natural Scene",
+    "subset": "Guided",
+    "learner": "Euclidean",
+    "attributes": 6,
+    "cost": 12,
+    "inner_brier": 0.25926427856855044,
+    "full_reference": 0.25959198103527265,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "Natural Scene",
+    "subset": "Guided",
+    "learner": "Manhattan",
+    "attributes": 6,
+    "cost": 12,
+    "inner_brier": 0.2637875445131243,
+    "full_reference": 0.2452909676591987,
+    "passes_own_reference": false,
+    "relative_to_euclidean": 0.01744654516058941
+  },
+  {
+    "dataset": "Natural Scene",
+    "subset": "Guided",
+    "learner": "Incoming directed",
+    "attributes": 6,
+    "cost": 12,
+    "inner_brier": 0.2666071402213246,
+    "full_reference": 0.2534381721380024,
+    "passes_own_reference": false,
+    "relative_to_euclidean": 0.028321918057186757
+  },
+  {
+    "dataset": "Natural Scene",
+    "subset": "Empty",
+    "learner": "Euclidean",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.3009555158343032,
+    "full_reference": 0.25959198103527265,
+    "passes_own_reference": false,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "Natural Scene",
+    "subset": "Empty",
+    "learner": "Manhattan",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.3009555158343032,
+    "full_reference": 0.2452909676591987,
+    "passes_own_reference": false,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "Natural Scene",
+    "subset": "Empty",
+    "learner": "Incoming directed",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.3009555158343032,
+    "full_reference": 0.2534381721380024,
+    "passes_own_reference": false,
+    "relative_to_euclidean": 0.0
+  }
+]

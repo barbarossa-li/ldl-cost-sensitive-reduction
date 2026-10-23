@@ -1,0 +1,222 @@
+[
+  {
+    "removed": 6,
+    "selected": [
+      9,
+      54,
+      70,
+      77,
+      84,
+      128,
+      173,
+      177,
+      200,
+      225
+    ],
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false,
+    "inner_brier": 0.027841537014719243,
+    "gamma": 0.23164391464009632
+  },
+  {
+    "removed": 9,
+    "selected": [
+      6,
+      54,
+      70,
+      77,
+      84,
+      128,
+      173,
+      177,
+      200,
+      225
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false,
+    "inner_brier": 0.027698516871279794,
+    "gamma": 0.116303914498192
+  },
+  {
+    "removed": 54,
+    "selected": [
+      6,
+      9,
+      70,
+      77,
+      84,
+      128,
+      173,
+      177,
+      200,
+      225
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "gamma_only_block": true,
+    "inner_brier": 0.026958286082915967,
+    "gamma": 0.11781103330188078
+  },
+  {
+    "removed": 70,
+    "selected": [
+      6,
+      9,
+      54,
+      77,
+      84,
+      128,
+      173,
+      177,
+      200,
+      225
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "gamma_only_block": true,
+    "inner_brier": 0.02662587686362515,
+    "gamma": 0.155984592120343
+  },
+  {
+    "removed": 77,
+    "selected": [
+      6,
+      9,
+      54,
+      70,
+      84,
+      128,
+      173,
+      177,
+      200,
+      225
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "gamma_only_block": true,
+    "inner_brier": 0.0264649907819799,
+    "gamma": 0.17253689242834444
+  },
+  {
+    "removed": 84,
+    "selected": [
+      6,
+      9,
+      54,
+      70,
+      77,
+      128,
+      173,
+      177,
+      200,
+      225
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "gamma_only_block": true,
+    "inner_brier": 0.02703611862408727,
+    "gamma": 0.17396110256537253
+  },
+  {
+    "removed": 128,
+    "selected": [
+      6,
+      9,
+      54,
+      70,
+      77,
+      84,
+      173,
+      177,
+      200,
+      225
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false,
+    "inner_brier": 0.028117586029872733,
+    "gamma": 0.16609286774062745
+  },
+  {
+    "removed": 173,
+    "selected": [
+      6,
+      9,
+      54,
+      70,
+      77,
+      84,
+      128,
+      177,
+      200,
+      225
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false,
+    "inner_brier": 0.0282950984950507,
+    "gamma": 0.15019522547581843
+  },
+  {
+    "removed": 177,
+    "selected": [
+      6,
+      9,
+      54,
+      70,
+      77,
+      84,
+      128,
+      173,
+      200,
+      225
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false,
+    "inner_brier": 0.02766918270734929,
+    "gamma": 0.11696455541679654
+  },
+  {
+    "removed": 200,
+    "selected": [
+      6,
+      9,
+      54,
+      70,
+      77,
+      84,
+      128,
+      173,
+      177,
+      225
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false,
+    "inner_brier": 0.02829152820231572,
+    "gamma": 0.15515968303820843
+  },
+  {
+    "removed": 225,
+    "selected": [
+      6,
+      9,
+      54,
+      70,
+      77,
+      84,
+      128,
+      173,
+      177,
+      200
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false,
+    "inner_brier": 0.028690327605989083,
+    "gamma": 0.17218874786820504
+  }
+]

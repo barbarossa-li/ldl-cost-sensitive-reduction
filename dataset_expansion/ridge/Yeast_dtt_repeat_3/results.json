@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Yeast_dtt",
+    "repeat": 3,
+    "alpha": 100.0,
+    "ridge_inner_full": 0.003365172761081542,
+    "ridge_inner_empty": 0.0033744517338090496,
+    "inner_gain": 9.278972727507634e-06,
+    "audit_brier_ridge": 0.0031325413777684944,
+    "audit_brier_empty": 0.0033727899366006934,
+    "audit_gain": 0.00024024855883219903,
+    "revived": true,
+    "seconds": 0.0054842999670654535
+  }
+]

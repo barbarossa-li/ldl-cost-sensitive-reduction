@@ -1,0 +1,122 @@
+[
+  {
+    "dataset": "SJAFFE",
+    "repeat": 3,
+    "cap": 1,
+    "method": "Prediction ranking",
+    "attributes": 0,
+    "spent": 0,
+    "audit_brier": 0.024793704336192924,
+    "feasible": false
+  },
+  {
+    "dataset": "SJAFFE",
+    "repeat": 3,
+    "cap": 1,
+    "method": "Dependency guidance",
+    "attributes": 0,
+    "spent": 0,
+    "audit_brier": 0.024793704336192924,
+    "feasible": false
+  },
+  {
+    "dataset": "SJAFFE",
+    "repeat": 3,
+    "cap": 2,
+    "method": "Prediction ranking",
+    "attributes": 0,
+    "spent": 0,
+    "audit_brier": 0.024793704336192924,
+    "feasible": false
+  },
+  {
+    "dataset": "SJAFFE",
+    "repeat": 3,
+    "cap": 2,
+    "method": "Dependency guidance",
+    "attributes": 0,
+    "spent": 0,
+    "audit_brier": 0.024793704336192924,
+    "feasible": false
+  },
+  {
+    "dataset": "SJAFFE",
+    "repeat": 3,
+    "cap": 5,
+    "method": "Prediction ranking",
+    "attributes": 0,
+    "spent": 0,
+    "audit_brier": 0.024793704336192924,
+    "feasible": false
+  },
+  {
+    "dataset": "SJAFFE",
+    "repeat": 3,
+    "cap": 5,
+    "method": "Dependency guidance",
+    "attributes": 0,
+    "spent": 0,
+    "audit_brier": 0.024793704336192924,
+    "feasible": false
+  },
+  {
+    "dataset": "SJAFFE",
+    "repeat": 3,
+    "cap": 10,
+    "method": "Prediction ranking",
+    "attributes": 0,
+    "spent": 0,
+    "audit_brier": 0.024793704336192924,
+    "feasible": false
+  },
+  {
+    "dataset": "SJAFFE",
+    "repeat": 3,
+    "cap": 10,
+    "method": "Dependency guidance",
+    "attributes": 0,
+    "spent": 0,
+    "audit_brier": 0.024793704336192924,
+    "feasible": false
+  },
+  {
+    "dataset": "SJAFFE",
+    "repeat": 3,
+    "cap": 20,
+    "method": "Prediction ranking",
+    "attributes": 0,
+    "spent": 0,
+    "audit_brier": 0.024793704336192924,
+    "feasible": false
+  },
+  {
+    "dataset": "SJAFFE",
+    "repeat": 3,
+    "cap": 20,
+    "method": "Dependency guidance",
+    "attributes": 0,
+    "spent": 0,
+    "audit_brier": 0.024793704336192924,
+    "feasible": false
+  },
+  {
+    "dataset": "SJAFFE",
+    "repeat": 3,
+    "cap": 50,
+    "method": "Prediction ranking",
+    "attributes": 0,
+    "spent": 0,
+    "audit_brier": 0.024793704336192924,
+    "feasible": false
+  },
+  {
+    "dataset": "SJAFFE",
+    "repeat": 3,
+    "cap": 50,
+    "method": "Dependency guidance",
+    "attributes": 0,
+    "spent": 0,
+    "audit_brier": 0.024793704336192924,
+    "feasible": false
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "attribute_fold_records": 1683,
+  "fitting_folds": 9,
+  "mean_fit_n": 128,
+  "original_weight_max_error": 1.3877787807814457e-16,
+  "jensen_max_positive_excess": 2.220446049250313e-16,
+  "shrink_convexity_max_positive_excess": 0.0,
+  "validation_or_test_labels_used": false,
+  "parameter_changes": false,
+  "no_prediction_or_selection_rerun": true,
+  "pdf_pages": 71,
+  "pdf_validation": "Two builds; no undefined references or overfull boxes; Section16 rendered and inspected",
+  "report_math": "Literal LaTeX escapes retained",
+  "support_stratum": "Other-object affinity mass t<1, diagnostic only; no algorithm threshold change"
+}

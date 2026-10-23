@@ -1,0 +1,42 @@
+[
+  {
+    "dataset": "FG-Net",
+    "repeat": 1,
+    "alpha": 100.0,
+    "method": "Full",
+    "attributes": 251,
+    "cost": 1412,
+    "audit_brier": 0.06207102358603768,
+    "test_brier": 0.05798387728652256
+  },
+  {
+    "dataset": "FG-Net",
+    "repeat": 1,
+    "alpha": 100.0,
+    "method": "Empty",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.07613285266027557,
+    "test_brier": 0.07547177337324563
+  },
+  {
+    "dataset": "FG-Net",
+    "repeat": 1,
+    "alpha": 100.0,
+    "method": "Prediction only after",
+    "attributes": 1,
+    "cost": 5,
+    "audit_brier": 0.06362230523260111,
+    "test_brier": 0.0632138359777138
+  },
+  {
+    "dataset": "FG-Net",
+    "repeat": 1,
+    "alpha": 100.0,
+    "method": "Guided after",
+    "attributes": 1,
+    "cost": 5,
+    "audit_brier": 0.06362230523260111,
+    "test_brier": 0.0632138359777138
+  }
+]

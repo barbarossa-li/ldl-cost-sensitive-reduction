@@ -1,0 +1,424 @@
+[
+  {
+    "dataset": "Natural Scene",
+    "repeat": 2,
+    "budget": 5,
+    "method": "Prediction ranking",
+    "selected": [
+      54,
+      110,
+      164
+    ],
+    "attributes": 3,
+    "spent": 5,
+    "inner_brier": 0.2647988948295855,
+    "inner_full_reference": 0.2457874879682242,
+    "inner_empty_reference": 0.28908805783193925,
+    "inner_pass_full": false,
+    "stop_reason": "no affordable attribute",
+    "candidate_requests": 226,
+    "dependency_requests": 0,
+    "search_seconds": 0.9624783889994433,
+    "trace": [
+      {
+        "before": [],
+        "attribute": 110,
+        "cost": 3,
+        "prediction_gain": -0.01571700495779288,
+        "dependency_gain": null,
+        "rule": "shared nonpositive prediction bridge"
+      },
+      {
+        "before": [
+          110
+        ],
+        "attribute": 54,
+        "cost": 1,
+        "prediction_gain": 0.026494525520422585,
+        "dependency_gain": null,
+        "rule": "prediction improvement/cost"
+      },
+      {
+        "before": [
+          54,
+          110
+        ],
+        "attribute": 164,
+        "cost": 1,
+        "prediction_gain": 0.013511642439724025,
+        "dependency_gain": null,
+        "rule": "prediction improvement/cost"
+      }
+    ]
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 2,
+    "budget": 5,
+    "method": "Dependency guidance",
+    "selected": [
+      54,
+      110,
+      177
+    ],
+    "attributes": 3,
+    "spent": 5,
+    "inner_brier": 0.2766561463026008,
+    "inner_full_reference": 0.2457874879682242,
+    "inner_empty_reference": 0.28908805783193925,
+    "inner_pass_full": false,
+    "stop_reason": "no affordable attribute",
+    "candidate_requests": 226,
+    "dependency_requests": 53,
+    "search_seconds": 2.558154315000138,
+    "trace": [
+      {
+        "before": [],
+        "attribute": 110,
+        "cost": 3,
+        "prediction_gain": -0.01571700495779288,
+        "dependency_gain": null,
+        "rule": "shared nonpositive prediction bridge"
+      },
+      {
+        "before": [
+          110
+        ],
+        "attribute": 54,
+        "cost": 1,
+        "prediction_gain": 0.026494525520422585,
+        "dependency_gain": 0.09035534163040493,
+        "rule": "positive dependency gain/cost"
+      },
+      {
+        "before": [
+          54,
+          110
+        ],
+        "attribute": 177,
+        "cost": 1,
+        "prediction_gain": 0.0016543909667087187,
+        "dependency_gain": 0.03037315994269066,
+        "rule": "positive dependency gain/cost"
+      }
+    ]
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 2,
+    "budget": 10,
+    "method": "Prediction ranking",
+    "selected": [
+      122,
+      188,
+      201,
+      214
+    ],
+    "attributes": 4,
+    "spent": 10,
+    "inner_brier": 0.2559523805566684,
+    "inner_full_reference": 0.2457874879682242,
+    "inner_empty_reference": 0.28908805783193925,
+    "inner_pass_full": false,
+    "stop_reason": "no affordable attribute",
+    "candidate_requests": 457,
+    "dependency_requests": 0,
+    "search_seconds": 1.3557016830000066,
+    "trace": [
+      {
+        "before": [],
+        "attribute": 201,
+        "cost": 7,
+        "prediction_gain": -0.01273129363388431,
+        "dependency_gain": null,
+        "rule": "shared nonpositive prediction bridge"
+      },
+      {
+        "before": [
+          201
+        ],
+        "attribute": 122,
+        "cost": 1,
+        "prediction_gain": 0.018113616132528765,
+        "dependency_gain": null,
+        "rule": "prediction improvement/cost"
+      },
+      {
+        "before": [
+          122,
+          201
+        ],
+        "attribute": 214,
+        "cost": 1,
+        "prediction_gain": 0.013960050826868797,
+        "dependency_gain": null,
+        "rule": "prediction improvement/cost"
+      },
+      {
+        "before": [
+          122,
+          201,
+          214
+        ],
+        "attribute": 188,
+        "cost": 1,
+        "prediction_gain": 0.013793303949757585,
+        "dependency_gain": null,
+        "rule": "prediction improvement/cost"
+      }
+    ]
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 2,
+    "budget": 10,
+    "method": "Dependency guidance",
+    "selected": [
+      6,
+      98,
+      201,
+      234
+    ],
+    "attributes": 4,
+    "spent": 10,
+    "inner_brier": 0.2603073710154293,
+    "inner_full_reference": 0.2457874879682242,
+    "inner_empty_reference": 0.28908805783193925,
+    "inner_pass_full": false,
+    "stop_reason": "no affordable attribute",
+    "candidate_requests": 457,
+    "dependency_requests": 94,
+    "search_seconds": 3.2658024379998096,
+    "trace": [
+      {
+        "before": [],
+        "attribute": 201,
+        "cost": 7,
+        "prediction_gain": -0.01273129363388431,
+        "dependency_gain": null,
+        "rule": "shared nonpositive prediction bridge"
+      },
+      {
+        "before": [
+          201
+        ],
+        "attribute": 98,
+        "cost": 1,
+        "prediction_gain": 0.016261639641240666,
+        "dependency_gain": 0.03628020939886584,
+        "rule": "positive dependency gain/cost"
+      },
+      {
+        "before": [
+          98,
+          201
+        ],
+        "attribute": 6,
+        "cost": 1,
+        "prediction_gain": 0.019273168809864405,
+        "dependency_gain": 0.053306718895790806,
+        "rule": "positive dependency gain/cost"
+      },
+      {
+        "before": [
+          6,
+          98,
+          201
+        ],
+        "attribute": 234,
+        "cost": 1,
+        "prediction_gain": 0.00597717199928921,
+        "dependency_gain": 0.021753372351094508,
+        "rule": "positive dependency gain/cost"
+      }
+    ]
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 2,
+    "budget": 20,
+    "method": "Prediction ranking",
+    "selected": [
+      104,
+      122,
+      188,
+      201,
+      213,
+      214
+    ],
+    "attributes": 6,
+    "spent": 12,
+    "inner_brier": 0.2410922887648042,
+    "inner_full_reference": 0.2457874879682242,
+    "inner_empty_reference": 0.28908805783193925,
+    "inner_pass_full": true,
+    "stop_reason": "internal full reference reached",
+    "candidate_requests": 1727,
+    "dependency_requests": 0,
+    "search_seconds": 6.64215420400069,
+    "trace": [
+      {
+        "before": [],
+        "attribute": 201,
+        "cost": 7,
+        "prediction_gain": -0.01273129363388431,
+        "dependency_gain": null,
+        "rule": "shared nonpositive prediction bridge"
+      },
+      {
+        "before": [
+          201
+        ],
+        "attribute": 122,
+        "cost": 1,
+        "prediction_gain": 0.018113616132528765,
+        "dependency_gain": null,
+        "rule": "prediction improvement/cost"
+      },
+      {
+        "before": [
+          122,
+          201
+        ],
+        "attribute": 214,
+        "cost": 1,
+        "prediction_gain": 0.013960050826868797,
+        "dependency_gain": null,
+        "rule": "prediction improvement/cost"
+      },
+      {
+        "before": [
+          122,
+          201,
+          214
+        ],
+        "attribute": 188,
+        "cost": 1,
+        "prediction_gain": 0.013793303949757585,
+        "dependency_gain": null,
+        "rule": "prediction improvement/cost"
+      },
+      {
+        "before": [
+          122,
+          188,
+          201,
+          214
+        ],
+        "attribute": 213,
+        "cost": 1,
+        "prediction_gain": 0.009889461628785845,
+        "dependency_gain": null,
+        "rule": "prediction improvement/cost"
+      },
+      {
+        "before": [
+          122,
+          188,
+          201,
+          213,
+          214
+        ],
+        "attribute": 104,
+        "cost": 1,
+        "prediction_gain": 0.00497063016307836,
+        "dependency_gain": null,
+        "rule": "prediction improvement/cost"
+      }
+    ]
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 2,
+    "budget": 20,
+    "method": "Dependency guidance",
+    "selected": [
+      6,
+      9,
+      98,
+      201,
+      214,
+      234
+    ],
+    "attributes": 6,
+    "spent": 13,
+    "inner_brier": 0.2454763870768796,
+    "inner_full_reference": 0.2457874879682242,
+    "inner_empty_reference": 0.28908805783193925,
+    "inner_pass_full": true,
+    "stop_reason": "internal full reference reached",
+    "candidate_requests": 1727,
+    "dependency_requests": 844,
+    "search_seconds": 28.55595274299958,
+    "trace": [
+      {
+        "before": [],
+        "attribute": 201,
+        "cost": 7,
+        "prediction_gain": -0.01273129363388431,
+        "dependency_gain": null,
+        "rule": "shared nonpositive prediction bridge"
+      },
+      {
+        "before": [
+          201
+        ],
+        "attribute": 98,
+        "cost": 1,
+        "prediction_gain": 0.016261639641240666,
+        "dependency_gain": 0.03628020939886584,
+        "rule": "positive dependency gain/cost"
+      },
+      {
+        "before": [
+          98,
+          201
+        ],
+        "attribute": 6,
+        "cost": 1,
+        "prediction_gain": 0.019273168809864405,
+        "dependency_gain": 0.053306718895790806,
+        "rule": "positive dependency gain/cost"
+      },
+      {
+        "before": [
+          6,
+          98,
+          201
+        ],
+        "attribute": 234,
+        "cost": 1,
+        "prediction_gain": 0.00597717199928921,
+        "dependency_gain": 0.021753372351094508,
+        "rule": "positive dependency gain/cost"
+      },
+      {
+        "before": [
+          6,
+          98,
+          201,
+          234
+        ],
+        "attribute": 214,
+        "cost": 1,
+        "prediction_gain": 0.009864823768641229,
+        "dependency_gain": -0.05097714516286225,
+        "rule": "prediction fallback"
+      },
+      {
+        "before": [
+          6,
+          98,
+          201,
+          214,
+          234
+        ],
+        "attribute": 9,
+        "cost": 2,
+        "prediction_gain": 0.004966160169908446,
+        "dependency_gain": 0.03846421960184451,
+        "rule": "positive dependency gain/cost"
+      }
+    ]
+  }
+]

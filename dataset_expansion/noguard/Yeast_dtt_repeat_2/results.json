@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Yeast_dtt",
+    "repeat": 2,
+    "method": "NoGuard",
+    "attributes": 1,
+    "cost": 5,
+    "inner_loss": 0.0037469403443844817,
+    "inner_loss_empty": 0.0033299776603505677,
+    "audit_brier_sel": 0.0036624702468028617,
+    "audit_brier_empty": 0.003266701834685054,
+    "audit_brier_full": 0.0036834032946355955,
+    "seconds": 0.06601569999475032
+  }
+]

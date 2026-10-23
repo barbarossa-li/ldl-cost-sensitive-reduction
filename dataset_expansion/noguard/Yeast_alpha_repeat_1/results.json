@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Yeast_alpha",
+    "repeat": 1,
+    "method": "NoGuard",
+    "attributes": 1,
+    "cost": 5,
+    "inner_loss": 0.0006978959956904199,
+    "inner_loss_empty": 0.0006063365346695085,
+    "audit_brier_sel": 0.0007087026691817705,
+    "audit_brier_empty": 0.0006055381155897291,
+    "audit_brier_full": 0.0006851581541281492,
+    "seconds": 0.06531810003798455
+  }
+]

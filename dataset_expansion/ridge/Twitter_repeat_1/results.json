@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Twitter",
+    "repeat": 1,
+    "alpha": 100.0,
+    "ridge_inner_full": 0.23073046668667113,
+    "ridge_inner_empty": 0.2047661675347222,
+    "inner_gain": -0.025964299151948922,
+    "audit_brier_ridge": 0.1942652871922562,
+    "audit_brier_empty": 0.18461083515517834,
+    "audit_gain": -0.009654452037077849,
+    "revived": false,
+    "seconds": 0.31389920006040484
+  }
+]

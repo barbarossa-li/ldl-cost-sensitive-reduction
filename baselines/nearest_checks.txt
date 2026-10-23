@@ -1,0 +1,1 @@
+PASS: exact equality to stable argsort nearest5 on random continuous and tied distance matrices (64x128 and 192x384).

@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 576,
+    "method": "DSIM k",
+    "attributes": 2,
+    "cost": 7,
+    "inner_brier": 0.0074649160464146345,
+    "test_brier": 0.00732051021572659,
+    "test_kl": 0.014796464667694888,
+    "test_tv": 0.06755957878567628,
+    "test_js": 0.003730317198595057
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 576,
+    "method": "DSIM budget",
+    "attributes": 2,
+    "cost": 5,
+    "inner_brier": 0.006918414904001125,
+    "test_brier": 0.007926273185355066,
+    "test_kl": 0.01607283008008477,
+    "test_tv": 0.06895424982842047,
+    "test_js": 0.004034600574973296
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 576,
+    "method": "FSLC k",
+    "attributes": 2,
+    "cost": 7,
+    "inner_brier": 0.0074649160464146345,
+    "test_brier": 0.00732051021572659,
+    "test_kl": 0.014796464667694888,
+    "test_tv": 0.06755957878567628,
+    "test_js": 0.003730317198595057
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 576,
+    "method": "FSLC budget",
+    "attributes": 2,
+    "cost": 5,
+    "inner_brier": 0.006918414904001125,
+    "test_brier": 0.007926273185355066,
+    "test_kl": 0.01607283008008477,
+    "test_tv": 0.06895424982842047,
+    "test_js": 0.004034600574973296
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 576,
+    "method": "GBFRS k",
+    "attributes": 2,
+    "cost": 13,
+    "inner_brier": 0.007156373637461664,
+    "test_brier": 0.0075177362965432905,
+    "test_kl": 0.015189035428931064,
+    "test_tv": 0.06822723582834458,
+    "test_js": 0.0038307653704759735
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 576,
+    "method": "GBFRS budget",
+    "attributes": 2,
+    "cost": 4,
+    "inner_brier": 0.007253516509733249,
+    "test_brier": 0.007578804177016647,
+    "test_kl": 0.015336379077269417,
+    "test_tv": 0.06846840804175383,
+    "test_js": 0.0038601912192637094
+  }
+]

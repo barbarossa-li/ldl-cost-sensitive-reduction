@@ -1,0 +1,141 @@
+{
+  "Joint guard": [
+    [
+      [],
+      164,
+      0.1257277054319192,
+      "dependency: positive cost-weighted gain"
+    ],
+    [
+      [
+        164
+      ],
+      235,
+      0.003561152736777033,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        164,
+        235
+      ],
+      99,
+      0.0016350976864035471,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        99,
+        164,
+        235
+      ],
+      77,
+      0.0011090141620426625,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        77,
+        99,
+        164,
+        235
+      ],
+      54,
+      0.0002989613723566112,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        54,
+        77,
+        99,
+        164,
+        235
+      ],
+      220,
+      0.1029307589607537,
+      "dependency: positive cost-weighted gain"
+    ],
+    [
+      [
+        54,
+        77,
+        99,
+        164,
+        220,
+        235
+      ],
+      128,
+      0.0012200975727482202,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        54,
+        77,
+        99,
+        128,
+        164,
+        220,
+        235
+      ],
+      105,
+      0.0013325380129306126,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        54,
+        77,
+        99,
+        105,
+        128,
+        164,
+        220,
+        235
+      ],
+      54,
+      0.028433801914415635,
+      "delete"
+    ],
+    [
+      [
+        77,
+        99,
+        105,
+        128,
+        164,
+        220,
+        235
+      ],
+      128,
+      -0.01812809804277893,
+      "delete"
+    ]
+  ],
+  "Prediction-only": [
+    [
+      [],
+      231,
+      -7.688472111316152e-05,
+      "prediction loss: nonpositive bridge"
+    ],
+    [
+      [
+        231
+      ],
+      173,
+      0.0011771491981555984,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        173,
+        231
+      ],
+      163,
+      0.0031095076694174356,
+      "prediction loss: positive cost-weighted gain"
+    ]
+  ]
+}

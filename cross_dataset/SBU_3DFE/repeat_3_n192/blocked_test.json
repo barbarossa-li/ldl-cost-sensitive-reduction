@@ -1,0 +1,46 @@
+[
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 3,
+    "train_n": 192,
+    "removed": 47,
+    "original_cost": 9,
+    "candidate_cost": 8,
+    "original_test_brier": 0.036551112949237546,
+    "candidate_test_brier": 0.036424071851242384,
+    "candidate_minus_original": -0.00012704109799516194
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 3,
+    "train_n": 192,
+    "removed": 54,
+    "original_cost": 9,
+    "candidate_cost": 8,
+    "original_test_brier": 0.036551112949237546,
+    "candidate_test_brier": 0.03714593363594286,
+    "candidate_minus_original": 0.0005948206867053135
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 3,
+    "train_n": 192,
+    "removed": 104,
+    "original_cost": 9,
+    "candidate_cost": 8,
+    "original_test_brier": 0.036551112949237546,
+    "candidate_test_brier": 0.038114674035781795,
+    "candidate_minus_original": 0.001563561086544249
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 3,
+    "train_n": 192,
+    "removed": 220,
+    "original_cost": 9,
+    "candidate_cost": 8,
+    "original_test_brier": 0.036551112949237546,
+    "candidate_test_brier": 0.03527875457176738,
+    "candidate_minus_original": -0.0012723583774701674
+  }
+]

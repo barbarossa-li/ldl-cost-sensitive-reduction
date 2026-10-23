@@ -1,0 +1,20 @@
+[
+  {
+    "phase": "prefix",
+    "selected": [],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "inner_brier": 0.006224425064106084,
+    "gamma": 0.0
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      1
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "inner_brier": 0.006994331837513541,
+    "gamma": 0.010642109197046164
+  }
+]

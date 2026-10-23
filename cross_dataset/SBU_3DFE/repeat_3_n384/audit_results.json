@@ -1,0 +1,30 @@
+[
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 3,
+    "train_n": 384,
+    "mode": "Constraint off",
+    "success": true,
+    "selected": [
+      70,
+      164
+    ],
+    "attributes": 2,
+    "cost": 2,
+    "test_brier": 0.032030514468621735
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 3,
+    "train_n": 384,
+    "mode": "Constraint on",
+    "success": true,
+    "selected": [
+      70,
+      164
+    ],
+    "attributes": 2,
+    "cost": 2,
+    "test_brier": 0.032030514468621735
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 384,
+    "mode": "Constraint off",
+    "success": true,
+    "selected": [],
+    "attributes": 0,
+    "cost": 0,
+    "test_brier": 0.006987449808030762
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 384,
+    "mode": "Constraint on",
+    "success": true,
+    "selected": [
+      22
+    ],
+    "attributes": 1,
+    "cost": 2,
+    "test_brier": 0.008384645607651595
+  }
+]

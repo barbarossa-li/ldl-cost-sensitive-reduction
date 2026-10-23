@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 576,
+    "method": "DSIM k",
+    "attributes": 4,
+    "cost": 23,
+    "inner_brier": 0.006964177888516037,
+    "test_brier": 0.007612453574283763,
+    "test_kl": 0.015753667493158065,
+    "test_tv": 0.06683045506223864,
+    "test_js": 0.004065037858675415
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 576,
+    "method": "DSIM budget",
+    "attributes": 4,
+    "cost": 13,
+    "inner_brier": 0.007255487491948285,
+    "test_brier": 0.007309595438547679,
+    "test_kl": 0.015146519157728106,
+    "test_tv": 0.06475369794257099,
+    "test_js": 0.0039139388860792036
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 576,
+    "method": "FSLC k",
+    "attributes": 4,
+    "cost": 19,
+    "inner_brier": 0.0071414068778910145,
+    "test_brier": 0.007425252195403504,
+    "test_kl": 0.015367740134386187,
+    "test_tv": 0.06655479948996876,
+    "test_js": 0.003957573226991036
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 576,
+    "method": "FSLC budget",
+    "attributes": 4,
+    "cost": 13,
+    "inner_brier": 0.0071672579103400184,
+    "test_brier": 0.007528330579406217,
+    "test_kl": 0.015589856882106092,
+    "test_tv": 0.06650522711493229,
+    "test_js": 0.0040259354761840015
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 576,
+    "method": "GBFRS k",
+    "attributes": 4,
+    "cost": 23,
+    "inner_brier": 0.0074585155805806345,
+    "test_brier": 0.007000905602834217,
+    "test_kl": 0.014553971017871566,
+    "test_tv": 0.06444950342586389,
+    "test_js": 0.0037489097137876188
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 576,
+    "method": "GBFRS budget",
+    "attributes": 2,
+    "cost": 13,
+    "inner_brier": 0.007424153903152918,
+    "test_brier": 0.007419467897840621,
+    "test_kl": 0.015419565832156562,
+    "test_tv": 0.06735088215507212,
+    "test_js": 0.0039668868822458824
+  }
+]

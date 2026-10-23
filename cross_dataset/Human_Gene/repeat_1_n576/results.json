@@ -1,0 +1,54 @@
+[
+  {
+    "dataset": "Human_Gene",
+    "repeat": 1,
+    "train_n": 576,
+    "method": "All attributes",
+    "attributes": 36,
+    "cost": 229,
+    "inner_brier": 0.02042241016531746,
+    "test_brier": 0.01834765818634363,
+    "test_kl": 0.31244155928922185,
+    "test_tv": 0.26031497700030265,
+    "test_js": 0.0673126231133782
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 1,
+    "train_n": 576,
+    "method": "Dependency-only",
+    "attributes": 2,
+    "cost": 3,
+    "inner_brier": 0.020297928043536355,
+    "test_brier": 0.018533350707903982,
+    "test_kl": 0.3063952897128783,
+    "test_tv": 0.26226578572641096,
+    "test_js": 0.06725046854175298
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 1,
+    "train_n": 576,
+    "method": "Joint guard",
+    "attributes": 2,
+    "cost": 3,
+    "inner_brier": 0.020297928043536355,
+    "test_brier": 0.018533350707903982,
+    "test_kl": 0.3063952897128783,
+    "test_tv": 0.26226578572641096,
+    "test_js": 0.06725046854175298
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 1,
+    "train_n": 576,
+    "method": "Prediction-only",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.017304332061295755,
+    "test_brier": 0.015254143078452837,
+    "test_kl": 0.25095381666278727,
+    "test_tv": 0.22065103581347495,
+    "test_js": 0.05391381794134038
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "scope": "Editorial consolidation; no new experiments",
+  "source_sha256": {
+    "large_holdout_replication/summary.json": "677a690ea7d8d3924a4e04424601a30dfa13c926990ed99f645460a38d45af35",
+    "matched_cost_audit/summary.json": "334a626568dd3e80cd18ec31d6a343e4241f8bef1f6bcb2721bb87e979beceb1",
+    "common_budget_audit/summary.json": "ba2d1bacfb0551b1a4340977e5199fa883b9b3bd05c19f6995dbae58fd9b14af",
+    "pareto_audit/summary.json": "11f0fe9774f11c0983a701cee3fec2273e4bdafd6642f3e2defcaa77a2038fc1"
+  },
+  "primary_table_rows": 12,
+  "datasets": 3
+}

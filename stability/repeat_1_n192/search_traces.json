@@ -1,0 +1,151 @@
+{
+  "Dependency-only": {
+    "trace": [
+      [
+        [],
+        281,
+        0.10366784426518755,
+        "positive cost-weighted gain"
+      ],
+      [
+        [
+          281
+        ],
+        104,
+        0.03839113370847844,
+        "positive cost-weighted gain"
+      ]
+    ],
+    "seconds": 17.60966517399902
+  },
+  "Joint guard": {
+    "trace": [
+      [
+        [],
+        281,
+        0.10366784426518755,
+        "dependency: positive cost-weighted gain"
+      ],
+      [
+        [
+          281
+        ],
+        104,
+        0.03839113370847844,
+        "dependency: positive cost-weighted gain"
+      ],
+      [
+        [
+          104,
+          281
+        ],
+        52,
+        0.03871092128477682,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          52,
+          104,
+          281
+        ],
+        213,
+        0.13591360195565624,
+        "dependency: positive cost-weighted gain"
+      ],
+      [
+        [
+          52,
+          104,
+          213,
+          281
+        ],
+        98,
+        0.015179578024006546,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          52,
+          98,
+          104,
+          213,
+          281
+        ],
+        276,
+        0.15545409263813975,
+        "dependency: positive cost-weighted gain"
+      ],
+      [
+        [
+          52,
+          98,
+          104,
+          213,
+          276,
+          281
+        ],
+        200,
+        0.025287451393666727,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          52,
+          98,
+          104,
+          200,
+          213,
+          276,
+          281
+        ],
+        6,
+        0.09479205890296007,
+        "dependency: positive cost-weighted gain"
+      ],
+      [
+        [
+          6,
+          52,
+          98,
+          104,
+          200,
+          213,
+          276,
+          281
+        ],
+        104,
+        -0.04111328884413401,
+        "delete"
+      ],
+      [
+        [
+          6,
+          52,
+          98,
+          200,
+          213,
+          276,
+          281
+        ],
+        276,
+        -0.01299488014410033,
+        "delete"
+      ],
+      [
+        [
+          6,
+          52,
+          98,
+          200,
+          213,
+          281
+        ],
+        6,
+        0.04233721007078767,
+        "delete"
+      ]
+    ],
+    "seconds": 23.561060844000167
+  }
+}

@@ -1,0 +1,150 @@
+
+\subsection{Label-distribution-driven local relative information and directed dissimilarity}
+\label{subsec:ldl-directed}
+
+We retain the source-dependent, fixed-normalization directed aggregation structure, but introduce a unified information statistic applicable to both numerical and categorical attributes. This statistic quantifies the divergence between an attribute-induced local label profile and the global label profile. This modeling choice reflects a structured information-theoretic strategy rather than an empirical claim of absolute predictive optimality.
+
+All statistical properties are evaluated on the fixed training object set $O$, remaining invariant when comparing alternative attribute subsets $P, Q \subseteq A$. Neither validation nor test labels are utilized during these computations.
+
+\subsubsection{Global and attribute-induced local label profiles}
+We define the global mean description degree for label $y_k$ across training instances as
+\begin{equation}
+	\bar{\ell}^k = \frac{1}{n} \sum_{i=1}^n \ell_i^k, \qquad \mathcal{K}_+ = \{k \in \{1,\dots,q\} : \bar{\ell}^k > 0\}.
+	\label{eq:global-label-profile}
+\end{equation}
+The vector $\bar{\boldsymbol{\ell}} = (\bar{\ell}^1, \dots, \bar{\ell}^q)$ represents the global label distribution. By non-negativity constraint \eqref{eq:label-simplex}, $\bar{\ell}^k = 0$ implies $\ell_i^k = 0$ for all training instances $o_i \in O$. Such uninformative labels are naturally excluded from information ratios without altering non-zero description degrees.
+
+For numerical attributes $a \in A_n$, training values are normalized to $[0, 1]$ via min-max scaling:
+\begin{equation}
+	z_a(o_i) = \begin{cases}
+		\displaystyle\frac{a(o_i) - a_{\min}}{a_{\max} - a_{\min}}, & \text{if } a_{\max} > a_{\min}, \\[6pt]
+		0, & \text{if } a_{\max} = a_{\min},
+	\end{cases}
+	\label{eq:numerical-normalization}
+\end{equation}
+where $a_{\min}$ and $a_{\max}$ denote the minimum and maximum values of attribute $a$ on $O$. Given a fixed kernel bandwidth $\tau_a > 0$, attribute-level pairwise affinities are defined as
+\begin{equation}
+	K_a(i,j) = \begin{cases}
+		\displaystyle\exp\left( -\frac{(z_a(o_i) - z_a(o_j))^2}{2\tau_a^2} \right), & \text{if } a \in A_n, \\[8pt]
+		1, & \text{if } a \in A_c \text{ and } a(o_i) = a(o_j), \\
+		0, & \text{if } a \in A_c \text{ and } a(o_i) \neq a(o_j).
+	\end{cases}
+	\label{eq:attribute-affinity}
+\end{equation}
+For both feature modalities, the affinity matrix satisfies $0 \le K_a(i,j) \le 1$, $K_a(i,j) = K_a(j,i)$, and $K_a(i,i) = 1$.
+
+We define the local support mass $s_a(i)$, the off-diagonal support mass $t_a(i)$, and the raw local label profile $\boldsymbol{u}_a(i)$ as follows:
+\begin{align}
+	s_a(i) &= \sum_{j=1}^n K_a(i,j), \qquad t_a(i) = \sum_{j \neq i} K_a(i,j) = s_a(i) - 1, \label{eq:local-support} \\
+	u_a^k(i) &= \frac{\sum_{j=1}^n K_a(i,j) \ell_j^k}{s_a(i)}. \label{eq:raw-local-profile}
+\end{align}
+Note that $s_a(i) \ge 1$ and $t_a(i) \ge 0$, ensuring $\boldsymbol{u}_a(i) = (u_a^1(i), \dots, u_a^q(i))$ remains a valid label distribution. For categorical attributes, $\boldsymbol{u}_a(i)$ yields the conditional mean distribution for category $a(o_i)$; for numerical attributes, it computes a Gaussian kernel-weighted mean label profile around $z_a(o_i)$.
+
+Because the raw profile includes the self-label $\boldsymbol{\ell}(o_i)$, small or sparse neighborhoods can introduce high variance. To stabilize local profile estimates, we incorporate a shrinkage hyperparameter $\beta > 0$ to construct a regularized local label profile:
+\begin{align}
+	\eta_a(i) &= \frac{t_a(i)}{t_a(i) + \beta}, \label{eq:profile-confidence} \\
+	\widetilde{\boldsymbol{u}}_a(i) &= \eta_a(i) \boldsymbol{u}_a(i) + (1 - \eta_a(i)) \bar{\boldsymbol{\ell}}. \label{eq:regularized-local-profile}
+\end{align}
+The confidence factor $\eta_a(i)$ depends entirely on the supporting mass provided by other objects. If an object is completely isolated ($t_a(i) = 0$), $\eta_a(i) = 0$, causing the regularized profile to revert to the global profile $\bar{\boldsymbol{\ell}}$. This shrinkage mechanism balances local discrimination with sample support. Hyperparameters $\tau_a$ and $\beta$ are fixed strictly during training and are not re-tuned during feature subset evaluation.
+
+\subsubsection{Normalized local relative information}
+When the active label set satisfies $|\mathcal{K}_+| \ge 2$, we define the dataset-level information normalization factor
+\begin{equation}
+	B_L = \log_2 \left( \frac{1}{\min_{k \in \mathcal{K}_+} \bar{\ell}^k} \right) > 0.
+	\label{eq:information-normalizer}
+\end{equation}
+The constant $B_L$ depends solely on the fixed global training label profile and remains independent of individual attributes or selected feature subsets.
+
+\begin{definition}[Local Relative-Information Weight]
+	\label{def:local-relative-weight}
+	For $|\mathcal{K}_+| \ge 2$, the local relative-information weight of attribute $a$ at object $o_i$ is defined as
+	\begin{equation}
+		W_a(o_i) = \frac{1}{B_L} \sum_{k \in \mathcal{K}_+} \widetilde{u}_a^k(i) \log_2 \left( \frac{\widetilde{u}_a^k(i)}{\bar{\ell}^k} \right).
+		\label{eq:relative-information-weight}
+	\end{equation}
+	If $|\mathcal{K}_+| = 1$, we set $W_a(o_i) = 0$ for all $a \in A$ and $o_i \in O$.
+\end{definition}
+
+The numerator in Eq.~\eqref{eq:relative-information-weight} measures the Kullback-Leibler (KL) divergence of the regularized local profile $\widetilde{\boldsymbol{u}}_a(i)$ from the global baseline $\bar{\boldsymbol{\ell}}$~\cite{SE}. Higher weight indicates that attribute $a$ creates a local neighborhood whose label dynamics deviate significantly from the dataset average, signaling strong local discrimination.
+
+\begin{proposition}[Weight Bounds and Zero-Weight Conditions]
+	\label{prop:relative-weight-bounds}
+	For any attribute $a \in A$ and object $o_i \in O$, $0 \le W_a(o_i) \le 1$. Furthermore, when $|\mathcal{K}_+| \ge 2$:
+	\[
+	W_a(o_i) = 0 \quad \Longleftrightarrow \quad \widetilde{\boldsymbol{u}}_a(i) = \bar{\boldsymbol{\ell}}.
+	\]
+	Specifically, $W_a(o_i) = 0$ holds if $o_i$ lacks supporting neighbors ($t_a(i) = 0$), if $a$ is a constant attribute, or if all training instances share identical label distributions.
+\end{proposition}
+\begin{proof}
+	Let $p_k = \bar{\ell}^k > 0$ and $r_k = \widetilde{u}_a^k(i)$ for $k \in \mathcal{K}_+$. By Gibbs' inequality (or log-sum inequality), $D_{\mathrm{KL}}(\boldsymbol{r} \parallel \boldsymbol{p}) \ge 0$, with equality holding if and only if $\boldsymbol{r} = \boldsymbol{p}$. For the upper bound,
+	\[
+	D_{\mathrm{KL}}(\boldsymbol{r} \parallel \boldsymbol{p}) = \sum_{k \in \mathcal{K}_+} r_k \log_2 r_k + \sum_{k \in \mathcal{K}_+} r_k \log_2 \left(\frac{1}{p_k}\right) \le 0 + \sum_{k \in \mathcal{K}_+} r_k B_L = B_L.
+	\]
+	Dividing by $B_L$ yields $0 \le W_a(o_i) \le 1$. If $t_a(i) = 0$, Eq.~\eqref{eq:regularized-local-profile} gives $\widetilde{\boldsymbol{u}}_a(i) = \bar{\boldsymbol{\ell}}$, implying $W_a(o_i) = 0$. For a constant attribute, $K_a(i,j) = 1$ for all $i,j$, which forces $\boldsymbol{u}_a(i) = \bar{\boldsymbol{\ell}}$ and thus $W_a(o_i) = 0$.
+\end{proof}
+
+\subsubsection{Hybrid discrepancy and directed aggregation}
+To isolate the contribution of information weighting, we employ standard symmetric feature discrepancies. For a categorical attribute value $v \in V_a$, let
+\begin{equation}
+	r_a^k(v) = \frac{\sum_{i: a(o_i)=v} \ell_i^k}{|\{i : a(o_i)=v\}|}
+	\label{eq:categorical-profile}
+\end{equation}
+denote the average description vector for value $v$. The hybrid discrepancy $\Delta_a(o_i, o_j)$ is defined as
+\begin{equation}
+	\Delta_a(o_i,o_j) = \begin{cases}
+		|z_a(o_i) - z_a(o_j)|, & \text{if } a \in A_n, \\[4pt]
+		\displaystyle\frac{1}{2} \sum_{k=1}^q |r_a^k(a(o_i)) - r_a^k(a(o_j))|, & \text{if } a \in A_c.
+	\end{cases}
+	\label{eq:hybrid-discrepancy}
+\end{equation}
+Both numerical and categorical discrepancies lie in $[0, 1]$, vanish on the diagonal, and satisfy symmetry and the triangle inequality.
+
+In addition to information-weighted profile discrepancy, we introduce a label-independent raw geometric discrepancy $G_a(o_i, o_j)$ to preserve topological separation for non-constant attributes that may carry zero local information weight:
+\begin{equation}
+	G_a(o_i,o_j) = \begin{cases}
+		|z_a(o_i) - z_a(o_j)|, & \text{if } a \in A_n, \\[4pt]
+		0, & \text{if } a \in A_c \text{ and } a(o_i) = a(o_j), \\
+		1, & \text{if } a \in A_c \text{ and } a(o_i) \neq a(o_j).
+	\end{cases}
+	\label{eq:raw-geometric-discrepancy}
+\end{equation}
+Given a global mixture coefficient $\zeta \in (0,1)$, we formulate the directed dissimilarity structure as follows.
+
+\begin{definition}[Mixed Information-Directed Dissimilarity]
+	For $m = |A| > 0$ and any subset $P \subseteq A$, the forward and backward directed dissimilarities between $o_i$ and $o_j$ are defined by
+	\begin{align}
+		I_P(o_i, o_j) &= \frac{1}{m} \sum_{a \in P} W_a(o_i) \Delta_a(o_i, o_j), \label{eq:info-component} \\
+		\overrightarrow{\rho}_P(o_i, o_j) &= (1-\zeta) I_P(o_i, o_j) + \frac{\zeta}{m} \sum_{a \in P} G_a(o_i, o_j), \label{eq:relative-forward-directed} \\
+		\overleftarrow{\rho}_P(o_i, o_j) &= \overrightarrow{\rho}_P(o_j, o_i). \label{eq:relative-backward-directed}
+	\end{align}
+	By convention, $\overrightarrow{\rho}_\varnothing(o_i, o_j) = 0$.
+\end{definition}
+
+\begin{proposition}[Properties of Working Dissimilarity]
+	\label{prop:relative-directed-properties}
+	For any $P \subseteq Q \subseteq A$:
+	\begin{enumerate}
+		\item Boundedness: $0 \le \overrightarrow{\rho}_P(o_i, o_j) \le \frac{|P|}{m}$, with $\overrightarrow{\rho}_P(o_i, o_i) = 0$.
+		\item Strict Positivity: $\overrightarrow{\rho}_P(o_i, o_j) > 0$ if objects $o_i, o_j$ differ on at least one selected numerical or categorical attribute in $P$.
+		\item Asymmetry: The directional asymmetry is given by
+		\[
+		\overrightarrow{\rho}_P(o_i, o_j) - \overleftarrow{\rho}_P(o_i, o_j) = \frac{1-\zeta}{m} \sum_{a \in P} \left( W_a(o_i) - W_a(o_j) \right) \Delta_a(o_i, o_j).
+		\]
+		Symmetry holds if $W_a(o_i) = W_a(o_j)$ for all $a \in P$, but equal label vectors $\boldsymbol{\ell}(o_i) = \boldsymbol{\ell}(o_j)$ are not required.
+		\item Monotonicity under Inclusion: $\overrightarrow{\rho}_P(o_i, o_j) \le \overrightarrow{\rho}_Q(o_i, o_j)$ for fixed statistics and dataset normalization.
+		\item Restricted Triangle Inequality: The triangle inequality holds on triples $o_i, o_j, o_k$ whenever $W_a(o_i) = W_a(o_j) = W_a(o_k)$ for all $a \in P$.
+	\end{enumerate}
+\end{proposition}
+\begin{proof}
+	Boundedness and strict positivity follow directly from $W_a(o_i) \in [0,1]$, $\Delta_a \in [0,1]$, and $G_a \in [0,1]$. For asymmetry, the geometric term $\frac{\zeta}{m}\sum G_a(o_i, o_j)$ is symmetric and cancels out. Monotonicity follows because appending attributes adds non-negative terms under a fixed denominator $m$. The restricted triangle inequality holds because both $\Delta_a$ and $G_a$ satisfy metric triangle inequalities.
+\end{proof}
+
+\begin{remark}[Failure of the General Triangle Inequality]
+	\label{rem:triangle-failure}
+	The directed dissimilarity $\overrightarrow{\rho}_P$ does not generally satisfy the triangle inequality. Consider three objects with a single numerical attribute $z_a(o_1)=0, z_a(o_2)=0.5, z_a(o_3)=1.0$ and label vectors $\boldsymbol{\ell}(o_1)=(1,0), \boldsymbol{\ell}(o_2)=(0.5,0.5), \boldsymbol{\ell}(o_3)=(0,1)$. Let $\tau_a=0.5, \beta=1$. By symmetry, $\widetilde{\boldsymbol{u}}_a(2) = \bar{\boldsymbol{\ell}} = (0.5,0.5)$, yielding $W_a(o_2)=0$, whereas $W_a(o_1) > 0$. Evaluating forward distances gives:
+	\begin{align*}
+		\overrightarrow{\rho}(o_1, o_3) &= (1-\zeta) W_a(o_1) + \zeta, \\
+		\overrightarrow{\rho}(o_1, o_2) + \overrightarrow{\rho}(o_2, o_3) &= \frac{1}{2}(1-\zeta) W_a(o_1) + \zeta.
+	\end{align*}
+	Here, $\overrightarrow{\rho}(o_1, o_3) > \overrightarrow{\rho}(o_1, o_2) + \overrightarrow{\rho}(o_2, o_3)$ for any $\zeta \in (0,1)$, proving that $\overrightarrow{\rho}_P$ is a pseudosemimetric rather than a metric.
+\end{remark}

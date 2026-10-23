@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "Human_Gene",
+    "repeat": 4,
+    "train_n": 576,
+    "method": "DSIM k",
+    "attributes": 5,
+    "cost": 37,
+    "inner_brier": 0.014032449432057083,
+    "test_brier": 0.018283526985216153,
+    "test_kl": 0.2874737764361729,
+    "test_tv": 0.25210765509436217,
+    "test_js": 0.06234381276207131
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 4,
+    "train_n": 576,
+    "method": "DSIM budget",
+    "attributes": 6,
+    "cost": 15,
+    "inner_brier": 0.014046167086143983,
+    "test_brier": 0.018419170808454476,
+    "test_kl": 0.29163758016790103,
+    "test_tv": 0.25407257051346177,
+    "test_js": 0.06313216707538054
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 4,
+    "train_n": 576,
+    "method": "FSLC k",
+    "attributes": 5,
+    "cost": 34,
+    "inner_brier": 0.014037730910392322,
+    "test_brier": 0.018309873997891666,
+    "test_kl": 0.29078414538928865,
+    "test_tv": 0.2533838790513673,
+    "test_js": 0.06276444160853732
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 4,
+    "train_n": 576,
+    "method": "FSLC budget",
+    "attributes": 6,
+    "cost": 15,
+    "inner_brier": 0.014046167086143983,
+    "test_brier": 0.018419170808454476,
+    "test_kl": 0.29163758016790103,
+    "test_tv": 0.25407257051346177,
+    "test_js": 0.06313216707538054
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 4,
+    "train_n": 576,
+    "method": "GBFRS k",
+    "attributes": 5,
+    "cost": 33,
+    "inner_brier": 0.013845437614694783,
+    "test_brier": 0.018319398784538542,
+    "test_kl": 0.2892623755638443,
+    "test_tv": 0.25345181615925605,
+    "test_js": 0.06308765526575646
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 4,
+    "train_n": 576,
+    "method": "GBFRS budget",
+    "attributes": 3,
+    "cost": 15,
+    "inner_brier": 0.014047713500355961,
+    "test_brier": 0.01873887532436575,
+    "test_kl": 0.299270386386568,
+    "test_tv": 0.2573272060854658,
+    "test_js": 0.0644748903052869
+  }
+]

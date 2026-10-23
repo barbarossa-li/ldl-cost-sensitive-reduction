@@ -1,0 +1,35 @@
+[
+  {
+    "dataset": "SBU_3DFE",
+    "method": "All attributes",
+    "attributes": 243,
+    "cost": 1373,
+    "inner_brier": 0.02747486893759826,
+    "test_brier": 0.033552772787869056
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "method": "Joint guard",
+    "attributes": 11,
+    "cost": 14,
+    "inner_brier": 0.027445177472254726,
+    "test_brier": 0.033364152052817335
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "method": "Prediction-only",
+    "attributes": 4,
+    "cost": 14,
+    "inner_brier": 0.026958443765059126,
+    "test_brier": 0.03441382968090847
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "method": "Predictive dependency guidance",
+    "attributes": 5,
+    "cost": 20.0,
+    "inner_brier": 0.02736765113031338,
+    "test_brier": 0.03442278677717659,
+    "gamma": 0.2783452516225424
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "scope": "Fixed three development splits, no new formal experiments",
+  "pure_search": "Saved costs and inner losses reproduced",
+  "guided_search": "Prior selections and inner losses reproduced",
+  "fairness": "Identical predictive predicate, cost exponent, bridge and deletion; ranking differs. Shared caches: no runtime comparison.",
+  "counterfactuals": "13 same-parent steps, 10 divergent; same-parent SBU cost11 extension is prediction-feasible",
+  "pdf_pages": 61,
+  "pdf_checks": "No undefined refs or overfull boxes; added pages visually inspected; floats before acknowledgements"
+}

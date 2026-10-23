@@ -1,0 +1,24 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 5,
+    "train_n": 192,
+    "removed": 6,
+    "original_cost": 4,
+    "candidate_cost": 3,
+    "original_test_brier": 0.00630420726418855,
+    "candidate_test_brier": 0.00680196980669803,
+    "candidate_minus_original": 0.0004977625425094797
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 5,
+    "train_n": 192,
+    "removed": 11,
+    "original_cost": 4,
+    "candidate_cost": 1,
+    "original_test_brier": 0.00630420726418855,
+    "candidate_test_brier": 0.006533320447690073,
+    "candidate_minus_original": 0.00022911318350152254
+  }
+]

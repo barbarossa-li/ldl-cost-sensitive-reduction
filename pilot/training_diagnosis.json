@@ -1,0 +1,7 @@
+{
+  "training_full_gamma": 0.09484519525643334,
+  "single_attribute_feasible_count": 15,
+  "total_attributes": 294,
+  "minimum_feasible_single_cost": 1,
+  "global_optimal_cost_certificate": "Empty subset is infeasible; every nonempty subset costs at least 1; the adopted heuristic finds a feasible cost-1 subset. Therefore cost 1 is globally optimal for the CURRENT empirical criterion over all 294 features; this certifies cost, not prediction quality."
+}

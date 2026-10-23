@@ -1,0 +1,283 @@
+[
+  {
+    "phase": "prefix",
+    "selected": [],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "inner_brier": 0.03317684346580198,
+    "gamma": 0.0
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      201
+    ],
+    "risk_pass": false,
+    "gamma_pass": true,
+    "inner_brier": 0.0352677979940442,
+    "gamma": 0.12341165304388071
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      104,
+      201
+    ],
+    "risk_pass": false,
+    "gamma_pass": true,
+    "inner_brier": 0.034112934355232355,
+    "gamma": 0.12343639778370041
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      104,
+      201,
+      223
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "inner_brier": 0.0319986864620673,
+    "gamma": 0.11781964066839676
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      70,
+      104,
+      201,
+      223
+    ],
+    "risk_pass": false,
+    "gamma_pass": true,
+    "inner_brier": 0.03147675453681347,
+    "gamma": 0.15668586639268495
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      70,
+      104,
+      105,
+      201,
+      223
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "inner_brier": 0.03050394066924293,
+    "gamma": 0.10991570014884855
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      70,
+      104,
+      105,
+      188,
+      201,
+      223
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "inner_brier": 0.03034818141029199,
+    "gamma": 0.044775550422258885
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      70,
+      99,
+      104,
+      105,
+      188,
+      201,
+      223
+    ],
+    "risk_pass": true,
+    "gamma_pass": true,
+    "inner_brier": 0.03010247679503153,
+    "gamma": 0.13493755093036702
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint off",
+    "removed": 201,
+    "selected": [
+      70,
+      104,
+      105,
+      223
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint off",
+    "removed": 223,
+    "selected": [
+      70,
+      104,
+      105,
+      201
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint off",
+    "removed": 105,
+    "selected": [
+      70,
+      104,
+      201,
+      223
+    ],
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint off",
+    "removed": 70,
+    "selected": [
+      104,
+      105,
+      201,
+      223
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint off",
+    "removed": 104,
+    "selected": [
+      70,
+      105,
+      201,
+      223
+    ],
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint on",
+    "removed": 201,
+    "selected": [
+      70,
+      99,
+      104,
+      105,
+      188,
+      223
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint on",
+    "removed": 223,
+    "selected": [
+      70,
+      99,
+      104,
+      105,
+      188,
+      201
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint on",
+    "removed": 105,
+    "selected": [
+      70,
+      99,
+      104,
+      188,
+      201,
+      223
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint on",
+    "removed": 70,
+    "selected": [
+      99,
+      104,
+      105,
+      188,
+      201,
+      223
+    ],
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint on",
+    "removed": 99,
+    "selected": [
+      70,
+      104,
+      105,
+      188,
+      201,
+      223
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint on",
+    "removed": 104,
+    "selected": [
+      70,
+      99,
+      105,
+      188,
+      201,
+      223
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint on",
+    "removed": 188,
+    "selected": [
+      70,
+      99,
+      104,
+      105,
+      201,
+      223
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "accepted": false
+  }
+]

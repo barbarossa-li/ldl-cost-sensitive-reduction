@@ -1,0 +1,43 @@
+\begin{algorithm}[htbp]
+	\caption{Dependency-Guided Prediction-Feasible Reduction}
+	\label{alg3:guided}
+	\begin{algorithmic}[1]
+		\Require Attribute set $A=\{0,\ldots,m-1\}$, attribute costs $\{c_a > 0\}_{a \in A}$, loss evaluation oracle $R_{\mathrm{inner}}(\cdot)$, granular dependency oracle $\Gamma(\cdot)$.
+		\Ensure Prediction-feasible subset $P^*$ and its acquisition cost $C(P^*)$.
+		\State Initialize $L_{\max} \gets R_{\mathrm{inner}}(A)$, $P \gets \varnothing$
+		\If{$R_{\mathrm{inner}}(\varnothing) \le L_{\max}$}
+		\State \Return $\varnothing, 0$ \Comment{Empty set is trivially feasible and optimal}
+		\EndIf
+		\While{$R_{\mathrm{inner}}(P) > L_{\max}$} \Comment{Forward selection phase}
+		\State $U \gets A \setminus P$, \quad $r \gets R_{\mathrm{inner}}(P)$
+		\State Compute $u_a \gets r - R_{\mathrm{inner}}(P \cup \{a\})$ for all $a \in U$
+		\State $J \gets \{a \in U : u_a > 0\}$
+		\If{$J \ne \varnothing$}
+		\State Compute $v_a \gets \Gamma(P \cup \{a\}) - \Gamma(P)$ for all $a \in J$
+		\State $H \gets \{a \in J : v_a > 0\}$
+		\Else
+		\State $H \gets \varnothing$
+		\EndIf
+		\If{$H \ne \varnothing$}
+		\State $a^* \gets \operatorname{argmax}_{a \in H} (v_a / c_a)$ \Comment{Dual-gain guided step}
+		\ElsIf{$J \ne \varnothing$}
+		\State $a^* \gets \operatorname{argmax}_{a \in J} (u_a / c_a)$ \Comment{Prediction-gain step}
+		\Else
+		\State $a^* \gets \operatorname{argmax}_{a \in U} u_a$ \Comment{Plateau-bridging step}
+		\EndIf
+		\State \textbf{break ties} by smaller $c_a$, then smaller index $a$
+		\State $P \gets P \cup \{a^*\}$
+		\EndWhile
+		\Repeat \Comment{Restarting backward pruning phase}
+		\State Sort $P$ in descending order of cost $c_a$ (ties broken by ascending index)
+		\State $\mathrm{pruned} \gets \textbf{false}$
+		\For{$a \in P$}
+		\If{$R_{\mathrm{inner}}(P \setminus \{a\}) \le L_{\max}$}
+		\State $P \gets P \setminus \{a\}$, \quad $\mathrm{pruned} \gets \textbf{true}$
+		\State \textbf{break} \Comment{Restart backward scan immediately}
+		\EndIf
+		\EndFor
+		\Until{$\mathrm{pruned} = \textbf{false}$}
+		\State \Return $P^* \gets P, \; C(P^*) \gets \sum_{a \in P^*} c_a$
+	\end{algorithmic}
+\end{algorithm}

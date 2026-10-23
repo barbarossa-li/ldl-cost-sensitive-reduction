@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Movie",
+    "repeat": 3,
+    "method": "NoGuard",
+    "attributes": 1,
+    "cost": 7,
+    "inner_loss": 0.04871135883947213,
+    "inner_loss_empty": 0.046659515095165915,
+    "audit_brier_sel": 0.05093088039046264,
+    "audit_brier_empty": 0.049226119738908815,
+    "audit_brier_full": 0.052216334982504414,
+    "seconds": 11.588471699971706
+  }
+]

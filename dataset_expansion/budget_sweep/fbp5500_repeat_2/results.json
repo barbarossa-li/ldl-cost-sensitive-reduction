@@ -1,0 +1,122 @@
+[
+  {
+    "dataset": "fbp5500",
+    "repeat": 2,
+    "cap": 1,
+    "method": "Prediction ranking",
+    "attributes": 1,
+    "spent": 1,
+    "audit_brier": 0.09896900635194229,
+    "feasible": false
+  },
+  {
+    "dataset": "fbp5500",
+    "repeat": 2,
+    "cap": 1,
+    "method": "Dependency guidance",
+    "attributes": 1,
+    "spent": 1,
+    "audit_brier": 0.12934804813431644,
+    "feasible": false
+  },
+  {
+    "dataset": "fbp5500",
+    "repeat": 2,
+    "cap": 2,
+    "method": "Prediction ranking",
+    "attributes": 2,
+    "spent": 2,
+    "audit_brier": 0.0886937023205337,
+    "feasible": false
+  },
+  {
+    "dataset": "fbp5500",
+    "repeat": 2,
+    "cap": 2,
+    "method": "Dependency guidance",
+    "attributes": 2,
+    "spent": 2,
+    "audit_brier": 0.08775032717290689,
+    "feasible": false
+  },
+  {
+    "dataset": "fbp5500",
+    "repeat": 2,
+    "cap": 5,
+    "method": "Prediction ranking",
+    "attributes": 4,
+    "spent": 5,
+    "audit_brier": 0.07242634619681446,
+    "feasible": false
+  },
+  {
+    "dataset": "fbp5500",
+    "repeat": 2,
+    "cap": 5,
+    "method": "Dependency guidance",
+    "attributes": 4,
+    "spent": 5,
+    "audit_brier": 0.06768936129464714,
+    "feasible": false
+  },
+  {
+    "dataset": "fbp5500",
+    "repeat": 2,
+    "cap": 10,
+    "method": "Prediction ranking",
+    "attributes": 5,
+    "spent": 6,
+    "audit_brier": 0.06736745507357401,
+    "feasible": true
+  },
+  {
+    "dataset": "fbp5500",
+    "repeat": 2,
+    "cap": 10,
+    "method": "Dependency guidance",
+    "attributes": 7,
+    "spent": 10,
+    "audit_brier": 0.0808310191835041,
+    "feasible": false
+  },
+  {
+    "dataset": "fbp5500",
+    "repeat": 2,
+    "cap": 20,
+    "method": "Prediction ranking",
+    "attributes": 5,
+    "spent": 6,
+    "audit_brier": 0.06736745507357401,
+    "feasible": true
+  },
+  {
+    "dataset": "fbp5500",
+    "repeat": 2,
+    "cap": 20,
+    "method": "Dependency guidance",
+    "attributes": 9,
+    "spent": 17,
+    "audit_brier": 0.07076574419866577,
+    "feasible": true
+  },
+  {
+    "dataset": "fbp5500",
+    "repeat": 2,
+    "cap": 50,
+    "method": "Prediction ranking",
+    "attributes": 5,
+    "spent": 6,
+    "audit_brier": 0.06736745507357401,
+    "feasible": true
+  },
+  {
+    "dataset": "fbp5500",
+    "repeat": 2,
+    "cap": 50,
+    "method": "Dependency guidance",
+    "attributes": 9,
+    "spent": 21,
+    "audit_brier": 0.06921414663730091,
+    "feasible": true
+  }
+]

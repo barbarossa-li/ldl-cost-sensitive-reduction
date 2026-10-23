@@ -1,0 +1,50 @@
+[
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 4,
+    "method": "Full",
+    "attributes": 243,
+    "cost": 1373,
+    "audit_brier": 0.03466609513509036
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 4,
+    "method": "Empty",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.03454992432317735
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 4,
+    "method": "Prediction only before",
+    "attributes": 2,
+    "cost": 6,
+    "audit_brier": 0.04106510574055696
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 4,
+    "method": "Prediction only after",
+    "attributes": 2,
+    "cost": 3,
+    "audit_brier": 0.0409610162654591
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 4,
+    "method": "Guided before",
+    "attributes": 2,
+    "cost": 8,
+    "audit_brier": 0.03630187675444995
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 4,
+    "method": "Guided after",
+    "attributes": 2,
+    "cost": 3,
+    "audit_brier": 0.0409610162654591
+  }
+]

@@ -1,0 +1,43 @@
+\begin{table}[htbp]
+\centering\small\renewcommand{\arraystretch}{1.25}\setlength{\tabcolsep}{4pt}
+\caption{Published scoring cores on the informative expansion datasets (three-repeat means, reserved-audit Brier). Baselines marked $k$ share cardinality with $G+$; budget variants share its cost. On the twenty guard-empty datasets every matched protocol returns the empty set and ties exactly, so those units enter only the pooled statistics reported in the text.}
+\label{tab:expansion-published}
+\begin{tabular}{llrrr}\hline
+Dataset & Method & Attributes & Cost & Audit Brier\\\hline
+SJAFFE & \textbf{$G+$ (proposed)} & 10.0 & 28.3 & 0.0247\\
+ & GBFRS k & 10.0 & 45.3 & 0.0263\\
+ & GBFRS budget & 6.7 & 28.3 & 0.0264\\
+ & DSIM k & 10.0 & 41.0 & 0.0247\\
+ & DSIM budget & 18.3 & 28.3 & 0.0222\\
+ & FSLC k & 10.0 & 40.0 & 0.0246\\
+ & FSLC budget & 16.7 & 28.3 & 0.0241\\
+ & NRS k & 10.0 & 33.0 & 0.0270\\
+ & NRS budget & 5.3 & 20.3 & 0.0283\\
+ & FMI k & 10.0 & 55.0 & 0.0267\\
+ & FMI budget & 7.7 & 28.3 & 0.0271\\
+\hline
+fbp5500 & \textbf{$G+$ (proposed)} & 9.3 & 19.3 & 0.0728\\
+ & GBFRS k & 9.3 & 56.0 & 0.0898\\
+ & GBFRS budget & 4.7 & 19.3 & 0.0820\\
+ & DSIM k & 9.3 & 43.7 & 0.0817\\
+ & DSIM budget & 16.3 & 19.3 & 0.0678\\
+ & FSLC k & 9.3 & 52.3 & 0.0704\\
+ & FSLC budget & 16.7 & 19.3 & 0.0723\\
+ & NRS k & 9.3 & 47.7 & 0.0860\\
+ & NRS budget & 5.3 & 19.3 & 0.0852\\
+ & FMI k & 9.3 & 47.0 & 0.0734\\
+ & FMI budget & 10.7 & 19.3 & 0.0788\\
+\hline
+RAF\_ML & \textbf{$G+$ (proposed)} & 3.0 & 7.0 & 0.2070\\
+ & GBFRS k & 3.0 & 15.7 & 0.1927\\
+ & GBFRS budget & 3.0 & 7.0 & 0.2032\\
+ & DSIM k & 3.0 & 11.0 & 0.1789\\
+ & DSIM budget & 3.0 & 7.0 & 0.1940\\
+ & FSLC k & 3.0 & 12.0 & 0.1748\\
+ & FSLC budget & 3.0 & 7.0 & 0.1940\\
+ & NRS k & 3.0 & 17.7 & 0.1977\\
+ & NRS budget & 2.0 & 7.0 & 0.1986\\
+ & FMI k & 3.0 & 14.3 & 0.1919\\
+ & FMI budget & 4.0 & 7.0 & 0.1977\\
+\hline
+\end{tabular}\end{table}

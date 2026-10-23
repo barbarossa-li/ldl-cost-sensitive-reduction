@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "Human_Gene",
+    "repeat": 4,
+    "train_n": 384,
+    "method": "DSIM k",
+    "attributes": 9,
+    "cost": 60,
+    "inner_brier": 0.014761959374322448,
+    "test_brier": 0.018669938338216414,
+    "test_kl": 0.29590976752429116,
+    "test_tv": 0.25510914588273204,
+    "test_js": 0.06378298841566599
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 4,
+    "train_n": 384,
+    "method": "DSIM budget",
+    "attributes": 10,
+    "cost": 33,
+    "inner_brier": 0.01432211170899582,
+    "test_brier": 0.018316556884626377,
+    "test_kl": 0.2893249662344178,
+    "test_tv": 0.25218832719880924,
+    "test_js": 0.06259600019563806
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 4,
+    "train_n": 384,
+    "method": "FSLC k",
+    "attributes": 9,
+    "cost": 55,
+    "inner_brier": 0.014624768209371822,
+    "test_brier": 0.018332953943185754,
+    "test_kl": 0.28904770824754067,
+    "test_tv": 0.25157990567564814,
+    "test_js": 0.062300213744328856
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 4,
+    "train_n": 384,
+    "method": "FSLC budget",
+    "attributes": 10,
+    "cost": 33,
+    "inner_brier": 0.014514251218538762,
+    "test_brier": 0.018351991942094234,
+    "test_kl": 0.2908978572516293,
+    "test_tv": 0.25252365462304815,
+    "test_js": 0.06272193119705255
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 4,
+    "train_n": 384,
+    "method": "GBFRS k",
+    "attributes": 9,
+    "cost": 55,
+    "inner_brier": 0.014075186474699004,
+    "test_brier": 0.01825391539899522,
+    "test_kl": 0.29090581143812905,
+    "test_tv": 0.25189761609098704,
+    "test_js": 0.06278628110610265
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 4,
+    "train_n": 384,
+    "method": "GBFRS budget",
+    "attributes": 6,
+    "cost": 33,
+    "inner_brier": 0.014369273506667305,
+    "test_brier": 0.01869341841676962,
+    "test_kl": 0.29544068888858915,
+    "test_tv": 0.25335246927836624,
+    "test_js": 0.06383477817895207
+  }
+]

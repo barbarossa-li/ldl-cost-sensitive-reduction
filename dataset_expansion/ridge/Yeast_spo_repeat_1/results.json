@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Yeast_spo",
+    "repeat": 1,
+    "alpha": 100.0,
+    "ridge_inner_full": 0.008857917502309945,
+    "ridge_inner_empty": 0.008591420286654211,
+    "inner_gain": -0.0002664972156557338,
+    "audit_brier_ridge": 0.008207547794385824,
+    "audit_brier_empty": 0.007900166939255398,
+    "audit_gain": -0.000307380855130426,
+    "revived": false,
+    "seconds": 0.00607589993160218
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "scope": "All strictly cost-reducing one-for-one exchanges from fixed saved bases; no sequential adoption",
+  "predictor": "Original Euclidean 5NN, saved three folds, fitting-only minmax",
+  "feasibility": "Same full-set internal Brier reference, exact <=, prediction tolerance 0",
+  "ordering": "Descending cost saving, then removed attribute index, then added index; independent of labels and candidate loss",
+  "matched_budget": "Per dataset minimum candidate count across two bases; prefix comparisons; report exhaustion separately",
+  "choice": "Feasible minimum cost, then loss, then indices; diagnostic best only",
+  "limitations": "Development reused; no independent generalization, no global optimality; Yeast empty has no exchange"
+}

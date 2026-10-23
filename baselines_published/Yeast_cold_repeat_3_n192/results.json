@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "train_n": 192,
+    "method": "DSIM k",
+    "attributes": 1,
+    "cost": 8,
+    "inner_brier": 0.007118168302251247,
+    "test_brier": 0.00793685754107927,
+    "test_kl": 0.01601823422443101,
+    "test_tv": 0.06781268115599198,
+    "test_js": 0.004025896975596209
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "train_n": 192,
+    "method": "DSIM budget",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.007331040571039456,
+    "test_brier": 0.00831449884935263,
+    "test_kl": 0.016670747164731242,
+    "test_tv": 0.06981980694640583,
+    "test_js": 0.004176115598661132
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "train_n": 192,
+    "method": "FSLC k",
+    "attributes": 1,
+    "cost": 5,
+    "inner_brier": 0.007185934932915391,
+    "test_brier": 0.007698550106319691,
+    "test_kl": 0.015507793405650573,
+    "test_tv": 0.06825550388036869,
+    "test_js": 0.003890666470695502
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "train_n": 192,
+    "method": "FSLC budget",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.007331040571039456,
+    "test_brier": 0.00831449884935263,
+    "test_kl": 0.016670747164731242,
+    "test_tv": 0.06981980694640583,
+    "test_js": 0.004176115598661132
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "train_n": 192,
+    "method": "GBFRS k",
+    "attributes": 1,
+    "cost": 3,
+    "inner_brier": 0.00775838288391443,
+    "test_brier": 0.007788079284107367,
+    "test_kl": 0.015671006051119832,
+    "test_tv": 0.06691587731225516,
+    "test_js": 0.003933925893267175
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "train_n": 192,
+    "method": "GBFRS budget",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.007331040571039456,
+    "test_brier": 0.00831449884935263,
+    "test_kl": 0.016670747164731242,
+    "test_tv": 0.06981980694640583,
+    "test_js": 0.004176115598661132
+  }
+]

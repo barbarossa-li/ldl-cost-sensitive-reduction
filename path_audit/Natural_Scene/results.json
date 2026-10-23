@@ -1,0 +1,35 @@
+[
+  {
+    "dataset": "Natural Scene",
+    "method": "All attributes",
+    "attributes": 294,
+    "cost": 1648,
+    "inner_brier": 0.25959198103527265,
+    "test_brier": 0.2529431620148811
+  },
+  {
+    "dataset": "Natural Scene",
+    "method": "Joint guard",
+    "attributes": 5,
+    "cost": 6,
+    "inner_brier": 0.25828695890442516,
+    "test_brier": 0.3075028350383031
+  },
+  {
+    "dataset": "Natural Scene",
+    "method": "Prediction-only",
+    "attributes": 5,
+    "cost": 9,
+    "inner_brier": 0.2507796559610387,
+    "test_brier": 0.29525892431874967
+  },
+  {
+    "dataset": "Natural Scene",
+    "method": "Predictive dependency guidance",
+    "attributes": 6,
+    "cost": 12.0,
+    "inner_brier": 0.25926427856855044,
+    "test_brier": 0.27355593514258825,
+    "gamma": 0.1029312024398654
+  }
+]

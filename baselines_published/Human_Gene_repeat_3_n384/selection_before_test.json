@@ -1,0 +1,25 @@
+{
+  "DSIM k": [
+    18,
+    20
+  ],
+  "DSIM budget": [
+    6,
+    18
+  ],
+  "FSLC k": [
+    8,
+    32
+  ],
+  "FSLC budget": [
+    6,
+    14
+  ],
+  "GBFRS k": [
+    1,
+    14
+  ],
+  "GBFRS budget": [
+    1
+  ]
+}

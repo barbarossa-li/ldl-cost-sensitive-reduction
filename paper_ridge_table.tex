@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering\small\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{4pt}
+\caption{Complete protocol under the ridge predictor on the nine revived datasets (three-repeat means). $C(A)$ is the full-set cost; Empty/Full are zero-cost and full-cost audit references under the same ridge predictor. Bold marks selections whose audit Brier is no worse than both references.}
+\label{tab:ridge-protocol}
+\begin{tabular}{lrrrrr}\hline
+Dataset & $C(A)$ & $C(G+)$ & Empty & Full & $G+$\\\hline
+Yeast\_diau & 127 & 15.0 & 0.0037 & 0.0036 & \textbf{0.0036}\\
+Yeast\_dtt & 127 & 2.3 & 0.0032 & 0.0031 & 0.0032\\
+Yeast\_heat & 127 & 6.7 & 0.0046 & 0.0045 & \textbf{0.0045}\\
+Yeast\_spoem & 127 & 14.7 & 0.0236 & 0.0225 & \textbf{0.0220}\\
+FG\_Net & 1412 & 5.0 & 0.0746 & 0.0643 & \textbf{0.0628}\\
+Painting & 831 & 1.3 & 0.1477 & 0.1372 & 0.1435\\
+SCUT\_FBP & 1690 & 27.0 & 0.1335 & 0.1341 & \textbf{0.1333}\\
+Movie & 10168 & 5.0 & 0.0487 & 0.0453 & 0.0484\\
+MOR\_PH & 1162 & 1.7 & 0.0752 & 0.0740 & \textbf{0.0707}\\
+\hline\end{tabular}\end{table}

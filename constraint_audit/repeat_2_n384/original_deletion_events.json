@@ -1,0 +1,98 @@
+[
+  {
+    "removed": 22,
+    "selected": [
+      84,
+      98,
+      122,
+      214,
+      282
+    ],
+    "cost": 5,
+    "inner_brier": 0.24518008989564047,
+    "gamma": 0.1529040734817317,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 84,
+    "selected": [
+      22,
+      98,
+      122,
+      214,
+      282
+    ],
+    "cost": 6,
+    "inner_brier": 0.23398909763226142,
+    "gamma": 0.14608736577714387,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 98,
+    "selected": [
+      22,
+      84,
+      122,
+      214,
+      282
+    ],
+    "cost": 6,
+    "inner_brier": 0.24075893873664525,
+    "gamma": 0.09509281615700917,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 122,
+    "selected": [
+      22,
+      84,
+      98,
+      214,
+      282
+    ],
+    "cost": 6,
+    "inner_brier": 0.23217126858736728,
+    "gamma": 0.16349961996068038,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 214,
+    "selected": [
+      22,
+      84,
+      98,
+      122,
+      282
+    ],
+    "cost": 6,
+    "inner_brier": 0.2417486366051976,
+    "gamma": 0.12225672779522487,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 282,
+    "selected": [
+      22,
+      84,
+      98,
+      122,
+      214
+    ],
+    "cost": 6,
+    "inner_brier": 0.2369942958718055,
+    "gamma": 0.1284238127209382,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  }
+]

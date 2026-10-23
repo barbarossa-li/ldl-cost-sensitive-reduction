@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "Human_Gene",
+    "repeat": 2,
+    "train_n": 384,
+    "method": "DSIM k",
+    "attributes": 1,
+    "cost": 5,
+    "inner_brier": 0.017802517687247717,
+    "test_brier": 0.011640527706349319,
+    "test_kl": 0.23017157853461112,
+    "test_tv": 0.23271785703992728,
+    "test_js": 0.05195087120363455
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 2,
+    "train_n": 384,
+    "method": "DSIM budget",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.01767819369755695,
+    "test_brier": 0.011842299643274675,
+    "test_kl": 0.23045754460151274,
+    "test_tv": 0.23334326218437235,
+    "test_js": 0.05224693894968681
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 2,
+    "train_n": 384,
+    "method": "FSLC k",
+    "attributes": 1,
+    "cost": 5,
+    "inner_brier": 0.01825405278770647,
+    "test_brier": 0.01154086122505308,
+    "test_kl": 0.22789296297447625,
+    "test_tv": 0.23190512402517421,
+    "test_js": 0.051459315579572555
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 2,
+    "train_n": 384,
+    "method": "FSLC budget",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.01767819369755695,
+    "test_brier": 0.011842299643274675,
+    "test_kl": 0.23045754460151274,
+    "test_tv": 0.23334326218437235,
+    "test_js": 0.05224693894968681
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 2,
+    "train_n": 384,
+    "method": "GBFRS k",
+    "attributes": 1,
+    "cost": 10,
+    "inner_brier": 0.01814309898069888,
+    "test_brier": 0.012030401936831739,
+    "test_kl": 0.2327803465052575,
+    "test_tv": 0.23535989368374932,
+    "test_js": 0.05290503823026453
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 2,
+    "train_n": 384,
+    "method": "GBFRS budget",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.01767819369755695,
+    "test_brier": 0.011842299643274675,
+    "test_kl": 0.23045754460151274,
+    "test_tv": 0.23334326218437235,
+    "test_js": 0.05224693894968681
+  }
+]

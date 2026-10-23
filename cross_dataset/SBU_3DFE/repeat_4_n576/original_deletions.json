@@ -1,0 +1,254 @@
+[
+  {
+    "removed": 47,
+    "selected": [
+      54,
+      70,
+      77,
+      84,
+      98,
+      107,
+      161,
+      177,
+      213,
+      220,
+      235
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "gamma_only_block": true,
+    "inner_brier": 0.03144854472194073,
+    "gamma": 0.0992803641952605
+  },
+  {
+    "removed": 54,
+    "selected": [
+      47,
+      70,
+      77,
+      84,
+      98,
+      107,
+      161,
+      177,
+      213,
+      220,
+      235
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "gamma_only_block": true,
+    "inner_brier": 0.031453012793200494,
+    "gamma": 0.1159654981397392
+  },
+  {
+    "removed": 70,
+    "selected": [
+      47,
+      54,
+      77,
+      84,
+      98,
+      107,
+      161,
+      177,
+      213,
+      220,
+      235
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "gamma_only_block": true,
+    "inner_brier": 0.031012632245670975,
+    "gamma": 0.10468186020647963
+  },
+  {
+    "removed": 77,
+    "selected": [
+      47,
+      54,
+      70,
+      84,
+      98,
+      107,
+      161,
+      177,
+      213,
+      220,
+      235
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false,
+    "inner_brier": 0.031598287989513335,
+    "gamma": 0.11524240196442101
+  },
+  {
+    "removed": 84,
+    "selected": [
+      47,
+      54,
+      70,
+      77,
+      98,
+      107,
+      161,
+      177,
+      213,
+      220,
+      235
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "gamma_only_block": true,
+    "inner_brier": 0.03135732148146624,
+    "gamma": 0.1462608788694066
+  },
+  {
+    "removed": 98,
+    "selected": [
+      47,
+      54,
+      70,
+      77,
+      84,
+      107,
+      161,
+      177,
+      213,
+      220,
+      235
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "gamma_only_block": true,
+    "inner_brier": 0.031047876422247538,
+    "gamma": 0.07335927063821515
+  },
+  {
+    "removed": 107,
+    "selected": [
+      47,
+      54,
+      70,
+      77,
+      84,
+      98,
+      161,
+      177,
+      213,
+      220,
+      235
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false,
+    "inner_brier": 0.03183827227965265,
+    "gamma": 0.13153400184988936
+  },
+  {
+    "removed": 161,
+    "selected": [
+      47,
+      54,
+      70,
+      77,
+      84,
+      98,
+      107,
+      177,
+      213,
+      220,
+      235
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false,
+    "inner_brier": 0.032751623038002275,
+    "gamma": 0.08878197706773999
+  },
+  {
+    "removed": 177,
+    "selected": [
+      47,
+      54,
+      70,
+      77,
+      84,
+      98,
+      107,
+      161,
+      213,
+      220,
+      235
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false,
+    "inner_brier": 0.032313434803760255,
+    "gamma": 0.14736391384154202
+  },
+  {
+    "removed": 213,
+    "selected": [
+      47,
+      54,
+      70,
+      77,
+      84,
+      98,
+      107,
+      161,
+      177,
+      220,
+      235
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false,
+    "inner_brier": 0.03179303801765258,
+    "gamma": 0.11951110237653056
+  },
+  {
+    "removed": 220,
+    "selected": [
+      47,
+      54,
+      70,
+      77,
+      84,
+      98,
+      107,
+      161,
+      177,
+      213,
+      235
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false,
+    "inner_brier": 0.0316962220297414,
+    "gamma": 0.10818619441901318
+  },
+  {
+    "removed": 235,
+    "selected": [
+      47,
+      54,
+      70,
+      77,
+      84,
+      98,
+      107,
+      161,
+      177,
+      213,
+      220
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "gamma_only_block": true,
+    "inner_brier": 0.031076636942426364,
+    "gamma": 0.132899294125253
+  }
+]

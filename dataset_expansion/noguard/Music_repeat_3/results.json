@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Music",
+    "repeat": 3,
+    "method": "NoGuard",
+    "attributes": 1,
+    "cost": 7,
+    "inner_loss": 0.020418377394249936,
+    "inner_loss_empty": 0.019833290667529167,
+    "audit_brier_sel": 0.026836740417538297,
+    "audit_brier_empty": 0.020326255333651903,
+    "audit_brier_full": 0.0232796703965214,
+    "seconds": 0.048324800096452236
+  }
+]

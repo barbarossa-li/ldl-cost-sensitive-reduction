@@ -1,0 +1,239 @@
+{
+  "before": [
+    52,
+    70,
+    177,
+    376,
+    378,
+    407
+  ],
+  "after": [
+    52,
+    70,
+    177,
+    376,
+    378,
+    407
+  ],
+  "initial_trace": [
+    [
+      [],
+      177,
+      0.05063745019257983,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        177
+      ],
+      52,
+      0.024775500867141198,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        52,
+        177
+      ],
+      376,
+      0.009110462085181986,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        52,
+        177,
+        376
+      ],
+      378,
+      0.0013465160075329663,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        52,
+        177,
+        376,
+        378
+      ],
+      407,
+      0.001921276346728798,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        52,
+        177,
+        376,
+        378,
+        407
+      ],
+      70,
+      0.004474554991647783,
+      "prediction loss: positive cost-weighted gain"
+    ]
+  ],
+  "refinement": {
+    "evaluations": 6,
+    "scans": 1,
+    "accepted": [],
+    "candidates": [
+      {
+        "scan": 1,
+        "before": [
+          52,
+          70,
+          177,
+          376,
+          378,
+          407
+        ],
+        "removed": 52,
+        "added": -1,
+        "cost": 5,
+        "loss": 0.07714157277070234,
+        "feasible": false,
+        "subset": [
+          70,
+          177,
+          376,
+          378,
+          407
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          52,
+          70,
+          177,
+          376,
+          378,
+          407
+        ],
+        "removed": 70,
+        "added": -1,
+        "cost": 5,
+        "loss": 0.07010251417749264,
+        "feasible": false,
+        "subset": [
+          52,
+          177,
+          376,
+          378,
+          407
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          52,
+          70,
+          177,
+          376,
+          378,
+          407
+        ],
+        "removed": 177,
+        "added": -1,
+        "cost": 5,
+        "loss": 0.08019252662602276,
+        "feasible": false,
+        "subset": [
+          52,
+          70,
+          376,
+          378,
+          407
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          52,
+          70,
+          177,
+          376,
+          378,
+          407
+        ],
+        "removed": 376,
+        "added": -1,
+        "cost": 5,
+        "loss": 0.070430751061317,
+        "feasible": false,
+        "subset": [
+          52,
+          70,
+          177,
+          378,
+          407
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          52,
+          70,
+          177,
+          376,
+          378,
+          407
+        ],
+        "removed": 378,
+        "added": -1,
+        "cost": 5,
+        "loss": 0.07150637854171323,
+        "feasible": false,
+        "subset": [
+          52,
+          70,
+          177,
+          376,
+          407
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          52,
+          70,
+          177,
+          376,
+          378,
+          407
+        ],
+        "removed": 407,
+        "added": -1,
+        "cost": 5,
+        "loss": 0.07022088161128667,
+        "feasible": false,
+        "subset": [
+          52,
+          70,
+          177,
+          376,
+          378
+        ]
+      }
+    ],
+    "stop_reason": "neighbourhood exhausted without feasible move"
+  },
+  "results": {
+    "method": "Prediction only",
+    "before_attributes": 6,
+    "after_attributes": 6,
+    "before_cost": 6,
+    "after_cost": 6,
+    "before_loss": 0.06562795918584485,
+    "after_loss": 0.06562795918584485,
+    "full_reference": 0.06569419174992286,
+    "refinement_evaluations": 6,
+    "accepted_moves": 0,
+    "stop_reason": "neighbourhood exhausted without feasible move",
+    "initial_unique_loss_evaluations": 3063,
+    "total_unique_loss_evaluations": 3063,
+    "initial_seconds": 12.994855800061487,
+    "refinement_seconds": 0.0005225000204518437
+  }
+}

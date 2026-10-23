@@ -1,0 +1,13 @@
+{
+  "attributes": 561,
+  "fold_attribute_checks": 1683,
+  "euclidean_manhattan_neighbour_equality": "All 1683 single-attribute fold comparisons exact",
+  "mean_reference_reproduction": "All three saved global-mean losses within 1e-12",
+  "previous_singleton_reproduction": "Yeast original single-attribute result within 1e-12",
+  "parameters_changed": false,
+  "test_labels_used": false,
+  "selection_rerun": false,
+  "manuscript_pdf_pages": 79,
+  "manuscript_visual_check": "Pages 70–75 inspected; tables and Figures 18–19 readable without overlap",
+  "reporting_comparison_tolerance": 1e-12
+}

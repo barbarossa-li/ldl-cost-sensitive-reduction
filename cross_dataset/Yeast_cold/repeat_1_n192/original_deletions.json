@@ -1,0 +1,11 @@
+[
+  {
+    "removed": 6,
+    "selected": [],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "gamma_only_block": true,
+    "inner_brier": 0.006230647334435509,
+    "gamma": 0.0
+  }
+]

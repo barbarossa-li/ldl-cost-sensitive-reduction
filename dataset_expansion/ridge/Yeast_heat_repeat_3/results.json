@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Yeast_heat",
+    "repeat": 3,
+    "alpha": 100.0,
+    "ridge_inner_full": 0.004129500333489354,
+    "ridge_inner_empty": 0.0042619810594002,
+    "inner_gain": 0.00013248072591084611,
+    "audit_brier_ridge": 0.0047661149035135,
+    "audit_brier_empty": 0.004769439659316981,
+    "audit_gain": 3.3247558034804267e-06,
+    "revived": true,
+    "seconds": 0.00608800002373755
+  }
+]

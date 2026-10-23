@@ -1,0 +1,47 @@
+[
+  {
+    "train_n": 192,
+    "outer_brier_delta_mean": 0.043758616515342366,
+    "outer_brier_delta_sd": 0.02048086962067749,
+    "relative_delta_percent_mean": 18.212369726536373,
+    "no_worse_than_all_count": 0,
+    "pairwise_jaccard_mean": 0.1261904761904762,
+    "paired_deltas": [
+      0.05455967302342202,
+      0.07046164118181372,
+      0.04662538769553076,
+      0.020035641983235264,
+      0.02711073869271008
+    ]
+  },
+  {
+    "train_n": 384,
+    "outer_brier_delta_mean": 0.019263771410516585,
+    "outer_brier_delta_sd": 0.0041314200624180805,
+    "relative_delta_percent_mean": 7.716781983922924,
+    "no_worse_than_all_count": 0,
+    "pairwise_jaccard_mean": 0.14222222222222222,
+    "paired_deltas": [
+      0.021273780990463953,
+      0.012086432814470582,
+      0.02217642508070572,
+      0.02131167066061823,
+      0.01947054750632443
+    ]
+  },
+  {
+    "train_n": 576,
+    "outer_brier_delta_mean": 0.011680592395392575,
+    "outer_brier_delta_sd": 0.006779349636123331,
+    "relative_delta_percent_mean": 4.988663882019573,
+    "no_worse_than_all_count": 1,
+    "pairwise_jaccard_mean": 0.19875176577808157,
+    "paired_deltas": [
+      -1.666356301066596e-05,
+      0.011695815309253788,
+      0.016293446677287937,
+      0.015826421683212494,
+      0.014603941870219322
+    ]
+  }
+]

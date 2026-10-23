@@ -1,0 +1,66 @@
+{
+  "selected": [
+    6,
+    83,
+    84,
+    201,
+    234
+  ],
+  "cost": 20.0,
+  "inner_brier": 0.02736765113031338,
+  "inner_reference": 0.02747486893759826,
+  "gamma": 0.2783452516225424,
+  "original_full_gamma": 0.17927621426124798,
+  "trace": [
+    {
+      "phase": "add",
+      "before": [],
+      "attribute": 201,
+      "prediction_gain": 0.0003852402223684104,
+      "rule": "prediction-improving dependency gain"
+    },
+    {
+      "phase": "add",
+      "before": [
+        201
+      ],
+      "attribute": 234,
+      "prediction_gain": 0.0017222424008305239,
+      "rule": "prediction-improving dependency gain"
+    },
+    {
+      "phase": "add",
+      "before": [
+        201,
+        234
+      ],
+      "attribute": 6,
+      "prediction_gain": 0.002235660057128712,
+      "rule": "prediction-improving dependency gain"
+    },
+    {
+      "phase": "add",
+      "before": [
+        6,
+        201,
+        234
+      ],
+      "attribute": 84,
+      "prediction_gain": 0.00021759798818258777,
+      "rule": "prediction-improving dependency gain"
+    },
+    {
+      "phase": "add",
+      "before": [
+        6,
+        84,
+        201,
+        234
+      ],
+      "attribute": 83,
+      "prediction_gain": 0.00047542774773617555,
+      "rule": "prediction-improving dependency gain"
+    }
+  ],
+  "split_source": "cross_dataset/SBU_3DFE/repeat_1_n192"
+}

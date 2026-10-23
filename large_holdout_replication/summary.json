@@ -1,0 +1,458 @@
+{
+  "means": [
+    {
+      "dataset": "Natural Scene",
+      "method": "Full",
+      "cost_mean": 1648.0,
+      "audit_brier_mean": 0.23298666780438895,
+      "audit_brier_sd": 0.024755302586042367,
+      "passes": 3,
+      "empty_outputs": 0
+    },
+    {
+      "dataset": "Natural Scene",
+      "method": "Empty",
+      "cost_mean": 0.0,
+      "audit_brier_mean": 0.2760182105159393,
+      "audit_brier_sd": 0.030678076707402788,
+      "passes": 0,
+      "empty_outputs": 3
+    },
+    {
+      "dataset": "Natural Scene",
+      "method": "Prediction only before",
+      "cost_mean": 13.0,
+      "audit_brier_mean": 0.24491502995347506,
+      "audit_brier_sd": 0.02703368799309777,
+      "passes": 0,
+      "empty_outputs": 0
+    },
+    {
+      "dataset": "Natural Scene",
+      "method": "Prediction only after",
+      "cost_mean": 9.666666666666666,
+      "audit_brier_mean": 0.24453193190016598,
+      "audit_brier_sd": 0.021687243144152598,
+      "passes": 0,
+      "empty_outputs": 0
+    },
+    {
+      "dataset": "Natural Scene",
+      "method": "Guided before",
+      "cost_mean": 13.666666666666666,
+      "audit_brier_mean": 0.24602033563935008,
+      "audit_brier_sd": 0.015464643583689793,
+      "passes": 1,
+      "empty_outputs": 0
+    },
+    {
+      "dataset": "Natural Scene",
+      "method": "Guided after",
+      "cost_mean": 10.333333333333334,
+      "audit_brier_mean": 0.2491074404396635,
+      "audit_brier_sd": 0.0236628715976998,
+      "passes": 0,
+      "empty_outputs": 0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "method": "Full",
+      "cost_mean": 1373.0,
+      "audit_brier_mean": 0.028780572623639738,
+      "audit_brier_sd": 0.0022487661095365345,
+      "passes": 3,
+      "empty_outputs": 0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "method": "Empty",
+      "cost_mean": 0.0,
+      "audit_brier_mean": 0.032800447435779485,
+      "audit_brier_sd": 0.0022472912054760353,
+      "passes": 0,
+      "empty_outputs": 3
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "method": "Prediction only before",
+      "cost_mean": 14.666666666666666,
+      "audit_brier_mean": 0.033039217438629524,
+      "audit_brier_sd": 0.0018144334965004135,
+      "passes": 0,
+      "empty_outputs": 0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "method": "Prediction only after",
+      "cost_mean": 12.333333333333334,
+      "audit_brier_mean": 0.03424686825191858,
+      "audit_brier_sd": 0.0006452256305785858,
+      "passes": 0,
+      "empty_outputs": 0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "method": "Guided before",
+      "cost_mean": 10.333333333333334,
+      "audit_brier_mean": 0.03159174753404622,
+      "audit_brier_sd": 0.002032692750690601,
+      "passes": 0,
+      "empty_outputs": 0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "method": "Guided after",
+      "cost_mean": 7.333333333333333,
+      "audit_brier_mean": 0.03256620897016901,
+      "audit_brier_sd": 0.002857416648453792,
+      "passes": 0,
+      "empty_outputs": 0
+    },
+    {
+      "dataset": "Yeast_cold",
+      "method": "Full",
+      "cost_mean": 127.0,
+      "audit_brier_mean": 0.007123773678765381,
+      "audit_brier_sd": 0.00023774372148339286,
+      "passes": 3,
+      "empty_outputs": 0
+    },
+    {
+      "dataset": "Yeast_cold",
+      "method": "Empty",
+      "cost_mean": 0.0,
+      "audit_brier_mean": 0.006045646754603941,
+      "audit_brier_sd": 0.00019223101225385023,
+      "passes": 3,
+      "empty_outputs": 3
+    },
+    {
+      "dataset": "Yeast_cold",
+      "method": "Prediction only before",
+      "cost_mean": 0.0,
+      "audit_brier_mean": 0.006045646754603941,
+      "audit_brier_sd": 0.00019223101225385023,
+      "passes": 3,
+      "empty_outputs": 3
+    },
+    {
+      "dataset": "Yeast_cold",
+      "method": "Prediction only after",
+      "cost_mean": 0.0,
+      "audit_brier_mean": 0.006045646754603941,
+      "audit_brier_sd": 0.00019223101225385023,
+      "passes": 3,
+      "empty_outputs": 3
+    },
+    {
+      "dataset": "Yeast_cold",
+      "method": "Guided before",
+      "cost_mean": 0.0,
+      "audit_brier_mean": 0.006045646754603941,
+      "audit_brier_sd": 0.00019223101225385023,
+      "passes": 3,
+      "empty_outputs": 3
+    },
+    {
+      "dataset": "Yeast_cold",
+      "method": "Guided after",
+      "cost_mean": 0.0,
+      "audit_brier_mean": 0.006045646754603941,
+      "audit_brier_sd": 0.00019223101225385023,
+      "passes": 3,
+      "empty_outputs": 3
+    }
+  ],
+  "paired": [
+    {
+      "dataset": "Natural Scene",
+      "repeat": 1,
+      "method": "Prediction only",
+      "audit_gap": 0.0059173530450356004,
+      "cost": 7,
+      "inner_gap": -0.0009187632214887609
+    },
+    {
+      "dataset": "Natural Scene",
+      "repeat": 2,
+      "method": "Prediction only",
+      "audit_gap": 0.018080603520077093,
+      "cost": 7,
+      "inner_gap": -0.0029623591673330063
+    },
+    {
+      "dataset": "Natural Scene",
+      "repeat": 3,
+      "method": "Prediction only",
+      "audit_gap": 0.010637835722218242,
+      "cost": 15,
+      "inner_gap": -0.0021303217924708018
+    },
+    {
+      "dataset": "Natural Scene",
+      "repeat": 1,
+      "method": "Guided",
+      "audit_gap": 0.004962903570793098,
+      "cost": 8,
+      "inner_gap": -0.004393468932942152
+    },
+    {
+      "dataset": "Natural Scene",
+      "repeat": 2,
+      "method": "Guided",
+      "audit_gap": 0.03377166803712378,
+      "cost": 11,
+      "inner_gap": -0.00036902157095899946
+    },
+    {
+      "dataset": "Natural Scene",
+      "repeat": 3,
+      "method": "Guided",
+      "audit_gap": 0.00962774629790672,
+      "cost": 12,
+      "inner_gap": -0.0012316733943829317
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 1,
+      "method": "Prediction only",
+      "audit_gap": 0.007100798245770618,
+      "cost": 5,
+      "inner_gap": -0.000588248712427332
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 2,
+      "method": "Prediction only",
+      "audit_gap": 0.0032007520984672633,
+      "cost": 23,
+      "inner_gap": -0.0005147859185348283
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 3,
+      "method": "Prediction only",
+      "audit_gap": 0.006097336540598679,
+      "cost": 9,
+      "inner_gap": -0.0004213861630736858
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 1,
+      "method": "Guided",
+      "audit_gap": 0.0027709268258274376,
+      "cost": 4,
+      "inner_gap": -0.0005227731427859816
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 2,
+      "method": "Guided",
+      "audit_gap": 0.00440990271437855,
+      "cost": 8,
+      "inner_gap": -0.001134020092794591
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 3,
+      "method": "Guided",
+      "audit_gap": 0.004176079499381841,
+      "cost": 10,
+      "inner_gap": -0.000611867217407757
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 1,
+      "method": "Prediction only",
+      "audit_gap": -0.0011111553096473286,
+      "cost": 0,
+      "inner_gap": -0.0008009277363519593
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 2,
+      "method": "Prediction only",
+      "audit_gap": -0.0010251592349152247,
+      "cost": 0,
+      "inner_gap": -0.0005004539913633591
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 3,
+      "method": "Prediction only",
+      "audit_gap": -0.0010980662279217656,
+      "cost": 0,
+      "inner_gap": -0.001215361402998525
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 1,
+      "method": "Guided",
+      "audit_gap": -0.0011111553096473286,
+      "cost": 0,
+      "inner_gap": -0.0008009277363519593
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 2,
+      "method": "Guided",
+      "audit_gap": -0.0010251592349152247,
+      "cost": 0,
+      "inner_gap": -0.0005004539913633591
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 3,
+      "method": "Guided",
+      "audit_gap": -0.0010980662279217656,
+      "cost": 0,
+      "inner_gap": -0.001215361402998525
+    }
+  ],
+  "common48": [
+    {
+      "dataset": "Natural Scene",
+      "method": "Prediction only",
+      "development_size": 192,
+      "mean_gap": 0.051358557064203676,
+      "passes": 0,
+      "gaps": [
+        0.053814027789762964,
+        0.04526302228757578,
+        0.05499862111527229
+      ]
+    },
+    {
+      "dataset": "Natural Scene",
+      "method": "Prediction only",
+      "development_size": 576,
+      "mean_gap": -0.0009301726412007291,
+      "passes": 2,
+      "gaps": [
+        -0.0012979935889292915,
+        0.0019811649474392734,
+        -0.003473689282112169
+      ]
+    },
+    {
+      "dataset": "Natural Scene",
+      "method": "Guided",
+      "development_size": 192,
+      "mean_gap": 0.051358557064203676,
+      "passes": 0,
+      "gaps": [
+        0.053814027789762964,
+        0.04526302228757578,
+        0.05499862111527229
+      ]
+    },
+    {
+      "dataset": "Natural Scene",
+      "method": "Guided",
+      "development_size": 576,
+      "mean_gap": 0.03922848106380799,
+      "passes": 0,
+      "gaps": [
+        0.012758819721976733,
+        0.0744302128962939,
+        0.030496410573153332
+      ]
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "method": "Prediction only",
+      "development_size": 192,
+      "mean_gap": 0.0007075612484554404,
+      "passes": 1,
+      "gaps": [
+        0.0011310905278887479,
+        0.00816947815338865,
+        -0.007177884935911077
+      ]
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "method": "Prediction only",
+      "development_size": 576,
+      "mean_gap": 0.0051271981499155265,
+      "passes": 0,
+      "gaps": [
+        0.0109643759932073,
+        0.001624776755925754,
+        0.002792441700613525
+      ]
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "method": "Guided",
+      "development_size": 192,
+      "mean_gap": 0.0008489433983628301,
+      "passes": 1,
+      "gaps": [
+        0.0015552369776109173,
+        0.00816947815338865,
+        -0.007177884935911077
+      ]
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "method": "Guided",
+      "development_size": 576,
+      "mean_gap": 0.005204662969963276,
+      "passes": 0,
+      "gaps": [
+        0.00437910748000896,
+        0.0050491843443343405,
+        0.006185697085546529
+      ]
+    },
+    {
+      "dataset": "Yeast_cold",
+      "method": "Prediction only",
+      "development_size": 192,
+      "mean_gap": -0.0011551643508367938,
+      "passes": 3,
+      "gaps": [
+        -0.0014347832079378469,
+        -0.0008792741309900862,
+        -0.0011514357135824485
+      ]
+    },
+    {
+      "dataset": "Yeast_cold",
+      "method": "Prediction only",
+      "development_size": 576,
+      "mean_gap": -0.0013726319223323193,
+      "passes": 3,
+      "gaps": [
+        -0.0011043630288609064,
+        -0.001532725076125248,
+        -0.0014808076620108036
+      ]
+    },
+    {
+      "dataset": "Yeast_cold",
+      "method": "Guided",
+      "development_size": 192,
+      "mean_gap": -0.0011551643508367938,
+      "passes": 3,
+      "gaps": [
+        -0.0014347832079378469,
+        -0.0008792741309900862,
+        -0.0011514357135824485
+      ]
+    },
+    {
+      "dataset": "Yeast_cold",
+      "method": "Guided",
+      "development_size": 576,
+      "mean_gap": -0.0013726319223323193,
+      "passes": 3,
+      "gaps": [
+        -0.0011043630288609064,
+        -0.001532725076125248,
+        -0.0014808076620108036
+      ]
+    }
+  ]
+}

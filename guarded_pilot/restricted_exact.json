@@ -1,0 +1,30 @@
+{
+  "scope": "8 training-screened candidates; own Gamma(candidate set) and inner-risk(candidate set) references",
+  "candidates": [
+    99,
+    109,
+    197,
+    199,
+    201,
+    203,
+    205,
+    207
+  ],
+  "dependency_target": 0.12126317230924089,
+  "inner_reference": 0.29184319960609056,
+  "heuristic_selected_original": [
+    199,
+    207
+  ],
+  "heuristic_cost": 11.0,
+  "heuristic_seconds": 0.5717262580001261,
+  "optimal_selected_original": [
+    199,
+    207
+  ],
+  "optimal_cost": 11.0,
+  "exact_seconds": 1.73358678600016,
+  "exact_nodes": 245,
+  "exact_distinct_dependency_evaluations": 73,
+  "completed": true
+}

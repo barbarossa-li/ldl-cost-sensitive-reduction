@@ -1,0 +1,50 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "method": "Full",
+    "attributes": 24,
+    "cost": 127,
+    "audit_brier": 0.009762503538311046
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "method": "Empty",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.008220778611426472
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "method": "Prediction only before",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.008220778611426472
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "method": "Prediction only after",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.008220778611426472
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "method": "Guided before",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.008220778611426472
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "method": "Guided after",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.008220778611426472
+  }
+]

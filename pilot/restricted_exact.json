@@ -1,0 +1,39 @@
+{
+  "scope": "8 features screened by training-only mean information weight; target is Gamma(candidate set), not Gamma(all 294)",
+  "candidates": [
+    197,
+    199,
+    201,
+    203,
+    205,
+    207,
+    209,
+    291
+  ],
+  "costs": [
+    9,
+    3,
+    7,
+    3,
+    4,
+    8,
+    5,
+    7
+  ],
+  "target": 0.05067644766856942,
+  "heuristic_selected_original": [
+    209
+  ],
+  "heuristic_cost": 5.0,
+  "heuristic_seconds": 0.16583169700061262,
+  "optimal_selected_original": [
+    209
+  ],
+  "optimal_cost": 5.0,
+  "exact_seconds": 0.1548459579989867,
+  "exact_nodes": 55,
+  "exact_distinct_evaluations": 9,
+  "completed": true,
+  "degenerate": false,
+  "excess_cost_ratio": 0.0
+}

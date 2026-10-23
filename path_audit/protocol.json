@@ -1,0 +1,19 @@
+{
+  "scope": "Path-only diagnosis on three already examined saved repeat-1 n192 splits; no fresh confirmatory test data",
+  "datasets": [
+    "Natural Scene",
+    "SBU_3DFE",
+    "Yeast_cold"
+  ],
+  "train_n": 192,
+  "repeat": 1,
+  "fixed_rule": "Positive predictive-gain candidates; among them prefer positive dependency gain/cost. Otherwise positive predictive gain/cost. Nonpositive predictive bridge if none. Prediction-only stop and deletion.",
+  "lambda": -1,
+  "prediction_tolerance": 0,
+  "inner_folds": 3,
+  "k": 5,
+  "geometry_parameters": "Original beta=1,zeta=.1,kappa=.1,smin=2,alpha=1",
+  "empty_subset": "Training global mean; accepted if inner guard passes",
+  "comparisons": "Saved original Joint guard and Prediction-only outputs; all use same splits, scaling, folds and costs",
+  "test_role": "Recorded after the selection checkpoint; descriptive only, not independent evidence or a tuning signal"
+}

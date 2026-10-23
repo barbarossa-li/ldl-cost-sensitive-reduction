@@ -1,0 +1,164 @@
+[
+  {
+    "removed": 6,
+    "selected": [
+      47,
+      54,
+      104,
+      152,
+      188,
+      214,
+      220,
+      235
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false,
+    "inner_brier": 0.03330104863644017,
+    "gamma": 0.0729736458055487
+  },
+  {
+    "removed": 47,
+    "selected": [
+      6,
+      54,
+      104,
+      152,
+      188,
+      214,
+      220,
+      235
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "gamma_only_block": true,
+    "inner_brier": 0.03129254793058476,
+    "gamma": 0.0686622663582024
+  },
+  {
+    "removed": 54,
+    "selected": [
+      6,
+      47,
+      104,
+      152,
+      188,
+      214,
+      220,
+      235
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "gamma_only_block": true,
+    "inner_brier": 0.03176018349843024,
+    "gamma": 0.06815544785447793
+  },
+  {
+    "removed": 104,
+    "selected": [
+      6,
+      47,
+      54,
+      152,
+      188,
+      214,
+      220,
+      235
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "gamma_only_block": true,
+    "inner_brier": 0.03203900855945081,
+    "gamma": 0.10824366086814649
+  },
+  {
+    "removed": 152,
+    "selected": [
+      6,
+      47,
+      54,
+      104,
+      188,
+      214,
+      220,
+      235
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false,
+    "inner_brier": 0.03376385225390574,
+    "gamma": 0.03774696992207001
+  },
+  {
+    "removed": 188,
+    "selected": [
+      6,
+      47,
+      54,
+      104,
+      152,
+      214,
+      220,
+      235
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false,
+    "inner_brier": 0.033698031317104256,
+    "gamma": 0.10504245819478357
+  },
+  {
+    "removed": 214,
+    "selected": [
+      6,
+      47,
+      54,
+      104,
+      152,
+      188,
+      220,
+      235
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false,
+    "inner_brier": 0.033599110988651086,
+    "gamma": 0.021442349134633328
+  },
+  {
+    "removed": 220,
+    "selected": [
+      6,
+      47,
+      54,
+      104,
+      152,
+      188,
+      214,
+      235
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "gamma_only_block": true,
+    "inner_brier": 0.032352539228168435,
+    "gamma": 0.04599358341609628
+  },
+  {
+    "removed": 235,
+    "selected": [
+      6,
+      47,
+      54,
+      104,
+      152,
+      188,
+      214,
+      220
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false,
+    "inner_brier": 0.03301702163640172,
+    "gamma": 0.09231500466160546
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "M2B",
+    "repeat": 2,
+    "alpha": 100.0,
+    "ridge_inner_full": 0.3776963002710378,
+    "ridge_inner_empty": 0.281862410143144,
+    "inner_gain": -0.09583389012789378,
+    "audit_brier_ridge": 0.39679577704755886,
+    "audit_brier_empty": 0.2809988329865192,
+    "audit_gain": -0.11579694406103969,
+    "revived": false,
+    "seconds": 0.4253091000718996
+  }
+]

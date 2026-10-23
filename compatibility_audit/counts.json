@@ -1,0 +1,29 @@
+[
+  {
+    "dataset": "Natural Scene",
+    "blocked_candidates": 7,
+    "affected_splits": 4,
+    "inner_better_than_parent": 5,
+    "inner_equal_to_parent": 0,
+    "test_better_than_parent": 4,
+    "both_losses_better": 4
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "blocked_candidates": 26,
+    "affected_splits": 7,
+    "inner_better_than_parent": 15,
+    "inner_equal_to_parent": 0,
+    "test_better_than_parent": 14,
+    "both_losses_better": 5
+  },
+  {
+    "dataset": "Yeast_cold",
+    "blocked_candidates": 14,
+    "affected_splits": 9,
+    "inner_better_than_parent": 9,
+    "inner_equal_to_parent": 0,
+    "test_better_than_parent": 8,
+    "both_losses_better": 6
+  }
+]

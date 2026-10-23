@@ -1,0 +1,17 @@
+{
+  "models": 45,
+  "fold_records": 135,
+  "outer_test_used": false,
+  "selection_rerun": false,
+  "euclidean_reproduction": "All fixed existing subset references within 1e-12",
+  "fold_fitting": "Nine geometry fits use only corresponding inner training IDs",
+  "comparison_scope": "Descriptive fixed-subset development diagnostic; no fresh test or unbiased generalization claim",
+  "pdf_pages": 68,
+  "pdf_validation": "Two reference-resolving builds plus table-width correction; no undefined references/overfull boxes; Section15 pages61-64 visually checked",
+  "information_share_definition": "Per-query sum of information distances / sum of incoming distances, averaged over 192 inner-validation objects",
+  "same_neighbour_full": {
+    "Natural Scene": 0.515625,
+    "SBU_3DFE": 0.9479166666666666,
+    "Yeast_cold": 0.9895833333333334
+  }
+}

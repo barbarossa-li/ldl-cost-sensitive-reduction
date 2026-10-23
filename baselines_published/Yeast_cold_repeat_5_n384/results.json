@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 5,
+    "train_n": 384,
+    "method": "DSIM k",
+    "attributes": 2,
+    "cost": 8,
+    "inner_brier": 0.007037242647265297,
+    "test_brier": 0.006915318663855127,
+    "test_kl": 0.0139905511620584,
+    "test_tv": 0.06566725591938594,
+    "test_js": 0.0035129109338979843
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 5,
+    "train_n": 384,
+    "method": "DSIM budget",
+    "attributes": 2,
+    "cost": 3,
+    "inner_brier": 0.0071490868743557395,
+    "test_brier": 0.006456172095675246,
+    "test_kl": 0.013088642718666766,
+    "test_tv": 0.06345207413499901,
+    "test_js": 0.003282864957267903
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 5,
+    "train_n": 384,
+    "method": "FSLC k",
+    "attributes": 2,
+    "cost": 8,
+    "inner_brier": 0.007037242647265297,
+    "test_brier": 0.006915318663855127,
+    "test_kl": 0.0139905511620584,
+    "test_tv": 0.06566725591938594,
+    "test_js": 0.0035129109338979843
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 5,
+    "train_n": 384,
+    "method": "FSLC budget",
+    "attributes": 1,
+    "cost": 3,
+    "inner_brier": 0.007283020682693558,
+    "test_brier": 0.006811663959708232,
+    "test_kl": 0.013780910137160825,
+    "test_tv": 0.06439196246030271,
+    "test_js": 0.0034568342361214386
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 5,
+    "train_n": 384,
+    "method": "GBFRS k",
+    "attributes": 2,
+    "cost": 11,
+    "inner_brier": 0.0067874531059239985,
+    "test_brier": 0.006371021212439791,
+    "test_kl": 0.012889417822476809,
+    "test_tv": 0.06266620693446219,
+    "test_js": 0.003234172477245887
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 5,
+    "train_n": 384,
+    "method": "GBFRS budget",
+    "attributes": 2,
+    "cost": 3,
+    "inner_brier": 0.007001556303806213,
+    "test_brier": 0.006923969704230339,
+    "test_kl": 0.014010029342829978,
+    "test_tv": 0.06543605003227243,
+    "test_js": 0.003515796718411349
+  }
+]

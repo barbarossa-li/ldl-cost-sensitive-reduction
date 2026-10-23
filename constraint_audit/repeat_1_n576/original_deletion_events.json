@@ -1,0 +1,233 @@
+[
+  {
+    "removed": 207,
+    "selected": [
+      54,
+      84,
+      104,
+      122,
+      188,
+      220,
+      239,
+      252,
+      269,
+      281
+    ],
+    "cost": 10,
+    "inner_brier": 0.2567204162873715,
+    "gamma": 0.11704145170733962,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 54,
+    "selected": [
+      84,
+      104,
+      122,
+      188,
+      207,
+      220,
+      239,
+      252,
+      269,
+      281
+    ],
+    "cost": 17,
+    "inner_brier": 0.24906946615646738,
+    "gamma": 0.10862406625169997,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 84,
+    "selected": [
+      54,
+      104,
+      122,
+      188,
+      207,
+      220,
+      239,
+      252,
+      269,
+      281
+    ],
+    "cost": 17,
+    "inner_brier": 0.24574646373796,
+    "gamma": 0.0828908891093134,
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 104,
+    "selected": [
+      54,
+      84,
+      122,
+      188,
+      207,
+      220,
+      239,
+      252,
+      269,
+      281
+    ],
+    "cost": 17,
+    "inner_brier": 0.25539205197592757,
+    "gamma": 0.13953914539054993,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 122,
+    "selected": [
+      54,
+      84,
+      104,
+      188,
+      207,
+      220,
+      239,
+      252,
+      269,
+      281
+    ],
+    "cost": 17,
+    "inner_brier": 0.2485677183963571,
+    "gamma": 0.12575314829653444,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 188,
+    "selected": [
+      54,
+      84,
+      104,
+      122,
+      207,
+      220,
+      239,
+      252,
+      269,
+      281
+    ],
+    "cost": 17,
+    "inner_brier": 0.24681609314565037,
+    "gamma": 0.11714209464867552,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 220,
+    "selected": [
+      54,
+      84,
+      104,
+      122,
+      188,
+      207,
+      239,
+      252,
+      269,
+      281
+    ],
+    "cost": 17,
+    "inner_brier": 0.261226479496755,
+    "gamma": 0.10321393411195566,
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 239,
+    "selected": [
+      54,
+      84,
+      104,
+      122,
+      188,
+      207,
+      220,
+      252,
+      269,
+      281
+    ],
+    "cost": 17,
+    "inner_brier": 0.24596209681116754,
+    "gamma": 0.12005056295666731,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 252,
+    "selected": [
+      54,
+      84,
+      104,
+      122,
+      188,
+      207,
+      220,
+      239,
+      269,
+      281
+    ],
+    "cost": 17,
+    "inner_brier": 0.24617204242091587,
+    "gamma": 0.1160917159813793,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 269,
+    "selected": [
+      54,
+      84,
+      104,
+      122,
+      188,
+      207,
+      220,
+      239,
+      252,
+      281
+    ],
+    "cost": 17,
+    "inner_brier": 0.24585375509997384,
+    "gamma": 0.1284123824803294,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 281,
+    "selected": [
+      54,
+      84,
+      104,
+      122,
+      188,
+      207,
+      220,
+      239,
+      252,
+      269
+    ],
+    "cost": 17,
+    "inner_brier": 0.24078087302145887,
+    "gamma": 0.09485950280555906,
+    "risk_pass": true,
+    "gamma_pass": false,
+    "gamma_only_block": true
+  }
+]

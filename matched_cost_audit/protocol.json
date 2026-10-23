@@ -1,0 +1,10 @@
+{
+  "scope": "576 development size, three saved repeats,432 search/144 reserved audit; no outer test; original refined subsets frozen",
+  "controls": 20,
+  "matching": "Exact cardinality, total cost and number of attributes at each cost value; stricter than cost/cardinality alone",
+  "sampling": "Uniform independent draws within each cost stratum, retain unique subsets excluding selected subset; fixed seeds; not uniform over all subsets with only matched total cost",
+  "seed": "20260930+10000*dataset_index+100*repeat+method_index",
+  "empty": "One identical empty reference, no substantive comparison",
+  "metrics": "Raw Brier as in search/audit; all controls evaluated and distribution summarized; no best-control selection",
+  "interpretation": "Descriptive conditional controls, not an exchangeable permutation test, p-value or significance claim"
+}

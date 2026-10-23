@@ -1,0 +1,13 @@
+[
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 1,
+    "train_n": 384,
+    "removed": 104,
+    "original_cost": 17,
+    "candidate_cost": 16,
+    "original_test_brier": 0.033301134530804466,
+    "candidate_test_brier": 0.03364959382237119,
+    "candidate_minus_original": 0.0003484592915667245
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "removed": 70,
+    "selected": [
+      104,
+      281
+    ],
+    "cost": 2,
+    "inner_brier": 0.2794322329538424,
+    "gamma": 0.09340615526727762,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 104,
+    "selected": [
+      70,
+      281
+    ],
+    "cost": 2,
+    "inner_brier": 0.28712623094052486,
+    "gamma": 0.008445365788939722,
+    "risk_pass": false,
+    "gamma_pass": false,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 281,
+    "selected": [
+      70,
+      104
+    ],
+    "cost": 2,
+    "inner_brier": 0.28875372567215835,
+    "gamma": 0.11245446330845388,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  }
+]

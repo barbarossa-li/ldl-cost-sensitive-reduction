@@ -1,0 +1,16 @@
+{
+  "scope": "15 saved Natural Scene splits; no retuning joint method",
+  "methods": {
+    "Cheapest k": "k cheapest, matched cardinality",
+    "Random k": "20 fixed random k subsets; average test metrics, not best chosen",
+    "Correlation k": "sum squared feature-label correlations, top k",
+    "Forward k": "training-inner Brier sequential forward selection to exactly k; no cost ranking",
+    "Cost-correlation budget": "correlation score/cost, greedy fit within joint cost budget",
+    "Cost-forward budget": "positive inner Brier decrease/cost, greedy within joint cost budget; stop if no positive gain",
+    "Prediction-only": "same original guarded heuristic, dependency identically zero; no matched quota",
+    "Budget-forward bridge": "cost-constrained forward search with nonpositive bridge; best inner-risk prefix incl empty; preserve positive-only baseline"
+  },
+  "random_draws": 20,
+  "fairness": "k and cost budget are joint outputs determined by training only. Same predictor, folds, normalization and costs. Test data already examined in prior diagnostics; exploratory paired comparison, not untouched confirmation. Generic controls and wrapper baselines, no claimed replicas of named published algorithms.",
+  "note": "Added to address established zero-singleton interaction issue; descriptive extension after early baseline diagnostics, not new untouched evaluation."
+}

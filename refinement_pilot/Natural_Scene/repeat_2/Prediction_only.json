@@ -1,0 +1,136 @@
+{
+  "before": [
+    54,
+    104,
+    164
+  ],
+  "after": [
+    54,
+    104,
+    164
+  ],
+  "initial_trace": [
+    [
+      [],
+      138,
+      -0.0018839998653015222,
+      "prediction loss: nonpositive bridge"
+    ],
+    [
+      [
+        138
+      ],
+      54,
+      0.004556276037168405,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        54,
+        138
+      ],
+      164,
+      0.029120228379005908,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        54,
+        138,
+        164
+      ],
+      104,
+      0.013957062954454813,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        54,
+        104,
+        138,
+        164
+      ],
+      138,
+      0.0,
+      "delete"
+    ]
+  ],
+  "refinement": {
+    "evaluations": 3,
+    "scans": 1,
+    "accepted": [],
+    "candidates": [
+      {
+        "scan": 1,
+        "before": [
+          54,
+          104,
+          164
+        ],
+        "removed": 54,
+        "added": -1,
+        "cost": 2,
+        "loss": 0.2683695506098485,
+        "feasible": false,
+        "subset": [
+          104,
+          164
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          54,
+          104,
+          164
+        ],
+        "removed": 104,
+        "added": -1,
+        "cost": 2,
+        "loss": 0.2734009074259989,
+        "feasible": false,
+        "subset": [
+          54,
+          164
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          54,
+          104,
+          164
+        ],
+        "removed": 164,
+        "added": -1,
+        "cost": 2,
+        "loss": 0.26866307443863685,
+        "feasible": false,
+        "subset": [
+          54,
+          104
+        ]
+      }
+    ],
+    "stop_reason": "neighbourhood exhausted without feasible move"
+  },
+  "results": {
+    "dataset": "Natural Scene",
+    "repeat": 2,
+    "method": "Prediction only",
+    "before_attributes": 3,
+    "after_attributes": 3,
+    "before_cost": 3,
+    "after_cost": 3,
+    "before_loss": 0.24591188066972283,
+    "after_loss": 0.24591188066972283,
+    "full_reference": 0.2580105907701351,
+    "refinement_evaluations": 3,
+    "accepted_moves": 0,
+    "stop_reason": "neighbourhood exhausted without feasible move",
+    "initial_unique_loss_evaluations": 1176,
+    "total_unique_loss_evaluations": 1176,
+    "initial_seconds": 0.9442705379988183,
+    "refinement_seconds": 0.00018921899936685804
+  }
+}

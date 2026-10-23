@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering\small\renewcommand{\arraystretch}{1.3}\setlength{\tabcolsep}{5pt}
+\caption{Frozen three-repeat evaluation: 432 search and 144 reserved audit objects. $P+$ and $G+$ include the common optional refinement. Passes compare audit loss with the full-set audit reference.}
+\label{tab:main-results}
+\begin{tabular}{llrrr}\hline
+Dataset & Method & Cost & Audit Brier $\pm$ SD & Passes\\\hline
+Natural Scene & Full & 1648.00 & 0.232987 $\pm$ 0.024755 & 3/3\\
+Natural Scene & Empty & 0.00 & 0.276018 $\pm$ 0.030678 & 0/3\\
+Natural Scene & $P+$ & 9.67 & 0.244532 $\pm$ 0.021687 & 0/3\\
+Natural Scene & $G+$ & 10.33 & 0.249107 $\pm$ 0.023663 & 0/3\\
+SBU\_3DFE & Full & 1373.00 & 0.028781 $\pm$ 0.002249 & 3/3\\
+SBU\_3DFE & Empty & 0.00 & 0.032800 $\pm$ 0.002247 & 0/3\\
+SBU\_3DFE & $P+$ & 12.33 & 0.034247 $\pm$ 0.000645 & 0/3\\
+SBU\_3DFE & $G+$ & 7.33 & 0.032566 $\pm$ 0.002857 & 0/3\\
+Yeast\_cold & Full & 127.00 & 0.007124 $\pm$ 0.000238 & 3/3\\
+Yeast\_cold & Empty & 0.00 & 0.006046 $\pm$ 0.000192 & 3/3\\
+Yeast\_cold & $P+$ & 0.00 & 0.006046 $\pm$ 0.000192 & 3/3\\
+Yeast\_cold & $G+$ & 0.00 & 0.006046 $\pm$ 0.000192 & 3/3\\
+\hline\end{tabular}\end{table}

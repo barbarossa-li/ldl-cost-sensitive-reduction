@@ -1,0 +1,42 @@
+[
+  {
+    "dataset": "MOR-PH",
+    "repeat": 2,
+    "alpha": 100.0,
+    "method": "Full",
+    "attributes": 200,
+    "cost": 1162,
+    "audit_brier": 0.07409750292233157,
+    "test_brier": 0.06342945645543241
+  },
+  {
+    "dataset": "MOR-PH",
+    "repeat": 2,
+    "alpha": 100.0,
+    "method": "Empty",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.07483724303324266,
+    "test_brier": 0.07376487961880822
+  },
+  {
+    "dataset": "MOR-PH",
+    "repeat": 2,
+    "alpha": 100.0,
+    "method": "Prediction only after",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.07483724303324266,
+    "test_brier": 0.07376487961880822
+  },
+  {
+    "dataset": "MOR-PH",
+    "repeat": 2,
+    "alpha": 100.0,
+    "method": "Guided after",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.07483724303324266,
+    "test_brier": 0.07376487961880822
+  }
+]

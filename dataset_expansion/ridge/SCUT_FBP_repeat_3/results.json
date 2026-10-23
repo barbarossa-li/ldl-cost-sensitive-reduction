@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "SCUT_FBP",
+    "repeat": 3,
+    "alpha": 10.0,
+    "ridge_inner_full": 0.13014828331132777,
+    "ridge_inner_empty": 0.13186153051136731,
+    "inner_gain": 0.0017132472000395416,
+    "audit_brier_ridge": 0.14470870727599378,
+    "audit_brier_empty": 0.13851007696751733,
+    "audit_gain": -0.006198630308476449,
+    "revived": true,
+    "seconds": 0.5316041000187397
+  }
+]

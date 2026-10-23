@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Yeast_heat",
+    "repeat": 3,
+    "method": "NoGuard",
+    "attributes": 1,
+    "cost": 1,
+    "inner_loss": 0.004759389861608458,
+    "inner_loss_empty": 0.0042619810594002,
+    "audit_brier_sel": 0.00551228966570257,
+    "audit_brier_empty": 0.004769439659316981,
+    "audit_brier_full": 0.0052855081566130025,
+    "seconds": 0.07348310004454106
+  }
+]

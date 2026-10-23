@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Flickr",
+    "repeat": 3,
+    "alpha": 100.0,
+    "ridge_inner_full": 0.223332012237475,
+    "ridge_inner_empty": 0.21172292155562358,
+    "inner_gain": -0.011609090681851425,
+    "audit_brier_ridge": 0.2371840927194166,
+    "audit_brier_empty": 0.2272059469555261,
+    "audit_gain": -0.0099781457638905,
+    "revived": false,
+    "seconds": 0.28612279996741563
+  }
+]

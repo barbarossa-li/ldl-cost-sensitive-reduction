@@ -1,0 +1,302 @@
+[
+  {
+    "dataset": "Natural Scene",
+    "repeat": 1,
+    "method": "Prediction only",
+    "inner_relative_loss": -0.010327846719873024,
+    "audit_relative_loss": 0.053814027789762964,
+    "relative_transfer_gap": 0.06414187450963599,
+    "inner_feasible": true,
+    "audit_feasible": false
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 2,
+    "method": "Prediction only",
+    "inner_relative_loss": -0.0075576754705208304,
+    "audit_relative_loss": 0.04526302228757578,
+    "relative_transfer_gap": 0.05282069775809661,
+    "inner_feasible": true,
+    "audit_feasible": false
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 3,
+    "method": "Prediction only",
+    "inner_relative_loss": -0.0011164059718914432,
+    "audit_relative_loss": 0.05499862111527229,
+    "relative_transfer_gap": 0.05611502708716373,
+    "inner_feasible": true,
+    "audit_feasible": false
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 4,
+    "method": "Prediction only",
+    "inner_relative_loss": -0.009152325952649643,
+    "audit_relative_loss": 0.10944801526814826,
+    "relative_transfer_gap": 0.1186003412207979,
+    "inner_feasible": true,
+    "audit_feasible": false
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 5,
+    "method": "Prediction only",
+    "inner_relative_loss": -0.0068330002448043214,
+    "audit_relative_loss": 0.04901663941167489,
+    "relative_transfer_gap": 0.05584963965647921,
+    "inner_feasible": true,
+    "audit_feasible": false
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 1,
+    "method": "Guided",
+    "inner_relative_loss": -0.010327846719873024,
+    "audit_relative_loss": 0.053814027789762964,
+    "relative_transfer_gap": 0.06414187450963599,
+    "inner_feasible": true,
+    "audit_feasible": false
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 2,
+    "method": "Guided",
+    "inner_relative_loss": -0.0075576754705208304,
+    "audit_relative_loss": 0.04526302228757578,
+    "relative_transfer_gap": 0.05282069775809661,
+    "inner_feasible": true,
+    "audit_feasible": false
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 3,
+    "method": "Guided",
+    "inner_relative_loss": -0.0011164059718914432,
+    "audit_relative_loss": 0.05499862111527229,
+    "relative_transfer_gap": 0.05611502708716373,
+    "inner_feasible": true,
+    "audit_feasible": false
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 4,
+    "method": "Guided",
+    "inner_relative_loss": -0.006014002258762974,
+    "audit_relative_loss": 0.04602782642940614,
+    "relative_transfer_gap": 0.05204182868816912,
+    "inner_feasible": true,
+    "audit_feasible": false
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 5,
+    "method": "Guided",
+    "inner_relative_loss": -0.018403725713494107,
+    "audit_relative_loss": -0.012026179568718737,
+    "relative_transfer_gap": 0.00637754614477537,
+    "inner_feasible": true,
+    "audit_feasible": true
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 1,
+    "method": "Prediction only",
+    "inner_relative_loss": -0.0006390754226130377,
+    "audit_relative_loss": 0.0011310905278887479,
+    "relative_transfer_gap": 0.0017701659505017855,
+    "inner_feasible": true,
+    "audit_feasible": false
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 2,
+    "method": "Prediction only",
+    "inner_relative_loss": -7.0739863569029e-05,
+    "audit_relative_loss": 0.00816947815338865,
+    "relative_transfer_gap": 0.008240218016957679,
+    "inner_feasible": true,
+    "audit_feasible": false
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 3,
+    "method": "Prediction only",
+    "inner_relative_loss": -0.0004964503821327307,
+    "audit_relative_loss": -0.007177884935911077,
+    "relative_transfer_gap": -0.006681434553778346,
+    "inner_feasible": true,
+    "audit_feasible": true
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 4,
+    "method": "Prediction only",
+    "inner_relative_loss": -0.0005494303182560292,
+    "audit_relative_loss": 0.006294921130368739,
+    "relative_transfer_gap": 0.006844351448624768,
+    "inner_feasible": true,
+    "audit_feasible": false
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 5,
+    "method": "Prediction only",
+    "inner_relative_loss": -5.1775487575456136e-05,
+    "audit_relative_loss": 0.0007752284766926881,
+    "relative_transfer_gap": 0.0008270039642681443,
+    "inner_feasible": true,
+    "audit_feasible": false
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 1,
+    "method": "Guided",
+    "inner_relative_loss": -0.0006204272964058233,
+    "audit_relative_loss": 0.0015552369776109173,
+    "relative_transfer_gap": 0.0021756642740167406,
+    "inner_feasible": true,
+    "audit_feasible": false
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 2,
+    "method": "Guided",
+    "inner_relative_loss": -7.0739863569029e-05,
+    "audit_relative_loss": 0.00816947815338865,
+    "relative_transfer_gap": 0.008240218016957679,
+    "inner_feasible": true,
+    "audit_feasible": false
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 3,
+    "method": "Guided",
+    "inner_relative_loss": -0.0004964503821327307,
+    "audit_relative_loss": -0.007177884935911077,
+    "relative_transfer_gap": -0.006681434553778346,
+    "inner_feasible": true,
+    "audit_feasible": true
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 4,
+    "method": "Guided",
+    "inner_relative_loss": -0.0005494303182560292,
+    "audit_relative_loss": 0.006294921130368739,
+    "relative_transfer_gap": 0.006844351448624768,
+    "inner_feasible": true,
+    "audit_feasible": false
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 5,
+    "method": "Guided",
+    "inner_relative_loss": -5.1775487575456136e-05,
+    "audit_relative_loss": 0.0007752284766926881,
+    "relative_transfer_gap": 0.0008270039642681443,
+    "inner_feasible": true,
+    "audit_feasible": false
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "method": "Prediction only",
+    "inner_relative_loss": -0.0016671677219839897,
+    "audit_relative_loss": -0.0014347832079378469,
+    "relative_transfer_gap": 0.00023238451404614287,
+    "inner_feasible": true,
+    "audit_feasible": true
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "method": "Prediction only",
+    "inner_relative_loss": -0.00047003120456143126,
+    "audit_relative_loss": -0.0008792741309900862,
+    "relative_transfer_gap": -0.0004092429264286549,
+    "inner_feasible": true,
+    "audit_feasible": true
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "method": "Prediction only",
+    "inner_relative_loss": -0.0013901249417119987,
+    "audit_relative_loss": -0.0011514357135824485,
+    "relative_transfer_gap": 0.00023868922812955023,
+    "inner_feasible": true,
+    "audit_feasible": true
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "method": "Prediction only",
+    "inner_relative_loss": -0.0007861004492650397,
+    "audit_relative_loss": -0.0015417249268845738,
+    "relative_transfer_gap": -0.0007556244776195341,
+    "inner_feasible": true,
+    "audit_feasible": true
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 5,
+    "method": "Prediction only",
+    "inner_relative_loss": -0.0012692921221750496,
+    "audit_relative_loss": -0.000748206071215343,
+    "relative_transfer_gap": 0.0005210860509597065,
+    "inner_feasible": true,
+    "audit_feasible": true
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "method": "Guided",
+    "inner_relative_loss": -0.0016671677219839897,
+    "audit_relative_loss": -0.0014347832079378469,
+    "relative_transfer_gap": 0.00023238451404614287,
+    "inner_feasible": true,
+    "audit_feasible": true
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "method": "Guided",
+    "inner_relative_loss": -0.00047003120456143126,
+    "audit_relative_loss": -0.0008792741309900862,
+    "relative_transfer_gap": -0.0004092429264286549,
+    "inner_feasible": true,
+    "audit_feasible": true
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "method": "Guided",
+    "inner_relative_loss": -0.0013901249417119987,
+    "audit_relative_loss": -0.0011514357135824485,
+    "relative_transfer_gap": 0.00023868922812955023,
+    "inner_feasible": true,
+    "audit_feasible": true
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "method": "Guided",
+    "inner_relative_loss": -0.0007861004492650397,
+    "audit_relative_loss": -0.0015417249268845738,
+    "relative_transfer_gap": -0.0007556244776195341,
+    "inner_feasible": true,
+    "audit_feasible": true
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 5,
+    "method": "Guided",
+    "inner_relative_loss": -0.0012692921221750496,
+    "audit_relative_loss": -0.000748206071215343,
+    "relative_transfer_gap": 0.0005210860509597065,
+    "inner_feasible": true,
+    "audit_feasible": true
+  }
+]

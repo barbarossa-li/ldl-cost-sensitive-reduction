@@ -1,0 +1,23 @@
+{
+  "datasets": [
+    "Natural Scene",
+    "SBU_3DFE",
+    "Yeast_cold"
+  ],
+  "repeats": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "development_size": 192,
+  "search_size": 144,
+  "audit_size": 48,
+  "refinement_budget": 200,
+  "scope": "Predeclared 144 search/48 audit split of saved development objects; frozen searches and refinement, audit never used to select; no outer test",
+  "rules": "Strictly lower cost and same exact prediction guard; deletions and cheaper one-for-one exchanges, descending saving/removed/added order; best evaluated feasible cost then loss then indices; restart after acceptance; total 200 candidate requests per variant, including repeated/cache-hit requests",
+  "fairness": "Identical refinement cap, not equal total initial search work or runtime",
+  "parameters": "Unchanged beta1,zeta.1,kappa.1,smin2,alpha1,lambda-1,k5,three folds,prediction tolerance0",
+  "holdout_rule": "seed20260930+1000*dataset_index+repeat; permute192 positions, first144 search, last48 audit; search-fold validation blocks are three consecutive48 blocks; audit does not change full-set internal bound"
+}

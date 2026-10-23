@@ -1,0 +1,48 @@
+\documentclass[preprint,12pt]{elsarticle}
+\usepackage[T1]{fontenc}
+\usepackage{algpseudocode}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,graphicx}
+\usepackage{float}
+\newtheorem{remark}{Remark}
+\usepackage[section]{placeins}
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}
+\usepackage{enumitem}
+\floatname{algorithm}{Algorithm}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage[hidelinks,hypertexnames=false]{hyperref}
+\hypersetup{pdfauthor={Chaoyang Li, Xiaohan Li, Zhaowen Li}}
+\journal{Applied Soft Computing}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\numberwithin{equation}{section}
+\emergencystretch=2em
+\begin{document}
+\begin{frontmatter}
+\title{Prediction-Constrained Cost-Sensitive Attribute Reduction for Label Distribution Learning via Directed Granular-Ball Computing}
+\input{authors_ASC.tex}
+\begin{abstract}
+Existing attribute reduction methods for Label Distribution Learning (LDL) often overlook the substantial variation in attribute acquisition costs, failing to balance prediction performance against real-world resource constraints. To address this, we propose a cost-constrained attribute reduction framework for LDL that explicitly incorporates attribute acquisition costs while retaining distributional supervision. We introduce a local distribution-information weight coupled with a source-dependent directed dissimilarity metric to capture both supervised association and intrinsic geometric structures. Based on this, a deterministic granular-ball model is constructed, equipped with a non-monotone granular dependency derived from normalized training representation error. To handle non-monotonicity, we formulate attribute reduction as a minimum-cost subset selection problem subject to an internal prediction-loss constraint, solved via a hybrid approach comprising a constructive heuristic, an exact backtracking algorithm, and an exchange refinement step. Extensive evaluations across twenty-five native LDL benchmark datasets—utilizing reserved audit partitions, matched-cost label-free controls, and common-budget ablations—demonstrate that our framework reduces acquisition costs by over two orders of magnitude (e.g., from 1,648 to ~10 on Natural Scene, and from 2,841 to ~19 on fbp5500) without sacrificing prediction accuracy. Benchmark comparisons against five published scoring cores spanning 2022–2025 confirm that published selectors incur two to five times higher costs for comparable or inferior predictive performance. Furthermore, our analysis identifies a near-degenerate regime—prevalent on twenty of the twenty-five benchmarks—where zero-cost configurations are optimal, and a predictor-sensitivity study shows that the feasibility guard tracks the deployed predictor: substituting a ridge predictor revives nine degenerate benchmarks, on six of which the selected low-cost subsets (1--6\% of full-set cost) outperform both the zero-cost and full-cost references. These results emphasize the necessity of feasibility guarantees over conventional lossless reduction.
+\end{abstract}
+\begin{keyword}
+Label distribution learning \sep Attribute reduction \sep Attribute acquisition cost \sep Granular computing \sep Directed dissimilarity
+\end{keyword}
+\end{frontmatter}
+% Consolidated manuscript draft. Experimental evidence remains developmental.
+\input{introduction_ASC.tex}
+\section{Preliminaries}
+\input{paper_preliminaries.tex}
+\section{Label-distribution information and directed distance}
+\input{paper_geometry.tex}
+\section{Distribution-consistent granular-ball representation}
+\input{paper_granules.tex}
+\input{paper_algorithms.tex}
+\input{paper_experiments.tex}
+\input{paper_discussion.tex}
+\clearpage
+\input{paper_declarations.tex}
+\bibliographystyle{elsarticle-num}
+\bibliography{refs_updated}
+\end{document}

@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 4,
+    "train_n": 192,
+    "method": "DSIM k",
+    "attributes": 2,
+    "cost": 15,
+    "inner_brier": 0.03892918286710909,
+    "test_brier": 0.03861759916942337,
+    "test_kl": 0.09763822669830668,
+    "test_tv": 0.1671837492157252,
+    "test_js": 0.023363907451405982
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 4,
+    "train_n": 192,
+    "method": "DSIM budget",
+    "attributes": 3,
+    "cost": 3,
+    "inner_brier": 0.03707981708244049,
+    "test_brier": 0.03626337871657133,
+    "test_kl": 0.091115624301249,
+    "test_tv": 0.16441616330127665,
+    "test_js": 0.021899139367252116
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 4,
+    "train_n": 192,
+    "method": "FSLC k",
+    "attributes": 2,
+    "cost": 12,
+    "inner_brier": 0.03716664065109016,
+    "test_brier": 0.03704401449486681,
+    "test_kl": 0.09219572000676751,
+    "test_tv": 0.16475674209120594,
+    "test_js": 0.022376865751087556
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 4,
+    "train_n": 192,
+    "method": "FSLC budget",
+    "attributes": 3,
+    "cost": 3,
+    "inner_brier": 0.03707981708244049,
+    "test_brier": 0.03626337871657133,
+    "test_kl": 0.091115624301249,
+    "test_tv": 0.16441616330127665,
+    "test_js": 0.021899139367252116
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 4,
+    "train_n": 192,
+    "method": "GBFRS k",
+    "attributes": 2,
+    "cost": 11,
+    "inner_brier": 0.03894117678033965,
+    "test_brier": 0.03668932761638978,
+    "test_kl": 0.09289566114869505,
+    "test_tv": 0.16658792992207244,
+    "test_js": 0.02218587736909372
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 4,
+    "train_n": 192,
+    "method": "GBFRS budget",
+    "attributes": 1,
+    "cost": 3,
+    "inner_brier": 0.04223695023596782,
+    "test_brier": 0.03982595701383142,
+    "test_kl": 0.1013467423854715,
+    "test_tv": 0.17403325902729103,
+    "test_js": 0.024120144516146108
+  }
+]

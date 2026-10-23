@@ -1,0 +1,13 @@
+{
+  "scope": "15 saved Natural Scene splits; published LDL scoring cores under the frozen cost-feasibility protocol",
+  "methods": {
+    "GBFRS k": "exact fuzzy-rough LDL dependency (Qian et al. 2023 core), forward greedy to matched k",
+    "GBFRS budget": "same criterion, positive-gain/cost greedy within the Joint guard budget",
+    "DSIM k": "dual-similarity dependence (Deng et al. 2022 core), top-k by score",
+    "DSIM budget": "score/cost greedy within budget",
+    "FSLC k": "feature-similarity/label-correlation greedy (Qian et al. 2022 core), matched k",
+    "FSLC budget": "relevance-per-cost with redundancy penalty, within budget"
+  },
+  "fairness": "k and cost budget are Joint guard outputs determined by training only. Same predictor, folds, normalization and costs as baselines/. Training-only statistics; selections saved before test evaluation. Implementations of cited scoring cores under a unified protocol, not verbatim replicas of published pipelines.",
+  "note": "GBFRS uses exact fuzzy lower approximations (strengthening of the ball-level approximation); bandwidths are per-attribute training standard deviations of min-max normalized features."
+}

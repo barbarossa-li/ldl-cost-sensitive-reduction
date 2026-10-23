@@ -1,0 +1,34 @@
+{
+  "before": [],
+  "after": [],
+  "initial_trace": [],
+  "refinement": {
+    "evaluations": 0,
+    "scans": 1,
+    "accepted": [],
+    "candidates": [],
+    "stop_reason": "neighbourhood exhausted without feasible move"
+  },
+  "results": {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 144,
+    "method": "Guided",
+    "before_attributes": 0,
+    "after_attributes": 0,
+    "before_cost": 0,
+    "after_cost": 0,
+    "before_loss": 0.006259025483540066,
+    "after_loss": 0.006259025483540066,
+    "full_reference": 0.0070599532198920255,
+    "refinement_evaluations": 0,
+    "accepted_moves": 0,
+    "stop_reason": "neighbourhood exhausted without feasible move",
+    "initial_unique_loss_evaluations": 2,
+    "total_unique_loss_evaluations": 2,
+    "initial_seconds": 0.03672284400090575,
+    "refinement_seconds": 6.04900014877785e-06
+  }
+}

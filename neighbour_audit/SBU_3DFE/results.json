@@ -1,0 +1,167 @@
+[
+  {
+    "dataset": "SBU_3DFE",
+    "subset": "Full",
+    "learner": "Euclidean",
+    "attributes": 243,
+    "cost": 1373,
+    "inner_brier": 0.027474868937598252,
+    "full_reference": 0.027474868937598252,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "subset": "Full",
+    "learner": "Manhattan",
+    "attributes": 243,
+    "cost": 1373,
+    "inner_brier": 0.02790819417972404,
+    "full_reference": 0.02790819417972404,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.015771694602437103
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "subset": "Full",
+    "learner": "Incoming directed",
+    "attributes": 243,
+    "cost": 1373,
+    "inner_brier": 0.0278979656950557,
+    "full_reference": 0.0278979656950557,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.015399409490119753
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "subset": "Original joint",
+    "learner": "Euclidean",
+    "attributes": 11,
+    "cost": 14,
+    "inner_brier": 0.027445177472254733,
+    "full_reference": 0.027474868937598252,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "subset": "Original joint",
+    "learner": "Manhattan",
+    "attributes": 11,
+    "cost": 14,
+    "inner_brier": 0.028935050884529235,
+    "full_reference": 0.02790819417972404,
+    "passes_own_reference": false,
+    "relative_to_euclidean": 0.05428543552981813
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "subset": "Original joint",
+    "learner": "Incoming directed",
+    "attributes": 11,
+    "cost": 14,
+    "inner_brier": 0.028906028676573232,
+    "full_reference": 0.0278979656950557,
+    "passes_own_reference": false,
+    "relative_to_euclidean": 0.05322797441537119
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "subset": "Prediction only",
+    "learner": "Euclidean",
+    "attributes": 4,
+    "cost": 14,
+    "inner_brier": 0.026958443765059126,
+    "full_reference": 0.027474868937598252,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "subset": "Prediction only",
+    "learner": "Manhattan",
+    "attributes": 4,
+    "cost": 14,
+    "inner_brier": 0.02879419138233677,
+    "full_reference": 0.02790819417972404,
+    "passes_own_reference": false,
+    "relative_to_euclidean": 0.06809545956272745
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "subset": "Prediction only",
+    "learner": "Incoming directed",
+    "attributes": 4,
+    "cost": 14,
+    "inner_brier": 0.028843452861963312,
+    "full_reference": 0.0278979656950557,
+    "passes_own_reference": false,
+    "relative_to_euclidean": 0.06992277125979163
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "subset": "Guided",
+    "learner": "Euclidean",
+    "attributes": 5,
+    "cost": 20,
+    "inner_brier": 0.027367651130313378,
+    "full_reference": 0.027474868937598252,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "subset": "Guided",
+    "learner": "Manhattan",
+    "attributes": 5,
+    "cost": 20,
+    "inner_brier": 0.027564586729166677,
+    "full_reference": 0.02790819417972404,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.007195926238447559
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "subset": "Guided",
+    "learner": "Incoming directed",
+    "attributes": 5,
+    "cost": 20,
+    "inner_brier": 0.027577586964671278,
+    "full_reference": 0.0278979656950557,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.007670948206635275
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "subset": "Empty",
+    "learner": "Euclidean",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.03240381954655979,
+    "full_reference": 0.027474868937598252,
+    "passes_own_reference": false,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "subset": "Empty",
+    "learner": "Manhattan",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.03240381954655979,
+    "full_reference": 0.02790819417972404,
+    "passes_own_reference": false,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "subset": "Empty",
+    "learner": "Incoming directed",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.03240381954655979,
+    "full_reference": 0.0278979656950557,
+    "passes_own_reference": false,
+    "relative_to_euclidean": 0.0
+  }
+]

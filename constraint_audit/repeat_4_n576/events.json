@@ -1,0 +1,383 @@
+[
+  {
+    "phase": "common prefix",
+    "index": 0,
+    "selected": [],
+    "cost": 0,
+    "inner_brier": 0.27896800267149013,
+    "gamma": 0.0,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 1,
+    "selected": [
+      203
+    ],
+    "cost": 3,
+    "inner_brier": 0.29430271733858776,
+    "gamma": 0.05606808646022574,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 2,
+    "selected": [
+      104,
+      203
+    ],
+    "cost": 4,
+    "inner_brier": 0.2652196776396738,
+    "gamma": 0.1205283178938723,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 3,
+    "selected": [
+      70,
+      104,
+      203
+    ],
+    "cost": 5,
+    "inner_brier": 0.24916223283198458,
+    "gamma": 0.11438864850992704,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 4,
+    "selected": [
+      70,
+      104,
+      188,
+      203
+    ],
+    "cost": 6,
+    "inner_brier": 0.24217990661708086,
+    "gamma": 0.0986875052102956,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 5,
+    "selected": [
+      70,
+      104,
+      188,
+      200,
+      203
+    ],
+    "cost": 8,
+    "inner_brier": 0.23484489153137517,
+    "gamma": 0.11502486282532681,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 6,
+    "selected": [
+      6,
+      70,
+      104,
+      188,
+      200,
+      203
+    ],
+    "cost": 9,
+    "inner_brier": 0.22319666436087018,
+    "gamma": 0.11036033189521469,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 7,
+    "selected": [
+      6,
+      70,
+      104,
+      188,
+      200,
+      203,
+      239
+    ],
+    "cost": 10,
+    "inner_brier": 0.22109039445566092,
+    "gamma": 0.09083257199725271,
+    "risk_pass": true,
+    "gamma_pass": true
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint off",
+    "removed": 203,
+    "selected": [
+      6,
+      70,
+      104,
+      188,
+      200,
+      239
+    ],
+    "cost": 7,
+    "inner_brier": 0.23570589569656125,
+    "gamma": 0.1322851265713958,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint off",
+    "removed": 200,
+    "selected": [
+      6,
+      70,
+      104,
+      188,
+      203,
+      239
+    ],
+    "cost": 8,
+    "inner_brier": 0.23671399826277367,
+    "gamma": 0.1168038722410995,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint off",
+    "removed": 6,
+    "selected": [
+      70,
+      104,
+      188,
+      200,
+      203,
+      239
+    ],
+    "cost": 9,
+    "inner_brier": 0.2337016334606131,
+    "gamma": 0.0578552139757954,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint off",
+    "removed": 70,
+    "selected": [
+      6,
+      104,
+      188,
+      200,
+      203,
+      239
+    ],
+    "cost": 9,
+    "inner_brier": 0.2315878169405931,
+    "gamma": 0.1270392005827745,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint off",
+    "removed": 104,
+    "selected": [
+      6,
+      70,
+      188,
+      200,
+      203,
+      239
+    ],
+    "cost": 9,
+    "inner_brier": 0.254040459353791,
+    "gamma": 0.06306618921712723,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint off",
+    "removed": 188,
+    "selected": [
+      6,
+      70,
+      104,
+      200,
+      203,
+      239
+    ],
+    "cost": 9,
+    "inner_brier": 0.22975455103221135,
+    "gamma": 0.09404551665057037,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint off",
+    "removed": 239,
+    "selected": [
+      6,
+      70,
+      104,
+      188,
+      200,
+      203
+    ],
+    "cost": 9,
+    "inner_brier": 0.22319666436087018,
+    "gamma": 0.11036033189521469,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint on",
+    "removed": 203,
+    "selected": [
+      6,
+      70,
+      104,
+      188,
+      200,
+      239
+    ],
+    "cost": 7,
+    "inner_brier": 0.23570589569656125,
+    "gamma": 0.1322851265713958,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint on",
+    "removed": 200,
+    "selected": [
+      6,
+      70,
+      104,
+      188,
+      203,
+      239
+    ],
+    "cost": 8,
+    "inner_brier": 0.23671399826277367,
+    "gamma": 0.1168038722410995,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint on",
+    "removed": 6,
+    "selected": [
+      70,
+      104,
+      188,
+      200,
+      203,
+      239
+    ],
+    "cost": 9,
+    "inner_brier": 0.2337016334606131,
+    "gamma": 0.0578552139757954,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint on",
+    "removed": 70,
+    "selected": [
+      6,
+      104,
+      188,
+      200,
+      203,
+      239
+    ],
+    "cost": 9,
+    "inner_brier": 0.2315878169405931,
+    "gamma": 0.1270392005827745,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint on",
+    "removed": 104,
+    "selected": [
+      6,
+      70,
+      188,
+      200,
+      203,
+      239
+    ],
+    "cost": 9,
+    "inner_brier": 0.254040459353791,
+    "gamma": 0.06306618921712723,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint on",
+    "removed": 188,
+    "selected": [
+      6,
+      70,
+      104,
+      200,
+      203,
+      239
+    ],
+    "cost": 9,
+    "inner_brier": 0.22975455103221135,
+    "gamma": 0.09404551665057037,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint on",
+    "removed": 239,
+    "selected": [
+      6,
+      70,
+      104,
+      188,
+      200,
+      203
+    ],
+    "cost": 9,
+    "inner_brier": 0.22319666436087018,
+    "gamma": 0.11036033189521469,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  }
+]

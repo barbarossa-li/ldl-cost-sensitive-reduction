@@ -1,0 +1,91 @@
+{
+  "Forward k": {
+    "additions": [
+      [
+        11,
+        -0.010649365517245046
+      ],
+      [
+        182,
+        0.027345809902297513
+      ],
+      [
+        38,
+        0.014588207721472235
+      ],
+      [
+        102,
+        0.016765979814852477
+      ],
+      [
+        205,
+        0.01341075968865063
+      ]
+    ],
+    "seconds": 6.646837656999992
+  },
+  "Cost-forward budget": {
+    "additions": [],
+    "seconds": 0.0006305100000076891
+  },
+  "Prediction-only": {
+    "trace": [
+      [
+        [],
+        11,
+        -0.010649365517245046,
+        "prediction loss: nonpositive bridge"
+      ],
+      [
+        [
+          11
+        ],
+        188,
+        0.015479561010000031,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          11,
+          188
+        ],
+        84,
+        0.016489430820921303,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          11,
+          84,
+          188
+        ],
+        122,
+        0.0062991292908595176,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          11,
+          84,
+          122,
+          188
+        ],
+        269,
+        0.011974487451220983,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          11,
+          84,
+          122,
+          188,
+          269
+        ],
+        282,
+        0.0074748121289006375,
+        "prediction loss: positive cost-weighted gain"
+      ]
+    ]
+  }
+}

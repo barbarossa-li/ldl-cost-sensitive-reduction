@@ -1,0 +1,26 @@
+{
+  "Adopted heuristic": {
+    "target": 0.09484519525643334,
+    "steps": [
+      [
+        [],
+        164,
+        0.15326059530438238,
+        "positive cost-weighted gain"
+      ]
+    ],
+    "cache_size": 296
+  },
+  "Information-only ablation": {
+    "target": 0.12680493026192155,
+    "steps": [
+      [
+        [],
+        220,
+        0.1606887290172714,
+        "positive cost-weighted gain"
+      ]
+    ],
+    "cache_size": 296
+  }
+}

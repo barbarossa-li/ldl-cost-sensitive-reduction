@@ -1,0 +1,29 @@
+\begin{table}[htbp]
+\centering\small
+\caption{Independent-within-run development audit: five repeats, search size 144 and audit size 48. Pass counts compare the same-run full-attribute predictor.}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llrrrr}
+\hline
+Dataset & Method & Cost & Audit Brier & Passes & Empty outputs\\
+\hline
+Natural Scene & Full & 1648.00 & 0.265200 & 5/5 & 0/5\\
+Natural Scene & Empty & 0.00 & 0.299029 & 0/5 & 5/5\\
+Natural Scene & P before & 17.40 & 0.321073 & 0/5 & 1/5\\
+Natural Scene & P after & 15.60 & 0.327708 & 0/5 & 1/5\\
+Natural Scene & G before & 20.20 & 0.305335 & 1/5 & 1/5\\
+Natural Scene & G after & 17.60 & 0.302816 & 1/5 & 1/5\\
+SBU\_3DFE & Full & 1373.00 & 0.033521 & 5/5 & 0/5\\
+SBU\_3DFE & Empty & 0.00 & 0.031608 & 3/5 & 5/5\\
+SBU\_3DFE & P before & 5.00 & 0.035381 & 1/5 & 1/5\\
+SBU\_3DFE & P after & 4.40 & 0.035360 & 1/5 & 1/5\\
+SBU\_3DFE & G before & 6.00 & 0.034866 & 1/5 & 1/5\\
+SBU\_3DFE & G after & 4.20 & 0.035445 & 1/5 & 1/5\\
+Yeast\_cold & Full & 127.00 & 0.007921 & 5/5 & 0/5\\
+Yeast\_cold & Empty & 0.00 & 0.006770 & 5/5 & 5/5\\
+Yeast\_cold & P before & 0.00 & 0.006770 & 5/5 & 5/5\\
+Yeast\_cold & P after & 0.00 & 0.006770 & 5/5 & 5/5\\
+Yeast\_cold & G before & 0.00 & 0.006770 & 5/5 & 5/5\\
+Yeast\_cold & G after & 0.00 & 0.006770 & 5/5 & 5/5\\
+\hline
+\end{tabular}}
+\end{table}

@@ -1,0 +1,54 @@
+[
+  {
+    "dataset": "M2B",
+    "repeat": 1,
+    "train_n": 384,
+    "method": "All attributes",
+    "attributes": 250,
+    "cost": 1406,
+    "inner_brier": 0.32288255922651626,
+    "test_brier": 0.33549982120634114,
+    "test_kl": 0.6545785973477689,
+    "test_tv": 0.39445005035709824,
+    "test_js": 0.14281214465283887
+  },
+  {
+    "dataset": "M2B",
+    "repeat": 1,
+    "train_n": 384,
+    "method": "Dependency-only",
+    "attributes": 2,
+    "cost": 2,
+    "inner_brier": 0.3117518277368944,
+    "test_brier": 0.3650434614765571,
+    "test_kl": 0.7292507123760021,
+    "test_tv": 0.43180728590375783,
+    "test_js": 0.1615974235161358
+  },
+  {
+    "dataset": "M2B",
+    "repeat": 1,
+    "train_n": 384,
+    "method": "Joint guard",
+    "attributes": 2,
+    "cost": 2,
+    "inner_brier": 0.3117518277368944,
+    "test_brier": 0.3650434614765571,
+    "test_kl": 0.7292507123760021,
+    "test_tv": 0.43180728590375783,
+    "test_js": 0.1615974235161358
+  },
+  {
+    "dataset": "M2B",
+    "repeat": 1,
+    "train_n": 384,
+    "method": "Prediction-only",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.28081883348410386,
+    "test_brier": 0.2984297430123685,
+    "test_kl": 0.5520697322352767,
+    "test_tv": 0.404407129530848,
+    "test_js": 0.13767697631080875
+  }
+]

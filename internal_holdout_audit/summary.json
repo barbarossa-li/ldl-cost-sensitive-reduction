@@ -1,0 +1,164 @@
+[
+  {
+    "dataset": "Natural Scene",
+    "method": "Full",
+    "cost_mean": 1648.0,
+    "audit_brier_mean": 0.26520021432302066,
+    "audit_brier_sd": 0.04014333554954599,
+    "passes_full_reference": 5,
+    "empty_outputs": 0
+  },
+  {
+    "dataset": "Natural Scene",
+    "method": "Empty",
+    "cost_mean": 0.0,
+    "audit_brier_mean": 0.29902880767641016,
+    "audit_brier_sd": 0.04919303868798677,
+    "passes_full_reference": 0,
+    "empty_outputs": 5
+  },
+  {
+    "dataset": "Natural Scene",
+    "method": "Prediction only before",
+    "cost_mean": 17.4,
+    "audit_brier_mean": 0.3210728490341839,
+    "audit_brier_sd": 0.03967468156065827,
+    "passes_full_reference": 0,
+    "empty_outputs": 1
+  },
+  {
+    "dataset": "Natural Scene",
+    "method": "Prediction only after",
+    "cost_mean": 15.6,
+    "audit_brier_mean": 0.32770827949750747,
+    "audit_brier_sd": 0.03792208549975637,
+    "passes_full_reference": 0,
+    "empty_outputs": 1
+  },
+  {
+    "dataset": "Natural Scene",
+    "method": "Guided before",
+    "cost_mean": 20.2,
+    "audit_brier_mean": 0.30533471581922217,
+    "audit_brier_sd": 0.05598955332237855,
+    "passes_full_reference": 1,
+    "empty_outputs": 1
+  },
+  {
+    "dataset": "Natural Scene",
+    "method": "Guided after",
+    "cost_mean": 17.6,
+    "audit_brier_mean": 0.30281567793368036,
+    "audit_brier_sd": 0.049994864764005366,
+    "passes_full_reference": 1,
+    "empty_outputs": 1
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "method": "Full",
+    "cost_mean": 1373.0,
+    "audit_brier_mean": 0.033521129378059046,
+    "audit_brier_sd": 0.006283449138358536,
+    "passes_full_reference": 5,
+    "empty_outputs": 0
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "method": "Empty",
+    "cost_mean": 0.0,
+    "audit_brier_mean": 0.03160761163132929,
+    "audit_brier_sd": 0.0041845757790250895,
+    "passes_full_reference": 3,
+    "empty_outputs": 5
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "method": "Prediction only before",
+    "cost_mean": 5.0,
+    "audit_brier_mean": 0.03538051394356417,
+    "audit_brier_sd": 0.007385117159119427,
+    "passes_full_reference": 1,
+    "empty_outputs": 1
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "method": "Prediction only after",
+    "cost_mean": 4.4,
+    "audit_brier_mean": 0.035359696048544595,
+    "audit_brier_sd": 0.007365206669845602,
+    "passes_full_reference": 1,
+    "empty_outputs": 1
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "method": "Guided before",
+    "cost_mean": 6.0,
+    "audit_brier_mean": 0.034866016636750756,
+    "audit_brier_sd": 0.0060365507499523475,
+    "passes_full_reference": 1,
+    "empty_outputs": 1
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "method": "Guided after",
+    "cost_mean": 4.2,
+    "audit_brier_mean": 0.03544452533848903,
+    "audit_brier_sd": 0.007220603616384889,
+    "passes_full_reference": 1,
+    "empty_outputs": 1
+  },
+  {
+    "dataset": "Yeast_cold",
+    "method": "Full",
+    "cost_mean": 127.0,
+    "audit_brier_mean": 0.007920939090407666,
+    "audit_brier_sd": 0.0011259324136787248,
+    "passes_full_reference": 5,
+    "empty_outputs": 0
+  },
+  {
+    "dataset": "Yeast_cold",
+    "method": "Empty",
+    "cost_mean": 0.0,
+    "audit_brier_mean": 0.006769854280285606,
+    "audit_brier_sd": 0.0008518186956593939,
+    "passes_full_reference": 5,
+    "empty_outputs": 5
+  },
+  {
+    "dataset": "Yeast_cold",
+    "method": "Prediction only before",
+    "cost_mean": 0.0,
+    "audit_brier_mean": 0.006769854280285606,
+    "audit_brier_sd": 0.0008518186956593939,
+    "passes_full_reference": 5,
+    "empty_outputs": 5
+  },
+  {
+    "dataset": "Yeast_cold",
+    "method": "Prediction only after",
+    "cost_mean": 0.0,
+    "audit_brier_mean": 0.006769854280285606,
+    "audit_brier_sd": 0.0008518186956593939,
+    "passes_full_reference": 5,
+    "empty_outputs": 5
+  },
+  {
+    "dataset": "Yeast_cold",
+    "method": "Guided before",
+    "cost_mean": 0.0,
+    "audit_brier_mean": 0.006769854280285606,
+    "audit_brier_sd": 0.0008518186956593939,
+    "passes_full_reference": 5,
+    "empty_outputs": 5
+  },
+  {
+    "dataset": "Yeast_cold",
+    "method": "Guided after",
+    "cost_mean": 0.0,
+    "audit_brier_mean": 0.006769854280285606,
+    "audit_brier_sd": 0.0008518186956593939,
+    "passes_full_reference": 5,
+    "empty_outputs": 5
+  }
+]

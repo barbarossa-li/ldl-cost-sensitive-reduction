@@ -1,0 +1,6 @@
+{
+  "nonempty_subset_cases": 10,
+  "directed_better_than_euclidean": 3,
+  "directed_better_than_manhattan": 3,
+  "warning": "Descriptive repeated-subset cases on three development splits; not independent trials"
+}

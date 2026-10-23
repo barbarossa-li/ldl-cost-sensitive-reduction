@@ -1,0 +1,26 @@
+{
+  "checks": [
+    "24 all-subset training-source orientation checks agree with original directed geometry; probability vectors valid",
+    "Unseen categories, numeric extrapolation, batching invariance, frozen weights and empty-subset global mean verified",
+    "Deterministic training-order tie handling verified",
+    "Real Natural Scene inner-fold interface: 128 fitting objects / 64 validation objects, disjoint; held-out labels are not a prediction input"
+  ],
+  "training_orientation_max_error": 1.3877787807814457e-17,
+  "real_fold": {
+    "dataset": "Natural Scene",
+    "saved_split": "repeat_1_n192",
+    "fold": 0,
+    "fit_n": 128,
+    "validation_n": 64,
+    "all_label_geometry_fit_n": 128,
+    "selected_subset": [
+      11,
+      86,
+      98,
+      128,
+      166,
+      281
+    ],
+    "scope": "Interface/provenance check only; not a loss comparison, selection rerun or benchmark"
+  }
+}

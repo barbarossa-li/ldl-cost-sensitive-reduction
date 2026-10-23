@@ -1,0 +1,65 @@
+\subsection{Computational Complexity and Scalability Analysis}
+\label{subsec:complexity}
+Let $n$ denote the number of training instances, $m = |A|$ the total attribute cardinality, $q$ the label dimension, $K$ the number of inner validation folds, and $k$ the neighbor cardinality in the base predictor. We analyze the asymptotic computational complexity and memory consumption of the proposed framework, explicitly distinguishing offline preprocessing from online combinatorial search.
+
+\subsubsection{Preprocessing and Single-Evaluation Oracles}
+\begin{enumerate}[label=(\roman*)]
+	\item \textbf{Geometric Statistics and Cache Preprocessing ($T_{\mathrm{prep}}$):}
+	Precomputing dense pairwise affinity matrices and kernel bandwidths for each attribute across $n$ instances requires $O(m n^2 \log n)$ operations using comparison-based sorting (or $O(m n^2)$ via linear-time median selection). Multiplying affinity matrices by the $n \times q$ label distribution matrix to derive local label profiles costs $O(m n^2 q)$. Storing the precomputed per-attribute distance matrices, instance labels, and feature caches requires $M_{\mathrm{prep}} = O(m n^2 + n q + n m)$ spatial memory.
+	
+	\item \textbf{Inner Prediction-Loss Evaluation ($T_R(s)$):}
+	Evaluating a candidate subset $P$ of size $s = |P|$ requires aggregating the precomputed pairwise distance components across the $K$ validation folds. Partitioning the training instances into validation and fitting sets across $K$ folds yields an aggregation cost of $O(n^2 s)$. Identifying the $k$-nearest neighbors via partial sorting across the folds and aggregating neighbor distributions incurs $O(n^2 \log n + n k q)$ operations. Hence, a single uncached loss evaluation satisfies:
+	\begin{equation}
+		T_R(s) = O\left(n^2(s + \log n) + n k q\right).
+		\label{eq:eval-loss-complexity}
+	\end{equation}
+	The baseline empty set $P = \varnothing$ bypasses neighborhood sorting and predicts fold-wise global means directly in $O(K n q)$ time.
+	
+	\item \textbf{Granular-Ball Dependency Evaluation ($T_\Gamma(s)$):}
+	Evaluating $\Gamma(P)$ for a candidate $P$ begins with aggregating the symmetric directed dissimilarity matrix $d_P$, taking $O(n^2 s)$ operations. At a granular node containing $b$ instances, medoid discovery and farthest-seed selection require $O(b^2)$ distance lookups, while dispersion updates require $O(b q)$. While the minimum support constraint $s_{\min} \ge 2$ bounds the total number of binary splits by $\lfloor n/s_{\min} \rfloor - 1$, in the worst-case scenario of a completely degenerate, unbalanced tree, summing over all hierarchical levels yields:
+	\begin{equation}
+		T_\Gamma(s) = O\left(n^2 s + n^3 + n^2 q\right).
+		\label{eq:eval-gamma-complexity}
+	\end{equation}
+	Under balanced partitioning, this bound naturally tightens toward $O(n^2 s + n^2 \log(n/s_{\min}) + n q \log(n/s_{\min}))$.
+\end{enumerate}
+
+\subsubsection{Combinatorial Search Procedures}
+Equipped with the single-query oracles $T_R = T_R(m)$ and $T_\Gamma = T_\Gamma(m)$, we characterize the overall time and memory requirements of the reduction algorithms.
+
+\begin{proposition}[Algorithmic Complexity Bounds]
+	\label{prop:complexity-bounds}
+	The asymptotic time complexity and auxiliary memory requirements of the proposed reduction algorithms are characterized as follows:
+\begin{enumerate}[label=(\roman*)]
+		\item \textbf{Dependency-Guided Heuristic:} 
+		The forward expansion evaluates at most $\frac{1}{2}m(m+1)$ candidate additions. The subsequent restarting backward pruning commits at most $m$ successful deletions alongside a final scan of at most $m$ checks, resulting in $O(m^2)$ total subset queries. Evaluating dependency $\Gamma$ strictly on loss-improving candidates ($J(P)$) yields an overall worst-case execution time of:
+		\begin{equation}
+			T_{\mathrm{guided}} = T_{\mathrm{prep}} + O\left(m^2 (T_R + T_\Gamma)\right).
+			\label{eq:guided-complexity}
+		\end{equation}
+		Maintaining subset caches requires $O(m^3)$ scalar indexing storage, ensuring a total memory bound of $O(m n^2 + n q + n m + m^3)$.
+		
+		\item \textbf{Exact Branch-and-Bound:} 
+		The binary inclusion/exclusion tree comprises at most $2^{m+1}-1$ states. Because feasibility depends strictly on $R_{\mathrm{inner}}$, the exact search entirely bypasses the calculation of $\Gamma(P)$. Pruning nodes exceeding the incumbent cost $C^*$ substantially reduces the practical search frontier, while maintaining the theoretical worst-case bound:
+		\begin{equation}
+			T_{\mathrm{exact}} = T_{\mathrm{prep}} + O\left(2^m (T_R + m)\right),
+			\label{eq:exact-complexity}
+		\end{equation}
+		with depth-first execution requiring $O(m^2)$ recursion stack memory when executed without a global exponential subset cache.
+		
+		\item \textbf{Budgeted Exchange Refinement:} 
+		For a subset of size $s$, the 1-exchange and deletion neighborhood contains $|\mathcal{M}| \le s + s(m - s) = O(m^2)$ candidate transformations. Gated by an explicit maximum evaluation budget $B_{\mathrm{eval}}$, the refinement procedure strictly executes within:
+		\begin{equation}
+			T_{\mathrm{refine}} = O\left(B_{\mathrm{eval}} T_R + B_{\mathrm{eval}} m^2 \log m\right),
+			\label{eq:refine-complexity}
+		\end{equation}
+		with auxiliary candidate list storage bounded by $O(m^2)$.
+	\end{enumerate}
+\end{proposition}
+
+\subsubsection{Theoretical Boundaries and Practical Considerations}
+The complexity analysis highlights a clear decoupling between operational acquisition costs $C(P)$ and computational running times:
+\begin{itemize}
+	\item \textbf{Scalability with Data Volume ($n$):} The offline pairwise dissimilarity caching strategy effectively trades memory for time, amortizing the $O(m n^2)$ distance construction over all subsequent subset traversals. This ensures that candidate evaluation reduces to lightweight index manipulation and matrix lookups.
+	\item \textbf{Scalability with Dimensionality ($m$):} For high-dimensional datasets ($m \gg 1$), the quadratic query bound $O(m^2)$ of Algorithm~\ref{alg2:guided} provides a computationally tractability guarantee compared to exponential complete solvers, while the dependency oracle $\Gamma$ focuses search trajectories on distributionally discriminative sub-manifolds without introducing extra tuning hyperparameters.
+\end{itemize}

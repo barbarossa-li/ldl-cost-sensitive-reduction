@@ -1,0 +1,51 @@
+{
+  "selected": {
+    "All attributes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "Joint guard": [
+      6
+    ],
+    "Prediction-only": [],
+    "Budget-forward bridge": []
+  },
+  "audit": {
+    "Constraint off": [],
+    "Constraint on": [
+      6
+    ]
+  },
+  "budget": 1,
+  "risk_reference": 0.007929675915200092,
+  "gamma_reference": 0.010858478122889944,
+  "bridge_path": [
+    [
+      6,
+      -0.0009819365030809485,
+      0.007212583837516458
+    ]
+  ]
+}

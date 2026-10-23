@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "Human_Gene",
+    "repeat": 4,
+    "train_n": 192,
+    "method": "DSIM k",
+    "attributes": 21,
+    "cost": 143,
+    "inner_brier": 0.0129510462555546,
+    "test_brier": 0.017656180361980817,
+    "test_kl": 0.280146674036889,
+    "test_tv": 0.24698979455974965,
+    "test_js": 0.06046941897353024
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 4,
+    "train_n": 192,
+    "method": "DSIM budget",
+    "attributes": 22,
+    "cost": 107,
+    "inner_brier": 0.013078198989855128,
+    "test_brier": 0.017946061570802325,
+    "test_kl": 0.28368724019383496,
+    "test_tv": 0.24962267110910868,
+    "test_js": 0.06158628672504562
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 4,
+    "train_n": 192,
+    "method": "FSLC k",
+    "attributes": 21,
+    "cost": 133,
+    "inner_brier": 0.013088197977234655,
+    "test_brier": 0.017822419384208973,
+    "test_kl": 0.281673489832461,
+    "test_tv": 0.24977533695959328,
+    "test_js": 0.061231065794094534
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 4,
+    "train_n": 192,
+    "method": "FSLC budget",
+    "attributes": 22,
+    "cost": 110,
+    "inner_brier": 0.013135626443303608,
+    "test_brier": 0.017936128698642827,
+    "test_kl": 0.28382461969098377,
+    "test_tv": 0.2497523901961654,
+    "test_js": 0.06165197032143063
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 4,
+    "train_n": 192,
+    "method": "GBFRS k",
+    "attributes": 21,
+    "cost": 130,
+    "inner_brier": 0.012898337797473623,
+    "test_brier": 0.017862693614139995,
+    "test_kl": 0.2829443945645441,
+    "test_tv": 0.24858880541986647,
+    "test_js": 0.06121315158147107
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 4,
+    "train_n": 192,
+    "method": "GBFRS budget",
+    "attributes": 19,
+    "cost": 111,
+    "inner_brier": 0.012764430936413511,
+    "test_brier": 0.017794741975726197,
+    "test_kl": 0.28130613866703,
+    "test_tv": 0.2477457218440574,
+    "test_js": 0.06087174011503317
+  }
+]

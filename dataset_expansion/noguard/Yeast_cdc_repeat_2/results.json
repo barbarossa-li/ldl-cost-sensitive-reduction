@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Yeast_cdc",
+    "repeat": 2,
+    "method": "NoGuard",
+    "attributes": 1,
+    "cost": 8,
+    "inner_loss": 0.0010386869963681176,
+    "inner_loss_empty": 0.0008853595307841926,
+    "audit_brier_sel": 0.0011291257321688142,
+    "audit_brier_empty": 0.0009469786720662641,
+    "audit_brier_full": 0.0010884321546871388,
+    "seconds": 0.07060810003895313
+  }
+]

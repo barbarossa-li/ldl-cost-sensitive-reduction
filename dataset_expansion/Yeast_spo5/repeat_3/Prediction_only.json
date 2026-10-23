@@ -1,0 +1,29 @@
+{
+  "before": [],
+  "after": [],
+  "initial_trace": [],
+  "refinement": {
+    "evaluations": 0,
+    "scans": 1,
+    "accepted": [],
+    "candidates": [],
+    "stop_reason": "neighbourhood exhausted without feasible move"
+  },
+  "results": {
+    "method": "Prediction only",
+    "before_attributes": 0,
+    "after_attributes": 0,
+    "before_cost": 0,
+    "after_cost": 0,
+    "before_loss": 0.017614303204760103,
+    "after_loss": 0.017614303204760103,
+    "full_reference": 0.019217034190893535,
+    "refinement_evaluations": 0,
+    "accepted_moves": 0,
+    "stop_reason": "neighbourhood exhausted without feasible move",
+    "initial_unique_loss_evaluations": 2,
+    "total_unique_loss_evaluations": 2,
+    "initial_seconds": 0.017409599968232214,
+    "refinement_seconds": 6.5999338403344154e-06
+  }
+}

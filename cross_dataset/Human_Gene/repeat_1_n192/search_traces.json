@@ -1,0 +1,44 @@
+{
+  "Dependency-only": {
+    "trace": [
+      [
+        [],
+        6,
+        0.009043398046381107,
+        "dependency: positive cost-weighted gain"
+      ],
+      [
+        [
+          6
+        ],
+        4,
+        0.0042757662289360215,
+        "dependency: positive cost-weighted gain"
+      ]
+    ],
+    "seconds": 0.7589408999920124
+  },
+  "Joint guard": {
+    "trace": [
+      [
+        [],
+        6,
+        0.009043398046381107,
+        "dependency: positive cost-weighted gain"
+      ],
+      [
+        [
+          6
+        ],
+        4,
+        0.0042757662289360215,
+        "dependency: positive cost-weighted gain"
+      ]
+    ],
+    "seconds": 9.229998977389187e-05
+  },
+  "Prediction-only": {
+    "trace": [],
+    "seconds": 9.830000635702163e-05
+  }
+}

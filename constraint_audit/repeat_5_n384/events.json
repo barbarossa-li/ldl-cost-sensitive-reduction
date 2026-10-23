@@ -1,0 +1,37 @@
+[
+  {
+    "phase": "common prefix",
+    "index": 0,
+    "selected": [],
+    "cost": 0,
+    "inner_brier": 0.30703282351905403,
+    "gamma": 0.0,
+    "risk_pass": false,
+    "gamma_pass": false
+  },
+  {
+    "phase": "common prefix",
+    "index": 1,
+    "selected": [
+      194
+    ],
+    "cost": 4,
+    "inner_brier": 0.3076807338049279,
+    "gamma": 0.06797097382742164,
+    "risk_pass": false,
+    "gamma_pass": false
+  },
+  {
+    "phase": "common prefix",
+    "index": 2,
+    "selected": [
+      70,
+      194
+    ],
+    "cost": 5,
+    "inner_brier": 0.28191812186534637,
+    "gamma": 0.12417852749972642,
+    "risk_pass": false,
+    "gamma_pass": true
+  }
+]

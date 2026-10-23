@@ -1,0 +1,19 @@
+{
+  "scope": "Same three development repeat-1 n192 splits; three fixed inner folds; no outer-test evaluation or selection rerun",
+  "subset_rule": "Full, saved original joint, saved prediction-only, saved guided, empty",
+  "learners": [
+    "Euclidean",
+    "Manhattan",
+    "Incoming directed"
+  ],
+  "k": 5,
+  "directed_orientation": "Training source to query target",
+  "fit": "All source weights, bandwidths, profiles and scaling refit only on each inner fitting fold",
+  "parameters": {
+    "beta": 1,
+    "zeta": 0.1
+  },
+  "tie": "Stable fitting-object order",
+  "reference": "Separate full-set validation loss per learner",
+  "caution": "Subsets were selected using the same development folds; this is not an unbiased generalization comparison"
+}

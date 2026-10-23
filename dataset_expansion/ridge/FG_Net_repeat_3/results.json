@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "FG-Net",
+    "repeat": 3,
+    "alpha": 100.0,
+    "ridge_inner_full": 0.06666019803794758,
+    "ridge_inner_empty": 0.075368393387928,
+    "inner_gain": 0.008708195349980422,
+    "audit_brier_ridge": 0.06697874258129038,
+    "audit_brier_empty": 0.07517327490788511,
+    "audit_gain": 0.008194532326594728,
+    "revived": true,
+    "seconds": 0.4813067000359297
+  }
+]

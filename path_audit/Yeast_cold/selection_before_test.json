@@ -1,0 +1,10 @@
+{
+  "selected": [],
+  "cost": 0,
+  "inner_brier": 0.006230647334435509,
+  "inner_reference": 0.007929675915200092,
+  "gamma": 0.0,
+  "original_full_gamma": 0.010858478122889944,
+  "trace": [],
+  "split_source": "cross_dataset/Yeast_cold/repeat_1_n192"
+}

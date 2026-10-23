@@ -1,0 +1,6 @@
+[
+  "80 arbitrary nonmonotone loss/dependency tables: exact agrees with enumeration; heuristic feasible and single-deletion irreducible",
+  "Lower-dependency predictive singleton is accepted",
+  "Nonpositive prediction bridge reaches complementary pair",
+  "Feasible empty subset is retained as zero-cost optimum"
+]

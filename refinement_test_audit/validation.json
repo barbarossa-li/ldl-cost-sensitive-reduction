@@ -1,0 +1,272 @@
+{
+  "records": 90,
+  "saved_brier_checks": [
+    {
+      "dataset": "Natural Scene",
+      "repeat": 1,
+      "method": "Full",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Natural Scene",
+      "repeat": 1,
+      "method": "Prediction only before",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Natural Scene",
+      "repeat": 1,
+      "method": "Guided before",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Natural Scene",
+      "repeat": 2,
+      "method": "Full",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Natural Scene",
+      "repeat": 2,
+      "method": "Prediction only before",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Natural Scene",
+      "repeat": 3,
+      "method": "Full",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Natural Scene",
+      "repeat": 3,
+      "method": "Prediction only before",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Natural Scene",
+      "repeat": 4,
+      "method": "Full",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Natural Scene",
+      "repeat": 4,
+      "method": "Prediction only before",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Natural Scene",
+      "repeat": 5,
+      "method": "Full",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Natural Scene",
+      "repeat": 5,
+      "method": "Prediction only before",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 1,
+      "method": "Full",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 1,
+      "method": "Empty",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 1,
+      "method": "Prediction only before",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 1,
+      "method": "Guided before",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 2,
+      "method": "Full",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 2,
+      "method": "Empty",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 2,
+      "method": "Prediction only before",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 3,
+      "method": "Full",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 3,
+      "method": "Empty",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 3,
+      "method": "Prediction only before",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 4,
+      "method": "Full",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 4,
+      "method": "Empty",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 4,
+      "method": "Prediction only before",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 5,
+      "method": "Full",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 5,
+      "method": "Empty",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "repeat": 5,
+      "method": "Prediction only before",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 1,
+      "method": "Full",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 1,
+      "method": "Empty",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 1,
+      "method": "Prediction only before",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 1,
+      "method": "Guided before",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 2,
+      "method": "Full",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 2,
+      "method": "Empty",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 2,
+      "method": "Prediction only before",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 3,
+      "method": "Full",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 3,
+      "method": "Empty",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 3,
+      "method": "Prediction only before",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 4,
+      "method": "Full",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 4,
+      "method": "Empty",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 4,
+      "method": "Prediction only before",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 5,
+      "method": "Full",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 5,
+      "method": "Empty",
+      "brier_error": 0.0
+    },
+    {
+      "dataset": "Yeast_cold",
+      "repeat": 5,
+      "method": "Prediction only before",
+      "brier_error": 0.0
+    }
+  ],
+  "all_split_train_test_disjoint": true,
+  "source_checkpoints_unchanged": true,
+  "fit_uses_training_only": true,
+  "test_used_for_evaluation_only": true,
+  "retuning": false,
+  "new_selection": false,
+  "manuscript_pdf_pages": 90,
+  "visual_check": "Pages 83\u201387 inspected; Table and Figure 24 legible without overlap",
+  "latex_check": "Two successful passes; no warnings or overfull boxes"
+}

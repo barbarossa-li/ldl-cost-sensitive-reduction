@@ -1,0 +1,1 @@
+PASS: 15 shared frozen paths; selection checkpoints, common budget, identical risk reference, on implies off feasibility, exact selected sets, no invalid output reported feasible. Original deletion diagnostics use saved training decisions before test evaluation.

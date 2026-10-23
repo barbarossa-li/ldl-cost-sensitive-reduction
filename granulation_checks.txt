@@ -1,0 +1,5 @@
+Adopted model: zeta=.1, kappa=.1, smin=2, alpha=1, beta=1, m=2
+Gamma(a)=0.0922402760947
+Gamma(a,b)=0
+Gain=-0.0922402760947
+Seed 20260930; trial 3; synthetic mechanism check.

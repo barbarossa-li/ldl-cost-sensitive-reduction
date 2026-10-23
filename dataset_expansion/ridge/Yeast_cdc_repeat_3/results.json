@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Yeast_cdc",
+    "repeat": 3,
+    "alpha": 100.0,
+    "ridge_inner_full": 0.0009410003886556294,
+    "ridge_inner_empty": 0.0009339644333963192,
+    "inner_gain": -7.035955259310201e-06,
+    "audit_brier_ridge": 0.0009044586026701879,
+    "audit_brier_empty": 0.0008723645040690254,
+    "audit_gain": -3.209409860116248e-05,
+    "revived": false,
+    "seconds": 0.006203499971888959
+  }
+]

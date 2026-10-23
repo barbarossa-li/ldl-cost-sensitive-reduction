@@ -1,0 +1,59 @@
+{
+  "Joint guard": [
+    [
+      [],
+      22,
+      0.023245209521230336,
+      "dependency: positive cost-weighted gain"
+    ],
+    [
+      [
+        22
+      ],
+      6,
+      0.000197731246075839,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        6,
+        22
+      ],
+      18,
+      0.00030540097428657237,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        6,
+        18,
+        22
+      ],
+      0,
+      0.013648516961413056,
+      "dependency: positive cost-weighted gain"
+    ],
+    [
+      [
+        0,
+        6,
+        18,
+        22
+      ],
+      18,
+      0.023034462099249517,
+      "delete"
+    ],
+    [
+      [
+        0,
+        6,
+        22
+      ],
+      22,
+      -0.018319554096377463,
+      "delete"
+    ]
+  ],
+  "Prediction-only": []
+}

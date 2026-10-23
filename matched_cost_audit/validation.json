@@ -1,0 +1,18 @@
+{
+  "contexts": 18,
+  "control_records": 246,
+  "selected_inner_and_audit_reproduced": 18,
+  "matching_cardinality_total_cost_profile": true,
+  "controls_frozen_before_loss_evaluation": true,
+  "selection_sources_unchanged": true,
+  "controls_use_no_labels": true,
+  "outer_test_used": false,
+  "new_selection": false,
+  "retuning": false,
+  "nonempty_contexts": 12,
+  "nonempty_controls": 240,
+  "degenerate_empty_records": 6,
+  "manuscript_pdf_pages": 100,
+  "visual_check": "Pages 93\u201396 inspected; Table and Figure 28 readable without overlap",
+  "latex_check": "Two successful passes; no warnings or overfull boxes"
+}

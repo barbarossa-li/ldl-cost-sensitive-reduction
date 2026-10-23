@@ -1,0 +1,29 @@
+\begin{table}[htbp]
+\centering\small
+\caption{Three-repeat frozen evaluation at search size 432 and reserved audit size 144. All means refer to development audits, not outer tests.}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llrrrr}
+\hline
+Dataset & Method & Cost & Audit Brier $\pm$ SD & Passes & Empty outputs\\
+\hline
+Natural Scene & Full & 1648.00 & 0.232987 $\pm$ 0.024755 & 3/3 & 0/3\\
+Natural Scene & Empty & 0.00 & 0.276018 $\pm$ 0.030678 & 0/3 & 3/3\\
+Natural Scene & P before & 13.00 & 0.244915 $\pm$ 0.027034 & 0/3 & 0/3\\
+Natural Scene & P after & 9.67 & 0.244532 $\pm$ 0.021687 & 0/3 & 0/3\\
+Natural Scene & G before & 13.67 & 0.246020 $\pm$ 0.015465 & 1/3 & 0/3\\
+Natural Scene & G after & 10.33 & 0.249107 $\pm$ 0.023663 & 0/3 & 0/3\\
+SBU\_3DFE & Full & 1373.00 & 0.028781 $\pm$ 0.002249 & 3/3 & 0/3\\
+SBU\_3DFE & Empty & 0.00 & 0.032800 $\pm$ 0.002247 & 0/3 & 3/3\\
+SBU\_3DFE & P before & 14.67 & 0.033039 $\pm$ 0.001814 & 0/3 & 0/3\\
+SBU\_3DFE & P after & 12.33 & 0.034247 $\pm$ 0.000645 & 0/3 & 0/3\\
+SBU\_3DFE & G before & 10.33 & 0.031592 $\pm$ 0.002033 & 0/3 & 0/3\\
+SBU\_3DFE & G after & 7.33 & 0.032566 $\pm$ 0.002857 & 0/3 & 0/3\\
+Yeast\_cold & Full & 127.00 & 0.007124 $\pm$ 0.000238 & 3/3 & 0/3\\
+Yeast\_cold & Empty & 0.00 & 0.006046 $\pm$ 0.000192 & 3/3 & 3/3\\
+Yeast\_cold & P before & 0.00 & 0.006046 $\pm$ 0.000192 & 3/3 & 3/3\\
+Yeast\_cold & P after & 0.00 & 0.006046 $\pm$ 0.000192 & 3/3 & 3/3\\
+Yeast\_cold & G before & 0.00 & 0.006046 $\pm$ 0.000192 & 3/3 & 3/3\\
+Yeast\_cold & G after & 0.00 & 0.006046 $\pm$ 0.000192 & 3/3 & 3/3\\
+\hline
+\end{tabular}}
+\end{table}

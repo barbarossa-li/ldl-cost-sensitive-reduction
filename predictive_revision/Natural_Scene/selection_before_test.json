@@ -1,0 +1,136 @@
+{
+  "selected": [
+    11,
+    86,
+    98,
+    128,
+    166,
+    281
+  ],
+  "cost": 12.0,
+  "inner_brier": 0.25926427856855044,
+  "inner_reference": 0.25959198103527265,
+  "gamma": 0.1029312024398654,
+  "original_full_gamma": 0.11391817028067673,
+  "trace": [
+    {
+      "phase": "add",
+      "before": [],
+      "attribute": 11,
+      "prediction_gain": 0.00031831631233397717,
+      "rule": "prediction-improving dependency gain"
+    },
+    {
+      "phase": "add",
+      "before": [
+        11
+      ],
+      "attribute": 173,
+      "prediction_gain": 0.0009975073846046345,
+      "rule": "prediction-improving dependency gain"
+    },
+    {
+      "phase": "add",
+      "before": [
+        11,
+        173
+      ],
+      "attribute": 281,
+      "prediction_gain": 0.0014958895887633439,
+      "rule": "prediction-improving dependency gain"
+    },
+    {
+      "phase": "add",
+      "before": [
+        11,
+        173,
+        281
+      ],
+      "attribute": 147,
+      "prediction_gain": 0.0025994500169289614,
+      "rule": "prediction-improving dependency gain"
+    },
+    {
+      "phase": "add",
+      "before": [
+        11,
+        147,
+        173,
+        281
+      ],
+      "attribute": 98,
+      "prediction_gain": 0.021524583685469723,
+      "rule": "prediction gain fallback"
+    },
+    {
+      "phase": "add",
+      "before": [
+        11,
+        98,
+        147,
+        173,
+        281
+      ],
+      "attribute": 86,
+      "prediction_gain": 0.006943352668297209,
+      "rule": "prediction-improving dependency gain"
+    },
+    {
+      "phase": "add",
+      "before": [
+        11,
+        86,
+        98,
+        147,
+        173,
+        281
+      ],
+      "attribute": 166,
+      "prediction_gain": 0.006381927042312718,
+      "rule": "prediction-improving dependency gain"
+    },
+    {
+      "phase": "add",
+      "before": [
+        11,
+        86,
+        98,
+        147,
+        166,
+        173,
+        281
+      ],
+      "attribute": 128,
+      "prediction_gain": 0.008132255814645717,
+      "rule": "prediction gain fallback"
+    },
+    {
+      "phase": "delete",
+      "before": [
+        11,
+        86,
+        98,
+        128,
+        147,
+        166,
+        173,
+        281
+      ],
+      "attribute": 147
+    },
+    {
+      "phase": "delete",
+      "before": [
+        11,
+        86,
+        98,
+        128,
+        166,
+        173,
+        281
+      ],
+      "attribute": 173
+    }
+  ],
+  "split_source": "stability/repeat_1_n192"
+}

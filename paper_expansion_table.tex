@@ -1,0 +1,30 @@
+\begin{table}[htbp]
+\centering\scriptsize\renewcommand{\arraystretch}{1.15}\setlength{\tabcolsep}{3.5pt}
+\caption{Dataset expansion under the frozen nested audit protocol (three repeats). Costs and audit Brier scores are means; passes compare the audit loss of each selection with the full-attribute reference. Datasets with fewer than 832 objects use the single-192-block development variant.}
+\label{tab:expansion-main}
+\begin{tabular}{lrrrrrrr}\hline
+Dataset & $C(A)$ & $C(G+)$ & Attrs & Full & $G+$ & Pass & Test\\\hline
+Yeast\_spo & 127 & 0.0 & 0.0 & 0.0097 & 0.0082 & 3/3 & 0.0081\\
+Yeast\_alpha & 127 & 0.0 & 0.0 & 0.0007 & 0.0006 & 3/3 & 0.0006\\
+Yeast\_cdc & 127 & 0.0 & 0.0 & 0.0011 & 0.0009 & 3/3 & 0.0009\\
+Yeast\_diau & 127 & 0.0 & 0.0 & 0.0041 & 0.0037 & 3/3 & 0.0039\\
+Yeast\_dtt & 127 & 0.0 & 0.0 & 0.0035 & 0.0032 & 3/3 & 0.0029\\
+Yeast\_elu & 127 & 0.0 & 0.0 & 0.0010 & 0.0009 & 3/3 & 0.0009\\
+Yeast\_heat & 127 & 0.0 & 0.0 & 0.0049 & 0.0046 & 3/3 & 0.0042\\
+Yeast\_spo5 & 127 & 0.0 & 0.0 & 0.0220 & 0.0199 & 3/3 & 0.0201\\
+Yeast\_spoem & 127 & 0.0 & 0.0 & 0.0250 & 0.0236 & 2/3 & 0.0241\\
+FG\_Net & 1412 & 0.0 & 0.0 & 0.0846 & 0.0746 & 3/3 & 0.0749\\
+SJAFFE & 1373 & 28.3 & 10.0 & 0.0175 & 0.0247 & 0/3 & 0.0263\\
+Music & 752 & 0.0 & 0.0 & 0.0260 & 0.0227 & 3/3 & 0.0213\\
+Painting & 831 & 0.0 & 0.0 & 0.1563 & 0.1477 & 2/3 & 0.1306\\
+SCUT\_FBP & 1690 & 0.0 & 0.0 & 0.1541 & 0.1335 & 3/3 & 0.1360\\
+fbp5500 & 2841 & 19.3 & 9.3 & 0.0621 & 0.0728 & 0/3 & 0.0767\\
+emotion6 & 979 & 0.0 & 0.0 & 0.2205 & 0.1961 & 3/3 & 0.1907\\
+RAF\_ML & 1162 & 7.0 & 3.0 & 0.1945 & 0.2070 & 1/3 & 0.2186\\
+Movie & 10168 & 0.0 & 0.0 & 0.0507 & 0.0487 & 3/3 & 0.0470\\
+Flickr & 979 & 0.0 & 0.0 & 0.2405 & 0.2135 & 3/3 & 0.2164\\
+Twitter & 979 & 0.0 & 0.0 & 0.2167 & 0.1922 & 3/3 & 0.1977\\
+MOR\_PH & 1162 & 0.0 & 0.0 & 0.0811 & 0.0752 & 3/3 & 0.0743\\
+Human\_Gene & 229 & 0.0 & 0.0 & 0.0216 & 0.0187 & 3/3 & 0.0140\\
+M2B & 1406 & 0.0 & 0.0 & 0.3155 & 0.2759 & 3/3 & 0.2895\\
+\hline\end{tabular}\end{table}

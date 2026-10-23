@@ -1,0 +1,1 @@
+PASS: 40 constructions, including tied farthest pairs, identical leaves/eligible sets/dependency/history against original implementation. Only farthest-pair enumeration vectorized.

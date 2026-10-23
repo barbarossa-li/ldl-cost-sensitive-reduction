@@ -1,0 +1,28 @@
+[
+  {
+    "repeat": 5,
+    "train_n": 384,
+    "mode": "Constraint off",
+    "success": false,
+    "attributes": null,
+    "cost": null,
+    "selected": null,
+    "inner_brier": null,
+    "gamma": null,
+    "test_brier": null,
+    "test_kl": null
+  },
+  {
+    "repeat": 5,
+    "train_n": 384,
+    "mode": "Constraint on",
+    "success": false,
+    "attributes": null,
+    "cost": null,
+    "selected": null,
+    "inner_brier": null,
+    "gamma": null,
+    "test_brier": null,
+    "test_kl": null
+  }
+]

@@ -1,0 +1,8 @@
+% Appended related-work passages: cost-sensitive learning and granular-ball computing.
+% Integrate into introduction_ASC.tex subsection 1.1 at the marked positions.
+
+% ---- Passage A: after the SVM cost-sensitive sentence (replaces the single \cite{AL} sentence) ----
+Cost-sensitive learning distinguishes many cost types, including test cost, misclassification cost, computation, and human involvement~\cite{Turney2000}. In rough-set research, test-cost-sensitive attribute reduction asks which attributes to acquire for each object at a bounded budget: Min et al.~\cite{Min2014TestCost} formulate feature selection with a test cost constraint as a constraint-satisfaction problem solved by backtracking and heuristics, and decision-theoretic rough sets price the reliance on attributes through decision costs~\cite{Jia2013MinCost,Zhao2009DTRS}. These studies share our notion of acquisition cost but assume crisp decision classes; adapting the objective to label-distribution supervision and to a predictor-based feasibility constraint is the step taken here.
+
+% ---- Passage B: after the GBG++ sentence in the granular-ball paragraph ----
+Granular-ball computing itself has developed beyond classification: efficient and adaptive ball generation~\cite{Xia2023GBadaptive} and unified granular-ball models of Pawlak and neighborhood rough sets~\cite{Xia2023GBRS} have made deterministic, robust granulation practical at scale. The present construction follows this line in spirit---deterministic splitting with explicit stopping rules---but its splitting criterion is distribution consistency under a directed, source-dependent dissimilarity, and its stopping rules serve a dependency that feeds cost-sensitive search rather than classification purity.

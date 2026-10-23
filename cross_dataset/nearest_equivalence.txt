@@ -1,0 +1,1 @@
+PASS: vectorized partial nearest5 equals stable full sorting on nine continuous/tied/all-zero cases up to 256x576. Boundary distance ties resolved by original fit index. No algorithm or parameter changed.

@@ -1,0 +1,12 @@
+{
+  "repeat": 2,
+  "train_n": 384,
+  "method": "Budget-forward bridge",
+  "attributes": 3,
+  "cost": 7,
+  "inner_brier": 0.25250043717795556,
+  "test_brier": 0.2704930923186266,
+  "test_kl": 1.13413984119363,
+  "test_tv": 0.498790352829822,
+  "test_js": 0.23680989720650997
+}

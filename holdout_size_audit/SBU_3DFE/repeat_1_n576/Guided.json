@@ -1,0 +1,207 @@
+{
+  "before": [
+    70,
+    164,
+    173,
+    188
+  ],
+  "after": [
+    70,
+    164,
+    173,
+    188
+  ],
+  "initial_trace": [
+    {
+      "phase": "add",
+      "before": [],
+      "attribute": 201,
+      "prediction_gain": -0.0018948538304378523,
+      "rule": "nonpositive prediction bridge"
+    },
+    {
+      "phase": "add",
+      "before": [
+        201
+      ],
+      "attribute": 70,
+      "prediction_gain": 0.0004309166831107797,
+      "rule": "prediction-improving dependency gain"
+    },
+    {
+      "phase": "add",
+      "before": [
+        70,
+        201
+      ],
+      "attribute": 104,
+      "prediction_gain": 0.0012922930640874436,
+      "rule": "prediction-improving dependency gain"
+    },
+    {
+      "phase": "add",
+      "before": [
+        70,
+        104,
+        201
+      ],
+      "attribute": 188,
+      "prediction_gain": 0.00036807498005823197,
+      "rule": "prediction-improving dependency gain"
+    },
+    {
+      "phase": "add",
+      "before": [
+        70,
+        104,
+        188,
+        201
+      ],
+      "attribute": 164,
+      "prediction_gain": 0.000403934393664325,
+      "rule": "prediction-improving dependency gain"
+    },
+    {
+      "phase": "add",
+      "before": [
+        70,
+        104,
+        164,
+        188,
+        201
+      ],
+      "attribute": 173,
+      "prediction_gain": 0.0018696421462087234,
+      "rule": "prediction gain fallback"
+    },
+    {
+      "phase": "delete",
+      "before": [
+        70,
+        104,
+        164,
+        173,
+        188,
+        201
+      ],
+      "attribute": 201
+    },
+    {
+      "phase": "delete",
+      "before": [
+        70,
+        104,
+        164,
+        173,
+        188
+      ],
+      "attribute": 104
+    }
+  ],
+  "refinement": {
+    "evaluations": 4,
+    "scans": 1,
+    "accepted": [],
+    "candidates": [
+      {
+        "scan": 1,
+        "before": [
+          70,
+          164,
+          173,
+          188
+        ],
+        "removed": 70,
+        "added": -1,
+        "cost": 3,
+        "loss": 0.03439859589306294,
+        "feasible": false,
+        "subset": [
+          164,
+          173,
+          188
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          164,
+          173,
+          188
+        ],
+        "removed": 164,
+        "added": -1,
+        "cost": 3,
+        "loss": 0.03572813021123081,
+        "feasible": false,
+        "subset": [
+          70,
+          173,
+          188
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          164,
+          173,
+          188
+        ],
+        "removed": 173,
+        "added": -1,
+        "cost": 3,
+        "loss": 0.03477036864849768,
+        "feasible": false,
+        "subset": [
+          70,
+          164,
+          188
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          164,
+          173,
+          188
+        ],
+        "removed": 188,
+        "added": -1,
+        "cost": 3,
+        "loss": 0.033120280077401996,
+        "feasible": false,
+        "subset": [
+          70,
+          164,
+          173
+        ]
+      }
+    ],
+    "stop_reason": "neighbourhood exhausted without feasible move"
+  },
+  "results": {
+    "dataset": "SBU_3DFE",
+    "repeat": 1,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 144,
+    "method": "Guided",
+    "before_attributes": 4,
+    "after_attributes": 4,
+    "before_cost": 4,
+    "after_cost": 4,
+    "before_loss": 0.032416702896184084,
+    "after_loss": 0.032416702896184084,
+    "full_reference": 0.032939476038970066,
+    "refinement_evaluations": 4,
+    "accepted_moves": 0,
+    "stop_reason": "neighbourhood exhausted without feasible move",
+    "initial_unique_loss_evaluations": 1452,
+    "total_unique_loss_evaluations": 1452,
+    "initial_seconds": 30.27506437300144,
+    "refinement_seconds": 0.000262486999417888
+  }
+}

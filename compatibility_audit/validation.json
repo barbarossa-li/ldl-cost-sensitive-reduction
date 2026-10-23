@@ -1,0 +1,10 @@
+{
+  "scope": "Frozen-candidate compatibility diagnostic; active algorithm unchanged",
+  "blocked_candidates": 47,
+  "cost_and_inner_loss_improving": 29,
+  "cost_inner_and_test_improving": 15,
+  "direct_identity_checks": 9,
+  "identity_max_absolute_error": 5.551115123125783e-17,
+  "pdf_pages": 54,
+  "validation": "pdflatex twice; no undefined references or overfull boxes; new pages visually inspected"
+}

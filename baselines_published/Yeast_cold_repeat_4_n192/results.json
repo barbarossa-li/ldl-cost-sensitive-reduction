@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 192,
+    "method": "DSIM k",
+    "attributes": 2,
+    "cost": 12,
+    "inner_brier": 0.008197506622952376,
+    "test_brier": 0.008040541878723276,
+    "test_kl": 0.016415523365865464,
+    "test_tv": 0.06893436223594174,
+    "test_js": 0.004159601977247139
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 192,
+    "method": "DSIM budget",
+    "attributes": 2,
+    "cost": 3,
+    "inner_brier": 0.00805839985961151,
+    "test_brier": 0.008161110602305417,
+    "test_kl": 0.01667218635878811,
+    "test_tv": 0.06973968695299618,
+    "test_js": 0.004222133116884642
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 192,
+    "method": "FSLC k",
+    "attributes": 2,
+    "cost": 12,
+    "inner_brier": 0.008197506622952376,
+    "test_brier": 0.008040541878723276,
+    "test_kl": 0.016415523365865464,
+    "test_tv": 0.06893436223594174,
+    "test_js": 0.004159601977247139
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 192,
+    "method": "FSLC budget",
+    "attributes": 2,
+    "cost": 3,
+    "inner_brier": 0.00805839985961151,
+    "test_brier": 0.008161110602305417,
+    "test_kl": 0.01667218635878811,
+    "test_tv": 0.06973968695299618,
+    "test_js": 0.004222133116884642
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 192,
+    "method": "GBFRS k",
+    "attributes": 2,
+    "cost": 13,
+    "inner_brier": 0.00784745414981139,
+    "test_brier": 0.008159578584815766,
+    "test_kl": 0.016652982203999835,
+    "test_tv": 0.07070244376952087,
+    "test_js": 0.004227251558883306
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 192,
+    "method": "GBFRS budget",
+    "attributes": 2,
+    "cost": 4,
+    "inner_brier": 0.007519437878272624,
+    "test_brier": 0.008435987874829997,
+    "test_kl": 0.017231894733321984,
+    "test_tv": 0.07177618248583896,
+    "test_js": 0.004360156218173726
+  }
+]

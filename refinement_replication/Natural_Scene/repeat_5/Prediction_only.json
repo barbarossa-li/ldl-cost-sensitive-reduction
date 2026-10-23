@@ -1,0 +1,3269 @@
+{
+  "before": [
+    70,
+    170
+  ],
+  "after": [
+    70,
+    184
+  ],
+  "initial_trace": [
+    [
+      [],
+      170,
+      0.0008392859644402173,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        170
+      ],
+      70,
+      0.030395757742099072,
+      "prediction loss: positive cost-weighted gain"
+    ]
+  ],
+  "refinement": {
+    "evaluations": 200,
+    "scans": 1,
+    "accepted": [
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 184,
+        "cost": 5,
+        "loss": 0.2603513581980789,
+        "feasible": true,
+        "subset": [
+          70,
+          184
+        ]
+      }
+    ],
+    "candidates": [
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": -1,
+        "cost": 1,
+        "loss": 0.3256067344237929,
+        "feasible": false,
+        "subset": [
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 6,
+        "cost": 2,
+        "loss": 0.31417710477721855,
+        "feasible": false,
+        "subset": [
+          6,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 47,
+        "cost": 2,
+        "loss": 0.30712134676215236,
+        "feasible": false,
+        "subset": [
+          47,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 51,
+        "cost": 2,
+        "loss": 0.31202268276740974,
+        "feasible": false,
+        "subset": [
+          51,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 52,
+        "cost": 2,
+        "loss": 0.32262218860986563,
+        "feasible": false,
+        "subset": [
+          52,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 54,
+        "cost": 2,
+        "loss": 0.30742849793640875,
+        "feasible": false,
+        "subset": [
+          54,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 77,
+        "cost": 2,
+        "loss": 0.32615458786027673,
+        "feasible": false,
+        "subset": [
+          70,
+          77
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 84,
+        "cost": 2,
+        "loss": 0.3117889930826285,
+        "feasible": false,
+        "subset": [
+          70,
+          84
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 98,
+        "cost": 2,
+        "loss": 0.2904684376585461,
+        "feasible": false,
+        "subset": [
+          70,
+          98
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 99,
+        "cost": 2,
+        "loss": 0.3297621082406991,
+        "feasible": false,
+        "subset": [
+          70,
+          99
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 104,
+        "cost": 2,
+        "loss": 0.28875372567215835,
+        "feasible": false,
+        "subset": [
+          70,
+          104
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 122,
+        "cost": 2,
+        "loss": 0.2891098738929747,
+        "feasible": false,
+        "subset": [
+          70,
+          122
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 152,
+        "cost": 2,
+        "loss": 0.29172138789895274,
+        "feasible": false,
+        "subset": [
+          70,
+          152
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 164,
+        "cost": 2,
+        "loss": 0.2926344514372797,
+        "feasible": false,
+        "subset": [
+          70,
+          164
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 173,
+        "cost": 2,
+        "loss": 0.3100042220547213,
+        "feasible": false,
+        "subset": [
+          70,
+          173
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 177,
+        "cost": 2,
+        "loss": 0.3054962887713276,
+        "feasible": false,
+        "subset": [
+          70,
+          177
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 188,
+        "cost": 2,
+        "loss": 0.2699202364248165,
+        "feasible": false,
+        "subset": [
+          70,
+          188
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 213,
+        "cost": 2,
+        "loss": 0.2979822920552866,
+        "feasible": false,
+        "subset": [
+          70,
+          213
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 214,
+        "cost": 2,
+        "loss": 0.32723977174853375,
+        "feasible": false,
+        "subset": [
+          70,
+          214
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 220,
+        "cost": 2,
+        "loss": 0.3024076375673356,
+        "feasible": false,
+        "subset": [
+          70,
+          220
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 225,
+        "cost": 2,
+        "loss": 0.3131832196642708,
+        "feasible": false,
+        "subset": [
+          70,
+          225
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 234,
+        "cost": 2,
+        "loss": 0.3248412031268215,
+        "feasible": false,
+        "subset": [
+          70,
+          234
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 235,
+        "cost": 2,
+        "loss": 0.31058536726625824,
+        "feasible": false,
+        "subset": [
+          70,
+          235
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 239,
+        "cost": 2,
+        "loss": 0.28542863973100524,
+        "feasible": false,
+        "subset": [
+          70,
+          239
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 247,
+        "cost": 2,
+        "loss": 0.31482043154448797,
+        "feasible": false,
+        "subset": [
+          70,
+          247
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 252,
+        "cost": 2,
+        "loss": 0.29955353545596364,
+        "feasible": false,
+        "subset": [
+          70,
+          252
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 261,
+        "cost": 2,
+        "loss": 0.32158313738769745,
+        "feasible": false,
+        "subset": [
+          70,
+          261
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 269,
+        "cost": 2,
+        "loss": 0.29925951930725503,
+        "feasible": false,
+        "subset": [
+          70,
+          269
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 274,
+        "cost": 2,
+        "loss": 0.32876177916214855,
+        "feasible": false,
+        "subset": [
+          70,
+          274
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 276,
+        "cost": 2,
+        "loss": 0.3122171210527052,
+        "feasible": false,
+        "subset": [
+          70,
+          276
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 281,
+        "cost": 2,
+        "loss": 0.28712623094052486,
+        "feasible": false,
+        "subset": [
+          70,
+          281
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 282,
+        "cost": 2,
+        "loss": 0.31791676159021315,
+        "feasible": false,
+        "subset": [
+          70,
+          282
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 9,
+        "cost": 3,
+        "loss": 0.3056271559919718,
+        "feasible": false,
+        "subset": [
+          9,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 22,
+        "cost": 3,
+        "loss": 0.31576307889538063,
+        "feasible": false,
+        "subset": [
+          22,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 43,
+        "cost": 3,
+        "loss": 0.30831241548311233,
+        "feasible": false,
+        "subset": [
+          43,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 64,
+        "cost": 3,
+        "loss": 0.3118579708593631,
+        "feasible": false,
+        "subset": [
+          64,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 74,
+        "cost": 3,
+        "loss": 0.32210185360967714,
+        "feasible": false,
+        "subset": [
+          70,
+          74
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 86,
+        "cost": 3,
+        "loss": 0.32595822979692013,
+        "feasible": false,
+        "subset": [
+          70,
+          86
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 105,
+        "cost": 3,
+        "loss": 0.31155296999605464,
+        "feasible": false,
+        "subset": [
+          70,
+          105
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 107,
+        "cost": 3,
+        "loss": 0.30911258904000105,
+        "feasible": false,
+        "subset": [
+          70,
+          107
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 126,
+        "cost": 3,
+        "loss": 0.27107581515128865,
+        "feasible": false,
+        "subset": [
+          70,
+          126
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 128,
+        "cost": 3,
+        "loss": 0.2789708050355418,
+        "feasible": false,
+        "subset": [
+          70,
+          128
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 130,
+        "cost": 3,
+        "loss": 0.2877347681024417,
+        "feasible": false,
+        "subset": [
+          70,
+          130
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 134,
+        "cost": 3,
+        "loss": 0.28096843201680727,
+        "feasible": false,
+        "subset": [
+          70,
+          134
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 139,
+        "cost": 3,
+        "loss": 0.3099255345997833,
+        "feasible": false,
+        "subset": [
+          70,
+          139
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 141,
+        "cost": 3,
+        "loss": 0.3114796696571695,
+        "feasible": false,
+        "subset": [
+          70,
+          141
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 196,
+        "cost": 3,
+        "loss": 0.3250870222177599,
+        "feasible": false,
+        "subset": [
+          70,
+          196
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 200,
+        "cost": 3,
+        "loss": 0.32190204708756737,
+        "feasible": false,
+        "subset": [
+          70,
+          200
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 226,
+        "cost": 3,
+        "loss": 0.3305277328389587,
+        "feasible": false,
+        "subset": [
+          70,
+          226
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 255,
+        "cost": 3,
+        "loss": 0.3073475414193348,
+        "feasible": false,
+        "subset": [
+          70,
+          255
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 262,
+        "cost": 3,
+        "loss": 0.32301978049194896,
+        "feasible": false,
+        "subset": [
+          70,
+          262
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 263,
+        "cost": 3,
+        "loss": 0.30757565250922264,
+        "feasible": false,
+        "subset": [
+          70,
+          263
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 278,
+        "cost": 3,
+        "loss": 0.291719625351486,
+        "feasible": false,
+        "subset": [
+          70,
+          278
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 280,
+        "cost": 3,
+        "loss": 0.3131240856782261,
+        "feasible": false,
+        "subset": [
+          70,
+          280
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 288,
+        "cost": 3,
+        "loss": 0.31530584075346535,
+        "feasible": false,
+        "subset": [
+          70,
+          288
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 11,
+        "cost": 4,
+        "loss": 0.3024900044791567,
+        "feasible": false,
+        "subset": [
+          11,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 14,
+        "cost": 4,
+        "loss": 0.3281228713834689,
+        "feasible": false,
+        "subset": [
+          14,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 18,
+        "cost": 4,
+        "loss": 0.33181970206402694,
+        "feasible": false,
+        "subset": [
+          18,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 60,
+        "cost": 4,
+        "loss": 0.30950124474727575,
+        "feasible": false,
+        "subset": [
+          60,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 67,
+        "cost": 4,
+        "loss": 0.31435036922618204,
+        "feasible": false,
+        "subset": [
+          67,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 78,
+        "cost": 4,
+        "loss": 0.32736674695057294,
+        "feasible": false,
+        "subset": [
+          70,
+          78
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 95,
+        "cost": 4,
+        "loss": 0.3189075193222583,
+        "feasible": false,
+        "subset": [
+          70,
+          95
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 110,
+        "cost": 4,
+        "loss": 0.2796825335050029,
+        "feasible": false,
+        "subset": [
+          70,
+          110
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 111,
+        "cost": 4,
+        "loss": 0.3089436514691852,
+        "feasible": false,
+        "subset": [
+          70,
+          111
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 124,
+        "cost": 4,
+        "loss": 0.28617621563793144,
+        "feasible": false,
+        "subset": [
+          70,
+          124
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 144,
+        "cost": 4,
+        "loss": 0.29420039146876903,
+        "feasible": false,
+        "subset": [
+          70,
+          144
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 147,
+        "cost": 4,
+        "loss": 0.3000927094412358,
+        "feasible": false,
+        "subset": [
+          70,
+          147
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 161,
+        "cost": 4,
+        "loss": 0.3048540222281389,
+        "feasible": false,
+        "subset": [
+          70,
+          161
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 163,
+        "cost": 4,
+        "loss": 0.30873388044876343,
+        "feasible": false,
+        "subset": [
+          70,
+          163
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 166,
+        "cost": 4,
+        "loss": 0.29978740666517417,
+        "feasible": false,
+        "subset": [
+          70,
+          166
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 179,
+        "cost": 4,
+        "loss": 0.31044455985051095,
+        "feasible": false,
+        "subset": [
+          70,
+          179
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 199,
+        "cost": 4,
+        "loss": 0.2839118964418658,
+        "feasible": false,
+        "subset": [
+          70,
+          199
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 203,
+        "cost": 4,
+        "loss": 0.29559781043408623,
+        "feasible": false,
+        "subset": [
+          70,
+          203
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 204,
+        "cost": 4,
+        "loss": 0.2999181359994975,
+        "feasible": false,
+        "subset": [
+          70,
+          204
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 212,
+        "cost": 4,
+        "loss": 0.3107327844010202,
+        "feasible": false,
+        "subset": [
+          70,
+          212
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 219,
+        "cost": 4,
+        "loss": 0.30404081196693694,
+        "feasible": false,
+        "subset": [
+          70,
+          219
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 233,
+        "cost": 4,
+        "loss": 0.32022964515599067,
+        "feasible": false,
+        "subset": [
+          70,
+          233
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 248,
+        "cost": 4,
+        "loss": 0.32776390024596785,
+        "feasible": false,
+        "subset": [
+          70,
+          248
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 257,
+        "cost": 4,
+        "loss": 0.3186703405531525,
+        "feasible": false,
+        "subset": [
+          70,
+          257
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 0,
+        "cost": 5,
+        "loss": 0.319990098889855,
+        "feasible": false,
+        "subset": [
+          0,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 3,
+        "cost": 5,
+        "loss": 0.3137776457269918,
+        "feasible": false,
+        "subset": [
+          3,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 10,
+        "cost": 5,
+        "loss": 0.31019419612180904,
+        "feasible": false,
+        "subset": [
+          10,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 17,
+        "cost": 5,
+        "loss": 0.3080772938266448,
+        "feasible": false,
+        "subset": [
+          17,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 35,
+        "cost": 5,
+        "loss": 0.3080286992977464,
+        "feasible": false,
+        "subset": [
+          35,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 65,
+        "cost": 5,
+        "loss": 0.3053639271833213,
+        "feasible": false,
+        "subset": [
+          65,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 69,
+        "cost": 5,
+        "loss": 0.29607438640706846,
+        "feasible": false,
+        "subset": [
+          69,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 75,
+        "cost": 5,
+        "loss": 0.3075707013797624,
+        "feasible": false,
+        "subset": [
+          70,
+          75
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 76,
+        "cost": 5,
+        "loss": 0.31992065214202925,
+        "feasible": false,
+        "subset": [
+          70,
+          76
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 80,
+        "cost": 5,
+        "loss": 0.33599193331967814,
+        "feasible": false,
+        "subset": [
+          70,
+          80
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 91,
+        "cost": 5,
+        "loss": 0.30038798860678145,
+        "feasible": false,
+        "subset": [
+          70,
+          91
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 106,
+        "cost": 5,
+        "loss": 0.28248859823574896,
+        "feasible": false,
+        "subset": [
+          70,
+          106
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 114,
+        "cost": 5,
+        "loss": 0.28180211824279033,
+        "feasible": false,
+        "subset": [
+          70,
+          114
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 115,
+        "cost": 5,
+        "loss": 0.2876711026131573,
+        "feasible": false,
+        "subset": [
+          70,
+          115
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 119,
+        "cost": 5,
+        "loss": 0.3054613109577549,
+        "feasible": false,
+        "subset": [
+          70,
+          119
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 138,
+        "cost": 5,
+        "loss": 0.2921865226484976,
+        "feasible": false,
+        "subset": [
+          70,
+          138
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 178,
+        "cost": 5,
+        "loss": 0.2928307436105605,
+        "feasible": false,
+        "subset": [
+          70,
+          178
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 182,
+        "cost": 5,
+        "loss": 0.28400266213725395,
+        "feasible": false,
+        "subset": [
+          70,
+          182
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 183,
+        "cost": 5,
+        "loss": 0.31475257555907143,
+        "feasible": false,
+        "subset": [
+          70,
+          183
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 184,
+        "cost": 5,
+        "loss": 0.2603513581980789,
+        "feasible": true,
+        "subset": [
+          70,
+          184
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 192,
+        "cost": 5,
+        "loss": 0.2861549745474344,
+        "feasible": false,
+        "subset": [
+          70,
+          192
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 193,
+        "cost": 5,
+        "loss": 0.3116007188756758,
+        "feasible": false,
+        "subset": [
+          70,
+          193
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 194,
+        "cost": 5,
+        "loss": 0.29019275248058557,
+        "feasible": false,
+        "subset": [
+          70,
+          194
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 198,
+        "cost": 5,
+        "loss": 0.313471407192439,
+        "feasible": false,
+        "subset": [
+          70,
+          198
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 205,
+        "cost": 5,
+        "loss": 0.28894148878181,
+        "feasible": false,
+        "subset": [
+          70,
+          205
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 217,
+        "cost": 5,
+        "loss": 0.31105680803575786,
+        "feasible": false,
+        "subset": [
+          70,
+          217
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 222,
+        "cost": 5,
+        "loss": 0.3139787055420875,
+        "feasible": false,
+        "subset": [
+          70,
+          222
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 223,
+        "cost": 5,
+        "loss": 0.31610049178611527,
+        "feasible": false,
+        "subset": [
+          70,
+          223
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 229,
+        "cost": 5,
+        "loss": 0.31452790205601533,
+        "feasible": false,
+        "subset": [
+          70,
+          229
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 230,
+        "cost": 5,
+        "loss": 0.3271531421382012,
+        "feasible": false,
+        "subset": [
+          70,
+          230
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 231,
+        "cost": 5,
+        "loss": 0.3218669221060173,
+        "feasible": false,
+        "subset": [
+          70,
+          231
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 236,
+        "cost": 5,
+        "loss": 0.3124006361844505,
+        "feasible": false,
+        "subset": [
+          70,
+          236
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 267,
+        "cost": 5,
+        "loss": 0.2812725103563525,
+        "feasible": false,
+        "subset": [
+          70,
+          267
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 273,
+        "cost": 5,
+        "loss": 0.3086009124712577,
+        "feasible": false,
+        "subset": [
+          70,
+          273
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 1,
+        "cost": 6,
+        "loss": 0.3031484596633169,
+        "feasible": false,
+        "subset": [
+          1,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 4,
+        "cost": 6,
+        "loss": 0.323350307184376,
+        "feasible": false,
+        "subset": [
+          4,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 8,
+        "cost": 6,
+        "loss": 0.3239785182278613,
+        "feasible": false,
+        "subset": [
+          8,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 12,
+        "cost": 6,
+        "loss": 0.3225706395140843,
+        "feasible": false,
+        "subset": [
+          12,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 42,
+        "cost": 6,
+        "loss": 0.29544870912446825,
+        "feasible": false,
+        "subset": [
+          42,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 46,
+        "cost": 6,
+        "loss": 0.30145962935257503,
+        "feasible": false,
+        "subset": [
+          46,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 48,
+        "cost": 6,
+        "loss": 0.30399052732635584,
+        "feasible": false,
+        "subset": [
+          48,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 49,
+        "cost": 6,
+        "loss": 0.3165265208283474,
+        "feasible": false,
+        "subset": [
+          49,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 73,
+        "cost": 6,
+        "loss": 0.3001212499292913,
+        "feasible": false,
+        "subset": [
+          70,
+          73
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 87,
+        "cost": 6,
+        "loss": 0.3164136635213319,
+        "feasible": false,
+        "subset": [
+          70,
+          87
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 101,
+        "cost": 6,
+        "loss": 0.30860312780525573,
+        "feasible": false,
+        "subset": [
+          70,
+          101
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 113,
+        "cost": 6,
+        "loss": 0.31274209723478946,
+        "feasible": false,
+        "subset": [
+          70,
+          113
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 137,
+        "cost": 6,
+        "loss": 0.3150259136837132,
+        "feasible": false,
+        "subset": [
+          70,
+          137
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 145,
+        "cost": 6,
+        "loss": 0.3076579800043035,
+        "feasible": false,
+        "subset": [
+          70,
+          145
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 146,
+        "cost": 6,
+        "loss": 0.27200354212322164,
+        "feasible": false,
+        "subset": [
+          70,
+          146
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 151,
+        "cost": 6,
+        "loss": 0.29666382554526266,
+        "feasible": false,
+        "subset": [
+          70,
+          151
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 156,
+        "cost": 6,
+        "loss": 0.27084698518844913,
+        "feasible": false,
+        "subset": [
+          70,
+          156
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 160,
+        "cost": 6,
+        "loss": 0.2874435000709121,
+        "feasible": false,
+        "subset": [
+          70,
+          160
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 175,
+        "cost": 6,
+        "loss": 0.30701596387710767,
+        "feasible": false,
+        "subset": [
+          70,
+          175
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 209,
+        "cost": 6,
+        "loss": 0.284292679763496,
+        "feasible": false,
+        "subset": [
+          70,
+          209
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 224,
+        "cost": 6,
+        "loss": 0.33035516349395205,
+        "feasible": false,
+        "subset": [
+          70,
+          224
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 241,
+        "cost": 6,
+        "loss": 0.3018240454038823,
+        "feasible": false,
+        "subset": [
+          70,
+          241
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 244,
+        "cost": 6,
+        "loss": 0.3260733213150802,
+        "feasible": false,
+        "subset": [
+          70,
+          244
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 246,
+        "cost": 6,
+        "loss": 0.3405874665796523,
+        "feasible": false,
+        "subset": [
+          70,
+          246
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 258,
+        "cost": 6,
+        "loss": 0.30672957406701723,
+        "feasible": false,
+        "subset": [
+          70,
+          258
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 268,
+        "cost": 6,
+        "loss": 0.3185298471289993,
+        "feasible": false,
+        "subset": [
+          70,
+          268
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 270,
+        "cost": 6,
+        "loss": 0.3305352460916839,
+        "feasible": false,
+        "subset": [
+          70,
+          270
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 19,
+        "cost": 7,
+        "loss": 0.30752498391332855,
+        "feasible": false,
+        "subset": [
+          19,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 21,
+        "cost": 7,
+        "loss": 0.2993883801556756,
+        "feasible": false,
+        "subset": [
+          21,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 34,
+        "cost": 7,
+        "loss": 0.3298288994179937,
+        "feasible": false,
+        "subset": [
+          34,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 44,
+        "cost": 7,
+        "loss": 0.30492811509363055,
+        "feasible": false,
+        "subset": [
+          44,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 59,
+        "cost": 7,
+        "loss": 0.3050221255357359,
+        "feasible": false,
+        "subset": [
+          59,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 79,
+        "cost": 7,
+        "loss": 0.30984646617956235,
+        "feasible": false,
+        "subset": [
+          70,
+          79
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 90,
+        "cost": 7,
+        "loss": 0.3178300178605946,
+        "feasible": false,
+        "subset": [
+          70,
+          90
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 92,
+        "cost": 7,
+        "loss": 0.3222991519254394,
+        "feasible": false,
+        "subset": [
+          70,
+          92
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 103,
+        "cost": 7,
+        "loss": 0.3116247106179404,
+        "feasible": false,
+        "subset": [
+          70,
+          103
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 117,
+        "cost": 7,
+        "loss": 0.3034846752854056,
+        "feasible": false,
+        "subset": [
+          70,
+          117
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 121,
+        "cost": 7,
+        "loss": 0.2933258105948459,
+        "feasible": false,
+        "subset": [
+          70,
+          121
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 142,
+        "cost": 7,
+        "loss": 0.2706403728179617,
+        "feasible": false,
+        "subset": [
+          70,
+          142
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 150,
+        "cost": 7,
+        "loss": 0.2800527974866666,
+        "feasible": false,
+        "subset": [
+          70,
+          150
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 158,
+        "cost": 7,
+        "loss": 0.26931546986065236,
+        "feasible": false,
+        "subset": [
+          70,
+          158
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 171,
+        "cost": 7,
+        "loss": 0.30757445671299005,
+        "feasible": false,
+        "subset": [
+          70,
+          171
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 172,
+        "cost": 7,
+        "loss": 0.26221845817133477,
+        "feasible": true,
+        "subset": [
+          70,
+          172
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 181,
+        "cost": 7,
+        "loss": 0.30929963035678715,
+        "feasible": false,
+        "subset": [
+          70,
+          181
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 202,
+        "cost": 7,
+        "loss": 0.3183260580662924,
+        "feasible": false,
+        "subset": [
+          70,
+          202
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 228,
+        "cost": 7,
+        "loss": 0.305602174919221,
+        "feasible": false,
+        "subset": [
+          70,
+          228
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 232,
+        "cost": 7,
+        "loss": 0.31576437113229044,
+        "feasible": false,
+        "subset": [
+          70,
+          232
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 243,
+        "cost": 7,
+        "loss": 0.30930191177827854,
+        "feasible": false,
+        "subset": [
+          70,
+          243
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 249,
+        "cost": 7,
+        "loss": 0.30012465266764166,
+        "feasible": false,
+        "subset": [
+          70,
+          249
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 250,
+        "cost": 7,
+        "loss": 0.31403257794295886,
+        "feasible": false,
+        "subset": [
+          70,
+          250
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 256,
+        "cost": 7,
+        "loss": 0.32124226245181126,
+        "feasible": false,
+        "subset": [
+          70,
+          256
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 260,
+        "cost": 7,
+        "loss": 0.3134287456080773,
+        "feasible": false,
+        "subset": [
+          70,
+          260
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 271,
+        "cost": 7,
+        "loss": 0.2906927225257789,
+        "feasible": false,
+        "subset": [
+          70,
+          271
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 283,
+        "cost": 7,
+        "loss": 0.29163798037739075,
+        "feasible": false,
+        "subset": [
+          70,
+          283
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 284,
+        "cost": 7,
+        "loss": 0.31459650062338734,
+        "feasible": false,
+        "subset": [
+          70,
+          284
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 16,
+        "cost": 8,
+        "loss": 0.3381893747777271,
+        "feasible": false,
+        "subset": [
+          16,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 23,
+        "cost": 8,
+        "loss": 0.30338545922188837,
+        "feasible": false,
+        "subset": [
+          23,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 33,
+        "cost": 8,
+        "loss": 0.306819625350828,
+        "feasible": false,
+        "subset": [
+          33,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 36,
+        "cost": 8,
+        "loss": 0.3083709423075673,
+        "feasible": false,
+        "subset": [
+          36,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 37,
+        "cost": 8,
+        "loss": 0.3015168716559655,
+        "feasible": false,
+        "subset": [
+          37,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 39,
+        "cost": 8,
+        "loss": 0.3077423352471788,
+        "feasible": false,
+        "subset": [
+          39,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 41,
+        "cost": 8,
+        "loss": 0.3148757732334145,
+        "feasible": false,
+        "subset": [
+          41,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 45,
+        "cost": 8,
+        "loss": 0.30815719339725506,
+        "feasible": false,
+        "subset": [
+          45,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 53,
+        "cost": 8,
+        "loss": 0.3002377478952152,
+        "feasible": false,
+        "subset": [
+          53,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 68,
+        "cost": 8,
+        "loss": 0.31741075375963046,
+        "feasible": false,
+        "subset": [
+          68,
+          70
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 89,
+        "cost": 8,
+        "loss": 0.3070956463305064,
+        "feasible": false,
+        "subset": [
+          70,
+          89
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 100,
+        "cost": 8,
+        "loss": 0.2801992226444448,
+        "feasible": false,
+        "subset": [
+          70,
+          100
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 148,
+        "cost": 8,
+        "loss": 0.27365677230697644,
+        "feasible": false,
+        "subset": [
+          70,
+          148
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 153,
+        "cost": 8,
+        "loss": 0.3168207211493838,
+        "feasible": false,
+        "subset": [
+          70,
+          153
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 155,
+        "cost": 8,
+        "loss": 0.3078689685263955,
+        "feasible": false,
+        "subset": [
+          70,
+          155
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 159,
+        "cost": 8,
+        "loss": 0.3102792814779544,
+        "feasible": false,
+        "subset": [
+          70,
+          159
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 167,
+        "cost": 8,
+        "loss": 0.30778026900647915,
+        "feasible": false,
+        "subset": [
+          70,
+          167
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 168,
+        "cost": 8,
+        "loss": 0.2692045722380894,
+        "feasible": false,
+        "subset": [
+          70,
+          168
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 169,
+        "cost": 8,
+        "loss": 0.32387839682477354,
+        "feasible": false,
+        "subset": [
+          70,
+          169
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 190,
+        "cost": 8,
+        "loss": 0.27997814805667454,
+        "feasible": false,
+        "subset": [
+          70,
+          190
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 195,
+        "cost": 8,
+        "loss": 0.3151836214618082,
+        "feasible": false,
+        "subset": [
+          70,
+          195
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 201,
+        "cost": 8,
+        "loss": 0.3034671434383616,
+        "feasible": false,
+        "subset": [
+          70,
+          201
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 206,
+        "cost": 8,
+        "loss": 0.3150662207537196,
+        "feasible": false,
+        "subset": [
+          70,
+          206
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 208,
+        "cost": 8,
+        "loss": 0.2880981622459344,
+        "feasible": false,
+        "subset": [
+          70,
+          208
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 210,
+        "cost": 8,
+        "loss": 0.3114365641164691,
+        "feasible": false,
+        "subset": [
+          70,
+          210
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 215,
+        "cost": 8,
+        "loss": 0.29737806096239755,
+        "feasible": false,
+        "subset": [
+          70,
+          215
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 242,
+        "cost": 8,
+        "loss": 0.3172655237231176,
+        "feasible": false,
+        "subset": [
+          70,
+          242
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 245,
+        "cost": 8,
+        "loss": 0.3203455181968767,
+        "feasible": false,
+        "subset": [
+          70,
+          245
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 277,
+        "cost": 8,
+        "loss": 0.2956038455692139,
+        "feasible": false,
+        "subset": [
+          70,
+          277
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 286,
+        "cost": 8,
+        "loss": 0.3185472292604073,
+        "feasible": false,
+        "subset": [
+          70,
+          286
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 291,
+        "cost": 8,
+        "loss": 0.30647053292470866,
+        "feasible": false,
+        "subset": [
+          70,
+          291
+        ]
+      },
+      {
+        "scan": 1,
+        "before": [
+          70,
+          170
+        ],
+        "removed": 170,
+        "added": 5,
+        "cost": 9,
+        "loss": 0.31134374499916534,
+        "feasible": false,
+        "subset": [
+          5,
+          70
+        ]
+      }
+    ],
+    "stop_reason": "budget exhausted after accepted move"
+  },
+  "results": {
+    "dataset": "Natural Scene",
+    "repeat": 5,
+    "method": "Prediction only",
+    "before_attributes": 2,
+    "after_attributes": 2,
+    "before_cost": 11,
+    "after_cost": 5,
+    "before_loss": 0.2581959954442468,
+    "after_loss": 0.2603513581980789,
+    "full_reference": 0.26570551541258863,
+    "refinement_evaluations": 200,
+    "accepted_moves": 1,
+    "stop_reason": "budget exhausted after accepted move",
+    "initial_unique_loss_evaluations": 589,
+    "total_unique_loss_evaluations": 788,
+    "initial_seconds": 0.45623229699958756,
+    "refinement_seconds": 0.16022229899863305
+  }
+}

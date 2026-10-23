@@ -1,0 +1,42 @@
+[
+  {
+    "dataset": "Yeast_heat",
+    "repeat": 1,
+    "alpha": 100.0,
+    "method": "Full",
+    "attributes": 24,
+    "cost": 127,
+    "audit_brier": 0.004022097367600093,
+    "test_brier": 0.0038696569035937215
+  },
+  {
+    "dataset": "Yeast_heat",
+    "repeat": 1,
+    "alpha": 100.0,
+    "method": "Empty",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.004047923844938105,
+    "test_brier": 0.003998295860446811
+  },
+  {
+    "dataset": "Yeast_heat",
+    "repeat": 1,
+    "alpha": 100.0,
+    "method": "Prediction only after",
+    "attributes": 1,
+    "cost": 3,
+    "audit_brier": 0.003969506097092893,
+    "test_brier": 0.0039264706940933475
+  },
+  {
+    "dataset": "Yeast_heat",
+    "repeat": 1,
+    "alpha": 100.0,
+    "method": "Guided after",
+    "attributes": 1,
+    "cost": 3,
+    "audit_brier": 0.003969506097092893,
+    "test_brier": 0.0039264706940933475
+  }
+]

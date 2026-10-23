@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Yeast_spoem",
+    "repeat": 2,
+    "alpha": 100.0,
+    "ridge_inner_full": 0.024600978083004623,
+    "ridge_inner_empty": 0.02593424486846987,
+    "inner_gain": 0.001333266785465248,
+    "audit_brier_ridge": 0.022482973193313556,
+    "audit_brier_empty": 0.023858239253836584,
+    "audit_gain": 0.0013752660605230276,
+    "revived": true,
+    "seconds": 0.005718800006434321
+  }
+]

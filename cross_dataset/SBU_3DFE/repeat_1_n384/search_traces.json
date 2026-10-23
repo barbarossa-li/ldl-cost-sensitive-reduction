@@ -1,0 +1,160 @@
+{
+  "Joint guard": [
+    [
+      [],
+      104,
+      0.10161060510619248,
+      "dependency: positive cost-weighted gain"
+    ],
+    [
+      [
+        104
+      ],
+      54,
+      0.04918709476840634,
+      "dependency: positive cost-weighted gain"
+    ],
+    [
+      [
+        54,
+        104
+      ],
+      233,
+      0.009244411013115517,
+      "dependency: positive cost-weighted gain"
+    ],
+    [
+      [
+        54,
+        104,
+        233
+      ],
+      17,
+      0.014256733396636051,
+      "dependency: positive cost-weighted gain"
+    ],
+    [
+      [
+        17,
+        54,
+        104,
+        233
+      ],
+      229,
+      0.020331256267880238,
+      "dependency: positive cost-weighted gain"
+    ],
+    [
+      [
+        17,
+        54,
+        104,
+        229,
+        233
+      ],
+      122,
+      0.00219521520904032,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        17,
+        54,
+        104,
+        122,
+        229,
+        233
+      ],
+      152,
+      0.0885036547869207,
+      "dependency: positive cost-weighted gain"
+    ],
+    [
+      [
+        17,
+        54,
+        104,
+        122,
+        152,
+        229,
+        233
+      ],
+      84,
+      0.0006109135120042526,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        17,
+        54,
+        84,
+        104,
+        122,
+        152,
+        229,
+        233
+      ],
+      164,
+      0.09337741412266304,
+      "dependency: positive cost-weighted gain"
+    ]
+  ],
+  "Prediction-only": [
+    [
+      [],
+      42,
+      -0.001539644374640388,
+      "prediction loss: nonpositive bridge"
+    ],
+    [
+      [
+        42
+      ],
+      229,
+      0.0008218663450997241,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        42,
+        229
+      ],
+      84,
+      0.0013472701061098546,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        42,
+        84,
+        229
+      ],
+      52,
+      0.0009953682526125662,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        42,
+        52,
+        84,
+        229
+      ],
+      224,
+      0.0009443973838246973,
+      "prediction loss: positive cost-weighted gain"
+    ],
+    [
+      [
+        42,
+        52,
+        84,
+        224,
+        229
+      ],
+      76,
+      0.0006172530437793707,
+      "prediction loss: positive cost-weighted gain"
+    ]
+  ]
+}

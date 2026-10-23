@@ -1,0 +1,29 @@
+\begin{table}[htbp]
+\centering\small
+\caption{Frozen pipeline on reused saved outer tests: five-repeat means. All prediction measures are lower-is-better.}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llrrrrr}
+\hline
+Dataset & Method & Cost & Brier & TV & KL & JS\\
+\hline
+Natural Scene & Full & 1648.00 & 0.250905 & 0.455918 & 1.159174 & 0.218922\\
+Natural Scene & Empty & 0.00 & 0.302688 & 0.557889 & 0.998019 & 0.269234\\
+Natural Scene & P before & 10.00 & 0.288290 & 0.500250 & 1.335939 & 0.246175\\
+Natural Scene & P after & 5.80 & 0.285292 & 0.496044 & 1.273075 & 0.242458\\
+Natural Scene & G before & 13.60 & 0.286910 & 0.503117 & 1.242122 & 0.245478\\
+Natural Scene & G after & 9.00 & 0.286751 & 0.501554 & 1.263062 & 0.244705\\
+SBU\_3DFE & Full & 1373.00 & 0.030896 & 0.151445 & 0.077716 & 0.018586\\
+SBU\_3DFE & Empty & 0.00 & 0.032466 & 0.160359 & 0.081268 & 0.019179\\
+SBU\_3DFE & P before & 5.40 & 0.033440 & 0.160029 & 0.083572 & 0.019845\\
+SBU\_3DFE & P after & 5.00 & 0.033477 & 0.159822 & 0.083803 & 0.019891\\
+SBU\_3DFE & G before & 8.20 & 0.033723 & 0.160864 & 0.084465 & 0.020053\\
+SBU\_3DFE & G after & 4.60 & 0.033165 & 0.159257 & 0.082804 & 0.019662\\
+Yeast\_cold & Full & 127.00 & 0.007703 & 0.067457 & 0.015685 & 0.003964\\
+Yeast\_cold & Empty & 0.00 & 0.006449 & 0.061672 & 0.013150 & 0.003341\\
+Yeast\_cold & P before & 0.00 & 0.006449 & 0.061672 & 0.013150 & 0.003341\\
+Yeast\_cold & P after & 0.00 & 0.006449 & 0.061672 & 0.013150 & 0.003341\\
+Yeast\_cold & G before & 0.00 & 0.006449 & 0.061672 & 0.013150 & 0.003341\\
+Yeast\_cold & G after & 0.00 & 0.006449 & 0.061672 & 0.013150 & 0.003341\\
+\hline
+\end{tabular}}
+\end{table}

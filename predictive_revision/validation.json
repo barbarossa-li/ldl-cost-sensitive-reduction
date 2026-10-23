@@ -1,0 +1,8 @@
+{
+  "search_checks": "80 nonmonotone tables plus lower-dependency, bridge and empty-subset cases passed",
+  "pilot": "Three frozen repeat-1 n192 development splits; all candidate outputs prediction-feasible and single-deletion irreducible",
+  "formal_expansion": false,
+  "original_code_changed": false,
+  "pdf_pages": 58,
+  "pdf_validation": "Two pdflatex runs; no undefined references or overfull boxes; pages 50-54 visually checked"
+}

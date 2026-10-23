@@ -1,0 +1,13 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 192,
+    "removed": 6,
+    "original_cost": 1,
+    "candidate_cost": 0,
+    "original_test_brier": 0.007952092073902304,
+    "candidate_test_brier": 0.006442138545778143,
+    "candidate_minus_original": -0.0015099535281241604
+  }
+]

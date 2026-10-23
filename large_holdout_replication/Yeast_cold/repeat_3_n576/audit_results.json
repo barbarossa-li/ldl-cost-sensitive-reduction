@@ -1,0 +1,68 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 144,
+    "method": "Full",
+    "attributes": 24,
+    "cost": 127,
+    "audit_brier": 0.007267590700327366
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 144,
+    "method": "Empty",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.006169524472405601
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 144,
+    "method": "Prediction only before",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.006169524472405601
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 144,
+    "method": "Prediction only after",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.006169524472405601
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 144,
+    "method": "Guided before",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.006169524472405601
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 144,
+    "method": "Guided after",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.006169524472405601
+  }
+]

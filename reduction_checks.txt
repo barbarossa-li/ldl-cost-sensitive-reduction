@@ -1,0 +1,4 @@
+80 nonmonotone subset tables: exact search agrees with exhaustive enumeration.
+Zero-singleton interaction: bridge reaches feasible pair.
+Actual four-object LDL construction: heuristic and exact return attribute a, cost 5.
+All are mechanism checks, not LDL benchmark comparisons.

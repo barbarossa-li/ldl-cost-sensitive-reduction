@@ -1,0 +1,5 @@
+Original XOR joint subset has zero distances and dependency 0.
+Adopted geometry mixture zeta=.1 yields dependency 1 on the repeated-XOR construction.
+Fixed delta=.01 stops the contracted perfect signal at the root when V0=.0032.
+Relative delta=.1*V0 yields dependency 1 at all three tested scales.
+Synthetic mechanism checks, not benchmark evidence; mixture and relative threshold adopted in Sections 2--3.

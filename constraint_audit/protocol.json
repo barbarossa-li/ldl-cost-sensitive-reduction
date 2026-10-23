@@ -1,0 +1,5 @@
+{
+  "scope": "constraint-only audit on identical frozen budget-bridge prefixes",
+  "rule": "For both versions choose lowest-cost prefix satisfying inner loss <= full reference. On version additionally requires Gamma >= full reference. Same highest-cost-first deletion/restart rule and budget. No feasible prefix reported as failure; never substitute a different search or a violating subset.",
+  "note": "Same path isolates feasibility checks, not directed geometry ranking or exhaustive global feasibility. Existing test data exploratory only."
+}

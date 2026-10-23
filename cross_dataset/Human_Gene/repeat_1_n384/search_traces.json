@@ -1,0 +1,128 @@
+{
+  "Dependency-only": {
+    "trace": [
+      [
+        [],
+        6,
+        0.012282448776412973,
+        "dependency: positive cost-weighted gain"
+      ],
+      [
+        [
+          6
+        ],
+        9,
+        0.00037444317598575236,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          6,
+          9
+        ],
+        11,
+        4.768229547464156e-05,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          6,
+          9,
+          11
+        ],
+        14,
+        4.865777182172515e-05,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          6,
+          9,
+          11,
+          14
+        ],
+        13,
+        0.0003243864077918032,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          6,
+          9,
+          11,
+          13,
+          14
+        ],
+        9,
+        0.0008100168412216975,
+        "delete"
+      ]
+    ],
+    "seconds": 1.5984072999999626
+  },
+  "Joint guard": {
+    "trace": [
+      [
+        [],
+        6,
+        0.012282448776412973,
+        "dependency: positive cost-weighted gain"
+      ],
+      [
+        [
+          6
+        ],
+        9,
+        0.00037444317598575236,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          6,
+          9
+        ],
+        11,
+        4.768229547464156e-05,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          6,
+          9,
+          11
+        ],
+        14,
+        4.865777182172515e-05,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          6,
+          9,
+          11,
+          14
+        ],
+        13,
+        0.0003243864077918032,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          6,
+          9,
+          11,
+          13,
+          14
+        ],
+        9,
+        0.0008100168412216975,
+        "delete"
+      ]
+    ],
+    "seconds": 0.000185800003237091
+  },
+  "Prediction-only": {
+    "trace": [],
+    "seconds": 0.0001002000062726438
+  }
+}

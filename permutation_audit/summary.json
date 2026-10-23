@@ -1,0 +1,68 @@
+[
+  {
+    "dataset": "Natural Scene",
+    "attributes": 294,
+    "observed_mean_W": 0.006021004313295212,
+    "permutation_mean_W": 0.0029656284337780878,
+    "observed_over_null_mean": 2.030262538865903,
+    "mean_attribute_fraction_above_own_q95": 0.6417233560090704,
+    "attributes_above_own_q95_all_three_folds": 149,
+    "fold_tail_ranks": [
+      0.005,
+      0.005,
+      0.005
+    ],
+    "fold_q95_counts": [
+      192,
+      187,
+      187
+    ],
+    "observed_raw_kl_bits": 0.05456527718559242,
+    "permutation_raw_kl_bits_mean": 0.03740070943303301,
+    "scope": "Dataset averages are descriptive; no combined p-value"
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "attributes": 243,
+    "observed_mean_W": 0.0006066230185444598,
+    "permutation_mean_W": 0.00019041734782828377,
+    "observed_over_null_mean": 3.1857550032232655,
+    "mean_attribute_fraction_above_own_q95": 0.6941015089163237,
+    "attributes_above_own_q95_all_three_folds": 130,
+    "fold_tail_ranks": [
+      0.005,
+      0.005,
+      0.005
+    ],
+    "fold_q95_counts": [
+      191,
+      158,
+      157
+    ],
+    "observed_raw_kl_bits": 0.001795841178776648,
+    "permutation_raw_kl_bits_mean": 0.0006019791420036188,
+    "scope": "Dataset averages are descriptive; no combined p-value"
+  },
+  {
+    "dataset": "Yeast_cold",
+    "attributes": 24,
+    "observed_mean_W": 6.828863676454485e-05,
+    "permutation_mean_W": 5.4034880825926396e-05,
+    "observed_over_null_mean": 1.2637880517315656,
+    "mean_attribute_fraction_above_own_q95": 0.15277777777777776,
+    "attributes_above_own_q95_all_three_folds": 0,
+    "fold_tail_ranks": [
+      0.06,
+      0.045,
+      0.27
+    ],
+    "fold_q95_counts": [
+      6,
+      3,
+      2
+    ],
+    "observed_raw_kl_bits": 0.00017484890533541765,
+    "permutation_raw_kl_bits_mean": 0.00015903809055994858,
+    "scope": "Dataset averages are descriptive; no combined p-value"
+  }
+]

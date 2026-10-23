@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Flickr",
+    "repeat": 2,
+    "method": "NoGuard",
+    "attributes": 1,
+    "cost": 3,
+    "inner_loss": 0.22342056932966023,
+    "inner_loss_empty": 0.2025029200889365,
+    "audit_brier_sel": 0.277722681359045,
+    "audit_brier_empty": 0.2149879830856262,
+    "audit_brier_full": 0.2319329660238751,
+    "seconds": 0.552012600004673
+  }
+]

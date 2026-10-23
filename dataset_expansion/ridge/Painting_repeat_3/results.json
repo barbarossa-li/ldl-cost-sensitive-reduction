@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Painting",
+    "repeat": 3,
+    "alpha": 100.0,
+    "ridge_inner_full": 0.14319468859766077,
+    "ridge_inner_empty": 0.1445747468415895,
+    "inner_gain": 0.0013800582439287279,
+    "audit_brier_ridge": 0.13367099589789208,
+    "audit_brier_empty": 0.14399342416302555,
+    "audit_gain": 0.010322428265133465,
+    "revived": true,
+    "seconds": 0.19386670005042106
+  }
+]

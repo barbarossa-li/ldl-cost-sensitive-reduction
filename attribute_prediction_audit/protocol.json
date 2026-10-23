@@ -1,0 +1,13 @@
+{
+  "scope": "All 561 single numerical attributes, same three development splits, three fold-refitted learners. No reduction or outer testing.",
+  "association_score": "Mean observed W minus mean permutation W across the three fitting folds; primary descriptive rank score",
+  "predictive_gain": "Inner validation Brier of fold-training global mean minus single-attribute Brier",
+  "learners": [
+    "Euclidean",
+    "Manhattan",
+    "Incoming directed"
+  ],
+  "constants": "Original scaling, k=5, beta=1,zeta=.1 and bandwidth rules",
+  "comparison": "Spearman coefficient only, no independent-attribute or significance claim; stable permutation group used for description only",
+  "limitations": "Marginal diagnosis cannot exclude feature interactions; previously used development folds are not fresh test evidence"
+}

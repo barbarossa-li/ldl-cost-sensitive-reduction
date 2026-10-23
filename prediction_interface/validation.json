@@ -1,0 +1,8 @@
+{
+  "scope": "Candidate training-source directed-neighbour interface; original learner and selection unchanged",
+  "interface_checks": "24 exact orientation checks plus categorical/extrapolation/tie/empty and real fold provenance passed",
+  "empirical_loss_claim": false,
+  "new_selection_run": false,
+  "pdf_pages": 64,
+  "pdf_validation": "No undefined references or overfull boxes; Section14 visually checked; Section13 figure precedes Section14"
+}

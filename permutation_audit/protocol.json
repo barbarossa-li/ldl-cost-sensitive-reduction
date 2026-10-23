@@ -1,0 +1,17 @@
+{
+  "scope": "Whole training-label-vector permutations, only within each of nine saved 128-object fitting folds",
+  "permutations_per_fold": 199,
+  "seed_rule": "20260930+1000*dataset_index+10*fold_index",
+  "joint_attributes": "Same permutation index used across all attributes within a fold",
+  "preserved": "Features, bandwidths, kernel/support/shrinkage, global label mean, active labels, KL normalizer, label-vector rows and row-internal probabilities",
+  "statistics": "Primary descriptive fold score: average W over sources and all attributes. Secondary: each attribute average W against its own permutation background",
+  "q95_scope": "Above own permutation 95th percentile is descriptive; not a multiplicity-adjusted significant-attribute count",
+  "p_scope": "One-sided finite-permutation rank (1+exceedances)/200 for each fold, conditional on label-row exchangeability under the null. No independence between overlapping folds or combined dataset p-value claimed.",
+  "unchanged": [
+    "model definitions",
+    "parameters",
+    "subsets",
+    "prediction learner"
+  ],
+  "no_validation_test_or_selection": true
+}

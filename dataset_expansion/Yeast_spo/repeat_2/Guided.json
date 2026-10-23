@@ -1,0 +1,29 @@
+{
+  "before": [],
+  "after": [],
+  "initial_trace": [],
+  "refinement": {
+    "evaluations": 0,
+    "scans": 1,
+    "accepted": [],
+    "candidates": [],
+    "stop_reason": "neighbourhood exhausted without feasible move"
+  },
+  "results": {
+    "method": "Guided",
+    "before_attributes": 0,
+    "after_attributes": 0,
+    "before_cost": 0,
+    "after_cost": 0,
+    "before_loss": 0.008611425258983306,
+    "after_loss": 0.008611425258983306,
+    "full_reference": 0.009813984293821552,
+    "refinement_evaluations": 0,
+    "accepted_moves": 0,
+    "stop_reason": "neighbourhood exhausted without feasible move",
+    "initial_unique_loss_evaluations": 2,
+    "total_unique_loss_evaluations": 2,
+    "initial_seconds": 0.10314099991228431,
+    "refinement_seconds": 7.400056347250938e-06
+  }
+}

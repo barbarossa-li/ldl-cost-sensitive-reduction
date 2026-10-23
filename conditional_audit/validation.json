@@ -1,0 +1,12 @@
+{
+  "semantic_candidate_records": 3366,
+  "contexts": 18,
+  "base_loss_reproduction": "All 18 saved baselines within 1e-12",
+  "original_single_deletion_irreducibility": "Both saved Euclidean bases per dataset have no feasible single deletion",
+  "no_test_no_new_reduct": true,
+  "parameters_changed": false,
+  "fold_fitting": "Nine fitting-only geometry models",
+  "manuscript_pdf_pages": 79,
+  "manuscript_visual_check": "Pages 70–75 inspected; tables and Figures 18–19 readable without overlap",
+  "reporting_comparison_tolerance": 1e-12
+}

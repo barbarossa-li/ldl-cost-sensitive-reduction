@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering\small
+\caption{Common acquisition-budget ablation with shared signed bridges and internal full-reference stopping. Three-repeat audit means; spending is reported separately from the budget cap.}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\hline
+Dataset & Cap & P spent & G spent & P Brier & G Brier & G better/tied/worse\\
+\hline
+Natural Scene & 5 & 5.00 & 5.00 & 0.275108 & 0.277632 & 1/1/1\\
+Natural Scene & 10 & 9.00 & 10.00 & 0.257004 & 0.265285 & 1/0/2\\
+Natural Scene & 20 & 13.00 & 15.00 & 0.247126 & 0.242612 & 2/0/1\\
+SBU\_3DFE & 5 & 5.00 & 5.00 & 0.034118 & 0.034019 & 1/2/0\\
+SBU\_3DFE & 10 & 9.67 & 10.00 & 0.034731 & 0.033161 & 2/0/1\\
+SBU\_3DFE & 20 & 13.67 & 16.33 & 0.033288 & 0.031619 & 2/0/1\\
+Yeast\_cold & 5 & 0.00 & 0.00 & 0.006046 & 0.006046 & 0/3/0\\
+Yeast\_cold & 10 & 0.00 & 0.00 & 0.006046 & 0.006046 & 0/3/0\\
+Yeast\_cold & 20 & 0.00 & 0.00 & 0.006046 & 0.006046 & 0/3/0\\
+\hline
+\end{tabular}}
+\end{table}

@@ -1,0 +1,1 @@
+PASS: 15 paired splits, 165 method rows; exact-k quotas, budget bounds, 20 random draws per split, pre-test selection files and deterministic nearest-neighbor equivalence checked.

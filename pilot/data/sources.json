@@ -1,0 +1,21 @@
+{
+  "repository_commit": "77b8b51f4d047c7b5cee063c2d545f4692d09f23",
+  "downloads": [
+    {
+      "file": "feature.npy",
+      "url": "https://raw.githubusercontent.com/wangjing4research/LDL-LDM/77b8b51f4d047c7b5cee063c2d545f4692d09f23/Scene/feature.npy",
+      "bytes": 4704080,
+      "sha256": "7d7b2e4772869236e99da7366b2e0b430fcff795da595cbecebf5ebfb32feb5b"
+    },
+    {
+      "file": "label.npy",
+      "url": "https://raw.githubusercontent.com/wangjing4research/LDL-LDM/77b8b51f4d047c7b5cee063c2d545f4692d09f23/Scene/label.npy",
+      "bytes": 144080,
+      "sha256": "e7edc3c9560550c0f41b8b0d700e7ee5ee2e0d1b6a19b15a3a092156513799e1"
+    },
+    {
+      "file": "original_zip",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}

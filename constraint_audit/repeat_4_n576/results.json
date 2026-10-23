@@ -1,0 +1,44 @@
+[
+  {
+    "repeat": 4,
+    "train_n": 576,
+    "mode": "Constraint off",
+    "success": true,
+    "attributes": 7,
+    "cost": 10,
+    "selected": [
+      6,
+      70,
+      104,
+      188,
+      200,
+      203,
+      239
+    ],
+    "inner_brier": 0.22109039445566092,
+    "gamma": 0.09083257199725271,
+    "test_brier": 0.25709609318209536,
+    "test_kl": 1.155624928850803
+  },
+  {
+    "repeat": 4,
+    "train_n": 576,
+    "mode": "Constraint on",
+    "success": true,
+    "attributes": 7,
+    "cost": 10,
+    "selected": [
+      6,
+      70,
+      104,
+      188,
+      200,
+      203,
+      239
+    ],
+    "inner_brier": 0.22109039445566092,
+    "gamma": 0.09083257199725271,
+    "test_brier": 0.25709609318209536,
+    "test_kl": 1.155624928850803
+  }
+]

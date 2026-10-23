@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Yeast_elu",
+    "repeat": 1,
+    "alpha": 100.0,
+    "ridge_inner_full": 0.0009625845612698712,
+    "ridge_inner_empty": 0.0009218606714564502,
+    "inner_gain": -4.0723889813421075e-05,
+    "audit_brier_ridge": 0.000894666784307743,
+    "audit_brier_empty": 0.000896474504751618,
+    "audit_gain": 1.807720443874959e-06,
+    "revived": false,
+    "seconds": 0.007243999978527427
+  }
+]

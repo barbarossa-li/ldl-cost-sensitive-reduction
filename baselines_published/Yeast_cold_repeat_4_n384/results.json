@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 384,
+    "method": "DSIM k",
+    "attributes": 1,
+    "cost": 10,
+    "inner_brier": 0.00703763394267375,
+    "test_brier": 0.007767154286859488,
+    "test_kl": 0.015914162764925625,
+    "test_tv": 0.06840758936811496,
+    "test_js": 0.00403357077777125
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 384,
+    "method": "DSIM budget",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.007992953533522116,
+    "test_brier": 0.007901556431201037,
+    "test_kl": 0.016169378912683493,
+    "test_tv": 0.06865836557431144,
+    "test_js": 0.004094759745261245
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 384,
+    "method": "FSLC k",
+    "attributes": 1,
+    "cost": 10,
+    "inner_brier": 0.00703763394267375,
+    "test_brier": 0.007767154286859488,
+    "test_kl": 0.015914162764925625,
+    "test_tv": 0.06840758936811496,
+    "test_js": 0.00403357077777125
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 384,
+    "method": "FSLC budget",
+    "attributes": 1,
+    "cost": 2,
+    "inner_brier": 0.007549004109873786,
+    "test_brier": 0.00841043333157332,
+    "test_kl": 0.01717578374133799,
+    "test_tv": 0.06951885918613976,
+    "test_js": 0.004347100295732361
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 384,
+    "method": "GBFRS k",
+    "attributes": 1,
+    "cost": 3,
+    "inner_brier": 0.00703268173017994,
+    "test_brier": 0.008011037871229637,
+    "test_kl": 0.016435967386053258,
+    "test_tv": 0.07033588846652528,
+    "test_js": 0.004146052697727714
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 384,
+    "method": "GBFRS budget",
+    "attributes": 1,
+    "cost": 2,
+    "inner_brier": 0.00701014481323476,
+    "test_brier": 0.008384645607651595,
+    "test_kl": 0.01710473698001525,
+    "test_tv": 0.07096108470201598,
+    "test_js": 0.004319445694122679
+  }
+]

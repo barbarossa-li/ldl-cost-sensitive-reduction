@@ -1,0 +1,75 @@
+[
+  {
+    "phase": "prefix",
+    "selected": [],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "inner_brier": 0.03184545290029312,
+    "gamma": 0.0
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      70
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "inner_brier": 0.03364696195458245,
+    "gamma": 0.04156109603930108
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      70,
+      164
+    ],
+    "risk_pass": true,
+    "gamma_pass": true,
+    "inner_brier": 0.03148773869088501,
+    "gamma": 0.10901438520735612
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint off",
+    "removed": 70,
+    "selected": [
+      164
+    ],
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint off",
+    "removed": 164,
+    "selected": [
+      70
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint on",
+    "removed": 70,
+    "selected": [
+      164
+    ],
+    "risk_pass": false,
+    "gamma_pass": true,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint on",
+    "removed": 164,
+    "selected": [
+      70
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "accepted": false
+  }
+]

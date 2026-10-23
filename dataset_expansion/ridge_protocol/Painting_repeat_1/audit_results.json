@@ -1,0 +1,42 @@
+[
+  {
+    "dataset": "Painting",
+    "repeat": 1,
+    "alpha": 100.0,
+    "method": "Full",
+    "attributes": 142,
+    "cost": 831,
+    "audit_brier": 0.14840294119259753,
+    "test_brier": 0.12416151731605143
+  },
+  {
+    "dataset": "Painting",
+    "repeat": 1,
+    "alpha": 100.0,
+    "method": "Empty",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.16176763897953558,
+    "test_brier": 0.12824314199139553
+  },
+  {
+    "dataset": "Painting",
+    "repeat": 1,
+    "alpha": 100.0,
+    "method": "Prediction only after",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.16176763897953558,
+    "test_brier": 0.12824314199139553
+  },
+  {
+    "dataset": "Painting",
+    "repeat": 1,
+    "alpha": 100.0,
+    "method": "Guided after",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.16176763897953558,
+    "test_brier": 0.12824314199139553
+  }
+]

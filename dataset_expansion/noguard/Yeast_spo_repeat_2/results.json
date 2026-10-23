@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Yeast_spo",
+    "repeat": 2,
+    "method": "NoGuard",
+    "attributes": 1,
+    "cost": 2,
+    "inner_loss": 0.009696559109144373,
+    "inner_loss_empty": 0.008611425258983306,
+    "audit_brier_sel": 0.009954435637173971,
+    "audit_brier_empty": 0.008155217803147598,
+    "audit_brier_full": 0.00956768507819409,
+    "seconds": 0.06611539993900806
+  }
+]

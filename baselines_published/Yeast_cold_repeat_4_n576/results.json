@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 576,
+    "method": "DSIM k",
+    "attributes": 1,
+    "cost": 6,
+    "inner_brier": 0.007316705094494873,
+    "test_brier": 0.008087693233466916,
+    "test_kl": 0.016528830891933424,
+    "test_tv": 0.06900190342642278,
+    "test_js": 0.004186426691804691
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 576,
+    "method": "DSIM budget",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.007452304156791398,
+    "test_brier": 0.007939546400642952,
+    "test_kl": 0.01623353456121927,
+    "test_tv": 0.06869528286132766,
+    "test_js": 0.00410745610792604
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 576,
+    "method": "FSLC k",
+    "attributes": 1,
+    "cost": 10,
+    "inner_brier": 0.007288780106756269,
+    "test_brier": 0.007810678485460212,
+    "test_kl": 0.015992523734368873,
+    "test_tv": 0.06865925685049397,
+    "test_js": 0.004039638845195868
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 576,
+    "method": "FSLC budget",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.007452304156791398,
+    "test_brier": 0.007939546400642952,
+    "test_kl": 0.01623353456121927,
+    "test_tv": 0.06869528286132766,
+    "test_js": 0.00410745610792604
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 576,
+    "method": "GBFRS k",
+    "attributes": 1,
+    "cost": 6,
+    "inner_brier": 0.007316705094494873,
+    "test_brier": 0.008087693233466916,
+    "test_kl": 0.016528830891933424,
+    "test_tv": 0.06900190342642278,
+    "test_js": 0.004186426691804691
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "train_n": 576,
+    "method": "GBFRS budget",
+    "attributes": 1,
+    "cost": 2,
+    "inner_brier": 0.007044021524062832,
+    "test_brier": 0.00811593701859647,
+    "test_kl": 0.01654647234749498,
+    "test_tv": 0.07001889394474747,
+    "test_js": 0.004183343523985768
+  }
+]

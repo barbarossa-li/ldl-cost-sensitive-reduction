@@ -1,0 +1,85 @@
+[
+  {
+    "phase": "prefix",
+    "selected": [],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "inner_brier": 0.03310321118895248,
+    "gamma": 0.0
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      42
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "inner_brier": 0.03464285556359287,
+    "gamma": 0.05487938113008449
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      42,
+      229
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "inner_brier": 0.03382098921849314,
+    "gamma": 0.13587466259368783
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      42,
+      84,
+      229
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "inner_brier": 0.03247371911238329,
+    "gamma": 0.07542160687161076
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      42,
+      52,
+      84,
+      229
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "inner_brier": 0.03147835085977072,
+    "gamma": 0.15757008115376445
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      42,
+      52,
+      84,
+      224,
+      229
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "inner_brier": 0.030533953475946025,
+    "gamma": 0.1322357071984611
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      42,
+      52,
+      84,
+      122,
+      224,
+      229
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "inner_brier": 0.03075139940368209,
+    "gamma": 0.11594109690050448
+  }
+]

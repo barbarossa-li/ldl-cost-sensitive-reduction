@@ -1,0 +1,68 @@
+[
+  {
+    "dataset": "Natural Scene",
+    "repeat": 1,
+    "development_size": 384,
+    "search_size": 288,
+    "audit_size": 96,
+    "method": "Full",
+    "attributes": 294,
+    "cost": 1648,
+    "audit_brier": 0.27010817188926045
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 1,
+    "development_size": 384,
+    "search_size": 288,
+    "audit_size": 96,
+    "method": "Empty",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.3009710246948466
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 1,
+    "development_size": 384,
+    "search_size": 288,
+    "audit_size": 96,
+    "method": "Prediction only before",
+    "attributes": 3,
+    "cost": 4,
+    "audit_brier": 0.2964241226078934
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 1,
+    "development_size": 384,
+    "search_size": 288,
+    "audit_size": 96,
+    "method": "Prediction only after",
+    "attributes": 3,
+    "cost": 4,
+    "audit_brier": 0.2964241226078934
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 1,
+    "development_size": 384,
+    "search_size": 288,
+    "audit_size": 96,
+    "method": "Guided before",
+    "attributes": 4,
+    "cost": 13,
+    "audit_brier": 0.30152990285109343
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 1,
+    "development_size": 384,
+    "search_size": 288,
+    "audit_size": 96,
+    "method": "Guided after",
+    "attributes": 4,
+    "cost": 6,
+    "audit_brier": 0.2951160824526326
+  }
+]

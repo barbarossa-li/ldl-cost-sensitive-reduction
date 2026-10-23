@@ -1,0 +1,74 @@
+[
+  {
+    "repeat": 3,
+    "train_n": 576,
+    "method": "DSIM k",
+    "attributes": 16,
+    "cost": 89,
+    "inner_brier": 0.2641176964932586,
+    "test_brier": 0.26654702730208735,
+    "test_kl": 1.1263773457521356,
+    "test_tv": 0.48346424352574796,
+    "test_js": 0.23081633624645387
+  },
+  {
+    "repeat": 3,
+    "train_n": 576,
+    "method": "DSIM budget",
+    "attributes": 16,
+    "cost": 23,
+    "inner_brier": 0.24961555364883273,
+    "test_brier": 0.2582842864276093,
+    "test_kl": 1.0658372727768222,
+    "test_tv": 0.4691120024129993,
+    "test_js": 0.22444110647098867
+  },
+  {
+    "repeat": 3,
+    "train_n": 576,
+    "method": "FSLC k",
+    "attributes": 16,
+    "cost": 91,
+    "inner_brier": 0.256812960838692,
+    "test_brier": 0.2711532771154204,
+    "test_kl": 1.1529197550681847,
+    "test_tv": 0.4726470777010983,
+    "test_js": 0.22903359272569174
+  },
+  {
+    "repeat": 3,
+    "train_n": 576,
+    "method": "FSLC budget",
+    "attributes": 17,
+    "cost": 23,
+    "inner_brier": 0.24144692049405028,
+    "test_brier": 0.25691543382993787,
+    "test_kl": 1.0810669933810444,
+    "test_tv": 0.4720225127514137,
+    "test_js": 0.22489057399537615
+  },
+  {
+    "repeat": 3,
+    "train_n": 576,
+    "method": "GBFRS k",
+    "attributes": 16,
+    "cost": 78,
+    "inner_brier": 0.23564016041406827,
+    "test_brier": 0.26259158504713215,
+    "test_kl": 1.178309862589649,
+    "test_tv": 0.4675682271960529,
+    "test_js": 0.224117281249029
+  },
+  {
+    "repeat": 3,
+    "train_n": 576,
+    "method": "GBFRS budget",
+    "attributes": 6,
+    "cost": 23,
+    "inner_brier": 0.2643793550561444,
+    "test_brier": 0.2874429903533397,
+    "test_kl": 1.2019915733371325,
+    "test_tv": 0.4922719380654897,
+    "test_js": 0.23940001163470592
+  }
+]

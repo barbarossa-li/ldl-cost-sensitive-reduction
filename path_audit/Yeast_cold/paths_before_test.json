@@ -1,0 +1,8 @@
+{
+  "guided_path": [],
+  "pure_path": [],
+  "guided_selected": [],
+  "pure_selected": [],
+  "same_parent_counterfactuals": [],
+  "note": "Training-only path audit; same-parent choices are counterfactual immediate steps, not complete alternative runs. Shared caches preclude a runtime comparison."
+}

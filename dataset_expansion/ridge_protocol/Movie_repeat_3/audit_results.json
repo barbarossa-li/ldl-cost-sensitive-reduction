@@ -1,0 +1,42 @@
+[
+  {
+    "dataset": "Movie",
+    "repeat": 3,
+    "alpha": 100.0,
+    "method": "Full",
+    "attributes": 1869,
+    "cost": 10168,
+    "audit_brier": 0.04865126768308208,
+    "test_brier": 0.044312400591395504
+  },
+  {
+    "dataset": "Movie",
+    "repeat": 3,
+    "alpha": 100.0,
+    "method": "Empty",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.049226119738908815,
+    "test_brier": 0.04311010293677793
+  },
+  {
+    "dataset": "Movie",
+    "repeat": 3,
+    "alpha": 100.0,
+    "method": "Prediction only after",
+    "attributes": 1,
+    "cost": 5,
+    "audit_brier": 0.04617994808082447,
+    "test_brier": 0.04174292545167393
+  },
+  {
+    "dataset": "Movie",
+    "repeat": 3,
+    "alpha": 100.0,
+    "method": "Guided after",
+    "attributes": 5,
+    "cost": 8,
+    "audit_brier": 0.04810381357004334,
+    "test_brier": 0.043184965046536836
+  }
+]

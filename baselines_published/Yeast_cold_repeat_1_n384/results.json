@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 384,
+    "method": "DSIM k",
+    "attributes": 4,
+    "cost": 23,
+    "inner_brier": 0.0072935954682550016,
+    "test_brier": 0.006917354260285807,
+    "test_kl": 0.014368974468246677,
+    "test_tv": 0.0635146581159273,
+    "test_js": 0.003707358051887966
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 384,
+    "method": "DSIM budget",
+    "attributes": 5,
+    "cost": 13,
+    "inner_brier": 0.007480664819317262,
+    "test_brier": 0.0070056533134835505,
+    "test_kl": 0.01455170877484481,
+    "test_tv": 0.06388880411626893,
+    "test_js": 0.003762038034961293
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 384,
+    "method": "FSLC k",
+    "attributes": 4,
+    "cost": 20,
+    "inner_brier": 0.0072466020282704645,
+    "test_brier": 0.007082912523479579,
+    "test_kl": 0.014749196332551593,
+    "test_tv": 0.06470674580282804,
+    "test_js": 0.003806505541902192
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 384,
+    "method": "FSLC budget",
+    "attributes": 5,
+    "cost": 13,
+    "inner_brier": 0.00763800065267566,
+    "test_brier": 0.00702713682278299,
+    "test_kl": 0.014556635869890944,
+    "test_tv": 0.06394037659383887,
+    "test_js": 0.0037592408794337867
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 384,
+    "method": "GBFRS k",
+    "attributes": 4,
+    "cost": 23,
+    "inner_brier": 0.007441246395271362,
+    "test_brier": 0.007124258612801561,
+    "test_kl": 0.014857681625715166,
+    "test_tv": 0.06581498009447176,
+    "test_js": 0.0038334523824914415
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 384,
+    "method": "GBFRS budget",
+    "attributes": 2,
+    "cost": 13,
+    "inner_brier": 0.007365454451870721,
+    "test_brier": 0.007259157346956204,
+    "test_kl": 0.015089434541924865,
+    "test_tv": 0.06594563056476342,
+    "test_js": 0.0038861838145008007
+  }
+]

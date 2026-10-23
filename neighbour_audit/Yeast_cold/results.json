@@ -1,0 +1,167 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "subset": "Full",
+    "learner": "Euclidean",
+    "attributes": 24,
+    "cost": 127,
+    "inner_brier": 0.007929675915200092,
+    "full_reference": 0.007929675915200092,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "Yeast_cold",
+    "subset": "Full",
+    "learner": "Manhattan",
+    "attributes": 24,
+    "cost": 127,
+    "inner_brier": 0.0077455800601060444,
+    "full_reference": 0.0077455800601060444,
+    "passes_own_reference": true,
+    "relative_to_euclidean": -0.02321606293406786
+  },
+  {
+    "dataset": "Yeast_cold",
+    "subset": "Full",
+    "learner": "Incoming directed",
+    "attributes": 24,
+    "cost": 127,
+    "inner_brier": 0.007747843273055399,
+    "full_reference": 0.007747843273055399,
+    "passes_own_reference": true,
+    "relative_to_euclidean": -0.022930652411171537
+  },
+  {
+    "dataset": "Yeast_cold",
+    "subset": "Original joint",
+    "learner": "Euclidean",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.007212583837516458,
+    "full_reference": 0.007929675915200092,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "Yeast_cold",
+    "subset": "Original joint",
+    "learner": "Manhattan",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.007212583837516458,
+    "full_reference": 0.0077455800601060444,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "Yeast_cold",
+    "subset": "Original joint",
+    "learner": "Incoming directed",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.007228053909573731,
+    "full_reference": 0.007747843273055399,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0021448724071400083
+  },
+  {
+    "dataset": "Yeast_cold",
+    "subset": "Prediction only",
+    "learner": "Euclidean",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.006230647334435509,
+    "full_reference": 0.007929675915200092,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "Yeast_cold",
+    "subset": "Prediction only",
+    "learner": "Manhattan",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.006230647334435509,
+    "full_reference": 0.0077455800601060444,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "Yeast_cold",
+    "subset": "Prediction only",
+    "learner": "Incoming directed",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.006230647334435509,
+    "full_reference": 0.007747843273055399,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "Yeast_cold",
+    "subset": "Guided",
+    "learner": "Euclidean",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.006230647334435509,
+    "full_reference": 0.007929675915200092,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "Yeast_cold",
+    "subset": "Guided",
+    "learner": "Manhattan",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.006230647334435509,
+    "full_reference": 0.0077455800601060444,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "Yeast_cold",
+    "subset": "Guided",
+    "learner": "Incoming directed",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.006230647334435509,
+    "full_reference": 0.007747843273055399,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "Yeast_cold",
+    "subset": "Empty",
+    "learner": "Euclidean",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.006230647334435509,
+    "full_reference": 0.007929675915200092,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "Yeast_cold",
+    "subset": "Empty",
+    "learner": "Manhattan",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.006230647334435509,
+    "full_reference": 0.0077455800601060444,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  },
+  {
+    "dataset": "Yeast_cold",
+    "subset": "Empty",
+    "learner": "Incoming directed",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.006230647334435509,
+    "full_reference": 0.007747843273055399,
+    "passes_own_reference": true,
+    "relative_to_euclidean": 0.0
+  }
+]

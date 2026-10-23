@@ -1,0 +1,440 @@
+{
+  "guided_path": [
+    {
+      "step": 1,
+      "phase": "add",
+      "attribute": 11,
+      "subset": [
+        11
+      ],
+      "cost": 3,
+      "inner_brier": 0.3006371995219692,
+      "gamma": 0.11855897345866932
+    },
+    {
+      "step": 2,
+      "phase": "add",
+      "attribute": 173,
+      "subset": [
+        11,
+        173
+      ],
+      "cost": 4,
+      "inner_brier": 0.2996396921373646,
+      "gamma": 0.14891603833200662
+    },
+    {
+      "step": 3,
+      "phase": "add",
+      "attribute": 281,
+      "subset": [
+        11,
+        173,
+        281
+      ],
+      "cost": 5,
+      "inner_brier": 0.29814380254860123,
+      "gamma": 0.2155659763309061
+    },
+    {
+      "step": 4,
+      "phase": "add",
+      "attribute": 147,
+      "subset": [
+        11,
+        147,
+        173,
+        281
+      ],
+      "cost": 8,
+      "inner_brier": 0.29554435253167227,
+      "gamma": 0.21980978519714633
+    },
+    {
+      "step": 5,
+      "phase": "add",
+      "attribute": 98,
+      "subset": [
+        11,
+        98,
+        147,
+        173,
+        281
+      ],
+      "cost": 9,
+      "inner_brier": 0.27401976884620255,
+      "gamma": 0.13009094472104202
+    },
+    {
+      "step": 6,
+      "phase": "add",
+      "attribute": 86,
+      "subset": [
+        11,
+        86,
+        98,
+        147,
+        173,
+        281
+      ],
+      "cost": 11,
+      "inner_brier": 0.26707641617790534,
+      "gamma": 0.20588803638443803
+    },
+    {
+      "step": 7,
+      "phase": "add",
+      "attribute": 166,
+      "subset": [
+        11,
+        86,
+        98,
+        147,
+        166,
+        173,
+        281
+      ],
+      "cost": 14,
+      "inner_brier": 0.2606944891355926,
+      "gamma": 0.23643772293341211
+    },
+    {
+      "step": 8,
+      "phase": "add",
+      "attribute": 128,
+      "subset": [
+        11,
+        86,
+        98,
+        128,
+        147,
+        166,
+        173,
+        281
+      ],
+      "cost": 16,
+      "inner_brier": 0.2525622333209469,
+      "gamma": 0.11784734274430864
+    },
+    {
+      "step": 9,
+      "phase": "delete",
+      "attribute": 147,
+      "subset": [
+        11,
+        86,
+        98,
+        128,
+        166,
+        173,
+        281
+      ],
+      "cost": 13,
+      "inner_brier": 0.2538575669323262,
+      "gamma": 0.11044993354936244
+    },
+    {
+      "step": 10,
+      "phase": "delete",
+      "attribute": 173,
+      "subset": [
+        11,
+        86,
+        98,
+        128,
+        166,
+        281
+      ],
+      "cost": 12,
+      "inner_brier": 0.25926427856855044,
+      "gamma": 0.1029312024398654
+    }
+  ],
+  "pure_path": [
+    {
+      "step": 1,
+      "phase": "add",
+      "attribute": 177,
+      "subset": [
+        177
+      ],
+      "cost": 1,
+      "inner_brier": 0.29837521939008815,
+      "gamma": 0.02908564476890613
+    },
+    {
+      "step": 2,
+      "phase": "add",
+      "attribute": 11,
+      "subset": [
+        11,
+        177
+      ],
+      "cost": 4,
+      "inner_brier": 0.29094561678490805,
+      "gamma": 0.1253175794793295
+    },
+    {
+      "step": 3,
+      "phase": "add",
+      "attribute": 70,
+      "subset": [
+        11,
+        70,
+        177
+      ],
+      "cost": 5,
+      "inner_brier": 0.28369482386304284,
+      "gamma": 0.07348738803077397
+    },
+    {
+      "step": 4,
+      "phase": "add",
+      "attribute": 98,
+      "subset": [
+        11,
+        70,
+        98,
+        177
+      ],
+      "cost": 6,
+      "inner_brier": 0.2747554278253599,
+      "gamma": 0.14330545352460297
+    },
+    {
+      "step": 5,
+      "phase": "add",
+      "attribute": 6,
+      "subset": [
+        6,
+        11,
+        70,
+        98,
+        177
+      ],
+      "cost": 7,
+      "inner_brier": 0.26092162018982434,
+      "gamma": 0.1058393474596203
+    },
+    {
+      "step": 6,
+      "phase": "add",
+      "attribute": 199,
+      "subset": [
+        6,
+        11,
+        70,
+        98,
+        177,
+        199
+      ],
+      "cost": 10,
+      "inner_brier": 0.2503833494654631,
+      "gamma": 0.031537591757231205
+    },
+    {
+      "step": 7,
+      "phase": "delete",
+      "attribute": 177,
+      "subset": [
+        6,
+        11,
+        70,
+        98,
+        199
+      ],
+      "cost": 9,
+      "inner_brier": 0.2507796559610387,
+      "gamma": 0.10648317736641004
+    }
+  ],
+  "guided_selected": [
+    11,
+    86,
+    98,
+    128,
+    166,
+    281
+  ],
+  "pure_selected": [
+    6,
+    11,
+    70,
+    98,
+    199
+  ],
+  "same_parent_counterfactuals": [
+    {
+      "guided_step": 1,
+      "parent": [],
+      "guided_attribute": 11,
+      "pure_at_same_parent": 177,
+      "divergent": true,
+      "guided_gain": 0.00031831631233397717,
+      "pure_gain": 0.0025802964442150356,
+      "guided_gain_per_cost": 0.00010610543744465906,
+      "pure_gain_per_cost": 0.0025802964442150356,
+      "guided_dependency_gain": 0.11855897345866932,
+      "pure_dependency_gain": 0.02908564476890613,
+      "guided_cost": 3,
+      "pure_cost": 1,
+      "guided_after_inner": 0.3006371995219692,
+      "pure_after_inner": 0.29837521939008815
+    },
+    {
+      "guided_step": 2,
+      "parent": [
+        11
+      ],
+      "guided_attribute": 173,
+      "pure_at_same_parent": 70,
+      "divergent": true,
+      "guided_gain": 0.0009975073846046345,
+      "pure_gain": 0.01800187990361235,
+      "guided_gain_per_cost": 0.0009975073846046345,
+      "pure_gain_per_cost": 0.01800187990361235,
+      "guided_dependency_gain": 0.030357064873337294,
+      "pure_dependency_gain": -0.06532305454159792,
+      "guided_cost": 1,
+      "pure_cost": 1,
+      "guided_after_inner": 0.2996396921373646,
+      "pure_after_inner": 0.28263531961835686
+    },
+    {
+      "guided_step": 3,
+      "parent": [
+        11,
+        173
+      ],
+      "guided_attribute": 281,
+      "pure_at_same_parent": 70,
+      "divergent": true,
+      "guided_gain": 0.0014958895887633439,
+      "pure_gain": 0.016166431013929117,
+      "guided_gain_per_cost": 0.0014958895887633439,
+      "pure_gain_per_cost": 0.016166431013929117,
+      "guided_dependency_gain": 0.06664993799889948,
+      "pure_dependency_gain": -0.09531916118190367,
+      "guided_cost": 1,
+      "pure_cost": 1,
+      "guided_after_inner": 0.29814380254860123,
+      "pure_after_inner": 0.28347326112343546
+    },
+    {
+      "guided_step": 4,
+      "parent": [
+        11,
+        173,
+        281
+      ],
+      "guided_attribute": 147,
+      "pure_at_same_parent": 98,
+      "divergent": true,
+      "guided_gain": 0.0025994500169289614,
+      "pure_gain": 0.01777810113631645,
+      "guided_gain_per_cost": 0.0008664833389763205,
+      "pure_gain_per_cost": 0.01777810113631645,
+      "guided_dependency_gain": 0.004243808866240234,
+      "pure_dependency_gain": -0.07871760598257635,
+      "guided_cost": 3,
+      "pure_cost": 1,
+      "guided_after_inner": 0.29554435253167227,
+      "pure_after_inner": 0.2803657014122848
+    },
+    {
+      "guided_step": 5,
+      "parent": [
+        11,
+        147,
+        173,
+        281
+      ],
+      "guided_attribute": 98,
+      "pure_at_same_parent": 98,
+      "divergent": false,
+      "guided_gain": 0.021524583685469723,
+      "pure_gain": 0.021524583685469723,
+      "guided_gain_per_cost": 0.021524583685469723,
+      "pure_gain_per_cost": 0.021524583685469723,
+      "guided_dependency_gain": -0.08971884047610432,
+      "pure_dependency_gain": -0.08971884047610432,
+      "guided_cost": 1,
+      "pure_cost": 1,
+      "guided_after_inner": 0.27401976884620255,
+      "pure_after_inner": 0.27401976884620255
+    },
+    {
+      "guided_step": 6,
+      "parent": [
+        11,
+        98,
+        147,
+        173,
+        281
+      ],
+      "guided_attribute": 86,
+      "pure_at_same_parent": 74,
+      "divergent": true,
+      "guided_gain": 0.006943352668297209,
+      "pure_gain": 0.015946813044342756,
+      "guided_gain_per_cost": 0.0034716763341486045,
+      "pure_gain_per_cost": 0.007973406522171378,
+      "guided_dependency_gain": 0.07579709166339602,
+      "pure_dependency_gain": 0.04251906180056206,
+      "guided_cost": 2,
+      "pure_cost": 2,
+      "guided_after_inner": 0.26707641617790534,
+      "pure_after_inner": 0.2580729558018598
+    },
+    {
+      "guided_step": 7,
+      "parent": [
+        11,
+        86,
+        98,
+        147,
+        173,
+        281
+      ],
+      "guided_attribute": 166,
+      "pure_at_same_parent": 77,
+      "divergent": true,
+      "guided_gain": 0.006381927042312718,
+      "pure_gain": 0.007702333329374533,
+      "guided_gain_per_cost": 0.0021273090141042394,
+      "pure_gain_per_cost": 0.007702333329374533,
+      "guided_dependency_gain": 0.03054968654897408,
+      "pure_dependency_gain": -0.19911171710825176,
+      "guided_cost": 3,
+      "pure_cost": 1,
+      "guided_after_inner": 0.2606944891355926,
+      "pure_after_inner": 0.2593740828485308
+    },
+    {
+      "guided_step": 8,
+      "parent": [
+        11,
+        86,
+        98,
+        147,
+        166,
+        173,
+        281
+      ],
+      "guided_attribute": 128,
+      "pure_at_same_parent": 128,
+      "divergent": false,
+      "guided_gain": 0.008132255814645717,
+      "pure_gain": 0.008132255814645717,
+      "guided_gain_per_cost": 0.0040661279073228584,
+      "pure_gain_per_cost": 0.0040661279073228584,
+      "guided_dependency_gain": -0.11859038018910348,
+      "pure_dependency_gain": -0.11859038018910348,
+      "guided_cost": 2,
+      "pure_cost": 2,
+      "guided_after_inner": 0.2525622333209469,
+      "pure_after_inner": 0.2525622333209469
+    }
+  ],
+  "note": "Training-only path audit; same-parent choices are counterfactual immediate steps, not complete alternative runs. Shared caches preclude a runtime comparison."
+}

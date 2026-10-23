@@ -1,0 +1,124 @@
+{
+  "Dependency-only": {
+    "trace": [
+      [
+        [],
+        99,
+        0.12509154882935758,
+        "dependency: positive cost-weighted gain"
+      ],
+      [
+        [
+          99
+        ],
+        213,
+        0.015870416097244044,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          99,
+          213
+        ],
+        52,
+        0.012363291379705987,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          52,
+          99,
+          213
+        ],
+        160,
+        0.013921373653287439,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          52,
+          99,
+          160,
+          213
+        ],
+        52,
+        -0.008272756459214478,
+        "delete"
+      ],
+      [
+        [
+          99,
+          160,
+          213
+        ],
+        99,
+        0.03595277091830751,
+        "delete"
+      ]
+    ],
+    "seconds": 15.578993900009664
+  },
+  "Joint guard": {
+    "trace": [
+      [
+        [],
+        99,
+        0.12509154882935758,
+        "dependency: positive cost-weighted gain"
+      ],
+      [
+        [
+          99
+        ],
+        213,
+        0.015870416097244044,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          99,
+          213
+        ],
+        52,
+        0.012363291379705987,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          52,
+          99,
+          213
+        ],
+        160,
+        0.013921373653287439,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          52,
+          99,
+          160,
+          213
+        ],
+        52,
+        -0.008272756459214478,
+        "delete"
+      ],
+      [
+        [
+          99,
+          160,
+          213
+        ],
+        99,
+        0.03595277091830751,
+        "delete"
+      ]
+    ],
+    "seconds": 0.0009488000068813562
+  },
+  "Prediction-only": {
+    "trace": [],
+    "seconds": 0.00015240001084748656
+  }
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "MOR-PH",
+    "repeat": 2,
+    "alpha": 100.0,
+    "ridge_inner_full": 0.07618384273345608,
+    "ridge_inner_empty": 0.07480998697283504,
+    "inner_gain": -0.0013738557606210317,
+    "audit_brier_ridge": 0.07409750292233157,
+    "audit_brier_empty": 0.07483724303324266,
+    "audit_gain": 0.0007397401109110885,
+    "revived": false,
+    "seconds": 0.3388019000412896
+  }
+]

@@ -1,0 +1,155 @@
+\section{Test-Cost-Sensitive Attribute Reduction}
+\label{sec:formal-method}
+This section formulates the test-cost-sensitive attribute reduction problem for label distribution learning (LDL) as a constrained combinatorial optimization task. In contrast to classical rough-set frameworks that enforce dependency preservation as a rigid feasibility constraint, our formulation employs an inner validation loss threshold to govern predictive feasibility, while leveraging the proposed granular dependency $\Gamma(P)$ to guide the search trajectory toward cost-effective subsets.
+
+\subsection{Prediction-Feasible Minimum-Cost Formulation}
+Let $c_a > 0$ denote the acquisition or measurement cost incurred when querying attribute $a \in A$ at inference time, and let $C(P) = \sum_{a \in P} c_a$ represent the total acquisition cost of subset $P \subseteq A$, with $C(\varnothing) = 0$.
+
+To ensure that attribute reduction does not compromise predictive fidelity, feasibility is defined over an inner cross-validation protocol on the training set $O$. Let $O$ be partitioned into $K$ disjoint validation folds $I_1, \dots, I_K$. For an evaluated subset $P \subseteq A$, let $\widehat{\boldsymbol{\ell}}^{(-k)}_P(\cdot)$ denote the LDL model trained on $O \setminus I_k$ using features restricted to $P$. The inner validation loss is given by
+\begin{equation}
+	R_{\mathrm{inner}}(P) = \frac{1}{n} \sum_{k=1}^K \sum_{i \in I_k} \|\boldsymbol{\ell}_i - \widehat{\boldsymbol{\ell}}^{(-k)}_P(x_i)\|_2^2.
+	\label{eq:inner-loss}
+\end{equation}
+We define the feasibility baseline as the performance attained by the complete attribute set, $L_{\max} = R_{\mathrm{inner}}(A)$. A candidate subset $P$ is deemed \emph{prediction-feasible} if its predictive loss does not exceed this baseline:
+\begin{equation}
+	\mathcal{F} = \left\{ P \subseteq A : R_{\mathrm{inner}}(P) \le L_{\max} \right\}.
+	\label{eq:feasible-set}
+\end{equation}
+The optimal test-cost-sensitive reduction problem is then formalized as:
+\begin{equation}
+	P^* \in \underset{P \in \mathcal{F}}{\operatorname{argmin}} \; C(P).
+	\label{eq:formal-cost-objective}
+\end{equation}
+
+By construction, the full set satisfies feasibility ($A \in \mathcal{F}$). If the baseline prediction of the empty set satisfies $R_{\mathrm{inner}}(\varnothing) \le L_{\max}$, then $P^* = \varnothing$ is the unique zero-cost trivial solution. In our reference implementation, $\widehat{\boldsymbol{\ell}}^{(-k)}_P$ is instantiated as a standard 5-nearest-neighbor regressor operating on min--max scaled attributes with Euclidean distance, while the empty subset predicts the fold-wise mean distribution $\bar{\boldsymbol{\ell}}^{(-k)}$.
+
+\begin{remark}[Decoupling Feasibility from Dependency]
+	Classical rough-set reducts typically mandate $\Gamma(P) \ge \Gamma(A)$. However, because empirical label dispersion and downstream non-parametric regression losses do not induce strictly isomorphic partial orders over $2^A$, imposing $\Gamma(P) \ge \Gamma(A)$ can unnecessarily discard subsets with superior test-cost trade-offs. Eq.~\eqref{eq:formal-cost-objective} instead designates actual predictive fidelity ($R_{\mathrm{inner}}$) as the feasibility boundary and reserves $\Gamma(P)$ as an efficient heuristic surrogate during search.
+\end{remark}
+
+\subsection{Dependency-Guided Constructive Search}
+\label{sub-sec:dependency}
+Finding $P^*$ in Eq.~\eqref{eq:formal-cost-objective} is NP-hard. We design a multi-tier forward-selection and backward-elimination heuristic that prioritizes predictive gain per unit cost, gated by granular dependency.
+
+For any subset $P$ and an unselected candidate $a \in A \setminus P$, define the marginal predictive gain $u_a(P)$ and marginal granular dependency gain $v_a(P)$ as:
+\begin{equation}
+	u_a(P) = R_{\mathrm{inner}}(P) - R_{\mathrm{inner}}(P \cup \{a\}), \qquad
+	v_a(P) = \Gamma(P \cup \{a\}) - \Gamma(P).
+	\label{eq:marginal-gains}
+\end{equation}
+
+\subsubsection{Forward Selection Stage}
+Starting from $P = \varnothing$, attributes are greedily accumulated until $P \in \mathcal{F}$. At each iteration, candidate attributes in $A \setminus P$ are partitioned hierarchically:
+\begin{enumerate}[label=(\roman*)]
+	\item \textbf{Loss-improving pool:} $J(P) = \{a \in A \setminus P : u_a(P) > 0\}$.
+	\item \textbf{Dual-improving pool:} $H(P) = \{a \in J(P) : v_a(P) > 0\}$.
+\end{enumerate}
+The next attribute is selected according to the following priority hierarchy:
+\begin{equation}
+	a^* = 
+	\begin{cases}
+		\underset{a \in H(P)}{\operatorname{argmax}} \; \dfrac{v_a(P)}{c_a}, & \text{if } H(P) \ne \varnothing, \\[8pt]
+		\underset{a \in J(P)}{\operatorname{argmax}} \; \dfrac{u_a(P)}{c_a}, & \text{if } H(P) = \varnothing \text{ and } J(P) \ne \varnothing, \\[8pt]
+		\underset{a \in A \setminus P}{\operatorname{argmax}} \; u_a(P), & \text{otherwise (plateau-bridging step)},
+	\end{cases}
+	\label{eq:selection-rule}
+\end{equation}
+with ties resolved by favoring smaller acquisition costs $c_a$, followed by fixed attribute indices. The plateau-bridging branch allows the search to navigate non-convex valleys where no single attribute produces an immediate positive marginal reduction in loss.
+
+\subsubsection{Restarting Backward Elimination}
+Upon attaining feasibility ($P \in \mathcal{F}$), redundant attributes are pruned. Attributes in $P$ are sorted in descending order of cost $c_a$ (breaking ties by ascending index). For each attribute $a \in P$:
+\begin{itemize}
+	\item If $R_{\mathrm{inner}}(P \setminus \{a\}) \le L_{\max}$, the removal is committed ($P \gets P \setminus \{a\}$), and the pruning scan restarts from the highest-cost attribute of the updated set.
+	\item The elimination terminates when a full scan over all attributes in $P$ yields no feasible deletions.
+\end{itemize}
+The complete procedure is formalized in Algorithm~\ref{alg2:guided}.
+
+\begin{algorithm}[t]
+	\caption{Dependency-Guided Cost-Sensitive Attribute Reduction}
+	\label{alg2:guided}
+	\begin{algorithmic}[1]
+		\Require Attribute set $A$, acquisition costs $\{c_a\}_{a \in A}$, baseline loss $L_{\max} = R_{\mathrm{inner}}(A)$
+		\Ensure Feasible, 1-deletion irreducible attribute subset $P^*$
+		\State Initialize $P \gets \varnothing$
+		\If{$R_{\mathrm{inner}}(\varnothing) \le L_{\max}$}
+		\State \Return $\varnothing$
+		\EndIf
+		\While{$R_{\mathrm{inner}}(P) > L_{\max}$ \textbf{and} $P \ne A$} \Comment{Forward Selection}
+		\State Compute $u_a(P)$ and $v_a(P)$ for all $a \in A \setminus P$ via Eq.~\eqref{eq:marginal-gains}
+		\State Form $J(P) = \{a : u_a(P) > 0\}$ and $H(P) = \{a \in J(P) : v_a(P) > 0\}$
+		\State Select $a^*$ according to the tiered priority in Eq.~\eqref{eq:selection-rule}
+		\State $P \gets P \cup \{a^*\}$
+		\EndWhile
+		\State \textbf{repeat} \Comment{Restarting Backward Pruning}
+		\State Sort attributes in $P$ such that $c_{a_1} \ge c_{a_2} \ge \dots \ge c_{a_{|P|}}$
+		\State $\mathrm{pruned} \gets \textbf{false}$
+		\For{$j = 1$ \textbf{to} $|P|$}
+		\If{$R_{\mathrm{inner}}(P \setminus \{a_j\}) \le L_{\max}$}
+		\State $P \gets P \setminus \{a_j\}$; $\mathrm{pruned} \gets \textbf{true}$; \textbf{break}
+		\EndIf
+		\EndFor
+		\State \textbf{until} $\mathrm{pruned} = \textbf{false}$
+		\State \Return $P^* \gets P$
+	\end{algorithmic}
+\end{algorithm}
+
+
+
+\begin{proposition}[Termination and Irreducibility]
+	\label{prop:heuristic-guarantee}
+	Under deterministic subset evaluations, Algorithm~\ref{alg2:guided} terminates in at most $m$ additions and $m$ accepted deletions, where $m = |A|$. The resulting subset $P^*$ is guaranteed to be feasible ($P^* \in \mathcal{F}$) and single-deletion irreducible:
+	\begin{equation}
+		\forall a \in P^*, \quad R_{\mathrm{inner}}(P^* \setminus \{a\}) > L_{\max}.
+	\end{equation}
+\end{proposition}
+\begin{proof}
+	Each forward step adds an unused attribute from $A \setminus P$. In the worst-case scenario where intermediate subsets remain infeasible, the forward phase expands to $P = A$, which satisfies $R_{\mathrm{inner}}(A) \le L_{\max}$ by definition. Thus, the forward phase terminates in at most $m$ iterations. 
+	
+	In the backward phase, each accepted deletion strictly decreases $|P|$ by 1 while maintaining $R_{\mathrm{inner}}(P) \le L_{\max}$. Hence, at most $m$ deletions can occur. The phase halts only after a complete scan over all members in $P$ confirms that no single element can be excised without exceeding $L_{\max}$, establishing single-deletion irreducibility.
+\end{proof}
+
+\subsection{Cost-Reducing Exchange Refinement}
+\label{sub-sec:optional}
+To escape sub-optimal local minima reached by forward-backward passes, we incorporate an optional 1-exchange neighborhood search over the feasible space.
+
+Given a feasible subset $P \in \mathcal{F}$, define the set of cost-improving replacement candidates:
+\begin{equation}
+	\mathcal{N}(P) = \left\{ Q = (P \setminus \{a\}) \cup \{b\} : a \in P, \, b \in A \setminus P, \, c_b < c_a \right\}.
+\end{equation}
+Candidates in $\mathcal{N}(P)$ are prioritized by decreasing cost saving $\Delta C = c_a - c_b$. Within a predefined computational evaluation budget $B_{\mathrm{eval}}$ (e.g., $B_{\mathrm{eval}} = 200$ subset queries):
+\begin{enumerate}
+	\item Candidates are sequentially evaluated. Any candidate satisfying $R_{\mathrm{inner}}(Q) \le L_{\max}$ is flagged as admissible.
+	\item If admissible exchanges exist, the move yielding the minimal total cost $C(Q)$ (breaking ties by lower inner loss $R_{\mathrm{inner}}(Q)$) is committed: $P \gets Q$.
+	\item After committing an exchange, backward pruning is re-invoked to eliminate any secondary redundancies exposed by the new feature combination.
+\end{enumerate}
+Because each accepted move strictly lowers the acquisition cost ($C(Q) < C(P)$) while preserving feasibility, the sequence of solutions is strictly cost-decreasing, guaranteeing convergence without cycling.
+
+\subsection{Exact Benchmark Formulation and Complexity Characterization}
+\label{subsec:exact-search}
+To establish a rigorous ground truth for algorithmic benchmarking on moderate-dimensional datasets, Eq.~\eqref{eq:formal-cost-objective} can be solved globally via a cost-bounded Branch-and-Bound (B\&B) search on the subset lattice $2^A$:
+\begin{itemize}
+	\item \textbf{Incumbent initialization:} The incumbent solution is initialized to the full set, $P_{\mathrm{best}} \gets A$, with incumbent cost $C^* = C(A)$.
+	\item \textbf{Branching and Pruning:} The search space is explored via a binary inclusion/exclusion tree. For any partial assignment with committed attributes $P_{\mathrm{curr}}$, the node is immediately pruned if its lower-bound cost satisfies:
+	\begin{equation}
+		C(P_{\mathrm{curr}}) \ge C^*.
+		\label{eq:cost-prune}
+	\end{equation}
+	Since attribute costs are strictly positive ($c_a > 0$), all completions $Q \supseteq P_{\mathrm{curr}}$ satisfy $C(Q) > C(P_{\mathrm{curr}}) \ge C^*$, rendering further branching redundant.
+	\item \textbf{Feasibility Update:} When a candidate subset $P$ with $C(P) < C^*$ satisfies $R_{\mathrm{inner}}(P) \le L_{\max}$, the incumbent is updated: $P_{\mathrm{best}} \gets P$, $C^* \gets C(P)$.
+\end{itemize}
+
+\subsubsection{Computational Complexity}
+The computational characteristics of the reduction pipeline are summarized as follows:
+\begin{itemize}
+	\item \textbf{Heuristic Search:} The forward phase requests at most $\sum_{k=1}^m (m - k + 1) = O(m^2)$ subset evaluations. The restarting backward elimination performs at most $O(m^2)$ loss evaluations in the worst case. Thus, the total number of subset loss requests is bounded by $O(m^2)$.
+	\item \textbf{Exchange Refinement:} Hard-bounded by $\min\{|\mathcal{N}(P)|, B_{\mathrm{eval}}\}$, ensuring controlled wall-clock execution.
+	\item \textbf{Exact Search:} Requires $O(2^m)$ evaluations in the theoretical worst case, though cost-based pruning significantly contracts the practical search space when low-cost feasible subsets exist early in the traversal.
+\end{itemize}
+
+\begin{remark}[Scope and Generalization Integrity]
+	All metric projections, feature scalings, and neighborhood models are strictly fit on the inner training folds $O \setminus I_k$, preventing information leakage. While membership in $\mathcal{F}$ certifies internal feasibility against the full-feature baseline on the development set, downstream performance preservation is evaluated externally on completely isolated hold-out test folds, as detailed in Section~\ref{sec:paper-experiments}.
+\end{remark}
+
+\input{paper_pseudocode.tex}
+\FloatBarrier
+\input{paper_complexity.tex}

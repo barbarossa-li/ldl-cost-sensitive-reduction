@@ -1,0 +1,650 @@
+[
+  {
+    "dataset": "Natural Scene",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.2971182424360932,
+    "repeat": 1
+  },
+  {
+    "dataset": "Natural Scene",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.33812924921750587,
+    "repeat": 1
+  },
+  {
+    "dataset": "Natural Scene",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.35093227022585616,
+    "repeat": 1
+  },
+  {
+    "dataset": "Natural Scene",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.35093227022585616,
+    "repeat": 1
+  },
+  {
+    "dataset": "Natural Scene",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.2699019168553435,
+    "repeat": 1
+  },
+  {
+    "dataset": "Natural Scene",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.338530184923441,
+    "repeat": 1
+  },
+  {
+    "dataset": "Natural Scene",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.2686039232664142,
+    "repeat": 1
+  },
+  {
+    "dataset": "Natural Scene",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.2826607365773202,
+    "repeat": 1
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.024113548572023576,
+    "repeat": 1
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.025420794117867653,
+    "repeat": 1
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.025244639099912324,
+    "repeat": 1
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.025668785549634494,
+    "repeat": 1
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.021943816071588837,
+    "repeat": 1
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.025562916495535087,
+    "repeat": 1
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.032908192064796137,
+    "repeat": 1
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.026322923551597797,
+    "repeat": 1
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.007911657497230879,
+    "repeat": 1
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.006476874289293032,
+    "repeat": 1
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.006476874289293032,
+    "repeat": 1
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.006476874289293032,
+    "repeat": 1
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.0075370166536954065,
+    "repeat": 1
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.0064326536248345,
+    "repeat": 1
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.0064326536248345,
+    "repeat": 1
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.0064326536248345,
+    "repeat": 1
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 2,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.313818932790484
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 2,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.3590819550780598
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 2,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.3590819550780598
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 2,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.3590819550780598
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 2,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.24742272404470692
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 2,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.3477419100756764
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 2,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.2494038889921462
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 2,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.3218529369410008
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 3,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.2157058477961363
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 3,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.24187741014989284
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 3,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.2707044689114086
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 3,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.2707044689114086
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 3,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.2126417542781859
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 3,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.24195545594168655
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 3,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.20916806499607374
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 3,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.24313816485133924
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 2,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.03119275073389559
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 2,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.03221762066060384
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 2,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.03936222888728424
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 2,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.03936222888728424
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 2,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.028901998573163865
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 2,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.031917299786833435
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 2,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.03052677532908962
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 2,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.033951182917498206
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 3,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.036999005764324085
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 3,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.029821120828413008
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 3,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.029821120828413008
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 3,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.029821120828413008
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 3,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.026696414935012184
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 3,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.030208871879086992
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 3,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.02948885663562571
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 3,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.03288211202055871
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.006913131402020531
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.006033857271030445
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.006033857271030445
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.006033857271030445
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.007568811517682021
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.006036086441556773
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.006036086441556773
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.006036086441556773
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.007911127556474662
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.0067596918428922135
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.0067596918428922135
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.0067596918428922135
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.008245095582092136
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.006764287920081332
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.006764287920081332
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.006764287920081332
+  }
+]

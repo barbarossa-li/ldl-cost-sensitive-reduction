@@ -1,0 +1,21 @@
+{
+  "selected": {
+    "Constraint off": [
+      84,
+      122,
+      188
+    ],
+    "Constraint on": [
+      84,
+      122,
+      188
+    ]
+  },
+  "budget": 3,
+  "gamma_reference": 0.04186052106371973,
+  "inner_reference": 0.2580105907701351,
+  "feasible_prefix_counts": {
+    "Constraint off": 1,
+    "Constraint on": 1
+  }
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "method": "All attributes",
+    "attributes": 24,
+    "cost": 127,
+    "inner_brier": 0.007929675915200092,
+    "test_brier": 0.007210060856221282
+  },
+  {
+    "dataset": "Yeast_cold",
+    "method": "Joint guard",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.007212583837516458,
+    "test_brier": 0.007952092073902304
+  },
+  {
+    "dataset": "Yeast_cold",
+    "method": "Prediction-only",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.006230647334435509,
+    "test_brier": 0.006442138545778143
+  },
+  {
+    "dataset": "Yeast_cold",
+    "method": "Predictive dependency guidance",
+    "attributes": 0,
+    "cost": 0,
+    "inner_brier": 0.006230647334435509,
+    "test_brier": 0.006442138545778143,
+    "gamma": 0.0
+  }
+]

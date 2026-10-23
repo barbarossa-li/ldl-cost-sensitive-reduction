@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "FG-Net",
+    "repeat": 1,
+    "method": "NoGuard",
+    "attributes": 7,
+    "cost": 29,
+    "inner_loss": 0.06312783095563435,
+    "inner_loss_empty": 0.07390106670798201,
+    "audit_brier_sel": 0.07624743994813128,
+    "audit_brier_empty": 0.07613285266027557,
+    "audit_brier_full": 0.08632868268575053,
+    "seconds": 6.297942899982445
+  }
+]

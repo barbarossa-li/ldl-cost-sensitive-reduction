@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Yeast_diau",
+    "repeat": 2,
+    "alpha": 100.0,
+    "ridge_inner_full": 0.003688656187314613,
+    "ridge_inner_empty": 0.0038548862996360617,
+    "inner_gain": 0.00016623011232144887,
+    "audit_brier_ridge": 0.003357357462659354,
+    "audit_brier_empty": 0.0035422171381770118,
+    "audit_gain": 0.00018485967551765776,
+    "revived": true,
+    "seconds": 0.005761500098742545
+  }
+]

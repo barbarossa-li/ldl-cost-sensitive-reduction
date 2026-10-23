@@ -1,0 +1,42 @@
+[
+  {
+    "dataset": "SCUT_FBP",
+    "repeat": 1,
+    "alpha": 10.0,
+    "method": "Full",
+    "attributes": 300,
+    "cost": 1690,
+    "audit_brier": 0.13616551622877437,
+    "test_brier": 0.12479797496392786
+  },
+  {
+    "dataset": "SCUT_FBP",
+    "repeat": 1,
+    "alpha": 10.0,
+    "method": "Empty",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.13812972719601635,
+    "test_brier": 0.1234816766817849
+  },
+  {
+    "dataset": "SCUT_FBP",
+    "repeat": 1,
+    "alpha": 10.0,
+    "method": "Prediction only after",
+    "attributes": 1,
+    "cost": 8,
+    "audit_brier": 0.13854033568439222,
+    "test_brier": 0.123807029185576
+  },
+  {
+    "dataset": "SCUT_FBP",
+    "repeat": 1,
+    "alpha": 10.0,
+    "method": "Guided after",
+    "attributes": 1,
+    "cost": 8,
+    "audit_brier": 0.13854033568439222,
+    "test_brier": 0.123807029185576
+  }
+]

@@ -1,0 +1,124 @@
+{
+  "Dependency-only": {
+    "trace": [
+      [
+        [],
+        281,
+        0.07721933502889805,
+        "positive cost-weighted gain"
+      ],
+      [
+        [
+          281
+        ],
+        104,
+        0.06777309258870906,
+        "positive cost-weighted gain"
+      ]
+    ],
+    "seconds": 16.667896275999738
+  },
+  "Joint guard": {
+    "trace": [
+      [
+        [],
+        281,
+        0.07721933502889805,
+        "dependency: positive cost-weighted gain"
+      ],
+      [
+        [
+          281
+        ],
+        104,
+        0.06777309258870906,
+        "dependency: positive cost-weighted gain"
+      ],
+      [
+        [
+          104,
+          281
+        ],
+        84,
+        0.02195191624318718,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          84,
+          104,
+          281
+        ],
+        6,
+        0.009146816625407811,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          6,
+          84,
+          104,
+          281
+        ],
+        188,
+        0.008408194345578601,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          6,
+          84,
+          104,
+          188,
+          281
+        ],
+        9,
+        0.005624175992772623,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          6,
+          9,
+          84,
+          104,
+          188,
+          281
+        ],
+        194,
+        0.00355057010965959,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          6,
+          9,
+          84,
+          104,
+          188,
+          194,
+          281
+        ],
+        198,
+        0.004074760974763725,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          6,
+          9,
+          84,
+          104,
+          188,
+          194,
+          198,
+          281
+        ],
+        43,
+        0.004446195817509407,
+        "prediction loss: positive cost-weighted gain"
+      ]
+    ],
+    "seconds": 8.619337552998331
+  }
+}

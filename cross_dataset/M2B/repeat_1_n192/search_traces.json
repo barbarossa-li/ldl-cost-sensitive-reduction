@@ -1,0 +1,14 @@
+{
+  "Dependency-only": {
+    "trace": [],
+    "seconds": 0.0013644999999087304
+  },
+  "Joint guard": {
+    "trace": [],
+    "seconds": 7.510000432375818e-05
+  },
+  "Prediction-only": {
+    "trace": [],
+    "seconds": 6.189999112393707e-05
+  }
+}

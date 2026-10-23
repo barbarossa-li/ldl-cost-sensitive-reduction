@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 384,
+    "method": "DSIM k",
+    "attributes": 7,
+    "cost": 41,
+    "inner_brier": 0.006899275944648298,
+    "test_brier": 0.007594677924584739,
+    "test_kl": 0.015329963413200948,
+    "test_tv": 0.06713755567452884,
+    "test_js": 0.003862100706497419
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 384,
+    "method": "DSIM budget",
+    "attributes": 7,
+    "cost": 21,
+    "inner_brier": 0.0067903115998182466,
+    "test_brier": 0.007426936797794327,
+    "test_kl": 0.015016903404053369,
+    "test_tv": 0.06707744037100327,
+    "test_js": 0.003784412294917808
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 384,
+    "method": "FSLC k",
+    "attributes": 7,
+    "cost": 41,
+    "inner_brier": 0.006408573800132836,
+    "test_brier": 0.007687844454989604,
+    "test_kl": 0.015505155050642802,
+    "test_tv": 0.06792499371398932,
+    "test_js": 0.003915898518708117
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 384,
+    "method": "FSLC budget",
+    "attributes": 5,
+    "cost": 21,
+    "inner_brier": 0.006451772153143405,
+    "test_brier": 0.007489688947953135,
+    "test_kl": 0.015130396046250641,
+    "test_tv": 0.06612575851609102,
+    "test_js": 0.0038257731517375862
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 384,
+    "method": "GBFRS k",
+    "attributes": 7,
+    "cost": 37,
+    "inner_brier": 0.006691510105425835,
+    "test_brier": 0.007614410049417745,
+    "test_kl": 0.015399510384605164,
+    "test_tv": 0.06783148450650017,
+    "test_js": 0.0038744281649824752
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "train_n": 384,
+    "method": "GBFRS budget",
+    "attributes": 5,
+    "cost": 21,
+    "inner_brier": 0.006673534280424935,
+    "test_brier": 0.007055557312210831,
+    "test_kl": 0.01428277682405477,
+    "test_tv": 0.06518909462177665,
+    "test_js": 0.0035937911634832745
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "dataset": "Natural_Scene",
+    "guided_additions": 8,
+    "pure_additions": 6,
+    "guided_deletions": 2,
+    "pure_deletions": 1,
+    "guided_final_cost": 12,
+    "pure_final_cost": 9,
+    "same_parent_divergent": 6,
+    "same_parent_steps": 8,
+    "lower_predictive_gain_per_cost": 6
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "guided_additions": 5,
+    "pure_additions": 4,
+    "guided_deletions": 0,
+    "pure_deletions": 0,
+    "guided_final_cost": 20,
+    "pure_final_cost": 14,
+    "same_parent_divergent": 4,
+    "same_parent_steps": 5,
+    "lower_predictive_gain_per_cost": 4
+  },
+  {
+    "dataset": "Yeast_cold",
+    "guided_additions": 0,
+    "pure_additions": 0,
+    "guided_deletions": 0,
+    "pure_deletions": 0,
+    "guided_final_cost": 0,
+    "pure_final_cost": 0,
+    "same_parent_divergent": 0,
+    "same_parent_steps": 0,
+    "lower_predictive_gain_per_cost": 0
+  }
+]

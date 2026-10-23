@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "MOR-PH",
+    "repeat": 2,
+    "method": "NoGuard",
+    "attributes": 4,
+    "cost": 15,
+    "inner_loss": 0.05279891536785676,
+    "inner_loss_empty": 0.07480998697283504,
+    "audit_brier_sel": 0.054627192650033164,
+    "audit_brier_empty": 0.07483724303324266,
+    "audit_brier_full": 0.08114753262796731,
+    "seconds": 3.391611999948509
+  }
+]

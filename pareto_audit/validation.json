@@ -1,0 +1,18 @@
+{
+  "paired_comparisons": 27,
+  "cross_budget_comparisons": 81,
+  "semantic_front_records": 72,
+  "source_sha256": "8bba71be0489f275e603489a657b60a13d16c0c8cfbda90fc4aadfaff900cf0c",
+  "source_unchanged": true,
+  "new_search": false,
+  "new_prediction": false,
+  "no_budget_selected_by_audit": true,
+  "cost_comparison": "exact integer",
+  "loss_tolerance": 1e-12,
+  "front_scope": "Finite existing candidate set plus full/empty per same split; no global optimality",
+  "duplicates": "Repeated budgets/identical subsets retained and must not count as independent evidence",
+  "dominance_irreflexivity_asymmetry_tradeoff_checks": true,
+  "manuscript_pdf_pages": 105,
+  "visual_check": "Pages 99\u2013102 inspected; Table and Figure 30 readable without overlap",
+  "latex_check": "Final compilation successful"
+}

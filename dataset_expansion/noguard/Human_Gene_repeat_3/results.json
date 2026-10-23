@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Human_Gene",
+    "repeat": 3,
+    "method": "NoGuard",
+    "attributes": 1,
+    "cost": 5,
+    "inner_loss": 0.017245312139702082,
+    "inner_loss_empty": 0.014926736930057048,
+    "audit_brier_sel": 0.027814130382758397,
+    "audit_brier_empty": 0.024409847686753812,
+    "audit_brier_full": 0.027632433251789244,
+    "seconds": 0.061309199896641076
+  }
+]

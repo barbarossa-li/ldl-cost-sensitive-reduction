@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Human_Gene",
+    "repeat": 1,
+    "alpha": 100.0,
+    "ridge_inner_full": 0.017062190114782987,
+    "ridge_inner_empty": 0.01662444551994211,
+    "inner_gain": -0.00043774459484087827,
+    "audit_brier_ridge": 0.019790641319396125,
+    "audit_brier_empty": 0.019483399993579713,
+    "audit_gain": -0.0003072413258164118,
+    "revived": false,
+    "seconds": 0.022688400000333786
+  }
+]

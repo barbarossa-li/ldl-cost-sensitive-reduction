@@ -1,0 +1,41 @@
+# Datasets (publicly available; fetch with download_data.py)
+*.mat
+*.npy
+dataset_expansion/data/*
+!dataset_expansion/data/.gitkeep
+cross_dataset/data/*
+!cross_dataset/data/.gitkeep
+pilot/data/feature.npy
+pilot/data/label.npy
+
+# Python
+__pycache__/
+*.pyc
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.synctex.gz
+*.out
+*.bbl
+*.blg
+*.spl
+*.toc
+*.lof
+*.loa
+*.fdb_latexmk
+*.fls
+
+# Superseded drafts and internal development notes (not part of the release)
+ASC_LDL_foundations.*
+ASC_LDL_formal_method.*
+ASC_LDL_introduction.*
+section_*.tex
+appendix_entropy_diagnostic.tex
+INTRODUCTION_REVISION_NOTES.md
+PAPER_STRUCTURE_AND_EVIDENCE.md
+RECENT_REFERENCES.md
+SUBMISSION_CONFIRMATIONS.md
+READ_ME.txt
+entropy_diagnostic.*
+negative_gain_construction.csv

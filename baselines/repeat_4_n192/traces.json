@@ -1,0 +1,59 @@
+{
+  "Forward k": {
+    "additions": [
+      [
+        201,
+        0.0074133787352769764
+      ],
+      [
+        116,
+        0.027411585069270217
+      ],
+      [
+        271,
+        0.016886248298063178
+      ],
+      [
+        194,
+        0.011200931670396097
+      ]
+    ],
+    "seconds": 2.287707619999992
+  },
+  "Cost-forward budget": {
+    "additions": [
+      [
+        3,
+        0.0035348177089292165
+      ]
+    ],
+    "seconds": 0.0010073560000591897
+  },
+  "Prediction-only": {
+    "trace": [
+      [
+        [],
+        201,
+        0.0074133787352769764,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          201
+        ],
+        173,
+        0.013434901957844414,
+        "prediction loss: positive cost-weighted gain"
+      ],
+      [
+        [
+          173,
+          201
+        ],
+        126,
+        0.01869076576045775,
+        "prediction loss: positive cost-weighted gain"
+      ]
+    ]
+  }
+}

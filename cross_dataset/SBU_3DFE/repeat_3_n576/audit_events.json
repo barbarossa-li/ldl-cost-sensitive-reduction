@@ -1,0 +1,122 @@
+[
+  {
+    "phase": "prefix",
+    "selected": [],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "inner_brier": 0.03238842560799075,
+    "gamma": 0.0
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      241
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "inner_brier": 0.03377191228386192,
+    "gamma": 0.10688203295067278
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      70,
+      241
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "inner_brier": 0.032563252701689596,
+    "gamma": 0.10735049565630589
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      70,
+      161,
+      241
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "inner_brier": 0.03080665106144995,
+    "gamma": 0.09601002427612006
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      54,
+      70,
+      161,
+      241
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "inner_brier": 0.02975306397168604,
+    "gamma": 0.12363703448988214
+  },
+  {
+    "phase": "prefix",
+    "selected": [
+      54,
+      70,
+      161,
+      231,
+      241
+    ],
+    "risk_pass": true,
+    "gamma_pass": false,
+    "inner_brier": 0.02871222747841652,
+    "gamma": 0.13197043732015526
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint off",
+    "removed": 241,
+    "selected": [
+      54,
+      70,
+      161
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint off",
+    "removed": 161,
+    "selected": [
+      54,
+      70,
+      241
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint off",
+    "removed": 54,
+    "selected": [
+      70,
+      161,
+      241
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "accepted": false
+  },
+  {
+    "phase": "deletion",
+    "mode": "Constraint off",
+    "removed": 70,
+    "selected": [
+      54,
+      161,
+      241
+    ],
+    "risk_pass": false,
+    "gamma_pass": false,
+    "accepted": false
+  }
+]

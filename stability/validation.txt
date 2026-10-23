@@ -1,0 +1,1 @@
+PASS: 15 completed runs, 45 method evaluations; all 15 joint guards feasible; split separation, old-object exclusion, nested training, full fold coverage, pre-test selection checkpoints verified.

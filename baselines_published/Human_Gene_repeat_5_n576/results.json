@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "Human_Gene",
+    "repeat": 5,
+    "train_n": 576,
+    "method": "DSIM k",
+    "attributes": 9,
+    "cost": 68,
+    "inner_brier": 0.018885615080392104,
+    "test_brier": 0.023700230954895523,
+    "test_kl": 0.33963776531079226,
+    "test_tv": 0.26758140095501337,
+    "test_js": 0.07139092243363784
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 5,
+    "train_n": 576,
+    "method": "DSIM budget",
+    "attributes": 11,
+    "cost": 36,
+    "inner_brier": 0.018935566177368687,
+    "test_brier": 0.02381010666161147,
+    "test_kl": 0.3377068838623266,
+    "test_tv": 0.26614979074046996,
+    "test_js": 0.07064180213692622
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 5,
+    "train_n": 576,
+    "method": "FSLC k",
+    "attributes": 9,
+    "cost": 54,
+    "inner_brier": 0.01896933620574273,
+    "test_brier": 0.02371931077767672,
+    "test_kl": 0.3397799111170505,
+    "test_tv": 0.2680947115482757,
+    "test_js": 0.07145190022019979
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 5,
+    "train_n": 576,
+    "method": "FSLC budget",
+    "attributes": 11,
+    "cost": 36,
+    "inner_brier": 0.018935566177368687,
+    "test_brier": 0.02381010666161147,
+    "test_kl": 0.3377068838623266,
+    "test_tv": 0.26614979074046996,
+    "test_js": 0.07064180213692622
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 5,
+    "train_n": 576,
+    "method": "GBFRS k",
+    "attributes": 9,
+    "cost": 58,
+    "inner_brier": 0.018683979525698426,
+    "test_brier": 0.0240875359239698,
+    "test_kl": 0.3361126191051927,
+    "test_tv": 0.26885956788989773,
+    "test_js": 0.071453185886253
+  },
+  {
+    "dataset": "Human_Gene",
+    "repeat": 5,
+    "train_n": 576,
+    "method": "GBFRS budget",
+    "attributes": 7,
+    "cost": 36,
+    "inner_brier": 0.018646315871773025,
+    "test_brier": 0.024082044064063217,
+    "test_kl": 0.3345039177044127,
+    "test_tv": 0.2667931139417301,
+    "test_js": 0.07095064132923012
+  }
+]

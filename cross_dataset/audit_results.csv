@@ -1,0 +1,61 @@
+dataset,repeat,train_n,mode,success,selected,attributes,cost,test_brier
+SBU_3DFE,1,192,Constraint off,True,"[0, 9, 17, 223]",4,14,0.03441382968090847
+SBU_3DFE,1,192,Constraint on,False,,,,
+SBU_3DFE,1,384,Constraint off,False,,,,
+SBU_3DFE,1,384,Constraint on,False,,,,
+SBU_3DFE,1,576,Constraint off,True,"[70, 104, 105, 201, 223]",5,15,0.03339104054169657
+SBU_3DFE,1,576,Constraint on,True,"[70, 99, 104, 105, 188, 201, 223]",7,17,0.03488825122132927
+SBU_3DFE,2,192,Constraint off,False,,,,
+SBU_3DFE,2,192,Constraint on,False,,,,
+SBU_3DFE,2,384,Constraint off,True,"[128, 241]",2,7,0.0335405327047011
+SBU_3DFE,2,384,Constraint on,True,"[128, 241]",2,7,0.0335405327047011
+SBU_3DFE,2,576,Constraint off,False,,,,
+SBU_3DFE,2,576,Constraint on,False,,,,
+SBU_3DFE,3,192,Constraint off,True,[],0,0,0.032576754326252774
+SBU_3DFE,3,192,Constraint on,True,[232],1,6,0.03510128333083411
+SBU_3DFE,3,384,Constraint off,True,"[70, 164]",2,2,0.032030514468621735
+SBU_3DFE,3,384,Constraint on,True,"[70, 164]",2,2,0.032030514468621735
+SBU_3DFE,3,576,Constraint off,True,"[54, 70, 161, 241]",4,10,0.03011502949396541
+SBU_3DFE,3,576,Constraint on,False,,,,
+SBU_3DFE,4,192,Constraint off,True,[],0,0,0.033655388454086936
+SBU_3DFE,4,192,Constraint on,True,"[164, 214]",2,2,0.03694305483723519
+SBU_3DFE,4,384,Constraint off,False,,,,
+SBU_3DFE,4,384,Constraint on,False,,,,
+SBU_3DFE,4,576,Constraint off,False,,,,
+SBU_3DFE,4,576,Constraint on,False,,,,
+SBU_3DFE,5,192,Constraint off,True,[],0,0,0.0318636437329546
+SBU_3DFE,5,192,Constraint on,True,"[47, 231]",2,5,0.03551203026619898
+SBU_3DFE,5,384,Constraint off,False,,,,
+SBU_3DFE,5,384,Constraint on,False,,,,
+SBU_3DFE,5,576,Constraint off,False,,,,
+SBU_3DFE,5,576,Constraint on,False,,,,
+Yeast_cold,1,192,Constraint off,True,[],0,0,0.006442138545778143
+Yeast_cold,1,192,Constraint on,True,[6],1,1,0.007952092073902304
+Yeast_cold,1,384,Constraint off,True,[],0,0,0.006422297679459522
+Yeast_cold,1,384,Constraint on,True,"[9, 11, 21, 22]",4,13,0.007335544774248765
+Yeast_cold,1,576,Constraint off,True,[],0,0,0.0064286809287415906
+Yeast_cold,1,576,Constraint on,True,"[7, 18]",2,11,0.0072706874233026755
+Yeast_cold,2,192,Constraint off,True,[],0,0,0.006636466625073205
+Yeast_cold,2,192,Constraint on,True,[10],1,4,0.007880759700084368
+Yeast_cold,2,384,Constraint off,True,[],0,0,0.006612561902961054
+Yeast_cold,2,384,Constraint on,True,[16],1,7,0.007343851548804329
+Yeast_cold,2,576,Constraint off,True,[],0,0,0.006596902959258982
+Yeast_cold,2,576,Constraint on,False,,,,
+Yeast_cold,3,192,Constraint off,True,[],0,0,0.006575995861449788
+Yeast_cold,3,192,Constraint on,True,[6],1,1,0.00831449884935263
+Yeast_cold,3,384,Constraint off,True,[],0,0,0.006565866791520815
+Yeast_cold,3,384,Constraint on,True,[9],1,2,0.007907940148454588
+Yeast_cold,3,576,Constraint off,True,[],0,0,0.006565130308783818
+Yeast_cold,3,576,Constraint on,True,[16],1,7,0.007468071268979499
+Yeast_cold,4,192,Constraint off,True,[],0,0,0.007045855519587781
+Yeast_cold,4,192,Constraint on,True,[22],1,2,0.00847753812469323
+Yeast_cold,4,384,Constraint off,True,[],0,0,0.006987449808030762
+Yeast_cold,4,384,Constraint on,True,[22],1,2,0.008384645607651595
+Yeast_cold,4,576,Constraint off,True,[],0,0,0.0069488888517345625
+Yeast_cold,4,576,Constraint on,True,[22],1,2,0.00811593701859647
+Yeast_cold,5,192,Constraint off,True,[],0,0,0.005542093178942456
+Yeast_cold,5,192,Constraint on,True,[22],1,2,0.006856599872955813
+Yeast_cold,5,384,Constraint off,True,[],0,0,0.005533385828458063
+Yeast_cold,5,384,Constraint on,True,"[6, 22]",2,3,0.006923969704230339
+Yeast_cold,5,576,Constraint off,True,[],0,0,0.005510478113059578
+Yeast_cold,5,576,Constraint on,False,,,,

@@ -1,0 +1,121 @@
+[
+  {
+    "removed": 203,
+    "selected": [
+      6,
+      70,
+      104,
+      188,
+      200,
+      239
+    ],
+    "cost": 7,
+    "inner_brier": 0.23570589569656125,
+    "gamma": 0.1322851265713958,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 200,
+    "selected": [
+      6,
+      70,
+      104,
+      188,
+      203,
+      239
+    ],
+    "cost": 8,
+    "inner_brier": 0.23671399826277367,
+    "gamma": 0.1168038722410995,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 6,
+    "selected": [
+      70,
+      104,
+      188,
+      200,
+      203,
+      239
+    ],
+    "cost": 9,
+    "inner_brier": 0.2337016334606131,
+    "gamma": 0.0578552139757954,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 70,
+    "selected": [
+      6,
+      104,
+      188,
+      200,
+      203,
+      239
+    ],
+    "cost": 9,
+    "inner_brier": 0.2315878169405931,
+    "gamma": 0.1270392005827745,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 104,
+    "selected": [
+      6,
+      70,
+      188,
+      200,
+      203,
+      239
+    ],
+    "cost": 9,
+    "inner_brier": 0.254040459353791,
+    "gamma": 0.06306618921712723,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 188,
+    "selected": [
+      6,
+      70,
+      104,
+      200,
+      203,
+      239
+    ],
+    "cost": 9,
+    "inner_brier": 0.22975455103221135,
+    "gamma": 0.09404551665057037,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  },
+  {
+    "removed": 239,
+    "selected": [
+      6,
+      70,
+      104,
+      188,
+      200,
+      203
+    ],
+    "cost": 9,
+    "inner_brier": 0.22319666436087018,
+    "gamma": 0.11036033189521469,
+    "risk_pass": false,
+    "gamma_pass": true,
+    "gamma_only_block": false
+  }
+]

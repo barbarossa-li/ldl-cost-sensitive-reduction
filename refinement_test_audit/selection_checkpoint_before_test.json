@@ -1,0 +1,461 @@
+[
+  {
+    "dataset": "Natural Scene",
+    "repeat": 1,
+    "split": "stability/repeat_1_n192/split.json",
+    "selected": {
+      "Prediction only before": [
+        6,
+        11,
+        70,
+        98,
+        199
+      ],
+      "Prediction only after": [
+        6,
+        70,
+        98,
+        214,
+        276
+      ],
+      "Guided before": [
+        11,
+        86,
+        98,
+        128,
+        166,
+        281
+      ],
+      "Guided after": [
+        52,
+        86,
+        98,
+        128,
+        234,
+        281
+      ]
+    },
+    "sources": {
+      "Prediction only": {
+        "path": "refinement_pilot/Natural_Scene/repeat_1/Prediction_only.json",
+        "sha256": "e5b6e283215986a44f7b464a61d4dc7826641323cec3ee5b3c669835d1b907b7"
+      },
+      "Guided": {
+        "path": "refinement_pilot/Natural_Scene/repeat_1/Guided.json",
+        "sha256": "6b91ed6a8bfe604b0f056a1d3f7cd0ad31865d6e1ff830cb3b3133b2aede02ae"
+      }
+    }
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 2,
+    "split": "stability/repeat_2_n192/split.json",
+    "selected": {
+      "Prediction only before": [
+        54,
+        104,
+        164
+      ],
+      "Prediction only after": [
+        54,
+        104,
+        164
+      ],
+      "Guided before": [
+        52,
+        130,
+        152
+      ],
+      "Guided after": [
+        52,
+        98,
+        152
+      ]
+    },
+    "sources": {
+      "Prediction only": {
+        "path": "refinement_pilot/Natural_Scene/repeat_2/Prediction_only.json",
+        "sha256": "1918c4d50cb94b050424d7fe7d0f74d66ca32b36732b7abd5a34399dcf828d10"
+      },
+      "Guided": {
+        "path": "refinement_pilot/Natural_Scene/repeat_2/Guided.json",
+        "sha256": "a6805d27fb1295505b4a0b8762f3c8922471f7f4b219e640a96fee1d99dd3f8a"
+      }
+    }
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 3,
+    "split": "stability/repeat_3_n192/split.json",
+    "selected": {
+      "Prediction only before": [
+        7,
+        9,
+        22,
+        86,
+        104,
+        107
+      ],
+      "Prediction only after": [
+        9,
+        22,
+        86,
+        104,
+        107,
+        177
+      ],
+      "Guided before": [
+        7,
+        52,
+        104,
+        128,
+        164,
+        217,
+        261,
+        284
+      ],
+      "Guided after": [
+        9,
+        52,
+        104,
+        128,
+        164,
+        217,
+        261,
+        284
+      ]
+    },
+    "sources": {
+      "Prediction only": {
+        "path": "refinement_pilot/Natural_Scene/repeat_3/Prediction_only.json",
+        "sha256": "93bea0239af1ca0c196aa4b0ae3e6c09844f6cd8b1a0ea841fedd25e0191c4b2"
+      },
+      "Guided": {
+        "path": "refinement_pilot/Natural_Scene/repeat_3/Guided.json",
+        "sha256": "64e7df3ac0d1d3779f789a04431a78946c7690bf656ce33196756ea36f214eb2"
+      }
+    }
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 4,
+    "split": "stability/repeat_4_n192/split.json",
+    "selected": {
+      "Prediction only before": [
+        126,
+        173,
+        201
+      ],
+      "Prediction only after": [
+        126,
+        173,
+        203
+      ],
+      "Guided before": [
+        22,
+        115,
+        120,
+        188
+      ],
+      "Guided after": [
+        22,
+        52,
+        120,
+        188
+      ]
+    },
+    "sources": {
+      "Prediction only": {
+        "path": "refinement_replication/Natural_Scene/repeat_4/Prediction_only.json",
+        "sha256": "3d690bc0048ebcc1badac054c67504b1244e558166054a1865d9a60a56e72a51"
+      },
+      "Guided": {
+        "path": "refinement_replication/Natural_Scene/repeat_4/Guided.json",
+        "sha256": "51b00cdea5f417a11b7b571269ae73b576d5081f48a7265839918bafe6865d12"
+      }
+    }
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 5,
+    "split": "stability/repeat_5_n192/split.json",
+    "selected": {
+      "Prediction only before": [
+        70,
+        170
+      ],
+      "Prediction only after": [
+        70,
+        184
+      ],
+      "Guided before": [
+        84,
+        170,
+        281
+      ],
+      "Guided after": [
+        84,
+        188,
+        281
+      ]
+    },
+    "sources": {
+      "Prediction only": {
+        "path": "refinement_replication/Natural_Scene/repeat_5/Prediction_only.json",
+        "sha256": "260795e7389790d51081844bfd2953d9ffab0df61b2a2c4e743cc5c356aff58c"
+      },
+      "Guided": {
+        "path": "refinement_replication/Natural_Scene/repeat_5/Guided.json",
+        "sha256": "ea8037d0ba39528fa5a0e5222ac5059867e224a7b243cf700f08478265b16048"
+      }
+    }
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 1,
+    "split": "cross_dataset/SBU_3DFE/repeat_1_n192/split.json",
+    "selected": {
+      "Prediction only before": [
+        0,
+        9,
+        17,
+        223
+      ],
+      "Prediction only after": [
+        9,
+        17,
+        200,
+        223
+      ],
+      "Guided before": [
+        6,
+        83,
+        84,
+        201,
+        234
+      ],
+      "Guided after": [
+        6,
+        84,
+        201,
+        225,
+        234
+      ]
+    },
+    "sources": {
+      "Prediction only": {
+        "path": "refinement_pilot/SBU_3DFE/repeat_1/Prediction_only.json",
+        "sha256": "dfe61a822aedd07143b9ed348584abaf0fe90fd4941f5d4197aa765d37a41eb7"
+      },
+      "Guided": {
+        "path": "refinement_pilot/SBU_3DFE/repeat_1/Guided.json",
+        "sha256": "b2eb22910b9c2f76b1fede8b07830a373804d8c17bf2dda11cba4402db5443c1"
+      }
+    }
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 2,
+    "split": "cross_dataset/SBU_3DFE/repeat_2_n192/split.json",
+    "selected": {
+      "Prediction only before": [
+        122,
+        131,
+        134
+      ],
+      "Prediction only after": [
+        122,
+        131,
+        134
+      ],
+      "Guided before": [
+        27,
+        122,
+        131
+      ],
+      "Guided after": [
+        84,
+        122,
+        131
+      ]
+    },
+    "sources": {
+      "Prediction only": {
+        "path": "refinement_pilot/SBU_3DFE/repeat_2/Prediction_only.json",
+        "sha256": "f3ecea9212b4e8186bcc4873eb29ac121c925ce4a1bdc8da91f27080c7947362"
+      },
+      "Guided": {
+        "path": "refinement_pilot/SBU_3DFE/repeat_2/Guided.json",
+        "sha256": "cb305b047f2ae0ff5609a09d2bf2324206019fd1948c1646cde631def51a367d"
+      }
+    }
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 3,
+    "split": "cross_dataset/SBU_3DFE/repeat_3_n192/split.json",
+    "selected": {
+      "Prediction only before": [],
+      "Prediction only after": [],
+      "Guided before": [],
+      "Guided after": []
+    },
+    "sources": {
+      "Prediction only": {
+        "path": "refinement_pilot/SBU_3DFE/repeat_3/Prediction_only.json",
+        "sha256": "4dfc2d0c3faa58157ad4aaa757eb432302bb4c191c75f281101975a22c1df20b"
+      },
+      "Guided": {
+        "path": "refinement_pilot/SBU_3DFE/repeat_3/Guided.json",
+        "sha256": "c7307df3472d7e0f08e5785b91a3b6f8190908e63a2d8aaa689bc4ae125c700d"
+      }
+    }
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 4,
+    "split": "cross_dataset/SBU_3DFE/repeat_4_n192/split.json",
+    "selected": {
+      "Prediction only before": [],
+      "Prediction only after": [],
+      "Guided before": [],
+      "Guided after": []
+    },
+    "sources": {
+      "Prediction only": {
+        "path": "refinement_replication/SBU_3DFE/repeat_4/Prediction_only.json",
+        "sha256": "b11062d19e1b5455140e5be0a2958c8a9039d477d4333d7564fae3bcdc4f7781"
+      },
+      "Guided": {
+        "path": "refinement_replication/SBU_3DFE/repeat_4/Guided.json",
+        "sha256": "9f96ed64c48bfd9e661184e4d1e49f1fb3f4d53b33889302eed3c6e76360e340"
+      }
+    }
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 5,
+    "split": "cross_dataset/SBU_3DFE/repeat_5_n192/split.json",
+    "selected": {
+      "Prediction only before": [],
+      "Prediction only after": [],
+      "Guided before": [],
+      "Guided after": []
+    },
+    "sources": {
+      "Prediction only": {
+        "path": "refinement_replication/SBU_3DFE/repeat_5/Prediction_only.json",
+        "sha256": "d0c987c90b1a15c5e97148869f9052ae016cdcbe0da7d63a8ef7edffe5afcc60"
+      },
+      "Guided": {
+        "path": "refinement_replication/SBU_3DFE/repeat_5/Guided.json",
+        "sha256": "fe626b9238baab41e5407669bdaa8acf3d05bd97c1318ba8204d5ddc78d49ae1"
+      }
+    }
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "split": "cross_dataset/Yeast_cold/repeat_1_n192/split.json",
+    "selected": {
+      "Prediction only before": [],
+      "Prediction only after": [],
+      "Guided before": [],
+      "Guided after": []
+    },
+    "sources": {
+      "Prediction only": {
+        "path": "refinement_pilot/Yeast_cold/repeat_1/Prediction_only.json",
+        "sha256": "7c2b5119866ed6b51039467662590ffc35a7df89d6cb3f141091c2e507919924"
+      },
+      "Guided": {
+        "path": "refinement_pilot/Yeast_cold/repeat_1/Guided.json",
+        "sha256": "583589b7fca66baefdc57dde9bb7d212a3a19c94faa202a8f38a5ce98937b23a"
+      }
+    }
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 2,
+    "split": "cross_dataset/Yeast_cold/repeat_2_n192/split.json",
+    "selected": {
+      "Prediction only before": [],
+      "Prediction only after": [],
+      "Guided before": [],
+      "Guided after": []
+    },
+    "sources": {
+      "Prediction only": {
+        "path": "refinement_pilot/Yeast_cold/repeat_2/Prediction_only.json",
+        "sha256": "eb7610ce6ebd514c38e8c64b7b435b7ad5850870751e33956fea44c0f49f4f01"
+      },
+      "Guided": {
+        "path": "refinement_pilot/Yeast_cold/repeat_2/Guided.json",
+        "sha256": "87c955ef6264a62786dce0eedd9e351cdfceb9bb8a16a6ec53d8cfb0cbbcf69d"
+      }
+    }
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 3,
+    "split": "cross_dataset/Yeast_cold/repeat_3_n192/split.json",
+    "selected": {
+      "Prediction only before": [],
+      "Prediction only after": [],
+      "Guided before": [],
+      "Guided after": []
+    },
+    "sources": {
+      "Prediction only": {
+        "path": "refinement_pilot/Yeast_cold/repeat_3/Prediction_only.json",
+        "sha256": "01d47b9cdf8d20b2a11fb9e5cb7e398471589386874300e412f4ef804063aefd"
+      },
+      "Guided": {
+        "path": "refinement_pilot/Yeast_cold/repeat_3/Guided.json",
+        "sha256": "17c3c3a89ab49c70da22e946708cdaf252e23148e36d0ae93fb8fa11840932f5"
+      }
+    }
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 4,
+    "split": "cross_dataset/Yeast_cold/repeat_4_n192/split.json",
+    "selected": {
+      "Prediction only before": [],
+      "Prediction only after": [],
+      "Guided before": [],
+      "Guided after": []
+    },
+    "sources": {
+      "Prediction only": {
+        "path": "refinement_replication/Yeast_cold/repeat_4/Prediction_only.json",
+        "sha256": "13a63769930edf721305b474b6f41d863b1d4fb8d9a5dbaf92d279ddaf7b1e00"
+      },
+      "Guided": {
+        "path": "refinement_replication/Yeast_cold/repeat_4/Guided.json",
+        "sha256": "07dd965dc8805672dc7bfede6bf16cbe554c1ec50e2870eac55d18724dc7c15f"
+      }
+    }
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 5,
+    "split": "cross_dataset/Yeast_cold/repeat_5_n192/split.json",
+    "selected": {
+      "Prediction only before": [],
+      "Prediction only after": [],
+      "Guided before": [],
+      "Guided after": []
+    },
+    "sources": {
+      "Prediction only": {
+        "path": "refinement_replication/Yeast_cold/repeat_5/Prediction_only.json",
+        "sha256": "91f990b1b3df455e2f0a2a05d198155840f7d3f65c0b1b16974778bd86174716"
+      },
+      "Guided": {
+        "path": "refinement_replication/Yeast_cold/repeat_5/Guided.json",
+        "sha256": "cc95cd8cd2769a84cb35d452cd1b97c7d228e00f4392033c76c857633eacdcce"
+      }
+    }
+  }
+]

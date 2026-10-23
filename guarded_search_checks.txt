@@ -1,0 +1,4 @@
+80 nonmonotone joint dependency/loss tables: exact search agrees with exhaustive minimum feasible cost.
+Heuristic outputs jointly feasible single-deletion-irreducible sets.
+High-dependency but high-loss singleton rejected; forward search switches to predictive improvement.
+No dependency or validation-loss monotonicity assumed.

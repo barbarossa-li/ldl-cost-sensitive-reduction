@@ -1,0 +1,25 @@
+{
+  "before": [
+    3,
+    5,
+    16
+  ],
+  "after": [
+    3,
+    5,
+    16
+  ],
+  "results": {
+    "method": "Prediction only",
+    "before_attributes": 3,
+    "after_attributes": 3,
+    "before_cost": 19,
+    "after_cost": 19,
+    "full_cost": 127,
+    "full_inner": 0.024703475203709052,
+    "after_loss": 0.024601792701622802,
+    "evaluations": 40,
+    "accepted": 0,
+    "initial_seconds": 0.0020362999057397246
+  }
+}

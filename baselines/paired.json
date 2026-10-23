@@ -1,0 +1,338 @@
+[
+  {
+    "train_n": 192,
+    "baseline": "Cheapest k",
+    "joint_minus_baseline_mean": -0.03940909224825502,
+    "joint_minus_baseline_sd": 0.022632620301837884,
+    "joint_wins": 5,
+    "paired_differences": [
+      -0.012254970320985659,
+      -0.06582509488553967,
+      -0.01953465111021563,
+      -0.05149838111139815,
+      -0.04793236381313598
+    ]
+  },
+  {
+    "train_n": 192,
+    "baseline": "Correlation k",
+    "joint_minus_baseline_mean": -0.03488123215568527,
+    "joint_minus_baseline_sd": 0.016729742719144368,
+    "joint_wins": 5,
+    "paired_differences": [
+      -0.03107427596895862,
+      -0.018981093449816466,
+      -0.024810463512460246,
+      -0.06216872997127204,
+      -0.03737159787591898
+    ]
+  },
+  {
+    "train_n": 192,
+    "baseline": "Cost-correlation budget",
+    "joint_minus_baseline_mean": 0.007414692749657092,
+    "joint_minus_baseline_sd": 0.035514801369736865,
+    "joint_wins": 3,
+    "paired_differences": [
+      0.03924561641437507,
+      -0.017737257587044086,
+      0.05237168420119864,
+      -0.023152428957229576,
+      -0.013654150323014591
+    ]
+  },
+  {
+    "train_n": 192,
+    "baseline": "Forward k",
+    "joint_minus_baseline_mean": -0.005866953736075642,
+    "joint_minus_baseline_sd": 0.02642268194875689,
+    "joint_wins": 3,
+    "paired_differences": [
+      -0.007039924563829736,
+      0.002236850135268198,
+      0.034060564399515436,
+      -0.02520188057717687,
+      -0.033390378074155236
+    ]
+  },
+  {
+    "train_n": 192,
+    "baseline": "Cost-forward budget",
+    "joint_minus_baseline_mean": -0.013384049604847991,
+    "joint_minus_baseline_sd": 0.02705554995057968,
+    "joint_wins": 4,
+    "paired_differences": [
+      0.008218259625998425,
+      -0.006011537146154378,
+      -0.0012162824288807772,
+      -0.06053152285555735,
+      -0.007379165219645878
+    ]
+  },
+  {
+    "train_n": 192,
+    "baseline": "Prediction-only",
+    "joint_minus_baseline_mean": 0.0063739217769668175,
+    "joint_minus_baseline_sd": 0.02977776390091037,
+    "joint_wins": 2,
+    "paired_differences": [
+      0.012243910719553441,
+      0.014731846997687925,
+      0.047850572273614944,
+      -0.012238841919080978,
+      -0.030717879186941244
+    ]
+  },
+  {
+    "train_n": 192,
+    "baseline": "Random k",
+    "joint_minus_baseline_mean": -0.027474479788566285,
+    "joint_minus_baseline_sd": 0.01838925279909872,
+    "joint_wins": 5,
+    "paired_differences": [
+      -0.017177053688486876,
+      -0.03496113831415193,
+      -0.0011182564395763595,
+      -0.04799785087544489,
+      -0.036118099625171374
+    ]
+  },
+  {
+    "train_n": 192,
+    "baseline": "Budget-forward bridge",
+    "joint_minus_baseline_mean": -0.007131738075660837,
+    "joint_minus_baseline_sd": 0.03229083294109584,
+    "joint_wins": 3,
+    "paired_differences": [
+      0.008218259625998425,
+      0.025250020499781395,
+      -0.0012162824288807772,
+      -0.06053152285555735,
+      -0.007379165219645878
+    ]
+  },
+  {
+    "train_n": 384,
+    "baseline": "Cheapest k",
+    "joint_minus_baseline_mean": -0.04296106372829634,
+    "joint_minus_baseline_sd": 0.026505449123299767,
+    "joint_wins": 4,
+    "paired_differences": [
+      -0.038709632535724015,
+      -0.06530345143100033,
+      0.0008960823794326167,
+      -0.051513982458858076,
+      -0.06017433459533189
+    ]
+  },
+  {
+    "train_n": 384,
+    "baseline": "Correlation k",
+    "joint_minus_baseline_mean": -0.036441039881679176,
+    "joint_minus_baseline_sd": 0.02862348482654448,
+    "joint_wins": 5,
+    "paired_differences": [
+      -0.007642366276598089,
+      -0.08274641516895151,
+      -0.0421032935889718,
+      -0.02612202427425303,
+      -0.023591100099621454
+    ]
+  },
+  {
+    "train_n": 384,
+    "baseline": "Cost-correlation budget",
+    "joint_minus_baseline_mean": 0.002363249074827961,
+    "joint_minus_baseline_sd": 0.02163873511546258,
+    "joint_wins": 2,
+    "paired_differences": [
+      0.008881112592848184,
+      -0.03241557881361021,
+      0.015210472660026675,
+      0.023051782671942966,
+      -0.002911543737067812
+    ]
+  },
+  {
+    "train_n": 384,
+    "baseline": "Forward k",
+    "joint_minus_baseline_mean": 0.001759242506404568,
+    "joint_minus_baseline_sd": 0.013061320029925008,
+    "joint_wins": 2,
+    "paired_differences": [
+      0.022587111750009936,
+      -0.01342384840844435,
+      0.0013832325222661868,
+      0.0005469331029446245,
+      -0.0022972164347535573
+    ]
+  },
+  {
+    "train_n": 384,
+    "baseline": "Cost-forward budget",
+    "joint_minus_baseline_mean": -0.03543004887629592,
+    "joint_minus_baseline_sd": 0.015725516467479675,
+    "joint_wins": 5,
+    "paired_differences": [
+      -0.025544341196138964,
+      -0.05944187685774069,
+      -0.04343992581598033,
+      -0.022671923365183422,
+      -0.026052177146436206
+    ]
+  },
+  {
+    "train_n": 384,
+    "baseline": "Prediction-only",
+    "joint_minus_baseline_mean": -0.010620158429752552,
+    "joint_minus_baseline_sd": 0.014354223156442041,
+    "joint_wins": 3,
+    "paired_differences": [
+      -0.028257111575650806,
+      -0.017728900868213243,
+      0.007623517743686081,
+      0.0,
+      -0.014738297448584792
+    ]
+  },
+  {
+    "train_n": 384,
+    "baseline": "Random k",
+    "joint_minus_baseline_mean": -0.036583168279371275,
+    "joint_minus_baseline_sd": 0.010392139869467172,
+    "joint_wins": 5,
+    "paired_differences": [
+      -0.028567660672425832,
+      -0.0525492360433675,
+      -0.028988918598200908,
+      -0.03115684691281101,
+      -0.041653179170051124
+    ]
+  },
+  {
+    "train_n": 384,
+    "baseline": "Budget-forward bridge",
+    "joint_minus_baseline_mean": -0.01776997403346377,
+    "joint_minus_baseline_sd": 0.02402776236044442,
+    "joint_wins": 4,
+    "paired_differences": [
+      -0.006193033156389971,
+      -0.05001544985212589,
+      -0.019050760230760744,
+      0.014335356459630466,
+      -0.027925983387672715
+    ]
+  },
+  {
+    "train_n": 576,
+    "baseline": "Cheapest k",
+    "joint_minus_baseline_mean": -0.02167571788572071,
+    "joint_minus_baseline_sd": 0.027817013949231403,
+    "joint_wins": 4,
+    "paired_differences": [
+      -0.010420939601914647,
+      -0.019861425802481653,
+      0.005015456961869669,
+      -0.06859586643346044,
+      -0.014515814552616468
+    ]
+  },
+  {
+    "train_n": 576,
+    "baseline": "Correlation k",
+    "joint_minus_baseline_mean": -0.023573623602816497,
+    "joint_minus_baseline_sd": 0.01915579643351811,
+    "joint_wins": 5,
+    "paired_differences": [
+      -0.006771260685833669,
+      -0.02641219715306059,
+      -0.008337194193797581,
+      -0.0542815894465265,
+      -0.022065876534864137
+    ]
+  },
+  {
+    "train_n": 576,
+    "baseline": "Cost-correlation budget",
+    "joint_minus_baseline_mean": -0.004384286672582738,
+    "joint_minus_baseline_sd": 0.01090295818642521,
+    "joint_wins": 3,
+    "paired_differences": [
+      0.0015501089751569497,
+      -0.02258513896938491,
+      0.005900649091684973,
+      -0.002597662974885395,
+      -0.004189389485485306
+    ]
+  },
+  {
+    "train_n": 576,
+    "baseline": "Forward k",
+    "joint_minus_baseline_mean": -0.005876970525248465,
+    "joint_minus_baseline_sd": 0.02027310188289311,
+    "joint_wins": 2,
+    "paired_differences": [
+      0.010916634376771484,
+      -0.026596808531326482,
+      0.009637834601481599,
+      -0.02934611308947699,
+      0.006003600016308064
+    ]
+  },
+  {
+    "train_n": 576,
+    "baseline": "Cost-forward budget",
+    "joint_minus_baseline_mean": -0.050379635323564556,
+    "joint_minus_baseline_sd": 0.009837478568935135,
+    "joint_wins": 5,
+    "paired_differences": [
+      -0.041909013378343685,
+      -0.058998206886075155,
+      -0.06050929182534781,
+      -0.05178484448309273,
+      -0.03869682004496339
+    ]
+  },
+  {
+    "train_n": 576,
+    "baseline": "Prediction-only",
+    "joint_minus_baseline_mean": -0.0033299985954627466,
+    "joint_minus_baseline_sd": 0.015125502797472533,
+    "joint_wins": 2,
+    "paired_differences": [
+      -0.009949496651909806,
+      -0.026099059308491823,
+      0.008635728621357197,
+      0.0,
+      0.0107628343617307
+    ]
+  },
+  {
+    "train_n": 576,
+    "baseline": "Random k",
+    "joint_minus_baseline_mean": -0.023013476676132932,
+    "joint_minus_baseline_sd": 0.012514753135686642,
+    "joint_wins": 5,
+    "paired_differences": [
+      -0.013799684344955099,
+      -0.023444210938096316,
+      -0.018540073074404417,
+      -0.04436445275937778,
+      -0.014918962263831048
+    ]
+  },
+  {
+    "train_n": 576,
+    "baseline": "Budget-forward bridge",
+    "joint_minus_baseline_mean": 5.410612483133792e-05,
+    "joint_minus_baseline_sd": 0.013257694898120105,
+    "joint_wins": 2,
+    "paired_differences": [
+      -0.00450616706251622,
+      -0.01922351922137097,
+      0.008448623219364626,
+      0.0,
+      0.015551593688679255
+    ]
+  }
+]

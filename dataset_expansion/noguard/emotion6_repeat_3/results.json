@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "emotion6",
+    "repeat": 3,
+    "method": "NoGuard",
+    "attributes": 1,
+    "cost": 3,
+    "inner_loss": 0.22808085181493476,
+    "inner_loss_empty": 0.2022188940983702,
+    "audit_brier_sel": 0.22723902663989706,
+    "audit_brier_empty": 0.18046436168420685,
+    "audit_brier_full": 0.20325933179192546,
+    "seconds": 0.3057740000076592
+  }
+]

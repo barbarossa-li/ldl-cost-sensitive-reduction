@@ -1,0 +1,7 @@
+dataset,train_n,off_found,on_found,both_found,changed_pairs,on_test_better,on_test_worse,common_prefix_gamma_only_blocks,original_blocked_deletions,blocked_drop_worsens_test,blocked_drop_improves_test,original_affected_splits
+SBU_3DFE,192,4,3,3,3,0,3,7,12,7,5,3
+SBU_3DFE,384,2,2,2,0,0,0,0,1,1,0,1
+SBU_3DFE,576,2,1,1,1,0,1,4,13,4,9,3
+Yeast_cold,192,5,5,5,5,0,5,5,4,2,2,3
+Yeast_cold,384,5,5,5,5,0,5,9,9,4,5,5
+Yeast_cold,576,5,3,3,3,0,3,6,1,0,1,1

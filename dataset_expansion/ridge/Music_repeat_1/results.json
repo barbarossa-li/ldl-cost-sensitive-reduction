@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Music",
+    "repeat": 1,
+    "alpha": 100.0,
+    "ridge_inner_full": 0.025230996389139917,
+    "ridge_inner_empty": 0.0220233567166927,
+    "inner_gain": -0.0032076396724472177,
+    "audit_brier_ridge": 0.029221756379914882,
+    "audit_brier_empty": 0.025032713039455007,
+    "audit_gain": -0.0041890433404598755,
+    "revived": false,
+    "seconds": 0.17618209996726364
+  }
+]

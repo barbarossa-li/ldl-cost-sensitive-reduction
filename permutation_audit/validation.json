@@ -1,0 +1,16 @@
+{
+  "fitting_folds": 9,
+  "permutations_per_fold": 199,
+  "attribute_fold_records": 1683,
+  "observed_weight_max_error": 5.039371697712625e-16,
+  "whole_label_vectors_preserved": true,
+  "global_label_mean_preserved": true,
+  "validation_test_labels_used": false,
+  "selection_or_prediction_rerun": false,
+  "parameters_changed": false,
+  "seconds": 10.240871182000774,
+  "pdf_pages": 74,
+  "pdf_validation": "Two builds; no undefined references or overfull boxes; Section17 pages67-70 visually checked",
+  "tail_resolution": 0.005,
+  "multiplicity_note": "Attribute percentile counts descriptive, unadjusted; overlapping folds not independent; no combined p-value"
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 192,
+    "method": "DSIM k",
+    "attributes": 1,
+    "cost": 3,
+    "inner_brier": 0.007744003881805992,
+    "test_brier": 0.006850794209696554,
+    "test_kl": 0.014290031656787003,
+    "test_tv": 0.06334331818472407,
+    "test_js": 0.003699435973413697
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 192,
+    "method": "DSIM budget",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.007212583837516458,
+    "test_brier": 0.007952092073902304,
+    "test_kl": 0.01645573810686364,
+    "test_tv": 0.06842471864595631,
+    "test_js": 0.004240183935713042
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 192,
+    "method": "FSLC k",
+    "attributes": 1,
+    "cost": 3,
+    "inner_brier": 0.007744003881805992,
+    "test_brier": 0.006850794209696554,
+    "test_kl": 0.014290031656787003,
+    "test_tv": 0.06334331818472407,
+    "test_js": 0.003699435973413697
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 192,
+    "method": "FSLC budget",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.007212583837516458,
+    "test_brier": 0.007952092073902304,
+    "test_kl": 0.01645573810686364,
+    "test_tv": 0.06842471864595631,
+    "test_js": 0.004240183935713042
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 192,
+    "method": "GBFRS k",
+    "attributes": 1,
+    "cost": 4,
+    "inner_brier": 0.00733339902988774,
+    "test_brier": 0.007622853431034473,
+    "test_kl": 0.015831732241615375,
+    "test_tv": 0.06751200506463124,
+    "test_js": 0.004076485998313747
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 192,
+    "method": "GBFRS budget",
+    "attributes": 1,
+    "cost": 1,
+    "inner_brier": 0.007212583837516458,
+    "test_brier": 0.007952092073902304,
+    "test_kl": 0.01645573810686364,
+    "test_tv": 0.06842471864595631,
+    "test_js": 0.004240183935713042
+  }
+]

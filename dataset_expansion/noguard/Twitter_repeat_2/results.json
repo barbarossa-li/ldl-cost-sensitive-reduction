@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "Twitter",
+    "repeat": 2,
+    "method": "NoGuard",
+    "attributes": 1,
+    "cost": 7,
+    "inner_loss": 0.20833622685185185,
+    "inner_loss_empty": 0.18671621314782666,
+    "audit_brier_sel": 0.22286458333333334,
+    "audit_brier_empty": 0.2016218104316701,
+    "audit_brier_full": 0.23368923611111114,
+    "seconds": 0.27551080007106066
+  }
+]

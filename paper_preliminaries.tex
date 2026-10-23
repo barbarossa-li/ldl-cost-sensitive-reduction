@@ -1,0 +1,95 @@
+% Proposed LDL foundations, 2026-09-30.
+% This replaces the crisp-decision-system setup only.
+% No claim about adaptive granular-ball dependency monotonicity is made.
+\subsection{Test-cost-sensitive label distribution decision information system}
+\label{subsec:ldl-system}
+
+Let $O=\{o_1,\dots,o_n\}$ be a finite, non-empty set of objects, $A=\{a_1,\dots,a_m\}$ a finite, non-empty set of conditional attributes, and $\mathcal{Y}=\{y_1,\dots,y_q\}$ a finite, non-empty set of labels. Each attribute $a\in A$ induces a mapping $a: O \to V_a$, where $V_a$ denotes the domain of attribute $a$. To handle hybrid feature spaces, we partition $A$ as
+\[
+A = A_n \cup A_c, \qquad A_n \cap A_c = \varnothing,
+\]
+where $A_n$ and $A_c$ designate numerical and categorical attribute subsets, respectively. Either subset may be empty.
+
+\begin{definition}[Label Distribution Decision Information System]
+	\label{def:ldl-system}
+	A label distribution decision information system is a tuple
+	\[
+	\mathcal{S}_L = (O, A, \mathcal{Y}, L),
+	\]
+	where $L = (\ell_i^k)_{n\times q}$ is the label distribution matrix satisfying the simplex constraints:
+	\begin{equation}
+		\ell_i^k \in [0,1], \qquad \sum_{k=1}^q \ell_i^k = 1 \quad (i=1,\dots,n;\ k=1,\dots,q).
+		\label{eq:label-simplex}
+	\end{equation}
+	The label distribution associated with object $o_i$ is represented by the vector
+	\begin{equation}
+		\boldsymbol{\ell}(o_i) = (\ell_i^1, \dots, \ell_i^q),
+		\label{eq:label-vector}
+	\end{equation}
+	where $\ell_i^k$ quantifies the description degree of label $y_k$ for object $o_i$~\cite{G1}.
+\end{definition}
+
+In our framework, the complete distribution vector $\boldsymbol{\ell}(o_i)$ serves directly as the supervisory decision signal. Rather than collapsing the vector to the most dominant label, this formulation explicitly retains fine-grained relative importances. Importantly, description degrees reflect quantitative supervisory weights rather than posterior class probabilities.
+
+The proposed information system builds upon Pawlak's classical rough set model~\cite{CARS}, incorporating neighborhood-based extensions designed for hybrid data types~\cite{NRS,Y1,HY}. Whereas traditional attribute reduction techniques rely on heuristic searches guided by dependency or information measures over crisp equivalence classes~\cite{SZ,XW,YC,ZM}, our model fundamentally differs in two key respects: its decision representation is distributional, and its reduction objective explicitly incorporates attribute acquisition costs.
+
+\begin{definition}[Soft Decision Representation]
+	\label{def:soft-decision}
+	For each label $y_k \in \mathcal{Y}$, define a fuzzy decision set $D_k$ on $O$ via the membership function
+	\begin{equation}
+		\mu_{D_k}(o_i) = \ell_i^k \quad (i=1,\dots,n;\ k=1,\dots,q).
+		\label{eq:soft-decision}
+	\end{equation}
+	The collection $\mathcal{D}_L = \{D_1, \dots, D_q\}$ constitutes the soft decision representation induced by $L$.
+\end{definition}
+
+According to Eq.~\eqref{eq:label-simplex}, the membership functions satisfy
+\begin{equation}
+	\sum_{k=1}^q \mu_{D_k}(o_i) = 1 \quad \text{for all } o_i \in O.
+	\label{eq:soft-partition}
+\end{equation}
+Consequently, $\mathcal{D}_L$ forms a fuzzy partition-of-unity over $O$. Unlike traditional decision tables, $\mathcal{D}_L$ does not induce mutually disjoint crisp equivalence classes; an object $o_i$ may simultaneously possess positive membership across multiple fuzzy decision sets $D_k$. Therefore, theoretical results relying on classical crisp partitions cannot be assumed directly and must be formally re-evaluated within this soft decision space.
+
+For label-weighted statistics introduced in subsequent sections, the total description mass of label $y_k$ is defined as
+\begin{equation}
+	M_k = \sum_{i=1}^n \ell_i^k.
+	\label{eq:label-mass}
+\end{equation}
+Any statistical quantity involving $M_k$ in the denominator is valid if and only if $M_k > 0$. A label with $M_k = 0$ carries zero description mass across all sample instances and is naturally excluded from label-weighted calculations.
+
+\begin{definition}[Test-Cost-Sensitive System]
+	\label{def:test-cost}
+	A test-cost-sensitive label distribution decision information system is defined as
+	\[
+	\mathcal{S}_{L,c} = (O, A, \mathcal{Y}, L, c),
+	\]
+	where $c: A \to \mathbb{R}_{>0}$ assigns a positive acquisition cost to each attribute $a \in A$. Assuming additivity, the total cost of acquiring an attribute subset $P \subseteq A$ is
+	\begin{equation}
+		c(P) = \sum_{a \in P} c(a), \qquad \text{with } c(\varnothing) = 0.
+		\label{eq:additive-cost}
+	\end{equation}
+\end{definition}
+
+The strict positivity constraint $c(a) > 0$ ensures that the cost weighting term $c(a)^\lambda$ remains well-defined and bounded for any exponent $\lambda \le 0$. Furthermore, this condition guarantees strict monotonicity of acquisition costs under subset inclusion—that is, $c(P) < c(Q)$ whenever $P \subsetneq Q$—without imposing any structural monotonicity assumptions on the granular dependency function itself.
+
+\begin{proposition}[Crisp Decision Representation as a Special Case]
+	\label{prop:crisp-special-case}
+	Suppose each row of $L$ is a one-hot vector (i.e., $\ell_i^k \in \{0, 1\}$ for all $i, k$). Define a discrete decision mapping $d: O \to \mathcal{Y}$ such that $d(o_i) = y_k$ if and only if $\ell_i^k = 1$. Then, each $D_k$ collapses to the indicator function of the crisp decision class
+	\[
+	C_k = \{o_i \in O : d(o_i) = y_k\}.
+	\]
+	Upon removing empty sets, $\{C_k\}$ forms a strict crisp partition of $O$.
+\end{proposition}
+\begin{proof}
+	For any $o_i \in O$, there exists a unique index $k$ such that $\ell_i^k = 1$. Thus, $o_i$ belongs to exactly one decision class $C_k$, establishing that $\bigcup_{k=1}^q C_k = O$ and $C_k \cap C_h = \varnothing$ for all $k \neq h$. By Eq.~\eqref{eq:soft-decision}, the membership function reduces to
+	\[
+	\mu_{D_k}(o_i) = 
+	\begin{cases}
+		1, & \text{if } o_i \in C_k, \\
+		0, & \text{if } o_i \notin C_k,
+	\end{cases}
+	\]
+	which matches the indicator representation of the crisp set $C_k$.
+\end{proof}
+
+Proposition~\ref{prop:crisp-special-case} addresses the decision representation mapping exclusively. The theoretical reduction of approximation operators and dependency metrics to classical crisp rough set models remains a separate issue that must be established following their explicit definitions. No automatic transference of classical properties—such as monotonic dependency—is assumed.

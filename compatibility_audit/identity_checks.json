@@ -1,0 +1,101 @@
+[
+  {
+    "dataset": "Natural Scene",
+    "repeat": 1,
+    "train_n": 192,
+    "subset": "Full",
+    "v0": 0.2949130861302728,
+    "gamma": 0.11391817028067673,
+    "direct_training_distortion": 0.2613171269664845,
+    "identity_rhs": 0.26131712696648446,
+    "absolute_error": 5.551115123125783e-17
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 1,
+    "train_n": 192,
+    "subset": "Parent",
+    "v0": 0.2949130861302728,
+    "gamma": 0.1701395420322711,
+    "direct_training_distortion": 0.24473670871674444,
+    "identity_rhs": 0.24473670871674444,
+    "absolute_error": 0.0
+  },
+  {
+    "dataset": "Natural Scene",
+    "repeat": 1,
+    "train_n": 192,
+    "subset": "Rejected drop",
+    "v0": 0.2949130861302728,
+    "gamma": 0.1102016167017544,
+    "direct_training_distortion": 0.262413187252213,
+    "identity_rhs": 0.26241318725221296,
+    "absolute_error": 5.551115123125783e-17
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 1,
+    "train_n": 192,
+    "subset": "Full",
+    "v0": 0.03182601770653402,
+    "gamma": 0.17927621426124798,
+    "direct_training_distortion": 0.02612036973709515,
+    "identity_rhs": 0.026120369737095153,
+    "absolute_error": 3.469446951953614e-18
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 1,
+    "train_n": 192,
+    "subset": "Parent",
+    "v0": 0.03182601770653402,
+    "gamma": 0.267269822891078,
+    "direct_training_distortion": 0.023319883590780358,
+    "identity_rhs": 0.02331988359078036,
+    "absolute_error": 3.469446951953614e-18
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "repeat": 1,
+    "train_n": 192,
+    "subset": "Rejected drop",
+    "v0": 0.03182601770653402,
+    "gamma": 0.11781103330188078,
+    "direct_training_distortion": 0.02807656167464329,
+    "identity_rhs": 0.02807656167464329,
+    "absolute_error": 0.0
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 192,
+    "subset": "Full",
+    "v0": 0.0061934837924214935,
+    "gamma": 0.010858478122889944,
+    "direct_training_distortion": 0.006126231984157011,
+    "identity_rhs": 0.006126231984157011,
+    "absolute_error": 0.0
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 192,
+    "subset": "Parent",
+    "v0": 0.0061934837924214935,
+    "gamma": 0.015684421160427703,
+    "direct_training_distortion": 0.0060963425841708725,
+    "identity_rhs": 0.006096342584170872,
+    "absolute_error": 8.673617379884035e-19
+  },
+  {
+    "dataset": "Yeast_cold",
+    "repeat": 1,
+    "train_n": 192,
+    "subset": "Rejected drop",
+    "v0": 0.0061934837924214935,
+    "gamma": 0.0,
+    "direct_training_distortion": 0.0061934837924214935,
+    "identity_rhs": 0.0061934837924214935,
+    "absolute_error": 0.0
+  }
+]

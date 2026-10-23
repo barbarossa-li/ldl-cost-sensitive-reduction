@@ -1,0 +1,136 @@
+[
+  {
+    "phase": "common prefix",
+    "index": 0,
+    "selected": [],
+    "cost": 0,
+    "inner_brier": 0.28027240739173737,
+    "gamma": 0.0,
+    "risk_pass": false,
+    "gamma_pass": false
+  },
+  {
+    "phase": "common prefix",
+    "index": 1,
+    "selected": [
+      215
+    ],
+    "cost": 7,
+    "inner_brier": 0.2909046536232925,
+    "gamma": 0.08576774293571439,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 2,
+    "selected": [
+      98,
+      215
+    ],
+    "cost": 8,
+    "inner_brier": 0.26537019580976023,
+    "gamma": 0.06105246052749922,
+    "risk_pass": false,
+    "gamma_pass": false
+  },
+  {
+    "phase": "common prefix",
+    "index": 3,
+    "selected": [
+      98,
+      188,
+      215
+    ],
+    "cost": 9,
+    "inner_brier": 0.25492971732546194,
+    "gamma": 0.10619549445319872,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 4,
+    "selected": [
+      98,
+      139,
+      188,
+      215
+    ],
+    "cost": 11,
+    "inner_brier": 0.2404984570624187,
+    "gamma": 0.11538656350804756,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 5,
+    "selected": [
+      98,
+      139,
+      188,
+      215,
+      263
+    ],
+    "cost": 13,
+    "inner_brier": 0.23059841873598916,
+    "gamma": 0.12220875372726685,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 6,
+    "selected": [
+      98,
+      139,
+      173,
+      188,
+      215,
+      263
+    ],
+    "cost": 14,
+    "inner_brier": 0.2280849491641106,
+    "gamma": 0.106999118770009,
+    "risk_pass": false,
+    "gamma_pass": true
+  },
+  {
+    "phase": "common prefix",
+    "index": 7,
+    "selected": [
+      98,
+      105,
+      139,
+      173,
+      188,
+      215,
+      263
+    ],
+    "cost": 16,
+    "inner_brier": 0.22673748042488162,
+    "gamma": 0.05352544616362209,
+    "risk_pass": false,
+    "gamma_pass": false
+  },
+  {
+    "phase": "common prefix",
+    "index": 8,
+    "selected": [
+      98,
+      105,
+      139,
+      173,
+      177,
+      188,
+      215,
+      263
+    ],
+    "cost": 17,
+    "inner_brier": 0.22653192273637932,
+    "gamma": 0.11951505521831617,
+    "risk_pass": false,
+    "gamma_pass": true
+  }
+]

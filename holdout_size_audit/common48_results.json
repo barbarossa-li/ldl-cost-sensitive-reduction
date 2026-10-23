@@ -1,0 +1,290 @@
+[
+  {
+    "dataset": "Natural Scene",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.2971182424360932
+  },
+  {
+    "dataset": "Natural Scene",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.33812924921750587
+  },
+  {
+    "dataset": "Natural Scene",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.35093227022585616
+  },
+  {
+    "dataset": "Natural Scene",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.35093227022585616
+  },
+  {
+    "dataset": "Natural Scene",
+    "development_size": 384,
+    "search_size": 288,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.27287865288376323
+  },
+  {
+    "dataset": "Natural Scene",
+    "development_size": 384,
+    "search_size": 288,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.3401814565801593
+  },
+  {
+    "dataset": "Natural Scene",
+    "development_size": 384,
+    "search_size": 288,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.2968747089097233
+  },
+  {
+    "dataset": "Natural Scene",
+    "development_size": 384,
+    "search_size": 288,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.3300811023326609
+  },
+  {
+    "dataset": "Natural Scene",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.2699019168553435
+  },
+  {
+    "dataset": "Natural Scene",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.338530184923441
+  },
+  {
+    "dataset": "Natural Scene",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.2686039232664142
+  },
+  {
+    "dataset": "Natural Scene",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.2826607365773202
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.024113548572023576
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.025420794117867653
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.025244639099912324
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.025668785549634494
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 384,
+    "search_size": 288,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.023841348977522672
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 384,
+    "search_size": 288,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.02570540719935228
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 384,
+    "search_size": 288,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.030583847047627153
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 384,
+    "search_size": 288,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.03018159246245633
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.021943816071588837
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.025562916495535087
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.032908192064796137
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.026322923551597797
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.007911657497230879
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.006476874289293032
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.006476874289293032
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 192,
+    "search_size": 144,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.006476874289293032
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 384,
+    "search_size": 288,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.008014232512011079
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 384,
+    "search_size": 288,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.00645822173831147
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 384,
+    "search_size": 288,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.00645822173831147
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 384,
+    "search_size": 288,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.00645822173831147
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Full",
+    "brier": 0.0075370166536954065
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Empty",
+    "brier": 0.0064326536248345
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Prediction only after",
+    "brier": 0.0064326536248345
+  },
+  {
+    "dataset": "Yeast_cold",
+    "development_size": 576,
+    "search_size": 432,
+    "audit_size": 48,
+    "method": "Guided after",
+    "brier": 0.0064326536248345
+  }
+]

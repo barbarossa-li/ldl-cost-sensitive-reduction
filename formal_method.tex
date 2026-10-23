@@ -1,0 +1,72 @@
+\section{Formal reduction method and scope of guarantees}
+\label{sec:formal-method}
+This formulation retains the label-distribution weights, directed dissimilarity and deterministic granular-ball construction. It specifies prediction feasibility as the reduction constraint and granular dependency as search guidance. Acquisition cost refers to measuring selected attributes at prediction time; it is distinct from algorithmic running time.
+
+\subsection{Native LDL representation and granular guidance}
+Let $T=\{(x_i,\boldsymbol\ell_i)\}_{i=1}^n$, where $\boldsymbol\ell_i\in[0,1]^q$ and $\sum_{j=1}^q\ell_{ij}=1$. Let $A$ contain $m$ attributes with finite costs $c_a>0$, and define $C(P)=\sum_{a\in P}c_a$. No single dominant decision label replaces the native distribution.
+
+The entropy-based information weight $W_a(i)$ measures the divergence between a regularized attribute-local average distribution and the global training distribution. Its interpretation is local supervised association, rather than guaranteed predictive importance. The directed dissimilarity combines this information with raw attribute geometry:
+\begin{equation}
+ \rho_P(i,j)=\frac{1}{m}\left[(1-\zeta)\sum_{a\in P}W_a(i)\Delta_a(i,j)
+ +\zeta\sum_{a\in P}G_a(i,j)\right],\quad 0<\zeta<1.
+\end{equation}
+Here $\Delta_a$ is the normalized numeric discrepancy or the total variation between categorical label profiles; $G_a$ is the numeric discrepancy or categorical mismatch. All component statistics are fixed when comparing subsets within a fitting sample. The denominator is the original $m$, not $|P|$. Thus $P\subseteq Q$ implies $\rho_P(i,j)\le\rho_Q(i,j)$. Source-dependent weights allow asymmetry; no triangle inequality is required.
+
+Granular construction uses $d_P(i,j)=\max\{\rho_P(i,j),\rho_P(j,i)\}$, keeps identical selected-attribute vectors together, and applies deterministic farthest-seed splitting, support checks and fixed eligibility rules. Let $\mathcal E_P$ denote the eligible leaves, $\boldsymbol p=n^{-1}\sum_i\boldsymbol\ell_i$, and $V_0=n^{-1}\sum_i\|\boldsymbol\ell_i-\boldsymbol p\|_2^2$. For $V_0>0$,
+\begin{equation}
+ \Gamma(P)=\frac{\sum_{B\in\mathcal E_P}|B|\|\boldsymbol\mu_B-\boldsymbol p\|_2^2}{nV_0}
+ =1-\frac{R_{\mathrm{GB,tr}}(P)}{V_0},\qquad 0\le\Gamma(P)\le1.
+\end{equation}
+$R_{\mathrm{GB,tr}}$ is the mean squared training representation error: members of eligible balls use their ball mean, while all remaining members use $\boldsymbol p$. Set $\Gamma(P)=0$ when $V_0=0$. The identity follows from the within--between decomposition on each eligible leaf. It concerns training representation, not predictions on unseen objects. Regenerating balls after adding attributes may decrease $\Gamma$; signed gains are therefore retained.
+
+\subsection{Prediction-feasible minimum-cost objective}
+Partition the development training sample into fixed inner validation folds $I_1,\ldots,I_K$. For each subset, refit preprocessing and the predictor using the complementary fitting rows. Define
+\begin{equation}
+ R_{\mathrm{inner}}(P)=\frac{1}{n}\sum_{k=1}^K\sum_{i\in I_k}
+ \|\boldsymbol\ell_i-\widehat{\boldsymbol\ell}^{(-k)}_P(x_i)\|_2^2,
+ \qquad L_{\max}=R_{\mathrm{inner}}(A).
+\end{equation}
+The reference predictor is the mean label distribution of five Euclidean nearest fitting neighbours after fitting-sample min--max scaling. The empty subset predicts the fitting-sample mean distribution. A predictor using supervised geometry would additionally require all label-derived weights and profiles to be fitted separately within every fold.
+
+The reduction objective is
+\begin{equation}
+ \mathcal F=\{P\subseteq A:R_{\mathrm{inner}}(P)\le L_{\max}\},
+ \qquad P^*\in\operatorname*{argmin}_{P\in\mathcal F}C(P).
+ \label{eq:formal-cost-objective}
+\end{equation}
+The full set is feasible by construction. If the empty set is feasible, it is the unique zero-cost optimum. The historical constraint $\Gamma(P)\ge\Gamma(A)$ is a comparator, not part of this prediction-feasibility formulation: training representation and predictor loss need not impose compatible orderings.
+
+\subsection{Dependency-guided constructive search}
+For $a\notin P$, write
+\begin{equation}
+ u_a(P)=R_{\mathrm{inner}}(P)-R_{\mathrm{inner}}(P\cup\{a\}),\qquad
+ v_a(P)=\Gamma(P\cup\{a\})-\Gamma(P).
+\end{equation}
+Use the established cost exponent $\lambda=-1$, so positive gains are ranked per unit cost. The following steps define the base heuristic; ties use smaller acquisition cost and then smaller attribute index.
+\begin{enumerate}
+\item Initialize $P=\varnothing$. If $P\in\mathcal F$, return $P$.
+\item While $P\notin\mathcal F$, evaluate $u_a(P)$ for all remaining attributes. Let $J=\{a:u_a(P)>0\}$ and $H=\{a\in J:v_a(P)>0\}$.
+\item If $H\ne\varnothing$, choose the maximum $v_a(P)/c_a$ over $H$. Otherwise, if $J\ne\varnothing$, choose the maximum $u_a(P)/c_a$ over $J$. If $J=\varnothing$, choose the maximum raw signed $u_a(P)$ over all remaining attributes. Add the selected attribute and repeat the feasibility check.
+\item Scan selected attributes in decreasing cost order, with increasing index for ties. Accept any deletion preserving membership in $\mathcal F$ and restart the scan. Stop after a complete unsuccessful scan.
+\end{enumerate}
+The nonpositive bridge permits continued construction when single additions do not improve the current loss. It does not guarantee recovery of every useful interaction. Dependency ranks a restricted set of prediction-improving candidates without introducing a mixing coefficient. This priority can select a smaller predictive improvement, so its benefit is empirical and may depend on the budget and dataset.
+
+\begin{proposition}[Base heuristic guarantee]
+Assuming finite deterministic subset losses, the base heuristic terminates with a feasible, single-deletion-irreducible subset after at most $m$ additions and $m$ accepted deletions. It need not return an inclusion-minimal or globally minimum-cost subset.
+\end{proposition}
+\begin{proof}
+Each addition introduces an unused attribute. If earlier subsets fail, the construction reaches the feasible full set. Each accepted deletion reduces cardinality and preserves feasibility. A final complete unsuccessful scan excludes every feasible single deletion. Nonmonotone loss allows a multiple deletion to be feasible even when each single deletion fails, so stronger minimality does not follow.
+\end{proof}
+There are $O(m^2)$ subset evaluation requests in the base search. This bound counts requests, not the computational cost of fitting predictors or constructing balls.
+
+\subsection{Optional lower-cost exchange refinement}
+For a feasible subset $P$, consider deletions and exchanges $Q=(P\setminus\{a\})\cup\{b\}$ with $a\in P$, $b\notin P$ and $c_b<c_a$. Order candidates by decreasing cost saving, removed index and added index. Evaluate candidates subject to a predeclared request budget. Among evaluated feasible candidates, select the one with smallest cost, then smallest inner loss, then the move indices. Accept it and restart. The diagnostic implementation uses a total budget of 200 requests, including cache hits. A partial scan can accept its best evaluated feasible move before stopping at the budget.
+
+Every accepted move strictly reduces acquisition cost and preserves the full-set loss guard. With finitely many subsets, unrestricted refinement terminates. Only termination after a complete unsuccessful neighbourhood scan establishes local optimality against these deletion and cheaper single-exchange moves. Budget exhaustion provides no such guarantee and may leave a feasible deletion after an accepted exchange. Loss may increase relative to the preceding subset while staying below $L_{\max}$. This phase is an explicit optional algorithm revision, not a consequence of the base heuristic theorem.
+
+\subsection{Exact reference and limits of the claims}
+An include/exclude enumeration with incumbent $A$ solves Eq.~\eqref{eq:formal-cost-objective} exactly when completed. Prune a node whose current cost is at least the incumbent cost. A feasible current subset can replace the incumbent, and its strict extensions need not be searched because all added costs are positive. No dependency- or loss-monotonicity pruning is permitted. Every omitted extension is therefore no cheaper than an available feasible solution; finite enumeration yields a global minimum. The worst-case search is exponential. No completed exact optimum on the high-dimensional real datasets is claimed.
+
+The exact objective is independent of $\Gamma$: granular information changes the heuristic path, not the feasible family. The contributions supported by this formulation are a native LDL information geometry, a distribution-based granular representation, and reproducible cost-sensitive search with an internal prediction constraint despite nonmonotone dependency. Claims of uniformly superior prediction, lossless external-test reduction, or universally beneficial granular guidance are not established.
+
+Inner folds are reused adaptively during search. Membership in $\mathcal F$ is an internal selection guarantee and does not imply an unbiased validation estimate or external predictive preservation. Independent held-out predictions and common-budget comparisons assess empirical cost--loss tradeoffs. Previously inspected test splits remain exploratory evidence. The directed geometry is used for selection and granulation in the reference pipeline; the Euclidean predictor is stated explicitly rather than silently replaced by a directed-neighbour predictor.

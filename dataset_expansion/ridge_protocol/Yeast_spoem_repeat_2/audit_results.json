@@ -1,0 +1,42 @@
+[
+  {
+    "dataset": "Yeast_spoem",
+    "repeat": 2,
+    "alpha": 100.0,
+    "method": "Full",
+    "attributes": 24,
+    "cost": 127,
+    "audit_brier": 0.022482973193313556,
+    "test_brier": 0.022989051297089235
+  },
+  {
+    "dataset": "Yeast_spoem",
+    "repeat": 2,
+    "alpha": 100.0,
+    "method": "Empty",
+    "attributes": 0,
+    "cost": 0,
+    "audit_brier": 0.023858239253836584,
+    "test_brier": 0.023925230894525355
+  },
+  {
+    "dataset": "Yeast_spoem",
+    "repeat": 2,
+    "alpha": 100.0,
+    "method": "Prediction only after",
+    "attributes": 3,
+    "cost": 15,
+    "audit_brier": 0.02247317207315107,
+    "test_brier": 0.02382232831284127
+  },
+  {
+    "dataset": "Yeast_spoem",
+    "repeat": 2,
+    "alpha": 100.0,
+    "method": "Guided after",
+    "attributes": 3,
+    "cost": 15,
+    "audit_brier": 0.02247317207315107,
+    "test_brier": 0.02382232831284127
+  }
+]

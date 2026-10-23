@@ -1,0 +1,62 @@
+[
+  {
+    "dataset": "Natural Scene",
+    "paired_comparisons": 9,
+    "counts": {
+      "guidance dominates": 2,
+      "prediction dominates": 4,
+      "tradeoff": 2,
+      "coincident": 1
+    },
+    "guidance_strict_both": 0,
+    "prediction_strict_both": 1,
+    "front_semantic_prediction": 4,
+    "front_semantic_guidance": 3,
+    "cross_budget_guidance_strict_both": 2,
+    "cross_budget_contexts_with_guidance_strict_both": 1,
+    "unique_front_prediction": 3,
+    "front_contexts_prediction": 2,
+    "unique_front_guidance": 3,
+    "front_contexts_guidance": 3
+  },
+  {
+    "dataset": "SBU_3DFE",
+    "paired_comparisons": 9,
+    "counts": {
+      "guidance dominates": 3,
+      "prediction dominates": 2,
+      "tradeoff": 2,
+      "coincident": 2
+    },
+    "guidance_strict_both": 0,
+    "prediction_strict_both": 0,
+    "front_semantic_prediction": 0,
+    "front_semantic_guidance": 3,
+    "cross_budget_guidance_strict_both": 4,
+    "cross_budget_contexts_with_guidance_strict_both": 2,
+    "unique_front_prediction": 0,
+    "front_contexts_prediction": 0,
+    "unique_front_guidance": 3,
+    "front_contexts_guidance": 2
+  },
+  {
+    "dataset": "Yeast_cold",
+    "paired_comparisons": 9,
+    "counts": {
+      "guidance dominates": 0,
+      "prediction dominates": 0,
+      "tradeoff": 0,
+      "coincident": 9
+    },
+    "guidance_strict_both": 0,
+    "prediction_strict_both": 0,
+    "front_semantic_prediction": 9,
+    "front_semantic_guidance": 9,
+    "cross_budget_guidance_strict_both": 0,
+    "cross_budget_contexts_with_guidance_strict_both": 0,
+    "unique_front_prediction": 3,
+    "front_contexts_prediction": 3,
+    "unique_front_guidance": 3,
+    "front_contexts_guidance": 3
+  }
+]

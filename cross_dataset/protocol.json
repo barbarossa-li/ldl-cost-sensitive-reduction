@@ -1,0 +1,28 @@
+{
+  "datasets": [
+    "SBU_3DFE",
+    "Yeast_cold"
+  ],
+  "sizes": [
+    192,
+    384,
+    576
+  ],
+  "repeats": 5,
+  "test_n": 256,
+  "cost_seed": 20260931,
+  "parameters": {
+    "beta": 1,
+    "zeta": 0.1,
+    "kappa": 0.1,
+    "smin": 2,
+    "alpha": 1,
+    "lambda": -1,
+    "dependency_tolerance": 0,
+    "prediction_tolerance": 0,
+    "inner_folds": 3,
+    "knn_k": 5
+  },
+  "scope": "All frozen before new-dataset test evaluation. Same original joint algorithm and prediction-only ablation. Strong bridge baseline under joint training-selected cost budget. Shared-prefix constraint-only audit; shared search failures retained. Original gamma-only deletion candidates diagnosed. Repeats overlap, descriptive results only.",
+  "global_mean_control": "Fixed zero-feature training mean control added after an empty predictive-only output was observed; no fitting parameter or threshold changed."
+}

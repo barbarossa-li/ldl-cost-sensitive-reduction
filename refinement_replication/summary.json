@@ -1,0 +1,198 @@
+{
+  "methods": [
+    {
+      "dataset": "Natural Scene",
+      "method": "Prediction only",
+      "before_mean_cost": 10.0,
+      "after_mean_cost": 5.8,
+      "after_sd_cost": 2.588435821108957,
+      "improved": 4,
+      "budget_limited": 3,
+      "loss_increased": 4,
+      "all_feasible": true,
+      "mean_initial_seconds": 1.0359721455995896,
+      "mean_refinement_seconds": 0.11982384539987834
+    },
+    {
+      "dataset": "Natural Scene",
+      "method": "Guided",
+      "before_mean_cost": 13.6,
+      "after_mean_cost": 9.0,
+      "after_sd_cost": 6.519202405202649,
+      "improved": 5,
+      "budget_limited": 4,
+      "loss_increased": 2,
+      "all_feasible": true,
+      "mean_initial_seconds": 8.20365753379956,
+      "mean_refinement_seconds": 0.13138456600026985
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "method": "Prediction only",
+      "before_mean_cost": 5.4,
+      "after_mean_cost": 5.0,
+      "after_sd_cost": 6.855654600401044,
+      "improved": 1,
+      "budget_limited": 2,
+      "loss_increased": 1,
+      "all_feasible": true,
+      "mean_initial_seconds": 0.2749090449997311,
+      "mean_refinement_seconds": 0.06096084940036235
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "method": "Guided",
+      "before_mean_cost": 8.2,
+      "after_mean_cost": 4.6,
+      "after_sd_cost": 6.308724118235002,
+      "improved": 2,
+      "budget_limited": 2,
+      "loss_increased": 2,
+      "all_feasible": true,
+      "mean_initial_seconds": 1.22801103180027,
+      "mean_refinement_seconds": 0.026463787999455236
+    },
+    {
+      "dataset": "Yeast_cold",
+      "method": "Prediction only",
+      "before_mean_cost": 0.0,
+      "after_mean_cost": 0.0,
+      "after_sd_cost": 0.0,
+      "improved": 0,
+      "budget_limited": 0,
+      "loss_increased": 0,
+      "all_feasible": true,
+      "mean_initial_seconds": 0.0013216033999924547,
+      "mean_refinement_seconds": 5.998800406814553e-06
+    },
+    {
+      "dataset": "Yeast_cold",
+      "method": "Guided",
+      "before_mean_cost": 0.0,
+      "after_mean_cost": 0.0,
+      "after_sd_cost": 0.0,
+      "improved": 0,
+      "budget_limited": 0,
+      "loss_increased": 0,
+      "all_feasible": true,
+      "mean_initial_seconds": 0.012291141800233163,
+      "mean_refinement_seconds": 1.0575599662843161e-05
+    }
+  ],
+  "paired": [
+    {
+      "dataset": "Natural Scene",
+      "guided_cheaper": 1,
+      "tied": 1,
+      "guided_more_expensive": 3,
+      "pairs": [
+        {
+          "repeat": 1,
+          "prediction_cost": 5,
+          "guided_cost": 8,
+          "guided_minus_prediction": 3
+        },
+        {
+          "repeat": 2,
+          "prediction_cost": 3,
+          "guided_cost": 3,
+          "guided_minus_prediction": 0
+        },
+        {
+          "repeat": 3,
+          "prediction_cost": 10,
+          "guided_cost": 18,
+          "guided_minus_prediction": 8
+        },
+        {
+          "repeat": 4,
+          "prediction_cost": 6,
+          "guided_cost": 13,
+          "guided_minus_prediction": 7
+        },
+        {
+          "repeat": 5,
+          "prediction_cost": 5,
+          "guided_cost": 3,
+          "guided_minus_prediction": -2
+        }
+      ]
+    },
+    {
+      "dataset": "SBU_3DFE",
+      "guided_cheaper": 2,
+      "tied": 3,
+      "guided_more_expensive": 0,
+      "pairs": [
+        {
+          "repeat": 1,
+          "prediction_cost": 12,
+          "guided_cost": 11,
+          "guided_minus_prediction": -1
+        },
+        {
+          "repeat": 2,
+          "prediction_cost": 13,
+          "guided_cost": 12,
+          "guided_minus_prediction": -1
+        },
+        {
+          "repeat": 3,
+          "prediction_cost": 0,
+          "guided_cost": 0,
+          "guided_minus_prediction": 0
+        },
+        {
+          "repeat": 4,
+          "prediction_cost": 0,
+          "guided_cost": 0,
+          "guided_minus_prediction": 0
+        },
+        {
+          "repeat": 5,
+          "prediction_cost": 0,
+          "guided_cost": 0,
+          "guided_minus_prediction": 0
+        }
+      ]
+    },
+    {
+      "dataset": "Yeast_cold",
+      "guided_cheaper": 0,
+      "tied": 5,
+      "guided_more_expensive": 0,
+      "pairs": [
+        {
+          "repeat": 1,
+          "prediction_cost": 0,
+          "guided_cost": 0,
+          "guided_minus_prediction": 0
+        },
+        {
+          "repeat": 2,
+          "prediction_cost": 0,
+          "guided_cost": 0,
+          "guided_minus_prediction": 0
+        },
+        {
+          "repeat": 3,
+          "prediction_cost": 0,
+          "guided_cost": 0,
+          "guided_minus_prediction": 0
+        },
+        {
+          "repeat": 4,
+          "prediction_cost": 0,
+          "guided_cost": 0,
+          "guided_minus_prediction": 0
+        },
+        {
+          "repeat": 5,
+          "prediction_cost": 0,
+          "guided_cost": 0,
+          "guided_minus_prediction": 0
+        }
+      ]
+    }
+  ]
+}

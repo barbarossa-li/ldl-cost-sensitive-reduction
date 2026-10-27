@@ -1,0 +1,126 @@
+{
+  "protocol": {
+    "datasets": [
+      "Natural Scene",
+      "SBU_3DFE",
+      "Yeast_cold"
+    ],
+    "repeat": 1,
+    "training_size": 192,
+    "inner_folds": 3,
+    "methods": [
+      "P",
+      "G",
+      "A"
+    ],
+    "epsilon": 0.05,
+    "tolerance": 0.0,
+    "predictor": "5NN, stable distance sorting, fold-training min-max scaling",
+    "geometry": {
+      "beta": 1,
+      "zeta": 0.1,
+      "smin": 2,
+      "kappa": 0.1,
+      "alpha": 1
+    },
+    "scope": "Development diagnostic on previously examined splits; not confirmatory evidence",
+    "selection_labels": "Saved 192 training objects only; test/audit rows not indexed",
+    "refinement": "Shared restarting deletion only; no exchange refinement",
+    "parameters": "Existing B2 epsilon default fixed in advance, no sweep or tuning",
+    "timing": "Per-method fresh caches; geometry fitted lazily and included in method seconds"
+  },
+  "split_source": "cross_dataset/SBU_3DFE/repeat_1_n192/split.json",
+  "split_sha256": "f2e000bfc9c042281aea2b19fc7a57c56d6e4ca531685bfb7379a4976dfffe66",
+  "training_arrays_sha256": "ab04002f374ff396aaaff058763195f606174801072fe4af318a98c29666a99c",
+  "result": {
+    "selected": [
+      6,
+      83,
+      84,
+      201,
+      234
+    ],
+    "cost": 20.0,
+    "inner_loss": 0.027367651130313378,
+    "limit": 0.027474868937598252,
+    "trace": [
+      {
+        "step": 0,
+        "before": [],
+        "attribute": 201,
+        "prediction_gain": 0.0003852402223684104,
+        "dependency_gain": 0.1133862621486791,
+        "rule": "granular_positive"
+      },
+      {
+        "step": 1,
+        "before": [
+          201
+        ],
+        "attribute": 234,
+        "prediction_gain": 0.0017222424008305239,
+        "dependency_gain": 0.12262645444357602,
+        "rule": "granular_positive"
+      },
+      {
+        "step": 2,
+        "before": [
+          201,
+          234
+        ],
+        "attribute": 6,
+        "prediction_gain": 0.002235660057128712,
+        "dependency_gain": 0.028140803196096437,
+        "rule": "granular_positive"
+      },
+      {
+        "step": 3,
+        "before": [
+          6,
+          201,
+          234
+        ],
+        "attribute": 84,
+        "prediction_gain": 0.0002175979881825843,
+        "dependency_gain": 0.005611776587287842,
+        "rule": "granular_positive"
+      },
+      {
+        "step": 4,
+        "before": [
+          6,
+          84,
+          201,
+          234
+        ],
+        "attribute": 83,
+        "prediction_gain": 0.0004754277477361825,
+        "dependency_gain": 0.008579955246903026,
+        "rule": "granular_positive"
+      }
+    ],
+    "risk_evaluations": 1209,
+    "dependency_evaluations": 323,
+    "feasible": true
+  },
+  "summary": {
+    "dataset": "SBU_3DFE",
+    "method": "G",
+    "attributes": 5,
+    "cost": 20.0,
+    "inner_loss": 0.027367651130313378,
+    "full_reference": 0.027474868937598252,
+    "seconds": 5.475276387000008,
+    "unique_risk_evaluations": 1210,
+    "risk_callback_calls": 1210,
+    "dependency_evaluations": 323,
+    "forward_steps": 5,
+    "deletions": 0
+  },
+  "verified": {
+    "training_reference_matches": true,
+    "single_deletion_irreducible": true,
+    "A_local_efficiency_bound": null,
+    "test_or_audit_evaluated": false
+  }
+}

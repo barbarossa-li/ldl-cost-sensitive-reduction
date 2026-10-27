@@ -1,0 +1,30 @@
+{
+  "datasets": [
+    "Natural Scene",
+    "SBU_3DFE",
+    "Yeast_cold"
+  ],
+  "repeat": 1,
+  "training_size": 192,
+  "inner_folds": 3,
+  "methods": [
+    "P",
+    "G",
+    "A"
+  ],
+  "epsilon": 0.05,
+  "tolerance": 0.0,
+  "predictor": "5NN, stable distance sorting, fold-training min-max scaling",
+  "geometry": {
+    "beta": 1,
+    "zeta": 0.1,
+    "smin": 2,
+    "kappa": 0.1,
+    "alpha": 1
+  },
+  "scope": "Development diagnostic on previously examined splits; not confirmatory evidence",
+  "selection_labels": "Saved 192 training objects only; test/audit rows not indexed",
+  "refinement": "Shared restarting deletion only; no exchange refinement",
+  "parameters": "Existing B2 epsilon default fixed in advance, no sweep or tuning",
+  "timing": "Per-method fresh caches; geometry fitted lazily and included in method seconds"
+}

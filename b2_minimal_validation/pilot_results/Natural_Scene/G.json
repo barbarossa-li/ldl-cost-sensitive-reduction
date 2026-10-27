@@ -1,0 +1,199 @@
+{
+  "protocol": {
+    "datasets": [
+      "Natural Scene",
+      "SBU_3DFE",
+      "Yeast_cold"
+    ],
+    "repeat": 1,
+    "training_size": 192,
+    "inner_folds": 3,
+    "methods": [
+      "P",
+      "G",
+      "A"
+    ],
+    "epsilon": 0.05,
+    "tolerance": 0.0,
+    "predictor": "5NN, stable distance sorting, fold-training min-max scaling",
+    "geometry": {
+      "beta": 1,
+      "zeta": 0.1,
+      "smin": 2,
+      "kappa": 0.1,
+      "alpha": 1
+    },
+    "scope": "Development diagnostic on previously examined splits; not confirmatory evidence",
+    "selection_labels": "Saved 192 training objects only; test/audit rows not indexed",
+    "refinement": "Shared restarting deletion only; no exchange refinement",
+    "parameters": "Existing B2 epsilon default fixed in advance, no sweep or tuning",
+    "timing": "Per-method fresh caches; geometry fitted lazily and included in method seconds"
+  },
+  "split_source": "stability/repeat_1_n192/split.json",
+  "split_sha256": "8cb715defaf63bd516c7742703adc674a990e1adf9e6f612a14ff03d1cbfd271",
+  "training_arrays_sha256": "9428959e3f60db301d490f1f45d38ee5efac2003447b2bf9abb276312d6b663e",
+  "result": {
+    "selected": [
+      11,
+      86,
+      98,
+      128,
+      166,
+      281
+    ],
+    "cost": 12.0,
+    "inner_loss": 0.25926427856855044,
+    "limit": 0.25959198103527265,
+    "trace": [
+      {
+        "step": 0,
+        "before": [],
+        "attribute": 11,
+        "prediction_gain": 0.0003183163123340327,
+        "dependency_gain": 0.11855897345866927,
+        "rule": "granular_positive"
+      },
+      {
+        "step": 1,
+        "before": [
+          11
+        ],
+        "attribute": 173,
+        "prediction_gain": 0.000997507384604579,
+        "dependency_gain": 0.030357064873337294,
+        "rule": "granular_positive"
+      },
+      {
+        "step": 2,
+        "before": [
+          11,
+          173
+        ],
+        "attribute": 281,
+        "prediction_gain": 0.0014958895887633439,
+        "dependency_gain": 0.0666499379988994,
+        "rule": "granular_positive"
+      },
+      {
+        "step": 3,
+        "before": [
+          11,
+          173,
+          281
+        ],
+        "attribute": 147,
+        "prediction_gain": 0.0025994500169289614,
+        "dependency_gain": 0.0042438088662402895,
+        "rule": "granular_positive"
+      },
+      {
+        "step": 4,
+        "before": [
+          11,
+          147,
+          173,
+          281
+        ],
+        "attribute": 98,
+        "prediction_gain": 0.021524583685469723,
+        "dependency_gain": -0.08971884047610429,
+        "rule": "prediction_fallback"
+      },
+      {
+        "step": 5,
+        "before": [
+          11,
+          98,
+          147,
+          173,
+          281
+        ],
+        "attribute": 86,
+        "prediction_gain": 0.006943352668297154,
+        "dependency_gain": 0.07579709166339596,
+        "rule": "granular_positive"
+      },
+      {
+        "step": 6,
+        "before": [
+          11,
+          86,
+          98,
+          147,
+          173,
+          281
+        ],
+        "attribute": 166,
+        "prediction_gain": 0.006381927042312829,
+        "dependency_gain": 0.030549686548974136,
+        "rule": "granular_positive"
+      },
+      {
+        "step": 7,
+        "before": [
+          11,
+          86,
+          98,
+          147,
+          166,
+          173,
+          281
+        ],
+        "attribute": 128,
+        "prediction_gain": 0.008132255814645606,
+        "dependency_gain": -0.1185903801891035,
+        "rule": "prediction_fallback"
+      },
+      {
+        "phase": "delete",
+        "attribute": 147,
+        "before": [
+          11,
+          86,
+          98,
+          128,
+          147,
+          166,
+          173,
+          281
+        ]
+      },
+      {
+        "phase": "delete",
+        "attribute": 173,
+        "before": [
+          11,
+          86,
+          98,
+          128,
+          166,
+          173,
+          281
+        ]
+      }
+    ],
+    "risk_evaluations": 2344,
+    "dependency_evaluations": 680,
+    "feasible": true
+  },
+  "summary": {
+    "dataset": "Natural Scene",
+    "method": "G",
+    "attributes": 6,
+    "cost": 12.0,
+    "inner_loss": 0.25926427856855044,
+    "full_reference": 0.25959198103527265,
+    "seconds": 10.928893565000067,
+    "unique_risk_evaluations": 2345,
+    "risk_callback_calls": 2345,
+    "dependency_evaluations": 680,
+    "forward_steps": 8,
+    "deletions": 2
+  },
+  "verified": {
+    "training_reference_matches": true,
+    "single_deletion_irreducible": true,
+    "A_local_efficiency_bound": null,
+    "test_or_audit_evaluated": false
+  }
+}

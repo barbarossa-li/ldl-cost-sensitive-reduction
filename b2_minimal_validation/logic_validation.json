@@ -1,0 +1,11 @@
+{
+  "seed": 20261027,
+  "tables": 100,
+  "attributes": 6,
+  "method_runs": 300,
+  "feasibility": true,
+  "single_deletion_irreducibility": true,
+  "determinism": true,
+  "A_local_efficiency_bound": true,
+  "scope": "Logic checks only; no empirical performance guarantee"
+}

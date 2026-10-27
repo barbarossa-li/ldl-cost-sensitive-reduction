@@ -1,0 +1,152 @@
+{
+  "protocol": {
+    "datasets": [
+      "Natural Scene",
+      "SBU_3DFE",
+      "Yeast_cold"
+    ],
+    "repeat": 1,
+    "training_size": 192,
+    "inner_folds": 3,
+    "methods": [
+      "P",
+      "G",
+      "A"
+    ],
+    "epsilon": 0.05,
+    "tolerance": 0.0,
+    "predictor": "5NN, stable distance sorting, fold-training min-max scaling",
+    "geometry": {
+      "beta": 1,
+      "zeta": 0.1,
+      "smin": 2,
+      "kappa": 0.1,
+      "alpha": 1
+    },
+    "scope": "Development diagnostic on previously examined splits; not confirmatory evidence",
+    "selection_labels": "Saved 192 training objects only; test/audit rows not indexed",
+    "refinement": "Shared restarting deletion only; no exchange refinement",
+    "parameters": "Existing B2 epsilon default fixed in advance, no sweep or tuning",
+    "timing": "Per-method fresh caches; geometry fitted lazily and included in method seconds"
+  },
+  "split_source": "stability/repeat_1_n192/split.json",
+  "split_sha256": "8cb715defaf63bd516c7742703adc674a990e1adf9e6f612a14ff03d1cbfd271",
+  "training_arrays_sha256": "9428959e3f60db301d490f1f45d38ee5efac2003447b2bf9abb276312d6b663e",
+  "result": {
+    "selected": [
+      6,
+      11,
+      70,
+      98,
+      199
+    ],
+    "cost": 9.0,
+    "inner_loss": 0.25077965596103863,
+    "limit": 0.25959198103527265,
+    "trace": [
+      {
+        "step": 0,
+        "before": [],
+        "attribute": 177,
+        "prediction_gain": 0.0025802964442150356,
+        "dependency_gain": null,
+        "rule": "single_near_best"
+      },
+      {
+        "step": 1,
+        "before": [
+          177
+        ],
+        "attribute": 11,
+        "prediction_gain": 0.007429602605180163,
+        "dependency_gain": null,
+        "rule": "single_near_best"
+      },
+      {
+        "step": 2,
+        "before": [
+          11,
+          177
+        ],
+        "attribute": 70,
+        "prediction_gain": 0.007250792921865201,
+        "dependency_gain": null,
+        "rule": "single_near_best"
+      },
+      {
+        "step": 3,
+        "before": [
+          11,
+          70,
+          177
+        ],
+        "attribute": 98,
+        "prediction_gain": 0.0089393960376829,
+        "dependency_gain": 0.06981806549382895,
+        "rule": "granular_tiebreak"
+      },
+      {
+        "step": 4,
+        "before": [
+          11,
+          70,
+          98,
+          177
+        ],
+        "attribute": 6,
+        "prediction_gain": 0.013833807635535489,
+        "dependency_gain": null,
+        "rule": "single_near_best"
+      },
+      {
+        "step": 5,
+        "before": [
+          6,
+          11,
+          70,
+          98,
+          177
+        ],
+        "attribute": 199,
+        "prediction_gain": 0.010538270724361254,
+        "dependency_gain": null,
+        "rule": "single_near_best"
+      },
+      {
+        "phase": "delete",
+        "attribute": 177,
+        "before": [
+          6,
+          11,
+          70,
+          98,
+          177,
+          199
+        ]
+      }
+    ],
+    "risk_evaluations": 1759,
+    "dependency_evaluations": 3,
+    "feasible": true
+  },
+  "summary": {
+    "dataset": "Natural Scene",
+    "method": "A",
+    "attributes": 5,
+    "cost": 9.0,
+    "inner_loss": 0.25077965596103863,
+    "full_reference": 0.25959198103527265,
+    "seconds": 1.7537062359999709,
+    "unique_risk_evaluations": 1760,
+    "risk_callback_calls": 1760,
+    "dependency_evaluations": 3,
+    "forward_steps": 6,
+    "deletions": 1
+  },
+  "verified": {
+    "training_reference_matches": true,
+    "single_deletion_irreducible": true,
+    "A_local_efficiency_bound": true,
+    "test_or_audit_evaluated": false
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "protocol": {
+    "datasets": [
+      "Natural Scene",
+      "SBU_3DFE",
+      "Yeast_cold"
+    ],
+    "repeat": 1,
+    "training_size": 192,
+    "inner_folds": 3,
+    "methods": [
+      "P",
+      "G",
+      "A"
+    ],
+    "epsilon": 0.05,
+    "tolerance": 0.0,
+    "predictor": "5NN, stable distance sorting, fold-training min-max scaling",
+    "geometry": {
+      "beta": 1,
+      "zeta": 0.1,
+      "smin": 2,
+      "kappa": 0.1,
+      "alpha": 1
+    },
+    "scope": "Development diagnostic on previously examined splits; not confirmatory evidence",
+    "selection_labels": "Saved 192 training objects only; test/audit rows not indexed",
+    "refinement": "Shared restarting deletion only; no exchange refinement",
+    "parameters": "Existing B2 epsilon default fixed in advance, no sweep or tuning",
+    "timing": "Per-method fresh caches; geometry fitted lazily and included in method seconds"
+  },
+  "split_source": "cross_dataset/Yeast_cold/repeat_1_n192/split.json",
+  "split_sha256": "89b6e5613c352f39a4298d7d6978f7a7efadb26c3516151b402ab8a54d0b67a4",
+  "training_arrays_sha256": "bd2dd9742cc26a3d319cce5db9fbb16712cb172bdbcaab53083ea64326777f94",
+  "result": {
+    "selected": [],
+    "cost": 0.0,
+    "inner_loss": 0.00623064733443551,
+    "limit": 0.007929675915200092,
+    "trace": [],
+    "risk_evaluations": 1,
+    "dependency_evaluations": 0,
+    "feasible": true
+  },
+  "summary": {
+    "dataset": "Yeast_cold",
+    "method": "P",
+    "attributes": 0,
+    "cost": 0.0,
+    "inner_loss": 0.00623064733443551,
+    "full_reference": 0.007929675915200092,
+    "seconds": 0.001305663999914941,
+    "unique_risk_evaluations": 2,
+    "risk_callback_calls": 2,
+    "dependency_evaluations": 0,
+    "forward_steps": 0,
+    "deletions": 0
+  },
+  "verified": {
+    "training_reference_matches": true,
+    "single_deletion_irreducible": true,
+    "A_local_efficiency_bound": null,
+    "test_or_audit_evaluated": false
+  }
+}

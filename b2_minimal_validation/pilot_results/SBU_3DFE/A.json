@@ -1,0 +1,112 @@
+{
+  "protocol": {
+    "datasets": [
+      "Natural Scene",
+      "SBU_3DFE",
+      "Yeast_cold"
+    ],
+    "repeat": 1,
+    "training_size": 192,
+    "inner_folds": 3,
+    "methods": [
+      "P",
+      "G",
+      "A"
+    ],
+    "epsilon": 0.05,
+    "tolerance": 0.0,
+    "predictor": "5NN, stable distance sorting, fold-training min-max scaling",
+    "geometry": {
+      "beta": 1,
+      "zeta": 0.1,
+      "smin": 2,
+      "kappa": 0.1,
+      "alpha": 1
+    },
+    "scope": "Development diagnostic on previously examined splits; not confirmatory evidence",
+    "selection_labels": "Saved 192 training objects only; test/audit rows not indexed",
+    "refinement": "Shared restarting deletion only; no exchange refinement",
+    "parameters": "Existing B2 epsilon default fixed in advance, no sweep or tuning",
+    "timing": "Per-method fresh caches; geometry fitted lazily and included in method seconds"
+  },
+  "split_source": "cross_dataset/SBU_3DFE/repeat_1_n192/split.json",
+  "split_sha256": "f2e000bfc9c042281aea2b19fc7a57c56d6e4ca531685bfb7379a4976dfffe66",
+  "training_arrays_sha256": "ab04002f374ff396aaaff058763195f606174801072fe4af318a98c29666a99c",
+  "result": {
+    "selected": [
+      0,
+      9,
+      17,
+      223
+    ],
+    "cost": 14.0,
+    "inner_loss": 0.026958443765059126,
+    "limit": 0.027474868937598252,
+    "trace": [
+      {
+        "step": 0,
+        "before": [],
+        "attribute": 223,
+        "prediction_gain": 0.002802490611950991,
+        "dependency_gain": null,
+        "rule": "single_near_best"
+      },
+      {
+        "step": 1,
+        "before": [
+          223
+        ],
+        "attribute": 0,
+        "prediction_gain": 0.001355861822579879,
+        "dependency_gain": null,
+        "rule": "single_near_best"
+      },
+      {
+        "step": 2,
+        "before": [
+          0,
+          223
+        ],
+        "attribute": 17,
+        "prediction_gain": 0.000200671903064574,
+        "dependency_gain": null,
+        "rule": "single_near_best"
+      },
+      {
+        "step": 3,
+        "before": [
+          0,
+          17,
+          223
+        ],
+        "attribute": 9,
+        "prediction_gain": 0.001086351443905221,
+        "dependency_gain": null,
+        "rule": "single_near_best"
+      }
+    ],
+    "risk_evaluations": 969,
+    "dependency_evaluations": 0,
+    "feasible": true
+  },
+  "summary": {
+    "dataset": "SBU_3DFE",
+    "method": "A",
+    "attributes": 4,
+    "cost": 14.0,
+    "inner_loss": 0.026958443765059126,
+    "full_reference": 0.027474868937598252,
+    "seconds": 0.815439318000017,
+    "unique_risk_evaluations": 970,
+    "risk_callback_calls": 970,
+    "dependency_evaluations": 0,
+    "forward_steps": 4,
+    "deletions": 0
+  },
+  "verified": {
+    "training_reference_matches": true,
+    "single_deletion_irreducible": true,
+    "A_local_efficiency_bound": true,
+    "test_or_audit_evaluated": false
+  }
+}

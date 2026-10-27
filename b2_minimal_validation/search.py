@@ -106,5 +106,16 @@ if __name__ == "__main__":
         result = search(costs, risk, dep, method)
         assert result["feasible"]
         assert result["inner_loss"] <= result["limit"]
-    assert search(costs, risk, dep, "A", epsilon=0)["selected"] == search(costs, risk, dep, "P")["selected"]
+    # epsilon=0 preserves prediction efficiency, not P's arbitrary tie-break.
+    tied_risk = {(): 10., (0,): 5., (1,): 5., (0, 1): 0.}
+    tied_dep = {(): 0., (0,): 1., (1,): 2., (0, 1): 3.}
+    p = search([1, 1], tied_risk.__getitem__, tied_dep.__getitem__, "P", tolerance=5)
+    a = search([1, 1], tied_risk.__getitem__, tied_dep.__getitem__, "A",
+               epsilon=0, tolerance=5)
+    assert p["selected"] == [0] and a["selected"] == [1]
+    assert a["trace"][0]["prediction_gain"] == p["trace"][0]["prediction_gain"]
+    # Equality is valid in this example because each positive best is unique.
+    p = search(costs, risk, dep, "P")
+    a = search(costs, risk, dep, "A", epsilon=0)
+    assert [t["attribute"] for t in a["trace"]] == [t["attribute"] for t in p["trace"]]
     print("Synthetic invariants passed")

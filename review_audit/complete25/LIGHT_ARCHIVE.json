@@ -1,0 +1,8 @@
+{
+  "filename": "LDL_25_results_light.zip",
+  "bytes": 1435528,
+  "sha256": "700f34aed0d5849cb05c8eff737783a197f1474e513fcce7e651d061c24d8bb4",
+  "full_return_sha256": "08c863befc2277ea1bab2998ea4174eb98875699d6079f5be6220eee11997356",
+  "contains_all_final_rows_selected_subsets_and_all_parameter_CVs": true,
+  "contains_full_intermediate_scoring_traces": false
+}

@@ -1,0 +1,8 @@
+family,completed_splits,candidates,feasible_candidates,minimum_violated_objects
+FG-Net,3,192,0,3
+SJAFFE,3,192,0,3
+Music,3,192,0,4
+RAF_ML,3,192,0,6
+Flickr,3,192,0,9
+MOR-PH,3,192,0,4
+Human_Gene,3,192,0,18

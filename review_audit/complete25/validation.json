@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-03",
+  "archive_sha256": "08c863befc2277ea1bab2998ea4174eb98875699d6079f5be6220eee11997356",
+  "archive_bytes": 388944896,
+  "archive_crc_verified": true,
+  "return_status": {
+    "status": "complete",
+    "at": "2026-11-03T01:15:22.495140"
+  },
+  "main_datasets": 25,
+  "boundary_datasets": 1,
+  "dataset_repeats": 78,
+  "main_dataset_repeats": 75,
+  "parameter_candidates": 17004,
+  "inner_fits": 51012,
+  "main_parameter_candidates": 16350,
+  "main_inner_fits": 49050,
+  "sources_splits_frozen_files_grid_losses_and_parameter_minima_verified": true,
+  "original_nine_results_match_initial_return": true,
+  "numerical_amendment_cases": 18,
+  "optimization_cases": 18,
+  "independent_prediction_recomputation": false,
+  "movie_original_checkpoints_vs_optimized_replay": [
+    {
+      "alpha": 0.05,
+      "beta": 7,
+      "all_three_attribute_sequences_and_fold_losses_exact": true
+    },
+    {
+      "alpha": 0.05,
+      "beta": 9,
+      "all_three_attribute_sequences_and_fold_losses_exact": true
+    }
+  ],
+  "O1_vs_full_dataset_mean_brier": {
+    "worse": 5,
+    "tie": 15,
+    "better": 3
+  },
+  "O1_mean_cost_reduced_datasets": 8,
+  "O1_no_mean_savings_datasets": 15,
+  "GBFRS_comparison": {
+    "GBFRS_lower_mean_cost_and_Brier": 16
+  },
+  "exported_final_configurations": 936,
+  "all_exported_subset_costs_and_counts_verified": true
+}

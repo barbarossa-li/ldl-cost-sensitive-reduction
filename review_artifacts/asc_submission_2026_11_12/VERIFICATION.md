@@ -12,4 +12,8 @@ The revised PDF (1,219,685 bytes) and source ZIP (800,954 bytes) were uploaded a
 
 The LaTeX build passed, with no undefined references or overfull boxes. 628 mathematical expressions and table numeric rows were unchanged relative to the supplied colleague-editing project. The PDF contains 68 pages.
 
-Public-download validation of the new dated directory will be recorded after publication. See REPRODUCTION_SCOPE.md for the limits of the frozen-record checks.
+## Public download verification — PASS
+
+The three binary files and SHA256SUMS were downloaded without authentication from commit-pinned public raw URLs at commit `22a58617b3bbdbddee9a047c5c5721824cbc6912`. All three SHA-256 checks matched; both ZIP CRC checks passed. The publicly downloaded reproducibility ZIP was freshly extracted, and `python run_checks.py --figures` exited 0 with all six groups PASS. No previously generated verification_outputs were used.
+
+See REPRODUCTION_SCOPE.md for the limits of the frozen-record checks.

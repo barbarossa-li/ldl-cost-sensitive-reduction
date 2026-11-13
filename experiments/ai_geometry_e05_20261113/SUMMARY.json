@@ -1,0 +1,445 @@
+{
+  "stage": "E0.5 direct prototype development",
+  "cases": 48,
+  "families": 16,
+  "metric_rows": 1776,
+  "new_outer_test_scored": false,
+  "contrasts": [
+    {
+      "mask": "Full",
+      "geometry": "U",
+      "vote": "uniform",
+      "control": "raw",
+      "equal_family_brier_difference": -0.00023150597116544614,
+      "families_better": 10,
+      "families_worse": 6,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "U",
+      "vote": "uniform",
+      "control": "direct_random_uniform",
+      "equal_family_brier_difference": -0.0003765663941657211,
+      "families_better": 7,
+      "families_worse": 9,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "U",
+      "vote": "uniform",
+      "control": "direct_mean_uniform",
+      "equal_family_brier_difference": -0.001664889581522071,
+      "families_better": 8,
+      "families_worse": 8,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "U",
+      "vote": "uniform",
+      "control": "source_mean_half",
+      "equal_family_brier_difference": 0.006383842881916692,
+      "families_better": 3,
+      "families_worse": 13,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "U",
+      "vote": "uniform",
+      "control": "source_ball_half",
+      "equal_family_brier_difference": -0.00017411540972176755,
+      "families_better": 10,
+      "families_worse": 6,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "U",
+      "vote": "mass",
+      "control": "raw",
+      "equal_family_brier_difference": 0.00012309244926120516,
+      "families_better": 11,
+      "families_worse": 5,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "U",
+      "vote": "mass",
+      "control": "direct_random_mass",
+      "equal_family_brier_difference": -0.0007606061401944166,
+      "families_better": 8,
+      "families_worse": 8,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "U",
+      "vote": "mass",
+      "control": "direct_mean_mass",
+      "equal_family_brier_difference": -0.0007232140760770116,
+      "families_better": 5,
+      "families_worse": 11,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "U",
+      "vote": "mass",
+      "control": "source_mean_half",
+      "equal_family_brier_difference": 0.0067384413023433435,
+      "families_better": 3,
+      "families_worse": 13,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "U",
+      "vote": "mass",
+      "control": "source_ball_half",
+      "equal_family_brier_difference": 0.00018048301070488376,
+      "families_better": 11,
+      "families_worse": 5,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "G",
+      "vote": "uniform",
+      "control": "raw",
+      "equal_family_brier_difference": -0.0007128555419733265,
+      "families_better": 7,
+      "families_worse": 9,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "G",
+      "vote": "uniform",
+      "control": "direct_random_uniform",
+      "equal_family_brier_difference": -0.00021120998223226776,
+      "families_better": 7,
+      "families_worse": 9,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "G",
+      "vote": "uniform",
+      "control": "direct_mean_uniform",
+      "equal_family_brier_difference": -0.002171925795581924,
+      "families_better": 8,
+      "families_worse": 8,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "G",
+      "vote": "uniform",
+      "control": "source_mean_half",
+      "equal_family_brier_difference": 0.004214937946332994,
+      "families_better": 5,
+      "families_worse": 11,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "G",
+      "vote": "uniform",
+      "control": "source_ball_half",
+      "equal_family_brier_difference": -0.0006121706370922069,
+      "families_better": 7,
+      "families_worse": 9,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "G",
+      "vote": "mass",
+      "control": "raw",
+      "equal_family_brier_difference": 0.0002993558832447895,
+      "families_better": 8,
+      "families_worse": 8,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "G",
+      "vote": "mass",
+      "control": "direct_random_mass",
+      "equal_family_brier_difference": -4.871277343134671e-05,
+      "families_better": 8,
+      "families_worse": 8,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "G",
+      "vote": "mass",
+      "control": "direct_mean_mass",
+      "equal_family_brier_difference": -0.002092082883151949,
+      "families_better": 7,
+      "families_worse": 9,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "G",
+      "vote": "mass",
+      "control": "source_mean_half",
+      "equal_family_brier_difference": 0.00522714937155111,
+      "families_better": 4,
+      "families_worse": 12,
+      "families_tied": 0
+    },
+    {
+      "mask": "Full",
+      "geometry": "G",
+      "vote": "mass",
+      "control": "source_ball_half",
+      "equal_family_brier_difference": 0.0004000407881259091,
+      "families_better": 8,
+      "families_worse": 8,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "U",
+      "vote": "uniform",
+      "control": "raw",
+      "equal_family_brier_difference": 0.00018751249232958327,
+      "families_better": 6,
+      "families_worse": 10,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "U",
+      "vote": "uniform",
+      "control": "direct_random_uniform",
+      "equal_family_brier_difference": 0.0006218676610719,
+      "families_better": 7,
+      "families_worse": 9,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "U",
+      "vote": "uniform",
+      "control": "direct_mean_uniform",
+      "equal_family_brier_difference": 6.2575072909994e-05,
+      "families_better": 8,
+      "families_worse": 8,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "U",
+      "vote": "uniform",
+      "control": "source_mean_half",
+      "equal_family_brier_difference": 0.008329793715273126,
+      "families_better": 2,
+      "families_worse": 14,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "U",
+      "vote": "uniform",
+      "control": "source_ball_half",
+      "equal_family_brier_difference": 0.000323283241488499,
+      "families_better": 6,
+      "families_worse": 10,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "U",
+      "vote": "mass",
+      "control": "raw",
+      "equal_family_brier_difference": 0.0013422126070879422,
+      "families_better": 7,
+      "families_worse": 9,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "U",
+      "vote": "mass",
+      "control": "direct_random_mass",
+      "equal_family_brier_difference": 0.000985066322562572,
+      "families_better": 6,
+      "families_worse": 10,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "U",
+      "vote": "mass",
+      "control": "direct_mean_mass",
+      "equal_family_brier_difference": 0.0018810883970267964,
+      "families_better": 7,
+      "families_worse": 9,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "U",
+      "vote": "mass",
+      "control": "source_mean_half",
+      "equal_family_brier_difference": 0.009484493830031485,
+      "families_better": 1,
+      "families_worse": 15,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "U",
+      "vote": "mass",
+      "control": "source_ball_half",
+      "equal_family_brier_difference": 0.0014779833562468577,
+      "families_better": 7,
+      "families_worse": 9,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "G",
+      "vote": "uniform",
+      "control": "raw",
+      "equal_family_brier_difference": -0.00034955078163285204,
+      "families_better": 10,
+      "families_worse": 6,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "G",
+      "vote": "uniform",
+      "control": "direct_random_uniform",
+      "equal_family_brier_difference": 0.00020292998988654542,
+      "families_better": 7,
+      "families_worse": 9,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "G",
+      "vote": "uniform",
+      "control": "direct_mean_uniform",
+      "equal_family_brier_difference": -0.0016118706222554076,
+      "families_better": 10,
+      "families_worse": 6,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "G",
+      "vote": "uniform",
+      "control": "source_mean_half",
+      "equal_family_brier_difference": 0.006807173793451294,
+      "families_better": 3,
+      "families_worse": 13,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "G",
+      "vote": "uniform",
+      "control": "source_ball_half",
+      "equal_family_brier_difference": -0.0002880526037496781,
+      "families_better": 9,
+      "families_worse": 7,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "G",
+      "vote": "mass",
+      "control": "raw",
+      "equal_family_brier_difference": -0.00021543548583949812,
+      "families_better": 9,
+      "families_worse": 7,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "G",
+      "vote": "mass",
+      "control": "direct_random_mass",
+      "equal_family_brier_difference": 0.0004308927242248613,
+      "families_better": 5,
+      "families_worse": 11,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "G",
+      "vote": "mass",
+      "control": "direct_mean_mass",
+      "equal_family_brier_difference": -0.0010310407137721482,
+      "families_better": 8,
+      "families_worse": 8,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "G",
+      "vote": "mass",
+      "control": "source_mean_half",
+      "equal_family_brier_difference": 0.006941289089244648,
+      "families_better": 3,
+      "families_worse": 13,
+      "families_tied": 0
+    },
+    {
+      "mask": "cost40",
+      "geometry": "G",
+      "vote": "mass",
+      "control": "source_ball_half",
+      "equal_family_brier_difference": -0.00015393730795632417,
+      "families_better": 8,
+      "families_worse": 8,
+      "families_tied": 0
+    }
+  ],
+  "capacity": [
+    {
+      "mask": "Full",
+      "geometry": "U",
+      "coverage_mean": 0.1321979561237374,
+      "prototype_slot_fraction_mean": 0.9239380787037037,
+      "numeric_array_byte_fraction_mean": 0.926098775961902,
+      "numeric_array_byte_fraction_total_weighted": 0.9164869309844192
+    },
+    {
+      "mask": "Full",
+      "geometry": "G",
+      "coverage_mean": 0.14892032302188551,
+      "prototype_slot_fraction_mean": 0.9150128893097643,
+      "numeric_array_byte_fraction_mean": 0.9174293936269243,
+      "numeric_array_byte_fraction_total_weighted": 0.8962731177413968
+    },
+    {
+      "mask": "cost40",
+      "geometry": "U",
+      "coverage_mean": 0.13044264257154883,
+      "prototype_slot_fraction_mean": 0.9271865793350168,
+      "numeric_array_byte_fraction_mean": 0.9291227546354619,
+      "numeric_array_byte_fraction_total_weighted": 0.9207296093229844
+    },
+    {
+      "mask": "cost40",
+      "geometry": "G",
+      "coverage_mean": 0.1404141019570707,
+      "prototype_slot_fraction_mean": 0.920418244949495,
+      "numeric_array_byte_fraction_mean": 0.922544534087169,
+      "numeric_array_byte_fraction_total_weighted": 0.9049068103721776
+    }
+  ],
+  "decision": "Interface/capacity checks pass; fixed direct prototypes show mixed errors and limited compression. Current grouping does not establish broad superiority vs capacity-matched random groups or simple global shrinkage. Do not promote as validated contribution.",
+  "next": "Before broader evaluation, redesign the granulation objective around explicit prototype budgets and training-internal risk/storage curves. Preserve the strict accepted-leaf method as a baseline; do not silently loosen its constraints."
+}

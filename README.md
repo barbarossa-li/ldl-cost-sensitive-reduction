@@ -4,6 +4,8 @@
 
 **Post-v1 training-internal diagnosis:** [E0.4 controls and candidate code](experiments/ai_geometry_e04_20261113/) are complete (48 development folds). Row normalization reduces source-amplitude attraction and improves on the old local geometry in many families, but does not establish local-shape superiority over global weights or row-permutation nulls. The candidate is not promoted to a validated main method. The current ball readout acts as weak smoothing; direct query-to-prototype representation remains future work. No new outer-test outcomes were scored.
 
+**Direct prototype development:** [E0.5 code and all controls](experiments/ai_geometry_e05_20261113/) are complete (48 training-internal folds; 1,776 audited metrics). Accepted-ball centroids and residual points now form a standalone inference representation. Numeric array size is modestly reduced, while errors versus matched random groups and simple mean shrinkage remain mixed. Both voting rules are retained; the candidate is not promoted to a validated contribution. No new outer-test scoring or manuscript edits were performed.
+
 **Cost-Sensitive Attribute Reduction for Label Distribution Learning Using Granular-Ball Computing with Objectwise Reconstruction Bounds**
 
 This is the submission-materials index for the review-aligned manuscript revised on 13 November 2026 (from the 12 November terminology source). The working branch contains one manuscript version and the corresponding retained code and frozen records.

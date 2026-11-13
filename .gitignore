@@ -39,3 +39,6 @@ SUBMISSION_CONFIRMATIONS.md
 READ_ME.txt
 entropy_diagnostic.*
 negative_gain_construction.csv
+
+# Reusable local official-dataset cache; large ZIP lives in a GitHub Release
+data/cache/

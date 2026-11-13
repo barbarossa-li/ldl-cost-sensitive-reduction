@@ -1,0 +1,20 @@
+{
+  "official_archive": "SCUT-FBP5500_v2.1.zip",
+  "archive_bytes": 179937702,
+  "archive_sha256": "b8a756d0634a514d3f2f956c3a9363bb8f5a727c7652cbf9d4a87d80bb55a23c",
+  "parts": [
+    {
+      "filename": "SCUT-FBP5500_v2.1.zip.part01",
+      "bytes": 90000000,
+      "sha256": "ce297fe3376caa7bcbe6c17ea5b6a9509b5fcf519a3edfc0a9dbb2c0c74805f4"
+    },
+    {
+      "filename": "SCUT-FBP5500_v2.1.zip.part02",
+      "bytes": 89937702,
+      "sha256": "ff4003fde841a9edde3a0443e034a7fb50e8b47431d1d73b4f117a87af28e08d"
+    }
+  ],
+  "source": "https://github.com/HCIILAB/SCUT-FBP5500-Database-Release",
+  "terms": "Non-commercial research only. Private research cache; not a public redistribution grant.",
+  "cache_policy": "Private local/author-Drive cache only. This manifest contains no images, ratings or private Drive file identifiers."
+}

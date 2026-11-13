@@ -10,6 +10,7 @@ This is the submission-materials index for the review-aligned manuscript revised
 | Editable LaTeX project | [Source ZIP](review_artifacts/asc_submission_2026_11_12/ASC_LDL_terminology_source.zip) |
 | Frozen-record reproduction packet | [Reviewer packet](review_artifacts/asc_submission_2026_11_12/ASC_REVIEW_REPRODUCIBILITY_v2.zip) |
 | 25-task results, selected subsets, parameter CVs, splits/protocol manifests | [Results ZIP](review_audit/complete25/LDL_25_results_light.zip) |
+| Official image dataset source and cache policy | [SCUT-FBP5500 cache instructions](datasets/SCUT_FBP5500/) |
 | Frozen experiment installer and numerical amendments | [Experiment runner](local_runner/) |
 | Scope and limitations | [Reproduction scope](review_artifacts/asc_submission_2026_11_12/REPRODUCTION_SCOPE.md) |
 | Independent checks performed on 13 November | [Verification](docs/VERIFICATION_20261113.md) |

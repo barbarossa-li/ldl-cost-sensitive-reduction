@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "Standard library constructors deterministic, exactK and full coverage, with declared duplicate repair",
+    "LDLKM positive-distance inverse-softmax identity, declared zero-distance rule and extreme small distances",
+    "All four constructors have same bytes per exactK and identical singleton endpoints under both priors",
+    "Constant-feature and duplicate-center prototype predictions remain simplex-valued",
+    "Inner pooled risk selection and smaller-capacity deterministic tie",
+    "All sixteen family fold designs exclude original outer-test indices",
+    "Adversarial holdout-label mutation leaves all inner selection and predictions unchanged"
+  ],
+  "scope": "Synthetic checks only; no benchmark prediction or performance claim"
+}

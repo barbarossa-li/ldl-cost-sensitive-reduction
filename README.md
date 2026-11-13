@@ -1,81 +1,47 @@
-# Prediction-Constrained Cost-Sensitive Attribute Reduction for Label Distribution Learning via Directed Granular-Ball Computing
+# ASC LDL submission materials
 
-Reference implementation and frozen experimental records for the manuscript submitted to *Applied Soft Computing*.
+**Cost-Sensitive Attribute Reduction for Label Distribution Learning Using Granular-Ball Computing with Objectwise Reconstruction Bounds**
 
-## Overview
+This is the submission-materials index for the terminology-revised manuscript dated 12 November 2026. The working branch contains one manuscript version and the corresponding retained code and frozen records.
 
-The framework selects a minimum-acquisition-cost attribute subset for label distribution learning (LDL) subject to an internal prediction-feasibility guard:
+| Material | Location |
+| --- | --- |
+| Manuscript PDF, 68 pages | [PDF](review_artifacts/asc_submission_2026_11_12/ASC_LDL_terminology_revised.pdf) |
+| Editable LaTeX project | [Source ZIP](review_artifacts/asc_submission_2026_11_12/ASC_LDL_terminology_source.zip) |
+| Frozen-record reproduction packet | [Reviewer packet](review_artifacts/asc_submission_2026_11_12/ASC_REVIEW_REPRODUCIBILITY_v2.zip) |
+| 25-task results, selected subsets, parameter CVs, splits/protocol manifests | [Results ZIP](review_audit/complete25/LDL_25_results_light.zip) |
+| Frozen experiment installer and numerical amendments | [Experiment runner](local_runner/) |
+| Scope and limitations | [Reproduction scope](review_artifacts/asc_submission_2026_11_12/REPRODUCTION_SCOPE.md) |
+| Independent checks performed on 13 November | [Verification](docs/VERIFICATION_20261113.md) |
 
-- a local distribution-information weight and a source-dependent directed dissimilarity,
-- a deterministic granular-ball model with non-monotone dependency,
-- a constructive greedy search (dependency-guided `G` / prediction-only `P`), an exact backtracking reference, and a 200-evaluation deletion/exchange refinement (`G+` / `P+`),
-- a nested audit protocol: frozen 576-object development subsets (432 search / 144 audit, block-wise nested), three inner folds, audit labels excluded from every selection decision.
+## Verify the frozen records
 
-## Repository structure
-
-```
-download_data.py            fetch all public benchmark datasets
-granulation_reference.py    directed geometry + granular-ball model
-reduction_reference.py      greedy / exact search with the loss guard
-predictive_revision/        guided search variant (G)
-refinement_pilot/refine.py  budgeted deletion/exchange refinement
-stability/                  Natural Scene frozen splits (initial replication)
-cross_dataset/              SBU-3DFE / Yeast_cold / Human_Gene / M2B runs
-large_holdout_replication/  frozen 576-protocol on the anchor datasets
-common_budget_audit/        common-budget ranking ablation
-matched_cost_audit/         label-free matched-cost controls
-pareto_audit/               Pareto frontier records
-baselines_published/        GBFRS / DSIM / FSLC scoring cores (2022-2023)
-dataset_expansion/          23-dataset expansion: main sweep, NRS / FMI cores
-                            (2024-2025), guard ablation, ridge predictor study,
-                            budget sweep, analysis and figure scripts
-ASC_LDL_paper_draft.tex     current manuscript LaTeX source (inputs paper_*.tex,
-  + paper_*.tex             refs_updated.bib, elsarticle class, paper_figures/)
-highlights.tex              Elsevier highlights page
-```
-
-Each experiment directory contains its own protocol description, per-split
-checkpoint files (`split.json`, `selection_before_test.json`, `results.json`),
-and frozen results. All statistics used for selection are computed on training
-data only; reserved-audit and held-out test scores are recorded once per frozen
-selection.
-
-## Reproduction
-
-Requires Python 3.10+ with `numpy`, `scipy`, `matplotlib`.
+Extract the reviewer packet, enter `ASC_REVIEW_REPRODUCIBILITY_v2`, install `requirements.txt`, and run:
 
 ```bash
-python download_data.py                 # 1. fetch datasets (public sources)
-# 2. anchor-dataset pipeline (Natural Scene / SBU-3DFE / Yeast-cold)
-#    see stability/, cross_dataset/, large_holdout_replication/
-cd dataset_expansion
-python run_expansion.py                 # 3. 23-dataset main sweep
-python run_expansion_published.py       # 4. GBFRS/DSIM/FSLC matched to G+
-python run_expansion_newcores.py        # 5. NRS/FMI cores
-python run_ablations.py all             # 6. guard ablation + ridge probe
-python run_ridge_protocol.py            # 7. ridge-predictor full protocol
-python run_budget_sweep.py              # 8. budget caps {1,2,5,10,20,50}
-python analyze_expansion.py             # 9. tables, statistics, main figures
-python generate_ablation_figures.py     # 10. ablation figures
-python generate_final_figures.py        # 11. budget sweep + ridge table
+python run_checks.py --figures
 ```
 
-All sweeps checkpoint per split and can be resumed after interruption.
-Result CSV/JSON files from the paper's runs are already included, so every
-table and figure can be regenerated without re-running the experiments.
+This checks the internal SHA-256 manifest and runs six checks on frozen inputs: independent-candidate summaries, recorded timing, recorded storage envelopes, object decisions, feature-family statistics, and figure regeneration. It does **not** rerun feature selection from original datasets, independently reconstruct all error vectors, run ResNet image inference, or repeat hardware timing. See the scope document before interpreting PASS.
 
-## Datasets
+## Build the manuscript
 
-All 25 native LDL benchmarks are publicly available (PyLDL and LDL-LDM
-repositories); `download_data.py` fetches them and records the exact sources.
-Label rows are normalized to sum one. `M2B` is retained as a predictor
-suitability boundary case, not a primary benchmark.
+Extract the source ZIP, enter `ASC_LDL_terminology`, and run:
 
-## Citation
+```bash
+latexmk -pdf main_short_flowcharts.tex
+```
 
-If you use this code, please cite the manuscript (citation entry will be added
-upon acceptance).
+The PDF and source are retained byte for byte. Organizing this repository does not resolve manuscript-review issues or constitute editorial acceptance.
 
-## License
+## Rerun experiments
 
-MIT License (see LICENSE).
+The frozen source and original split/protocol records are embedded in [BOOTSTRAP_25.py](local_runner/BOOTSTRAP_25.py). The installer verifies the embedded package and obtains datasets and third-party sources from recorded upstream versions. Read [runner instructions](local_runner/README.md) and [Movie/GBFRS amendments](local_runner/README_FAST.md). Keep the numerical amendment and exact-score optimization files together; they are part of the recorded implementation provenance. Full runs may take days and require external datasets.
+
+The light results archive contains 936 final result/selection entries and 17,004 parameter-CV records. It is not a replacement for the full original return archive or image-pipeline SQLite caches. Those external records are not claimed to be included here.
+
+## Historical versions
+
+Superseded drafts, the earlier prediction-guard workflow, duplicate reviewer packets and development-only experiment folders were removed from the working branch on 13 November 2026. They remain recoverable from [the pre-cleanup commit](https://github.com/barbarossa-li/ldl-cost-sensitive-reduction/tree/1887e40dba08cef452b130b869f67c8fdfe143c1). No history was rewritten. The older root README described a different development workflow and should not be used for this submission.
+
+No original face images, pretrained weights or unlicensed third-party sources are added by this cleanup. Code licensing does not replace dataset-specific permissions. See [LICENSE](LICENSE).

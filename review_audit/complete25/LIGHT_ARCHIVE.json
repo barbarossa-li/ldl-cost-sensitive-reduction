@@ -1,9 +1,0 @@
-{
-  "filename": "LDL_25_results_light.zip",
-  "bytes": 1211469,
-  "sha256": "200670f88613b8e67ba082c41027cd78ae6869b74034158c2df3c2f48fda3eb3",
-  "full_return_sha256": "08c863befc2277ea1bab2998ea4174eb98875699d6079f5be6220eee11997356",
-  "contains_all_final_rows_selected_subsets_and_all_parameter_CVs": true,
-  "contains_full_intermediate_scoring_traces": false,
-  "rebuild_note": "Rebuilt from original archives after temporary workspace cleanup; includes all 17004 parameter CVs and 936 final subset records."
-}

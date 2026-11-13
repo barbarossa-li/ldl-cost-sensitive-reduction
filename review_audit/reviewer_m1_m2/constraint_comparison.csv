@@ -1,5 +1,0 @@
-dataset,repeat,criterion,attributes,cost,full_cost,mean_reference_error,mean_selected_error,violated_objects,violation_rate,maximum_error_increase,positive_error_p90,positive_error_tail_mean,predefined_high_deviation_group_size,high_deviation_group_violated,candidate_requests
-Yeast_cold,1,objectwise,24,127.0,127,0.005990831588455161,0.005990831588455161,0,0.0,0.0,0.0,0.0,48,0,24
-Yeast_cold,1,average,3,12.0,127,0.005990831588455161,0.005915078449827069,9,0.046875,0.006011061482654054,0.0,0.0012757143430888076,48,0,46
-SCUT_FBP,1,objectwise,172,934.0,1690,0.1257339446160044,0.12244418852845024,0,0.0,0.0,0.0,0.0,48,0,1507
-SCUT_FBP,1,average,1,2.0,1690,0.1257339446160044,0.11635584855031296,24,0.125,0.18196906363246507,0.0020325863998679732,0.04498817638772644,48,1,386

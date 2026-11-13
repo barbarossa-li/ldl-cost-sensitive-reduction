@@ -1,9 +1,0 @@
-{
-  "protocol_sha256": "9b921c4867c49cf5f875fd3328f874f70a2a3123890381f61b41456c06c691e9",
-  "cases_completed": 2,
-  "objectwise_endpoints_match_prior_frozen_selections": true,
-  "full_reference_vectors_match_exactly": true,
-  "no_test_labels_used": true,
-  "case_selection_developmental": true,
-  "scope": "Real-data training representation diagnostic, not verified deployment usefulness or out-of-sample guarantee"
-}

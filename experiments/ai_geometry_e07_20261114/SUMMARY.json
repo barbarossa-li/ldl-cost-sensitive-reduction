@@ -1,0 +1,375 @@
+{
+  "scope": "Previously consulted16 families. Nested CV wholly inside old repeat1 training pools firstmin(192,ntrain). No original outer-test scoring. Development evidence only, not untouched-data confirmation.",
+  "families": 16,
+  "nested_outer_cases": 48,
+  "aggregate_metric_rows": 4656,
+  "family_rows": 1552,
+  "metric_audit_rows": 4656,
+  "metric_audit_max_error": 5.551115123125783e-17,
+  "original_outer_test_scored": false,
+  "fixed_budget_contrasts": [
+    {
+      "mask": "Full",
+      "budget_percent": 25,
+      "contrast": "Information weighting",
+      "equal_family_brier_difference": -0.0040357787214374986,
+      "better": 11,
+      "tie": 1,
+      "worse": 4
+    },
+    {
+      "mask": "Full",
+      "budget_percent": 25,
+      "contrast": "Hierarchy versus Lloyd",
+      "equal_family_brier_difference": -0.0012926671799446156,
+      "better": 13,
+      "tie": 0,
+      "worse": 3
+    },
+    {
+      "mask": "Full",
+      "budget_percent": 25,
+      "contrast": "Label priority secondary",
+      "equal_family_brier_difference": -0.00046904389478896893,
+      "better": 6,
+      "tie": 0,
+      "worse": 10
+    },
+    {
+      "mask": "Full",
+      "budget_percent": 50,
+      "contrast": "Information weighting",
+      "equal_family_brier_difference": -0.004454058664584085,
+      "better": 12,
+      "tie": 0,
+      "worse": 4
+    },
+    {
+      "mask": "Full",
+      "budget_percent": 50,
+      "contrast": "Hierarchy versus Lloyd",
+      "equal_family_brier_difference": -0.0007730290396252706,
+      "better": 10,
+      "tie": 0,
+      "worse": 6
+    },
+    {
+      "mask": "Full",
+      "budget_percent": 50,
+      "contrast": "Label priority secondary",
+      "equal_family_brier_difference": -0.0002719586231423989,
+      "better": 7,
+      "tie": 0,
+      "worse": 9
+    },
+    {
+      "mask": "Full",
+      "budget_percent": 75,
+      "contrast": "Information weighting",
+      "equal_family_brier_difference": -0.005380963067741012,
+      "better": 14,
+      "tie": 0,
+      "worse": 2
+    },
+    {
+      "mask": "Full",
+      "budget_percent": 75,
+      "contrast": "Hierarchy versus Lloyd",
+      "equal_family_brier_difference": -0.000526660960621292,
+      "better": 8,
+      "tie": 0,
+      "worse": 8
+    },
+    {
+      "mask": "Full",
+      "budget_percent": 75,
+      "contrast": "Label priority secondary",
+      "equal_family_brier_difference": 0.00017732127206035084,
+      "better": 6,
+      "tie": 0,
+      "worse": 10
+    },
+    {
+      "mask": "Full",
+      "budget_percent": 100,
+      "contrast": "Information weighting",
+      "equal_family_brier_difference": -0.0034874805626042096,
+      "better": 13,
+      "tie": 0,
+      "worse": 3
+    },
+    {
+      "mask": "Full",
+      "budget_percent": 100,
+      "contrast": "Hierarchy versus Lloyd",
+      "equal_family_brier_difference": 0.0,
+      "better": 0,
+      "tie": 16,
+      "worse": 0
+    },
+    {
+      "mask": "Full",
+      "budget_percent": 100,
+      "contrast": "Label priority secondary",
+      "equal_family_brier_difference": 0.0,
+      "better": 0,
+      "tie": 16,
+      "worse": 0
+    },
+    {
+      "mask": "cost40",
+      "budget_percent": 25,
+      "contrast": "Information weighting",
+      "equal_family_brier_difference": -0.0011874130993652964,
+      "better": 11,
+      "tie": 0,
+      "worse": 5
+    },
+    {
+      "mask": "cost40",
+      "budget_percent": 25,
+      "contrast": "Hierarchy versus Lloyd",
+      "equal_family_brier_difference": -0.0018771128290910278,
+      "better": 13,
+      "tie": 0,
+      "worse": 3
+    },
+    {
+      "mask": "cost40",
+      "budget_percent": 25,
+      "contrast": "Label priority secondary",
+      "equal_family_brier_difference": -0.0006288523221560996,
+      "better": 8,
+      "tie": 0,
+      "worse": 8
+    },
+    {
+      "mask": "cost40",
+      "budget_percent": 50,
+      "contrast": "Information weighting",
+      "equal_family_brier_difference": -0.001442679505854136,
+      "better": 12,
+      "tie": 0,
+      "worse": 4
+    },
+    {
+      "mask": "cost40",
+      "budget_percent": 50,
+      "contrast": "Hierarchy versus Lloyd",
+      "equal_family_brier_difference": -0.0008045884070913236,
+      "better": 9,
+      "tie": 0,
+      "worse": 7
+    },
+    {
+      "mask": "cost40",
+      "budget_percent": 50,
+      "contrast": "Label priority secondary",
+      "equal_family_brier_difference": -0.00010906061738063567,
+      "better": 5,
+      "tie": 0,
+      "worse": 11
+    },
+    {
+      "mask": "cost40",
+      "budget_percent": 75,
+      "contrast": "Information weighting",
+      "equal_family_brier_difference": -0.0016968346967185192,
+      "better": 11,
+      "tie": 0,
+      "worse": 5
+    },
+    {
+      "mask": "cost40",
+      "budget_percent": 75,
+      "contrast": "Hierarchy versus Lloyd",
+      "equal_family_brier_difference": 0.00016821185004322378,
+      "better": 8,
+      "tie": 0,
+      "worse": 8
+    },
+    {
+      "mask": "cost40",
+      "budget_percent": 75,
+      "contrast": "Label priority secondary",
+      "equal_family_brier_difference": -0.00015665542193631435,
+      "better": 6,
+      "tie": 0,
+      "worse": 10
+    },
+    {
+      "mask": "cost40",
+      "budget_percent": 100,
+      "contrast": "Information weighting",
+      "equal_family_brier_difference": -0.0015318281295217582,
+      "better": 12,
+      "tie": 0,
+      "worse": 4
+    },
+    {
+      "mask": "cost40",
+      "budget_percent": 100,
+      "contrast": "Hierarchy versus Lloyd",
+      "equal_family_brier_difference": 0.0,
+      "better": 0,
+      "tie": 16,
+      "worse": 0
+    },
+    {
+      "mask": "cost40",
+      "budget_percent": 100,
+      "contrast": "Label priority secondary",
+      "equal_family_brier_difference": 0.0,
+      "better": 0,
+      "tie": 16,
+      "worse": 0
+    }
+  ],
+  "selected_cap100_policies": [
+    {
+      "mask": "Full",
+      "geometry": "U",
+      "method": "geometric",
+      "equal_family_brier": 0.10357063800962277,
+      "brier_difference_from_fixed100": 3.4974891181365744e-05,
+      "mean_array_fraction": 0.6603088831164332,
+      "mean_selected_percent": 65.10416666666667,
+      "better": 6,
+      "tie": 3,
+      "worse": 7
+    },
+    {
+      "mask": "Full",
+      "geometry": "U",
+      "method": "supervised",
+      "equal_family_brier": 0.10374541050225584,
+      "brier_difference_from_fixed100": 0.0002097473838144359,
+      "mean_array_fraction": 0.6809447756529261,
+      "mean_selected_percent": 67.1875,
+      "better": 4,
+      "tie": 3,
+      "worse": 9
+    },
+    {
+      "mask": "Full",
+      "geometry": "U",
+      "method": "lloyd",
+      "equal_family_brier": 0.1034009883074138,
+      "brier_difference_from_fixed100": -0.0001346748110276083,
+      "mean_array_fraction": 0.7412743478391851,
+      "mean_selected_percent": 73.4375,
+      "better": 7,
+      "tie": 4,
+      "worse": 5
+    },
+    {
+      "mask": "Full",
+      "geometry": "G",
+      "method": "geometric",
+      "equal_family_brier": 0.1001275430989827,
+      "brier_difference_from_fixed100": 7.936054314549234e-05,
+      "mean_array_fraction": 0.6906431995217563,
+      "mean_selected_percent": 68.2256711409396,
+      "better": 7,
+      "tie": 2,
+      "worse": 7
+    },
+    {
+      "mask": "Full",
+      "geometry": "G",
+      "method": "supervised",
+      "equal_family_brier": 0.10023149078306168,
+      "brier_difference_from_fixed100": 0.00018330822722449017,
+      "mean_array_fraction": 0.7215410443284351,
+      "mean_selected_percent": 71.35416666666666,
+      "better": 5,
+      "tie": 4,
+      "worse": 7
+    },
+    {
+      "mask": "Full",
+      "geometry": "G",
+      "method": "lloyd",
+      "equal_family_brier": 0.10006254903178602,
+      "brier_difference_from_fixed100": 1.4366475948820209e-05,
+      "mean_array_fraction": 0.7312991057732551,
+      "mean_selected_percent": 72.39583333333334,
+      "better": 6,
+      "tie": 4,
+      "worse": 6
+    },
+    {
+      "mask": "cost40",
+      "geometry": "U",
+      "method": "geometric",
+      "equal_family_brier": 0.10456815559059365,
+      "brier_difference_from_fixed100": -0.0010692946336156733,
+      "mean_array_fraction": 0.6546372455236419,
+      "mean_selected_percent": 64.58333333333334,
+      "better": 9,
+      "tie": 3,
+      "worse": 4
+    },
+    {
+      "mask": "cost40",
+      "geometry": "U",
+      "method": "supervised",
+      "equal_family_brier": 0.10491314433485817,
+      "brier_difference_from_fixed100": -0.0007243058893511775,
+      "mean_array_fraction": 0.6805524341037517,
+      "mean_selected_percent": 67.19449105145414,
+      "better": 8,
+      "tie": 3,
+      "worse": 5
+    },
+    {
+      "mask": "cost40",
+      "geometry": "U",
+      "method": "lloyd",
+      "equal_family_brier": 0.10532878116907932,
+      "brier_difference_from_fixed100": -0.0003086690551300287,
+      "mean_array_fraction": 0.7305808881314234,
+      "mean_selected_percent": 72.39583333333334,
+      "better": 8,
+      "tie": 4,
+      "worse": 4
+    },
+    {
+      "mask": "cost40",
+      "geometry": "G",
+      "method": "geometric",
+      "equal_family_brier": 0.10369730422812143,
+      "brier_difference_from_fixed100": -0.00040831786656614724,
+      "mean_array_fraction": 0.6441947870865238,
+      "mean_selected_percent": 63.541666666666664,
+      "better": 7,
+      "tie": 3,
+      "worse": 6
+    },
+    {
+      "mask": "cost40",
+      "geometry": "G",
+      "method": "supervised",
+      "equal_family_brier": 0.10394024795649001,
+      "brier_difference_from_fixed100": -0.00016537413819757706,
+      "mean_array_fraction": 0.6905991315678544,
+      "mean_selected_percent": 68.22916666666666,
+      "better": 6,
+      "tie": 4,
+      "worse": 6
+    },
+    {
+      "mask": "cost40",
+      "geometry": "G",
+      "method": "lloyd",
+      "equal_family_brier": 0.10341253330952757,
+      "brier_difference_from_fixed100": -0.000693088785160022,
+      "mean_array_fraction": 0.7054093373952488,
+      "mean_selected_percent": 69.79166666666667,
+      "better": 8,
+      "tie": 4,
+      "worse": 4
+    }
+  ],
+  "runtime_seconds": 118.0201917899999
+}

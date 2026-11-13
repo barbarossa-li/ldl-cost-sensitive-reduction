@@ -1,0 +1,259 @@
+{
+  "protocol_freeze_commit": "4917253807a4318aa437b1b0d151e0234847e6b8",
+  "protocol_sha256": "c6c4d323218ddfd160ee0fc7cf4b27fed2f7795b14ab5333ebef146b50434547",
+  "code_manifest_sha256": "0c921cfbab6aa04255a6a59fe70dcdddc47bfa9fe190032d65607a069f11c960",
+  "all_predictions_frozen_sha256": "4aaa84c5b56f48e7944997c8c12d2bede737e2fe1edb24927857573479c75e63",
+  "case_records": 48,
+  "all_32_source_arrays_hash_verified": true,
+  "original_outer_test_scored": false,
+  "fixed_budget_e06_replay_rows": 2304,
+  "fixed_budget_e06_max_abs_difference": 0.0,
+  "fixed_budget_scope": "Exact replay on same training-pool outer folds, not new independent evidence. New computation is inner-fold budget selection and its heldout evaluation.",
+  "private_predictions": [
+    {
+      "case": "Natural_Scene/fold_0/record_PRIVATE.json",
+      "record_sha256": "ba1c31e61761a2ee581fae6e60d96cdaa198db70ec551e36475d8de2e797c4c9",
+      "prediction_sha256": "3ed2dbacf1a0f0a7b84f448d41e3c0460f85a1d46a7f5f1d4727e962594e6845"
+    },
+    {
+      "case": "Natural_Scene/fold_1/record_PRIVATE.json",
+      "record_sha256": "1b01c19121ffd30cdbb67c96b7d9eeaf6ca7f383074a23506c077cafcdd05cf9",
+      "prediction_sha256": "7900db5ffaf45b4aabb6ed716e0782ef846667a5132671dd330257814ebc57fa"
+    },
+    {
+      "case": "Natural_Scene/fold_2/record_PRIVATE.json",
+      "record_sha256": "8191b090a88b1feb2c3eca36cb34e895495c88e0c769418a17af5dc095e520f1",
+      "prediction_sha256": "7bdd6346d758eaacaa84e9e14af8d70a2bb561c959e9ae37a1c9f6a6a069ec40"
+    },
+    {
+      "case": "SBU_3DFE/fold_0/record_PRIVATE.json",
+      "record_sha256": "fe387e69324ebf366e24e95c35b0152b8ccc37db1c7602a57186a92153059c0f",
+      "prediction_sha256": "4e5a01f7f4a6aed8d761a768301b21540c0bae8c989bed612f505695ede34f11"
+    },
+    {
+      "case": "SBU_3DFE/fold_1/record_PRIVATE.json",
+      "record_sha256": "dd4153db8bdb9da9159e97047ef8ec4fe424e2baebd2c28abe548631636327d3",
+      "prediction_sha256": "ef429c26896e8e44265f88e60684a2b96d5668a22f9b4936b5b4e74ceffd9b23"
+    },
+    {
+      "case": "SBU_3DFE/fold_2/record_PRIVATE.json",
+      "record_sha256": "dad7d7b0bc75571275c9f5dbd4c89fb2adb90756a9e0ba5a1bc57334d4390650",
+      "prediction_sha256": "13f367e84555ecbeb75a9d4eb1db678bc0b8c36470185be252e5bb9b1144509c"
+    },
+    {
+      "case": "Yeast_cold/fold_0/record_PRIVATE.json",
+      "record_sha256": "90b5bb54b20a2bbec251e5a0ef97f176ec0f2472e400498f351df1b3ef8d6d98",
+      "prediction_sha256": "0908c06b0d90fcfc69df60410fc94be9b809afe93a765405a4983d827c513094"
+    },
+    {
+      "case": "Yeast_cold/fold_1/record_PRIVATE.json",
+      "record_sha256": "9f29905b7cb3ac61f88c9437cfb86846c1e8f7100b2cfc74c8994a203c7499ce",
+      "prediction_sha256": "f3892635f68e10988726442baaf66c0465f797456c7423d7865d6e3600e994da"
+    },
+    {
+      "case": "Yeast_cold/fold_2/record_PRIVATE.json",
+      "record_sha256": "d241a96cb742b391e167b4b112561394feb18d48095afe3e30b41cb4c38824c7",
+      "prediction_sha256": "82b944d1406fe62e7c27ac08b68bb4a42bce158b1386022dcf97a6d2dc4a9d2b"
+    },
+    {
+      "case": "SCUT_FBP/fold_0/record_PRIVATE.json",
+      "record_sha256": "b94ff5c31452605f1b035fbf6973e557fb5e6a7dc4babca6f183cac7e9d98466",
+      "prediction_sha256": "ade14b50f62c02e6ac5280e9197d157061fcfd4f5d04425c9e1a191910f541f8"
+    },
+    {
+      "case": "SCUT_FBP/fold_1/record_PRIVATE.json",
+      "record_sha256": "b2b5ffab6954549937f807665d9a4bc184649ed7df2e172187fbe8a8d3bd5039",
+      "prediction_sha256": "cb7c0a213900d1cdeaec933e24dfd96920e1ce0908d5357d94757f53b4440910"
+    },
+    {
+      "case": "SCUT_FBP/fold_2/record_PRIVATE.json",
+      "record_sha256": "83bc0a663e62d64bc35f5920672ef37a7c9314d4ab9db1adbadec93487ccd8db",
+      "prediction_sha256": "6bfa0831361bb20429e45b0916565774231c495baf766fb7cf100ca436f37004"
+    },
+    {
+      "case": "FG-Net/fold_0/record_PRIVATE.json",
+      "record_sha256": "dacb8e4ec729d4f14c9a2b78d93fc1a3cb4aa0ca36b9d4d7a4df6aca794ddd11",
+      "prediction_sha256": "9d0b6a13e36c0d5075fe05d521390ed12adccf92bc680803eb4b4d4cf736c60a"
+    },
+    {
+      "case": "FG-Net/fold_1/record_PRIVATE.json",
+      "record_sha256": "7e1aaa683199d6209620bd29d319ba806eec782ac209afc3278f0a6e206a8510",
+      "prediction_sha256": "bf3b58d1395a05af341a4882505943881e23e37f303b368fc83d44230dfcba32"
+    },
+    {
+      "case": "FG-Net/fold_2/record_PRIVATE.json",
+      "record_sha256": "45e6ac9fbd170975fda8e05319e4155ae521cb3310c5ca254fc37f3b5f6adc83",
+      "prediction_sha256": "0fbffafff0b4a2fcea747367a3f0700bf944932c73824b8d6d44a8b6382627c6"
+    },
+    {
+      "case": "Music/fold_0/record_PRIVATE.json",
+      "record_sha256": "88186ca56daee839dcc06f889558605ef8e03388fd154c1f1c151f22f874910b",
+      "prediction_sha256": "6df021194e474831d26ad41f4e911eef98a9f17f5bac88262de0329f1141c485"
+    },
+    {
+      "case": "Music/fold_1/record_PRIVATE.json",
+      "record_sha256": "6d8163d55a7434ea43a3aa9223bd7741f6e49dc109def2b0e8cd68f440474aff",
+      "prediction_sha256": "5b192b8f30f5da8d59ea50d25beb669a09fb393583ac5b34de24805f44950035"
+    },
+    {
+      "case": "Music/fold_2/record_PRIVATE.json",
+      "record_sha256": "da8d9af5e5401cf36345b684e12839ff0bf3bfa23fbc169baf9fa7cbfb2110de",
+      "prediction_sha256": "02da527f526664a562db90528e15f7fc2e1f50a4be368c299baf5e2efdadee24"
+    },
+    {
+      "case": "Painting/fold_0/record_PRIVATE.json",
+      "record_sha256": "4199f80bc1a12fe17db22b5cc5606caa5f0802c6adfd0fb56b6b2833b7cf9228",
+      "prediction_sha256": "b53bcb37231d7cda25c6f4b0fc8a76969d60418476c972f1990533be392acdd8"
+    },
+    {
+      "case": "Painting/fold_1/record_PRIVATE.json",
+      "record_sha256": "bc1fb7cef0140043cb6f01335afb1927c8c97c86c8ee2ee0604c29f1f9ed588a",
+      "prediction_sha256": "586bf5d95817839e8e61049d73d3a30a879391eb009a929ed41a4fd4cb20625b"
+    },
+    {
+      "case": "Painting/fold_2/record_PRIVATE.json",
+      "record_sha256": "29a447d519bdf07ce08309a9ea161727ad05909fae68f303c808e41f78ac6f9f",
+      "prediction_sha256": "f23d7ac6160ec1e146c63be196538157f82c393044ddf0aa41899bd4a1e22fac"
+    },
+    {
+      "case": "Human_Gene/fold_0/record_PRIVATE.json",
+      "record_sha256": "87710b79a775a6cea96fdf32a29d49db61d5804403493d0c81e3b294e2c3cda5",
+      "prediction_sha256": "65d5ba92929ba567ab363647523cca6ec0115551187f81522044b7cdd3842872"
+    },
+    {
+      "case": "Human_Gene/fold_1/record_PRIVATE.json",
+      "record_sha256": "6609e68066742f1058025c8f0f2b7ceb2039a1838fb34a8fac4f5fe14021ed97",
+      "prediction_sha256": "e3c227864a23ceaa9ff814a1fef3def580c5d59701138c8162dcd76ca8b69b81"
+    },
+    {
+      "case": "Human_Gene/fold_2/record_PRIVATE.json",
+      "record_sha256": "2b6f51d88c96f3b48b342bd4e279ab21e28b8b3c953e45721dc53114ae693967",
+      "prediction_sha256": "572730e0201dd2c9edbcfe44d02e21c0a9e423ddcbec54c03b869a5dc2a57498"
+    },
+    {
+      "case": "SJAFFE/fold_0/record_PRIVATE.json",
+      "record_sha256": "3c77c550b95895d9459a799b7b7c6c7ba1c5ccd93b14d83d60b5e812cb40aa4a",
+      "prediction_sha256": "8cefbd0e621e7f40c4b973bb55780a45424de48284906f604bba2f2792da2b6a"
+    },
+    {
+      "case": "SJAFFE/fold_1/record_PRIVATE.json",
+      "record_sha256": "c8888e445cfcc6a6f2389ad7c8ced293ffd09f1f128022a06f5557a58b380226",
+      "prediction_sha256": "6daf3590e5d34bdf8573d4ea77cacb082c8edf6371149fc4bf1d161a52f5a142"
+    },
+    {
+      "case": "SJAFFE/fold_2/record_PRIVATE.json",
+      "record_sha256": "c03595823073679146a5fdbd7316863540e72a666e8a7beb441cf56bd1f09404",
+      "prediction_sha256": "50ba081113c90a16d94ecf538115a422dce5a8d580b33f80bef85c9256547cb9"
+    },
+    {
+      "case": "fbp5500/fold_0/record_PRIVATE.json",
+      "record_sha256": "78aa15ceebad844d1cf349ddf6593090cdacbea28e0398c944bce4c213a339de",
+      "prediction_sha256": "0f27212fab78aa42258a174217cf8fc0f15cd8e4fd1bdb6d6ff5ccbbfff6a5eb"
+    },
+    {
+      "case": "fbp5500/fold_1/record_PRIVATE.json",
+      "record_sha256": "f13d400db69e0bc4b3f4b1b816ffa2ea9500b495e2079399ec3363cda83a11bc",
+      "prediction_sha256": "3b42c876aa5099b9850676ec9545f292a2f2cc77c47ca383922d8e0e7fa4e998"
+    },
+    {
+      "case": "fbp5500/fold_2/record_PRIVATE.json",
+      "record_sha256": "cda5e056fd9ff37ae8380bc8363816e361e26ccbd0a03d1fb794a2a537f329cb",
+      "prediction_sha256": "f52ca4af57751a4bc0babc00762c9d54d213ffe6b1a40ffa3168baeb9313fcb8"
+    },
+    {
+      "case": "emotion6/fold_0/record_PRIVATE.json",
+      "record_sha256": "b9831d605bef3ab841210ecccfb16130154bea176a0d51523bbb3438f2eb28e2",
+      "prediction_sha256": "814b42ba5446aa80fd5fc65b14f27db7bfd61fad38bfa545ad216d290aed39bf"
+    },
+    {
+      "case": "emotion6/fold_1/record_PRIVATE.json",
+      "record_sha256": "f5add081176fda9c83003f0b53129f93279491015bb5fb0ac1803659c336f3dc",
+      "prediction_sha256": "034243b4830239d7cd55e542e11232d41a4572173e6f10ca935bdfba0d3461b4"
+    },
+    {
+      "case": "emotion6/fold_2/record_PRIVATE.json",
+      "record_sha256": "d7eef1470a100e8344f2f7856dbb9e7ed76c359a6b26174938cf86d5c1fefe68",
+      "prediction_sha256": "cb8cf9c8a300ff210a9f80f894367d77fa296ddf2d9f3361a0ffbf01f051ebef"
+    },
+    {
+      "case": "RAF_ML/fold_0/record_PRIVATE.json",
+      "record_sha256": "8812e00c53dfccfc1571ddd6cf9b4d5424152bab2881b163cb83489ae2d39b8b",
+      "prediction_sha256": "4784a5008d3f553744cbccf6ae9f8e26233e429871976e5ccec469bb0a5154dd"
+    },
+    {
+      "case": "RAF_ML/fold_1/record_PRIVATE.json",
+      "record_sha256": "c3b973abb2f7635c8a23098a235b4e2d45455e68f337045452f70605c52bf735",
+      "prediction_sha256": "0dc5074684da753e551569af934b8278b9821992fc224512196d2acf2278c8ff"
+    },
+    {
+      "case": "RAF_ML/fold_2/record_PRIVATE.json",
+      "record_sha256": "efe6830b8c8718e0d78be1aafcd8cfe2c2d088263ee40334d1755f3fc6c0c16f",
+      "prediction_sha256": "dcd2f98d8a8a7fea89d9560bcb5b2d0a637fd41e1b311115493418bda49faa4f"
+    },
+    {
+      "case": "Movie/fold_0/record_PRIVATE.json",
+      "record_sha256": "3ffebc27562a0355b15b858e746af089b3fcd9c27fc5ebc4512dfd0652da587d",
+      "prediction_sha256": "b42bb847b739df7804f2c14a8d869b72780b5c1ba146adcc5835493d29ae82b2"
+    },
+    {
+      "case": "Movie/fold_1/record_PRIVATE.json",
+      "record_sha256": "266832cb2528ff804cbab2d3d3f0e84c985df6d03c386d9cf3f371bd92a767bf",
+      "prediction_sha256": "dc2e8a0e226f26d1f36c49843f2408b522110253436be0cec3633955f4240697"
+    },
+    {
+      "case": "Movie/fold_2/record_PRIVATE.json",
+      "record_sha256": "b8c7f9a66c69821942d90c0b63ec57a0ce14d6f7fd24fef738a8b21f1f82b0c0",
+      "prediction_sha256": "3428455fda2b14480eb31e183b9ab31aeab527d2d3f3db4de6afe32c62e2141e"
+    },
+    {
+      "case": "Flickr/fold_0/record_PRIVATE.json",
+      "record_sha256": "c45411212d2f56e73e4748d8f149c15c143f7446845bb4678be84afa2bc91e79",
+      "prediction_sha256": "da9bcac453e841a26f64ef17bf83be3710a91d5a22701663c8e94f263191ce62"
+    },
+    {
+      "case": "Flickr/fold_1/record_PRIVATE.json",
+      "record_sha256": "ca38d75ae86bacce261a4680951efbb2445b95adbb742e7f42ef38ac1dfd335f",
+      "prediction_sha256": "1f7bfcf47b302719e6fbb66692788ab0f965d629b766b3551c69fe5d954d8cca"
+    },
+    {
+      "case": "Flickr/fold_2/record_PRIVATE.json",
+      "record_sha256": "a08ccb9b983dbc57ce5ac61b101556e16babda04e899a1a862c09b02aa44faad",
+      "prediction_sha256": "91671974c62a03b4df5473248e14b3370a114d5af750793d45c0e476cda8dda7"
+    },
+    {
+      "case": "Twitter/fold_0/record_PRIVATE.json",
+      "record_sha256": "ba01e8ad2e9e5c7337e7aae267a449675670038bc6fb959262571aea6ba82d5d",
+      "prediction_sha256": "c342567df1b79da9f2863dd9d7e42fc4fc22ce4985d66dccf839b72467b9b06f"
+    },
+    {
+      "case": "Twitter/fold_1/record_PRIVATE.json",
+      "record_sha256": "768cf20e073da07536a87958e724c66323c0eb54df40cacf60bc2ec3136edcde",
+      "prediction_sha256": "718b478d7ef4cd881cc04c1f79aaebabe86bc68b457ea9f75e7afc1820fffa98"
+    },
+    {
+      "case": "Twitter/fold_2/record_PRIVATE.json",
+      "record_sha256": "d9078ca0e3413ebe45530046467518ae4b5c0584f377e9653b5c06b8f3f329f6",
+      "prediction_sha256": "09a6f82308976904779c648eea06d7fa011ff4ea727af72fcf9d3446da6e0f9a"
+    },
+    {
+      "case": "MOR-PH/fold_0/record_PRIVATE.json",
+      "record_sha256": "71c48a4f17b80922b2f53ccc6f1041663a23d5cf2ddfffea71b32f50dac6d8f9",
+      "prediction_sha256": "df39273f0c96480e13623802e3e1ac12a5967af20087711a3ca592dcc43771bf"
+    },
+    {
+      "case": "MOR-PH/fold_1/record_PRIVATE.json",
+      "record_sha256": "5b34835f6667cb4e246c349209cf33ee4c360dd902fcaa173adc37d3965d6abd",
+      "prediction_sha256": "8a06ea7908949723e3bf99197bfeadb17b066350d403676ea43d541af171a8ee"
+    },
+    {
+      "case": "MOR-PH/fold_2/record_PRIVATE.json",
+      "record_sha256": "6c926f6b3cda254b164edf04ba3eb23157e22bbc3ccd0b260415c7fda8f7a2eb",
+      "prediction_sha256": "2ba95e9ad58d80ea42f4f94988e06076116f1d0a80a98c6ba5d6b4aa0179436f"
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  }
+}

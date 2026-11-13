@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scope": "Synthetic technical checks; no benchmark predictions or new result claims",
+  "checks": [
+    "Budget cap, deterministic tolerance tie and nonfinite rejection",
+    "Full endpoint equality across three constructors and two geometries",
+    "Exact capacity formula and fixed-budget bytes matching",
+    "Deterministic feature-only prediction interface",
+    "Constant-feature/zero-information fallback",
+    "All16 family outer/inner/excluded-original-test index separation",
+    "Adversarial outer-holdout-label replacement leaves all inner risks, selected budgets and predictions unchanged"
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "version": "AI-E0.9-capacity-aligned-constructor-readout-factorial-v1",
+  "date": "2026-11-14",
+  "status": "Protocol/source to be committed before E09 benchmark computation",
+  "scope": "Fixed-setting factorial development on16 consulted families and same48 E08 training-pool outerfolds. No new inner selection, new original outer-test scoring or independent confirmation.",
+  "families": [
+    {
+      "family": "Natural_Scene",
+      "group": "A",
+      "N": 2000,
+      "m": 294,
+      "q": 9,
+      "outer_train": 384,
+      "outer_test": 512,
+      "mat_sha256": "7778ea8f217c07d7f1457361d7bfa97e63f5ca7ef2551e3cc77888c2d9f76d31",
+      "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/Natural_Scene.mat",
+      "X_sha256": "81bdf4190d6fba763f26c557cbcd5e7dbaa10a9f80c0e8bed430beb390639708",
+      "L_sha256": "7e9ee1a7a24f3f8a189c711680fb473c8b884ee5ef92ba2faac2992e478ee27f"
+    },
+    {
+      "family": "SBU_3DFE",
+      "group": "A",
+      "N": 2500,
+      "m": 243,
+      "q": 6,
+      "outer_train": 384,
+      "outer_test": 512,
+      "mat_sha256": "59dec80525aaa859b8400a92e5b94e54b405ce6ed60bfad9ec95e58964e84707",
+      "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/SBU_3DFE.mat",
+      "X_sha256": "598d0d8e7988eb4c1e7130ad0a547c269aa7f93d7c3da14a4b0a145db7c6b75a",
+      "L_sha256": "6979e39c8944adc415af621ccea11609835c3a2c95ce837b5b7058ed7bd0ee7e"
+    },
+    {
+      "family": "Yeast_cold",
+      "group": "A",
+      "N": 2465,
+      "m": 24,
+      "q": 4,
+      "outer_train": 384,
+      "outer_test": 512,
+      "mat_sha256": "7b1f599ec4791052f9549c62cc6c8677af3e982a9f4bddb298c2bb2694811f21",
+      "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/Yeast_cold.mat",
+      "X_sha256": "f8a37ea802b9df9dbed158075b8157f7a36df0aa5441e3e82452355312197e3c",
+      "L_sha256": "f05eba80e4450c7ef240a445123c8940534464d846ad599bc628f91e6178177d"
+    },
+    {
+      "family": "SCUT_FBP",
+      "group": "A",
+      "N": 1500,
+      "m": 300,
+      "q": 5,
+      "outer_train": 384,
+      "outer_test": 512,
+      "mat_sha256": "2851c11a0b98ad84483784230b597eca81108583b60ed3cc8674816ab48c03de",
+      "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/SCUT_FBP.mat",
+      "X_sha256": "d647a2a783dbb69a0d50104c22fc31749af7ab4f4884cd7f712e97143539b0c4",
+      "L_sha256": "ae957aa12e8db1fac87e972adff77b4f7dc92e1487d54159aaa1d76d0d9e23d0"
+    },
+    {
+      "family": "FG-Net",
+      "group": "A",
+      "N": 1002,
+      "m": 251,
+      "q": 70,
+      "outer_train": 384,
+      "outer_test": 512,
+      "mat_sha256": "9b016b9304a2f75a1fa9b41b455dca8c07d779d2580dbb1d4f25f33ff8bf5c33",
+      "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/FG-Net.mat",
+      "X_sha256": "a710c74745e71e085af65d9eec766315fb795f1a9891ef5945976b1f8584e234",
+      "L_sha256": "b818d3275d823092d83ab3f0ec7d464407791574a1e4e577434c871c61b3ba8f"
+    },
+    {
+      "family": "Music",
+      "group": "A",
+      "N": 360,
+      "m": 128,
+      "q": 9,
+      "outer_train": 252,
+      "outer_test": 108,
+      "mat_sha256": "0de6c00768d30a3be522c59543ec4210efab6b1fa65f7973917d97075413c990",
+      "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/Music.mat",
+      "X_sha256": "71836585d0d0907bc8142e4f742a268c65b8d1a6e9922982029197333e5491e7",
+      "L_sha256": "b0aa47a10ee568e61ffdb924bedc8ee3b290ccbb9e20d533ff6440a5baf8d027"
+    },
+    {
+      "family": "Painting",
+      "group": "A",
+      "N": 280,
+      "m": 142,
+      "q": 8,
+      "outer_train": 196,
+      "outer_test": 84,
+      "mat_sha256": "22404e67262707f34005047dfc80aa9763472328f87fff9c2430d972d1c5b796",
+      "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/Painting.mat",
+      "X_sha256": "63e9cbda54f792a2154704a9dd991c80d0250b93c644832ed2c78810fb518564",
+      "L_sha256": "a00775375dd91e57374465593a7f9d3548051f1ae8fc251fc0a089d34e9bfb0a"
+    },
+    {
+      "family": "Human_Gene",
+      "group": "A",
+      "N": 17892,
+      "m": 36,
+      "q": 68,
+      "outer_train": 384,
+      "outer_test": 512,
+      "mat_sha256": "3b067d5412bbc92445e4c3d0c5e445ec4e74470c5cf677ebcf88f6e72f90208c",
+      "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/Human_Gene.mat",
+      "X_sha256": "59f4ece70c83c4a31f67e0486923e8d9aaf5ad6e681f2848a0797e51e119f1b9",
+      "L_sha256": "c0a145cace5481b434dd44a50281e4802fcc9200e8ddc5c76f1e24199d4cc8de"
+    },
+    {
+      "family": "SJAFFE",
+      "group": "B",
+      "N": 213,
+      "m": 243,
+      "q": 6,
+      "outer_train": 149,
+      "outer_test": 64,
+      "mat_sha256": "bdd53fb033a275b39b8fd873809cd69f3cee13234f5aa472aea0f5ad73b8a04b",
+      "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/SJAFFE.mat",
+      "X_sha256": "d3a8102184a83c18e04f05966e3e4cca87438c20fb721d8e02ef5d548cd6f2fb",
+      "L_sha256": "2b7e976aec8e2a6cfd81dbed65222894f402a45c349f857fab67b37104248f7f"
+    },
+    {
+      "family": "fbp5500",
+      "group": "B",
+      "N": 5500,
+      "m": 512,
+      "q": 5,
+      "outer_train": 384,
+      "outer_test": 512,
+      "mat_sha256": "2cf91483f2f4fed37aba1364b81c6a6c9f7643bc99d5d7e9617bfccd4793f17c",
+      "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/fbp5500.mat",
+      "X_sha256": "a14347cd19ff6ec90ef447388a7ac0dafa6596377bee56ef5471a4ac3e281595",
+      "L_sha256": "2ee69df32843316eb086366b37302133fc3aa6d0a011b788c53b66b9488bf92e"
+    },
+    {
+      "family": "emotion6",
+      "group": "B",
+      "N": 1980,
+      "m": 168,
+      "q": 7,
+      "outer_train": 384,
+      "outer_test": 512,
+      "mat_sha256": "2cc3b82d142b5eb27509105540390a8a7de2d6780b898d8e69c29a12a2e409a5",
+      "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/emotion6.mat",
+      "X_sha256": "c06c54bd923658cb5b2fe37c760cb84e3c91111bff8abeb609e853d9b969d7b5",
+      "L_sha256": "ffc529b0c3bf7fb04afa1df6486c48d08458761d55aba92d0405b6256bbf2e8f"
+    },
+    {
+      "family": "RAF_ML",
+      "group": "B",
+      "N": 4908,
+      "m": 200,
+      "q": 6,
+      "outer_train": 384,
+      "outer_test": 512,
+      "mat_sha256": "45755604cb0d65f9c52b21810ab1631b8039b3317706538a896f0a35637f876a",
+      "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/RAF_ML.mat",
+      "X_sha256": "a4d43bdc7a8cef54abaf4889b6600492a12e0a9559fc7475f53a7aa5b3535a48",
+      "L_sha256": "0685a92d50a39c236ad75f5092007e3a7fa2f4b61478265e3c2fba250b4b759e"
+    },
+    {
+      "family": "Movie",
+      "group": "B",
+      "N": 7755,
+      "m": 1869,
+      "q": 5,
+      "outer_train": 384,
+      "outer_test": 512,
+      "mat_sha256": "5c8629905fdf18640410d43b30f1a84c17473df38e48f279f5a2af11019a1bac",
+      "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/Movie.mat",
+      "X_sha256": "2efedf6bee1628725a20e8262ebff3461218936b65ae7f18b993b29174c4e1cc",
+      "L_sha256": "302d9da55dc27285aeeb8254e5ea1666429f66faac7284d758b809dbefa9bfdf"
+    },
+    {
+      "family": "Flickr",
+      "group": "B",
+      "N": 11150,
+      "m": 168,
+      "q": 8,
+      "outer_train": 384,
+      "outer_test": 512,
+      "mat_sha256": "8651f4e93d135c162f3f81a4de7a74bc13c694f31fb6433d69405c55820fc82c",
+      "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/Flickr.mat",
+      "X_sha256": "342969d5635831ee8bc309ce008002526d0a8a061995c6479c45b71e58c9b609",
+      "L_sha256": "b0ff58534d0e8123c5ad1e481830aa18af9a074e8593913d59f08465a0e9be22"
+    },
+    {
+      "family": "Twitter",
+      "group": "B",
+      "N": 10045,
+      "m": 168,
+      "q": 8,
+      "outer_train": 384,
+      "outer_test": 512,
+      "mat_sha256": "f7a91535ada88dd1ba0aeb0d42b2479b8293313bf37f6236aa8e6dfa05db385e",
+      "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/Twitter.mat",
+      "X_sha256": "90956cdaa1d6ead2bd7a37a46e19737a0ffab978d2c9fd7f345b549ad805c964",
+      "L_sha256": "7510f61babef3ca263e3ced59c5393eb9828ba9904019e34821b8165c67fe59d"
+    },
+    {
+      "family": "MOR-PH",
+      "group": "B",
+      "N": 55132,
+      "m": 200,
+      "q": 62,
+      "outer_train": 384,
+      "outer_test": 512,
+      "mat_sha256": "283e09441d077e684d75d38b4c3bcf78c471f9421ecee1c75a7f44d8c54cb9d4",
+      "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/MOR-PH.mat",
+      "X_sha256": "f72f3123651e9d345817b2a7066dcc952f2b081aecfdeb64b7af9b50ec054706",
+      "L_sha256": "458cda1ebdef9ffdd35731f0ada5d2c180dd0b864c55b5c91ab5cb7403b483f3"
+    }
+  ],
+  "outer_folds": 3,
+  "inner_folds": 0,
+  "outer_seed": "202611134000+10000*family_index0based+1000 (same training-internal folds as E06)",
+  "fixed_settings": {
+    "constructors": [
+      "geometric",
+      "kmeanspp",
+      "bisecting",
+      "paper20"
+    ],
+    "geometries": [
+      "U",
+      "G"
+    ],
+    "masks": [
+      "Full",
+      "cost40"
+    ],
+    "budgets": [
+      "K5",
+      25,
+      50,
+      75,
+      100
+    ],
+    "readouts": [
+      "nn5",
+      "allp5"
+    ],
+    "prior_alpha": [
+      0.0,
+      0.5
+    ],
+    "zeta": 0.5,
+    "library": "scikit-learn1.8.0"
+  },
+  "controls": "E08 matched NN5 geometric,KMeans++,Bisecting at same seeds plus a random one-start20-iteration paper20 constructor. U paper20 groups on unweighted training-scaled features; G paper20 uses weighted Euclidean features and is explicitly an adaptation. Allp5 always queries unweighted min-max-scaled coordinates with Minkowski5 and inverse-distance softmax; therefore G denotes construction-only for allp5, while NN5 uses G for both construction and query. No claim these two readout blocks differ in only one metric or mechanism.",
+  "selection": "No selection this round: all fixed budgets and both readout blocks reported. Do not pick a best point or reinterpret consulted folds as independent confirmation.",
+  "training_refit": "Fit scaling,bandwidths,KL weights and calibration on each outer-fit only. No inner selection this stage. Masks depend on fixed seeds/costs. Full fitting features used even for cost40; not60% complete training acquisition savings.",
+  "evaluation": "Freeze all48 prediction bundles before one scoring pass. Compare constructors within same exactK,geometry,readout,alpha; compare readout blocks on identical prototype groups. No original external-test scoring.",
+  "aggregation": "Pool3outerfold squared-error sums per family. Equal-weight16families; folds, masks, caps and budgets do not become independent datasets. Report all families and all settings; no best point headline.",
+  "primary_diagnostics": [
+    "KMeans++ and Bisecting minus geometric at sameK under each readout",
+    "Allp5 minus NN5 on identicalgroups for every constructor",
+    "U/paper20/K5 native anchor and its same-readout capacity curves"
+  ],
+  "secondary_diagnostics": [
+    "G minus U construction for allp5; not queried Gweight",
+    "all prior and negative outcomes",
+    "exact E08 common NN5/native anchor replay",
+    "repair and warning counts for each outer construction"
+  ],
+  "reporting": "Descriptive means, family win/tie/loss and selected capacity. Brier ties use absdiff<=1e-12. No significance claim on the already consulted development families. Training array capacity excludes Python overhead, fitting memory,serialization. Full endpoint equals singleton predictor.",
+  "freeze_boundary": "Source, protocol and synthetic checks committed before E09 benchmark execution; data previously consulted and cached. All48 predictions frozen before scoring. Not registry preregistration.",
+  "stop_rules": [
+    "Hash/source mismatch",
+    "split overlap",
+    "nonfinite or nonsimplex predictions",
+    "incorrect exactK or capacity",
+    "changed singleton endpoint",
+    "incomplete prediction freeze"
+  ],
+  "not_done": [
+    "new adaptive budget/readout selection",
+    "single-factor distance-only attribution",
+    "ProLSFEO-LDL and RkNN comparison",
+    "independent dataset confirmation",
+    "new manuscript rewrite",
+    "complete training/query resource measurement"
+  ],
+  "source_packet_sha256": null,
+  "constructor_seeds": "Exactly E08 outer construction seeds for common methods/budgets. paper20 uses E08 nativeLDLKM seedbase+700000+mask for allbudgets, modulo2**32. K5 is min(5,nfit); percentageK=max(1,floor(percent*nfit/100)).",
+  "exactK_and_duplicates": "Shared E08 exactK convention: singleton groups atK=n; if distinct selected weighted feature vectors<K, library fits at min(K,distinct) and deterministic largest-group repair supplies exactK. Repaired paper20 variants are adaptations; native anchor only compared when repair_count=0. Both readouts receive same canonical member groups. All cases/repairs retained.",
+  "native_LDLKM": {
+    "primary_source": "https://html.rhhz.net/tis/html/201704024.htm",
+    "reconstruction_not_author_code": true,
+    "paper_settings": {
+      "K": 5,
+      "max_iter": 20,
+      "minkowski_p": 5,
+      "init": "random,one initialization"
+    },
+    "implementation_disclosures": "Training-only min-max scaling, sklearn1.8.0 Lloyd random initialization, tol1e-4 and fixed seed; these are explicit implementation choices, not claimed verbatim paper specifications. Feature and label means per nonempty cluster. Softmax of inverse Minkowski5 distances over all centers. Zero-distance rows: equal weight only among exactzero centers; an added convention because paper reciprocal is undefined there. Stable inverse-logit shifting. Native alpha0 output and separately named half-mean adaptation both reported. Native uses U/no information geometry; same selected P, K5 or fewer distinct centers. Model byte count includes selected indices,scaling,feature and label centers, plus prior only for half-adaptation. No complete deployment/hardware-memory claim."
+  },
+  "replay_boundary": "Existing geometric and oldLloyd, alpha.5 fixed curves and cap100 policies use E07 splits and should replay exactly. Replayed rows are not new independent evidence.",
+  "inherits_old_O1_guarantees": false,
+  "capacity": "Same constructor/readout/alpha layout at exactK must have equal numeric array bytes across construction methods. NN5 retains E08 standalone layout. P5 standalone state stores centers,labels,P,lo,span,plus mean only ifalpha>0:8*[K*(d+q)+3d+(q ifalpha>0 else0)]. Thus equalK across different readouts is not necessarily equalbytes. Report actualbytes and fraction against singleton of same readout. Excludes Python/scalar metadata, fitting memory andserialization.",
+  "native_anchor": "U/paper20/K5/allp5 with no group repair must reproduce E08 nativeLDLKM within1e-12 and bytecounts exactly, alpha0/.5. Mean-reduction array layouts can cause floating-roundoff differences; record observed maxima instead of claiming bitwise identity. Disclosed reconstruction, not author code. Budgeted/G variants are adaptations."
+}

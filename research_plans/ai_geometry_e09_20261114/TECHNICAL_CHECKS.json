@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "Both readouts have identical singleton endpoints across four constructors, not necessarily across readouts",
+    "Measured state bytes equal each readout formula and match constructors at equalK",
+    "P5 inference state operates independently of training source and prototype object",
+    "LDLKM K5 prediction anchor within1e-12 and exact numeric byte identity in each U mask",
+    "Duplicate/constant-feature partitions and zero-distance prediction remain valid",
+    "Adversarial heldout-label replacement cannot alter any frozen prediction"
+  ],
+  "scope": "Synthetic checks only; no new benchmark results"
+}

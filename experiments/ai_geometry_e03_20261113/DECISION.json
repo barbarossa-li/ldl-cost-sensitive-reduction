@@ -1,0 +1,16 @@
+{
+  "technical_gate": "PASS",
+  "grouping_advantage": "NOT_SUPPORTED_ON_THESE_DEVELOPMENT_CASES",
+  "fixed_L_ball_worse_than_same_covered_mean_combinations": 6,
+  "fixed_L_ball_worse_than_same_covered_random_combinations": 6,
+  "combinations": 6,
+  "independent_families": 3,
+  "development_rows": 405,
+  "inner_scores_recomputed": 2268,
+  "new_outer_test_scored": false,
+  "main_protocol_status": "FIXED_MECHANISM_SPECIFICATION_AND_RUNNER_FROZEN; 1/80 predictions generated, 0/80 scored",
+  "main_input_arrays_verified": 6,
+  "main_input_arrays_planned": 32,
+  "manuscript_pages": 78,
+  "manuscript_changed": false
+}

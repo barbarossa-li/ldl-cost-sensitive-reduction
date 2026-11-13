@@ -1,6 +1,6 @@
 # LDL geometry and granular-ball research materials
 
-**Active research target: Applied Intelligence — redesign in progress.** The [v0.1 contribution and experiment plan](research_plans/applied_intelligence_20261113/) is the preserved design draft. The [E0 interface/internal-fold pilot](experiments/ai_geometry_e0_20261113/) has now completed: technical checks pass, while default-scale geometry effects require further development before the full study. The linked 76-page ASC-format manuscript remains the preserved experimental baseline while the new representation interface and evidence are developed.
+**Active research target: Applied Intelligence — redesign in progress.** The [E0.2 calibration probe](experiments/ai_geometry_e02_20261113/) and [E0.3 coverage-matched development controls](experiments/ai_geometry_e03_20261113/) are complete. Calibration activates local geometry, but the current ball readout has not shown independent grouping benefits over coverage-matched controls on the consulted development cases. The [fixed cross-family mechanism protocol v1](research_plans/ai_mechanism_v1_20261113/) now separates geometry and grouping contrasts: 80 splits prepared, 1 prediction case executed, no new outer-test scoring. This is not a completed 16-family result. The current 78-page manuscript includes restored Declarations; the substantive redesign remains in progress.
 
 **Cost-Sensitive Attribute Reduction for Label Distribution Learning Using Granular-Ball Computing with Objectwise Reconstruction Bounds**
 
@@ -8,7 +8,7 @@ This is the submission-materials index for the review-aligned manuscript revised
 
 | Material | Location |
 | --- | --- |
-| Manuscript PDF, 76 pages | [PDF](review_artifacts/asc_submission_2026_11_12/ASC_LDL_terminology_revised.pdf) |
+| Manuscript PDF, 78 pages | [PDF](review_artifacts/asc_submission_2026_11_12/ASC_LDL_terminology_revised.pdf) |
 | Editable LaTeX project | [Source ZIP](review_artifacts/asc_submission_2026_11_12/ASC_LDL_terminology_source.zip) |
 | Frozen-record reproduction packet | [Reviewer packet](review_artifacts/asc_submission_2026_11_12/ASC_REVIEW_REPRODUCIBILITY_v2.zip) |
 | 25-task results, selected subsets, parameter CVs, splits/protocol manifests | [Results ZIP](review_audit/complete25/LDL_25_results_light.zip) |

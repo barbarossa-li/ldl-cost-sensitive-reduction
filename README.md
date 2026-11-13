@@ -6,7 +6,7 @@ This is the submission-materials index for the review-aligned manuscript revised
 
 | Material | Location |
 | --- | --- |
-| Manuscript PDF, 72 pages | [PDF](review_artifacts/asc_submission_2026_11_12/ASC_LDL_terminology_revised.pdf) |
+| Manuscript PDF, 75 pages | [PDF](review_artifacts/asc_submission_2026_11_12/ASC_LDL_terminology_revised.pdf) |
 | Editable LaTeX project | [Source ZIP](review_artifacts/asc_submission_2026_11_12/ASC_LDL_terminology_source.zip) |
 | Frozen-record reproduction packet | [Reviewer packet](review_artifacts/asc_submission_2026_11_12/ASC_REVIEW_REPRODUCIBILITY_v2.zip) |
 | 25-task results, selected subsets, parameter CVs, splits/protocol manifests | [Results ZIP](review_audit/complete25/LDL_25_results_light.zip) |
@@ -34,7 +34,7 @@ Extract the source ZIP, enter `ASC_LDL_terminology`, and run:
 latexmk -pdf main_short_flowcharts.tex
 ```
 
-The current PDF/source incorporate the paragraph-review corrections: node eligibility, an explicit anchored oracle, seed-pair order, parameter/metric disclosure, a margin proposition, complexity and evidence limits. Frozen experiment code, pre-existing numeric table rows and result figures are unchanged. Revision details are inside the source ZIP as `REVISION_NOTES.md`; previous manuscript bytes remain in Git history. The additional experiments are distributed separately below; these manuscript bytes predate that supplement. No editorial acceptance is implied.
+The current PDF/source incorporate the paragraph-review corrections: node eligibility, an explicit anchored oracle, seed-pair order, parameter/metric disclosure, a margin proposition, complexity and evidence limits. Frozen experiment code, pre-existing numeric table rows and result figures are unchanged. Revision details are inside the source ZIP as `REVISION_NOTES.md`; previous manuscript bytes remain in Git history. The 27-run geometry supplement, nine original-data replays, measured selection resources and official image-to-prediction replay are now integrated into the manuscript; source and detailed records are also indexed in the additional-experiment supplement. No editorial acceptance is implied.
 
 ## Rerun experiments
 

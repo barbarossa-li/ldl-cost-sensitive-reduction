@@ -1,3 +1,5 @@
+> Stage note: this page and its frozen packet document the earlier 27-run/endpoint-replay stage. The subsequent [full official 3,300-image O1 selection](../official_image_selection_20261113/) is now complete and integrated into the current manuscript. Earlier statements here that full-image selection was uncompleted refer to that earlier stage.
+
 # ASC_LDL 新增实验报告
 日期：2026年11月13日。原论文、原实验记录和新增实验分别保留；本报告不把旧记录重算冒充新增原始数据运行。
 ## 完成情况

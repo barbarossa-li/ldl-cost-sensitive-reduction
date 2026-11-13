@@ -29,3 +29,7 @@ Retained: the single dated manuscript/reviewer directory, all original runner/am
 ## Subsequent review-aligned manuscript revision
 
 The current 72-page PDF and source were revised after the record checks above. Independent node eligibility, the distance-ordered anchored oracle, parameter/metric defaults, the zero-reference exclusion policy, a formal margin result, complexity and evidence limits are now specified. The current checksums are in the submission directory; source/plot numeric invariance and the restored synthetic example were checked. Original-data experiment reruns and missing-resource measurements are not claimed.
+
+## Subsequent completed actual-data supplements
+
+The current 76-page manuscript integrates 27 known-family geometry runs, nine exact original-method replays, an official 5,500-image endpoint replay, and a completed full 3,300-object / 512-coordinate strict O1 search. The latter retains Full after all 512 single deletions fail; 513 vectors / 1,692,900 float64 errors are privately cached and hash-checked. Two original full-sorting candidate rechecks match exactly. See [full-image supplement](../experiments/official_image_selection_20261113/) and the current manuscript verification. The original cleanup/record-check observations above are historical; they should not be interpreted as limits on the subsequently added evidence. Subject-disjointness, all 25-task baseline reruns and old-hardware timing remain uncompleted.

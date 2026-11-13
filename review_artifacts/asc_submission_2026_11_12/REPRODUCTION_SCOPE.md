@@ -1,3 +1,9 @@
+# Current evidence scope — 13 November 2026
+
+The current manuscript includes completed additional runs distributed separately: [27-run supplement](../../experiments/additional_20261113/) and [full official-image O1 selection](../../experiments/official_image_selection_20261113/). The latter records 513 actual per-subset error vectors, original-sort rechecks and held-out prediction after selection freeze. Raw vectors and original data are private. This does not establish subject-disjointness or reproduce every baseline/timing experiment.
+
+The original reviewer packet remains unchanged; the following scope describes that packet's frozen-record checks, not the newer actual-data runs.
+
 # Reproduction scope
 
 ## Checks available in the self-contained packet

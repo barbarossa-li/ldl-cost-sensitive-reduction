@@ -1,12 +1,13 @@
 # Current ASC manuscript
 
-Updated 13 November 2026: 75-page manuscript with paragraph-review corrections and the additional experimental evidence. The current PDF and source replace their previous versions in place; historical bytes remain in Git history.
+Updated 13 November 2026: 76 pages, including the full official-image O1 reselection and earlier paragraph-review corrections / 27-run supplement. Existing PDF/source links are preserved; old bytes remain in Git history.
 
-- [PDF](ASC_LDL_terminology_revised.pdf)
-- [Editable source](ASC_LDL_terminology_source.zip), entry ASC_LDL_terminology/main_short_flowcharts.tex
-- [Additional code, protocols and results](../../experiments/additional_20261113/)
+- [Current PDF](ASC_LDL_terminology_revised.pdf)
+- [Editable LaTeX source](ASC_LDL_terminology_source.zip), entry ASC_LDL_terminology/main_short_flowcharts.tex
+- [Full official-image selection: code/protocol/results](../../experiments/official_image_selection_20261113/)
+- [Earlier 27-run geometry and image-prediction supplement](../../experiments/additional_20261113/)
 - [Checksums](SHA256SUMS)
 - [Verification](VERIFICATION.md)
-- [Original frozen-record packet](ASC_REVIEW_REPRODUCIBILITY_v2.zip), unchanged
+- [Frozen-record reviewer packet](ASC_REVIEW_REPRODUCIBILITY_v2.zip), unchanged
 
-New evidence covers 27 geometry runs on three known families, nine exact original-method replays, 81 cross-evaluator checks, n=192 resource measurements, and official 5,500-image extraction/prediction at six frozen endpoints. Subject-disjoint evaluation and full 3,300-object selection are not reported as completed. Source REVISION_NOTES.md distinguishes the stages. Raw inputs and individual-error caches remain private. Build with latexmk -pdf main_short_flowcharts.tex.
+The full image search retains 512/512 coordinates: all 512 single deletions violate the fixed objectwise bound. It establishes a local endpoint, not a global minimum. The test predictions equal Full. Source REVISION_NOTES.md distinguishes the successive stages. Subject-disjoint evaluation is still unavailable without a verified identity map. Raw inputs and individual vectors remain in the private Drive cache. Build with latexmk -pdf main_short_flowcharts.tex.

@@ -6,10 +6,11 @@ This is the submission-materials index for the review-aligned manuscript revised
 
 | Material | Location |
 | --- | --- |
-| Manuscript PDF, 75 pages | [PDF](review_artifacts/asc_submission_2026_11_12/ASC_LDL_terminology_revised.pdf) |
+| Manuscript PDF, 76 pages | [PDF](review_artifacts/asc_submission_2026_11_12/ASC_LDL_terminology_revised.pdf) |
 | Editable LaTeX project | [Source ZIP](review_artifacts/asc_submission_2026_11_12/ASC_LDL_terminology_source.zip) |
 | Frozen-record reproduction packet | [Reviewer packet](review_artifacts/asc_submission_2026_11_12/ASC_REVIEW_REPRODUCIBILITY_v2.zip) |
 | 25-task results, selected subsets, parameter CVs, splits/protocol manifests | [Results ZIP](review_audit/complete25/LDL_25_results_light.zip) |
+| Full official 3,300-image O1 selection | [Code, protocol and completed results](experiments/official_image_selection_20261113/) |
 | Additional original-data experiments (27 runs) and image replay | [Protocols, code and results](experiments/additional_20261113/) |
 | Official image dataset source and cache policy | [SCUT-FBP5500 cache instructions](datasets/SCUT_FBP5500/) |
 | Frozen experiment installer and numerical amendments | [Experiment runner](local_runner/) |
@@ -47,3 +48,7 @@ The light results archive contains 936 final result/selection entries and 17,004
 Superseded drafts, the earlier prediction-guard workflow, duplicate reviewer packets and development-only experiment folders were removed from the working branch on 13 November 2026. They remain recoverable from [the pre-cleanup commit](https://github.com/barbarossa-li/ldl-cost-sensitive-reduction/tree/1887e40dba08cef452b130b869f67c8fdfe143c1). No history was rewritten. The older root README described a different development workflow and should not be used for this submission.
 
 No original face images, pretrained weights or unlicensed third-party sources are added by this cleanup. Code licensing does not replace dataset-specific permissions. See [LICENSE](LICENSE).
+
+## Completed full-image reselection
+
+The official 3,300-object / 512-coordinate full-to-fixed-reference O1 search is complete. All 512 single-coordinate deletions were infeasible; Full is locally single-deletion irreducible. The 513 actual error vectors contain 1,692,900 float64 values, retained privately with hashes. Two predeclared candidates were independently checked with the original full pair sorting, exactly matching errors. Test predictions equal Full (Brier 0.1064455253). See the full-image supplement and current manuscript Section 7.7.2. This is a known-split reproducibility run; subject-disjoint evaluation and complete cross-method training-resource benchmarks are not claimed.

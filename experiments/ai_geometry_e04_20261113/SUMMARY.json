@@ -1,0 +1,185 @@
+{
+  "cases": 48,
+  "metric_rows": 2064,
+  "families": 16,
+  "scope": "Post-v1 training-internal development only",
+  "contrasts": [
+    {
+      "mask": "Full",
+      "contrast": "N-L",
+      "equal_family_brier_difference": -0.008919517741378153,
+      "families_lower": 12,
+      "families_higher": 4
+    },
+    {
+      "mask": "Full",
+      "contrast": "N-U",
+      "equal_family_brier_difference": -0.0007010669684061047,
+      "families_lower": 7,
+      "families_higher": 9
+    },
+    {
+      "mask": "Full",
+      "contrast": "N-G",
+      "equal_family_brier_difference": 0.004473968958973923,
+      "families_lower": 3,
+      "families_higher": 13
+    },
+    {
+      "mask": "Full",
+      "contrast": "N-T",
+      "equal_family_brier_difference": 0.001306756494972635,
+      "families_lower": 7,
+      "families_higher": 9
+    },
+    {
+      "mask": "Full",
+      "contrast": "Nball-mean",
+      "equal_family_brier_difference": 2.493930807392664e-05,
+      "families_lower": 5,
+      "families_higher": 11
+    },
+    {
+      "mask": "Full",
+      "contrast": "Nball-random",
+      "equal_family_brier_difference": -6.655707678571176e-05,
+      "families_lower": 5,
+      "families_higher": 11
+    },
+    {
+      "mask": "cost40",
+      "contrast": "N-L",
+      "equal_family_brier_difference": -0.003050893371918379,
+      "families_lower": 10,
+      "families_higher": 6
+    },
+    {
+      "mask": "cost40",
+      "contrast": "N-U",
+      "equal_family_brier_difference": 0.0028195866243500073,
+      "families_lower": 7,
+      "families_higher": 9
+    },
+    {
+      "mask": "cost40",
+      "contrast": "N-G",
+      "equal_family_brier_difference": 0.005336971401731162,
+      "families_lower": 3,
+      "families_higher": 13
+    },
+    {
+      "mask": "cost40",
+      "contrast": "N-T",
+      "equal_family_brier_difference": 0.0018585281822855514,
+      "families_lower": 8,
+      "families_higher": 8
+    },
+    {
+      "mask": "cost40",
+      "contrast": "Nball-mean",
+      "equal_family_brier_difference": 0.0007960169049242795,
+      "families_lower": 5,
+      "families_higher": 11
+    },
+    {
+      "mask": "cost40",
+      "contrast": "Nball-random",
+      "equal_family_brier_difference": 0.00041226062405153556,
+      "families_lower": 4,
+      "families_higher": 12
+    }
+  ],
+  "hubness": [
+    {
+      "mode": "U",
+      "mass_frequency_spearman_mean": -0.43848031090956546,
+      "selection_weighted_mass_ratio_mean": 0.809812977026024,
+      "neighbor_gini_mean": 0.6097358237388232,
+      "effective_source_fraction_mean": 0.4007119476829935
+    },
+    {
+      "mode": "L",
+      "mass_frequency_spearman_mean": -0.5990016929825945,
+      "selection_weighted_mass_ratio_mean": 0.6587068356750565,
+      "neighbor_gini_mean": 0.7583838721203049,
+      "effective_source_fraction_mean": 0.23865013903047905
+    },
+    {
+      "mode": "N",
+      "mass_frequency_spearman_mean": -0.41145588358481394,
+      "selection_weighted_mass_ratio_mean": 0.8053728553395116,
+      "neighbor_gini_mean": 0.6789029071456353,
+      "effective_source_fraction_mean": 0.31564510491933667
+    },
+    {
+      "mode": "G",
+      "mass_frequency_spearman_mean": -0.44171497643426627,
+      "selection_weighted_mass_ratio_mean": 0.8170263813211303,
+      "neighbor_gini_mean": 0.5930484088307139,
+      "effective_source_fraction_mean": 0.41998735833136436
+    }
+  ],
+  "shift_energy": [
+    {
+      "mode": "L",
+      "target": "ball",
+      "shift_energy": 3.270182914139346e-05,
+      "alignment_term": -0.00010724127317469119,
+      "brier_change": -7.453944403329616e-05
+    },
+    {
+      "mode": "L",
+      "target": "covered_mean",
+      "shift_energy": 0.0007736664292162182,
+      "alignment_term": -0.0013160979507825428,
+      "brier_change": -0.0005424315215663225
+    },
+    {
+      "mode": "L",
+      "target": "global_mean",
+      "shift_energy": 0.006300165441657508,
+      "alignment_term": -0.015665947184239835,
+      "brier_change": -0.009365781742582326
+    },
+    {
+      "mode": "L",
+      "target": "random",
+      "shift_energy": 0.000359255695476761,
+      "alignment_term": -0.0006354801243052165,
+      "brier_change": -0.00027622442882845456
+    },
+    {
+      "mode": "N",
+      "target": "ball",
+      "shift_energy": 3.0822810812028646e-05,
+      "alignment_term": -0.00015167973426527174,
+      "brier_change": -0.00012085692345324326
+    },
+    {
+      "mode": "N",
+      "target": "covered_mean",
+      "shift_energy": 0.0011324224451607866,
+      "alignment_term": -0.0016639396945421641,
+      "brier_change": -0.0005315172493813788
+    },
+    {
+      "mode": "N",
+      "target": "global_mean",
+      "shift_energy": 0.007972568621872829,
+      "alignment_term": -0.016018273314236282,
+      "brier_change": -0.008045704692363454
+    },
+    {
+      "mode": "N",
+      "target": "random",
+      "shift_energy": 0.0005180490334469802,
+      "alignment_term": -0.0008118625251877046,
+      "brier_change": -0.00029381349174072244
+    }
+  ],
+  "weight_rank1_energy_fraction_mean": 0.4723470799076825,
+  "source_weight_mass_cv_mean": 0.49960377641831416,
+  "maximum_exact_decomposition_error": 8.371565430893152e-17,
+  "new_outer_test_scored": false,
+  "decision": "Row-amplitude bias supported as partial mechanism; normalization helps old L but does not establish local shape advantage vs G/T. Do not promote N to a validated main method. Redesign query-to-prototype representation and independently examine global information geometry."
+}

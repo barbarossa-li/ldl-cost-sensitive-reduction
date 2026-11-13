@@ -1,0 +1,30 @@
+{
+  "table_numeric_blocks_unchanged": 21,
+  "displayed_equations_and_algorithms_unchanged": true,
+  "labels_and_refs_resolved": true,
+  "resolved_citation_keys": 47,
+  "unused_bib_entries": [],
+  "other_source_files_byte_identical": 14,
+  "additional_geometry_resource_table_values_from_records": 15,
+  "all_81_cross_evaluator_results_checked": true,
+  "all_9_original_replays_exact": true,
+  "27_run_error_record_counts_match": true,
+  "all_6_image_endpoints_all_4_metrics_exact": true,
+  "full_image_selection_table_counts_vectors_and_certificates_match": true,
+  "fresh_full_target_margin_certificate_count": 1479,
+  "scope_limits_present": {
+    "global_minimum_not_established": true,
+    "subject_generalization_unestablished": true,
+    "known_test_outcomes_disclosed": true,
+    "selection_resources_exclude_extraction_fitting": true
+  },
+  "author_statements_absent": [
+    "funding",
+    "competing interests",
+    "CRediT/author contributions"
+  ],
+  "publication_acceptance_not_evaluated": true,
+  "baseline_github_commit": "d2d46dc03e5395ac25c8d823acfe52bfaa504c9a",
+  "before_tex_sha256": "a4009e7b32cbc40491450ee26736e4093bed15a3f746a9e6266e32dba706e204",
+  "after_tex_sha256": "01957f9811e6e3a84a59078ff64d6d1678908e88e0cf73bb787714ddb2eacacc"
+}

@@ -15,6 +15,7 @@ This is the submission-materials index for the review-aligned manuscript revised
 | Official image dataset source and cache policy | [SCUT-FBP5500 cache instructions](datasets/SCUT_FBP5500/) |
 | Frozen experiment installer and numerical amendments | [Experiment runner](local_runner/) |
 | Scope and limitations | [Reproduction scope](review_artifacts/asc_submission_2026_11_12/REPRODUCTION_SCOPE.md) |
+| Submission consistency audit | [Audit report and scope](docs/FINAL_AUDIT_20261113.md) |
 | Independent checks performed on 13 November | [Verification](docs/VERIFICATION_20261113.md) |
 
 ## Verify the frozen records
@@ -52,3 +53,7 @@ No original face images, pretrained weights or unlicensed third-party sources ar
 ## Completed full-image reselection
 
 The official 3,300-object / 512-coordinate full-to-fixed-reference O1 search is complete. All 512 single-coordinate deletions were infeasible; Full is locally single-deletion irreducible. The 513 actual error vectors contain 1,692,900 float64 values, retained privately with hashes. Two predeclared candidates were independently checked with the original full pair sorting, exactly matching errors. Test predictions equal Full (Brier 0.1064455253). See the full-image supplement and current manuscript Section 7.7.2. This is a known-split reproducibility run; subject-disjoint evaluation and complete cross-method training-resource benchmarks are not claimed.
+
+## Latest consistency audit
+
+The current 76-page PDF/source include 16 targeted corrections to evidence scope, observed-category domains, proof boundary cases and eager/streaming resource descriptions. All 21 table numeric sequences, displayed equations, algorithms and original plot bytes are preserved. The source includes FINAL_AUDIT_NOTES.md and paragraph_inventory.csv. This content audit does not complete missing author funding, competing-interest or contribution statements, verify live journal requirements, or constitute submission/acceptance.

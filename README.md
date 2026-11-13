@@ -1,6 +1,6 @@
 # LDL geometry and granular-ball research materials
 
-**Active research target: Applied Intelligence — redesign in progress.** The [v0.1 contribution and experiment plan](research_plans/applied_intelligence_20261113/) is a design draft with no new performance results. The linked 76-page ASC-format manuscript remains the preserved experimental baseline while the new representation interface and evidence are developed.
+**Active research target: Applied Intelligence — redesign in progress.** The [v0.1 contribution and experiment plan](research_plans/applied_intelligence_20261113/) is the preserved design draft. The [E0 interface/internal-fold pilot](experiments/ai_geometry_e0_20261113/) has now completed: technical checks pass, while default-scale geometry effects require further development before the full study. The linked 76-page ASC-format manuscript remains the preserved experimental baseline while the new representation interface and evidence are developed.
 
 **Cost-Sensitive Attribute Reduction for Label Distribution Learning Using Granular-Ball Computing with Objectwise Reconstruction Bounds**
 
@@ -59,3 +59,7 @@ The official 3,300-object / 512-coordinate full-to-fixed-reference O1 search is 
 ## Latest consistency audit
 
 The current 76-page PDF/source include 16 targeted corrections to evidence scope, observed-category domains, proof boundary cases and eager/streaming resource descriptions. All 21 table numeric sequences, displayed equations, algorithms and original plot bytes are preserved. The source includes FINAL_AUDIT_NOTES.md and paragraph_inventory.csv. This content audit does not complete missing author funding, competing-interest or contribution statements, verify live journal requirements, or constitute submission/acceptance.
+
+## Applied Intelligence E0 pilot status
+
+E0 completed 27 training-internal fold cases and 540 descriptive metric rows, with no new outer-test scoring. A fresh path-rebound artifact replay reproduces all 240 aggregate metric values exactly. Current local weights have weak influence under the original mixture scale and U/L neighbor sets largely coincide; the old global-fallback gains require a simple shrinkage control. [Results and code](experiments/ai_geometry_e0_20261113/). Next is a training-only calibration/readout-control development stage, followed by formal protocol freeze. The 76-page baseline remains unchanged.

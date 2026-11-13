@@ -1,4 +1,6 @@
-# ASC LDL submission materials
+# LDL geometry and granular-ball research materials
+
+**Active research target: Applied Intelligence — redesign in progress.** The [v0.1 contribution and experiment plan](research_plans/applied_intelligence_20261113/) is a design draft with no new performance results. The linked 76-page ASC-format manuscript remains the preserved experimental baseline while the new representation interface and evidence are developed.
 
 **Cost-Sensitive Attribute Reduction for Label Distribution Learning Using Granular-Ball Computing with Objectwise Reconstruction Bounds**
 

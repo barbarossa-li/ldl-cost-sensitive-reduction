@@ -1,0 +1,73 @@
+{
+  "protocol_sha256": "e3adceca5e44aad6d9d6e334b60e181e67361a0fbc3a750f12ccee579c53a418",
+  "families": 16,
+  "outer_cases": 80,
+  "mask_positions": 1040,
+  "aggregate_metric_rows": 12560,
+  "primary_unit": "one mean per feature family; repeats/banks/budgets are nested, not independent samples",
+  "contrasts": {
+    "geometry": {
+      "equal_family_mean": 0.007697407287265154,
+      "median": 0.0007356296675921157,
+      "families_negative": 6,
+      "families_positive": 10,
+      "families_zero": 0,
+      "min": -0.003661603873876373,
+      "max": 0.047568881367901945
+    },
+    "grouping": {
+      "equal_family_mean": 0.00024007336706624656,
+      "median": 0.00024689597580449066,
+      "families_negative": 4,
+      "families_positive": 12,
+      "families_zero": 0,
+      "min": -0.0037626278540079014,
+      "max": 0.0024897089426527954
+    },
+    "grouping_random": {
+      "equal_family_mean": 0.00011041758107540961,
+      "median": 0.00013858972809791418,
+      "families_negative": 4,
+      "families_positive": 12,
+      "families_zero": 0,
+      "min": -0.0012470040232912167,
+      "max": 0.0011117998276814478
+    },
+    "grouping_global": {
+      "equal_family_mean": 0.008685229838332718,
+      "median": 0.006638879995963981,
+      "families_negative": 2,
+      "families_positive": 14,
+      "families_zero": 0,
+      "min": -0.009675738228431293,
+      "max": 0.022931166392763186
+    },
+    "ball_raw": {
+      "equal_family_mean": -5.627265025815217e-05,
+      "median": -4.052201096231388e-05,
+      "families_negative": 14,
+      "families_positive": 2,
+      "families_zero": 0,
+      "min": -0.0001750190624266466,
+      "max": 3.158468122574643e-05
+    },
+    "interaction": {
+      "equal_family_mean": 1.3636296244144232e-05,
+      "median": 5.034088958304308e-07,
+      "families_negative": 8,
+      "families_positive": 8,
+      "families_zero": 0,
+      "min": -5.063339200895115e-05,
+      "max": 0.00023505435646806137
+    }
+  },
+  "independent_brier_audit": {
+    "comparisons": 1920,
+    "maximum_absolute_difference": 5.551115123125783e-17,
+    "passed": true
+  },
+  "total_case_wall_seconds_including_two_worker_contention": 1240.7112611400153,
+  "maximum_worker_peak_rss_bytes": 283631616,
+  "scope": "Fixed known-benchmark object-level mechanism study on random budget masks. Not external feature-selector superiority, subject-disjoint validation or untouched confirmation.",
+  "all_results_retained": true
+}

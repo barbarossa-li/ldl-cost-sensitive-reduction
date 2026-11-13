@@ -2,11 +2,11 @@
 
 **Cost-Sensitive Attribute Reduction for Label Distribution Learning Using Granular-Ball Computing with Objectwise Reconstruction Bounds**
 
-This is the submission-materials index for the terminology-revised manuscript dated 12 November 2026. The working branch contains one manuscript version and the corresponding retained code and frozen records.
+This is the submission-materials index for the review-aligned manuscript revised on 13 November 2026 (from the 12 November terminology source). The working branch contains one manuscript version and the corresponding retained code and frozen records.
 
 | Material | Location |
 | --- | --- |
-| Manuscript PDF, 68 pages | [PDF](review_artifacts/asc_submission_2026_11_12/ASC_LDL_terminology_revised.pdf) |
+| Manuscript PDF, 72 pages | [PDF](review_artifacts/asc_submission_2026_11_12/ASC_LDL_terminology_revised.pdf) |
 | Editable LaTeX project | [Source ZIP](review_artifacts/asc_submission_2026_11_12/ASC_LDL_terminology_source.zip) |
 | Frozen-record reproduction packet | [Reviewer packet](review_artifacts/asc_submission_2026_11_12/ASC_REVIEW_REPRODUCIBILITY_v2.zip) |
 | 25-task results, selected subsets, parameter CVs, splits/protocol manifests | [Results ZIP](review_audit/complete25/LDL_25_results_light.zip) |
@@ -32,7 +32,7 @@ Extract the source ZIP, enter `ASC_LDL_terminology`, and run:
 latexmk -pdf main_short_flowcharts.tex
 ```
 
-The PDF and source are retained byte for byte. Organizing this repository does not resolve manuscript-review issues or constitute editorial acceptance.
+The current PDF/source incorporate the paragraph-review corrections: node eligibility, an explicit anchored oracle, seed-pair order, parameter/metric disclosure, a margin proposition, complexity and evidence limits. Frozen experiment code, pre-existing numeric table rows and result figures are unchanged. Revision details are inside the source ZIP as `REVISION_NOTES.md`; previous manuscript bytes remain in Git history. No new original-data experiments or editorial acceptance are implied.
 
 ## Rerun experiments
 

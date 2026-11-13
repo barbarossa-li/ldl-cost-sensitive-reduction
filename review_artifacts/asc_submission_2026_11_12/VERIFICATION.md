@@ -1,3 +1,24 @@
+# Current manuscript verification — 13 November 2026
+
+Current PDF: 72 pages, SHA-256 `3da5aeddd7d3e8bae8b264e5c59d415aafb224fddc2ee46a26d38e3d8d3e6ef9`.
+Current source: 16 editable project files, SHA-256 `6def82ae58ac4e8ce1966948a28d8a3608f8e748f26c0ffa34ca074fc745f497`.
+The reviewer packet is unchanged: SHA-256 `2989f90bfbc9f77115b3cf4b4412bc349e049332b7444f81f3751bdb2b6d0a2c`.
+
+## Revision checks
+
+- pdfLaTeX/BibTeX build converged without undefined references, duplicate labels or overfull boxes.
+- All 47 citation keys resolve, with no unused bibliography entries; the KL citation was replaced with Kullback and Leibler (1951), checked against DOI metadata.
+- Pre-existing numerical table rows were compared with the prior source and retain their values; main-table checks from frozen records cover 275 cells.
+- All six original plotted figure files retain their SHA-256 values.
+- Restored synthetic data reproduce dependencies 0.09224027609466404 and 0 for the existing eight-object illustration using the frozen implementation.
+- Key algorithm, equation, title and notation pages were rendered and visually inspected.
+
+The revision documents the frozen implementation, including its zero-reference exclusion, and does not change experiment code or claim new original-data experiments. See `REVISION_NOTES.md` inside the source for issue-by-issue disposition and evidence limits.
+
+## Historical verification of the 12 November version
+
+The following record concerns the prior PDF/source bytes, now available through Git history. Its PDF page count, binary sizes and manuscript checksums are historical; use SHA256SUMS above for current files.
+
 # Verification record
 
 Date: 2026-11-12 (Asia/Shanghai).

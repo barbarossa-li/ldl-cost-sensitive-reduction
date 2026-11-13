@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-14",
+  "scope": "Metadata, named files and paper-to-code links only; no external baseline executions",
+  "repositories": [
+    {
+      "repo": "ilia10000/LO-Shot",
+      "url": "https://github.com/ilia10000/LO-Shot",
+      "default_branch": "master",
+      "head": "b5324f744c2801091ba8674ce0135e5027f35761",
+      "license": "not declared in retrieved metadata",
+      "author_provenance": "linked by primary paper",
+      "verified_files": [
+        "Paper3/LOshot-fix.R",
+        "Paper3/Soft Label Optimization.ipynb",
+        "Paper3/requirements.txt"
+      ]
+    },
+    {
+      "repo": "avyavkumar/meta-learned-lines",
+      "url": "https://github.com/avyavkumar/meta-learned-lines",
+      "default_branch": "main",
+      "head": "53cb4815c7cd675c81cf3f3dd2c023db33ec895a",
+      "license": "MIT",
+      "author_provenance": "linked by primary paper",
+      "verified_files": [
+        "main.py",
+        "prototypes/",
+        "lines/",
+        "requirements.txt"
+      ]
+    },
+    {
+      "repo": "SpriteMisaka/PyLDL",
+      "url": "https://github.com/SpriteMisaka/PyLDL",
+      "default_branch": "main",
+      "head": "80b2d188c11b640bce7accbc9a88dac89c48a56f",
+      "license": "MIT",
+      "author_provenance": "independent implementation; not verified as paper authors' release",
+      "verified_files": [
+        "pyldl/algorithms/_rknn_ldl.py",
+        "pyldl/matlab_algorithms/AA_KNN.m",
+        "pyldl/matlab_algorithms/SA_BFGS_fit.m"
+      ]
+    },
+    {
+      "repo": "AldrinLake/GBFRS",
+      "url": "https://github.com/AldrinLake/GBFRS",
+      "default_branch": "main",
+      "head": "25a8bc2a8ddf6be13ea8fe773a63def1ca45bc3d",
+      "license": "MIT",
+      "author_provenance": "provenance not established; do not label official"
+    },
+    {
+      "repo": "dmyuser/algorithm-code",
+      "url": "https://github.com/dmyuser/algorithm-code",
+      "default_branch": "main",
+      "head": "851ae144c61d51bb3813966a21eb41260c30d2f7",
+      "license": "not declared in retrieved metadata",
+      "author_provenance": "repository linked in publisher article search excerpt; contents IWDLFS.py and IWCLFS.py verified; full paper/code equivalence not audited"
+    },
+    {
+      "method": "LDLKM",
+      "paper": "https://html.rhhz.net/tis/html/201704024.htm",
+      "status": "Full paper read; author-released code not located in this targeted search; absence not proven",
+      "implementation_equivalence": "not implemented in this round"
+    },
+    {
+      "method": "ProLSFEO-LDL",
+      "paper": "https://www.mdpi.com/2076-3417/10/9/3089",
+      "status": "Full paper read; author-released implementation not located in this targeted search; absence not proven",
+      "implementation_equivalence": "not reproduced in this round"
+    },
+    {
+      "method": "Original LDL algorithms",
+      "url": "https://palm.seu.edu.cn/xgeng/LDL/index.htm",
+      "status": "Author page lists IIS-LLD, BFGS-LLD, CPNN, LDSVR code download",
+      "license": "Page permits academic non-profit use; not treated as blanket redistribution permission",
+      "checked": "download link presence only; no execution"
+    }
+  ]
+}

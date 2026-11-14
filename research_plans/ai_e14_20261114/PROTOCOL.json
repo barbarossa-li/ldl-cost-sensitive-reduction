@@ -1,0 +1,12 @@
+{
+  "version": "E14-common-half-prior-pre-outcome-overlay-v1",
+  "date": "2026-11-14",
+  "scope": "Prespecified secondary common-prior overlay on the same53 E11/E12 frozen cases, added before any E11/E12/E13 outcome scoring or inspection. Original primary/native outputs remain unchanged and all are reported; not new independent data.",
+  "parent_commit": "b03a0d8e7fdf578ab0fc6f39669501784c057bb5",
+  "parent_protocol_sha256": "a34b4bb84932fca54b4553d8d5479fe8bbc3eafc5964bed41754b3ed60929b51",
+  "formula": "For each of fiveexternal prediction variants, each mask and each case, .5*rawprediction+.5*the cached fitting-label mean (parent plain_mean array). No second fit, no test labels, no hyperparameter selection.",
+  "purpose": "Own GG50 fixes alpha.5; overlay distinguishes common mean-shrinkage from advantages of geometry/compression. Adapted baseline outputs are explicitly labeled half_prior, never unmodified original methods.",
+  "expected_rows": 530,
+  "scoring": "All53 overlay bundles,53 E13 bundles andboth parent manifests must freeze before any scoring.7parent metrics,primaryBrier. Report all raw/native and common-prior variants side byside,never select whichever comparator makes proposal look better. Pool folds byobjects then equalfamily;Ren remains1corpus.",
+  "privacy": "Private object predictions andsplits only in authorized cache; publiccode/protocol/aggregate results/checksums."
+}

@@ -1,0 +1,119 @@
+{
+  "id": "E16-restricted-grid-training-only-selection-v1",
+  "status": "To be committed before any real-data E16 model fits or predictions; synthetic checks only so far",
+  "parent_source_commit": "b03a0d8e7fdf578ab0fc6f39669501784c057bb5",
+  "parent_protocol_sha256": "a34b4bb84932fca54b4553d8d5479fe8bbc3eafc5964bed41754b3ed60929b51",
+  "parent_manifest_sha256": "e37f526902ea76cb663da4eddf5d4e7d4e15b9bb8290521e8c929c0b8bfdc31c",
+  "scope": "Reuse E11 48 training-pool heldout cases and E12 five Ren allocations. ALL are now consulted development cases, including Ren. No fresh confirmation, subject-group validation, or new-domain claim.",
+  "outer_partition": "Exact previous fit/query rows, costs, and Full/cost40 masks; excluded original outer-test rows unchanged. Outer query labels are never supplied to selection or fitting. Parent frozen record hashes checked.",
+  "inner_partition": {
+    "folds": 3,
+    "groups": "Exact duplicates of the full original feature vector within each outer fit set; not subject/document identity",
+    "algorithm": "Random permutation of duplicate groups; greedily place group in least-populated fold, tie lowest fold index; seed202611160500+1000*family_index+100*outer_fold",
+    "sharing": "Identical fold assignments for every learner and both feature masks",
+    "preprocessing": "Min/max and geometry fitted on inner training only; constants zero; query outside range not clipped. Priors from inner training labels only."
+  },
+  "menus": {
+    "G_and_U": {
+      "budget_percent": [
+        25,
+        50,
+        75,
+        100
+      ],
+      "query_k": [
+        3,
+        5,
+        10,
+        20
+      ],
+      "prior_alpha": [
+        0,
+        0.5
+      ],
+      "constructor": "Geometry-only bisection; no label-dispersion priority. G informative construction and query; U uniform both. 32+mean candidates each"
+    },
+    "AA_kNN": {
+      "k": [
+        4,
+        5,
+        10,
+        20,
+        40
+      ],
+      "prior_alpha": [
+        0,
+        0.5
+      ],
+      "candidate_count_including_mean": 11
+    },
+    "RidgeProj": {
+      "ridge_lambda": [
+        0.0001,
+        0.01,
+        1,
+        100
+      ],
+      "fit_intercept": true,
+      "solver": "cholesky",
+      "output": "Euclidean simplex projection",
+      "prior_alpha": [
+        0,
+        0.5
+      ],
+      "candidate_count_including_mean": 9,
+      "identity": "New regularized linear baseline; not SA-BFGS"
+    },
+    "RKNN_pointwise": {
+      "anchors": [
+        {
+          "k": 5,
+          "alpha_corr": 0.001,
+          "beta": 1e-06
+        },
+        {
+          "k": 20,
+          "alpha_corr": 0.001,
+          "beta": 1e-06
+        },
+        {
+          "k": 20,
+          "alpha_corr": 0.01,
+          "beta": 1e-05
+        }
+      ],
+      "epochs": [
+        100,
+        500,
+        1000
+      ],
+      "prior_alpha": [
+        0,
+        0.5
+      ],
+      "candidate_count_including_mean": 19,
+      "optimizer": "Upstream full-batch SGD1e-3; kernel=True,sparse=True; no held-label stopping",
+      "gamma": "Fixed from exact float32 training state; explicit pointwise adapter, not original query-batch gamma",
+      "seed_inner": "202611160000+10000*fi+1000*outer_fold+100*inner_fold+10*mask_index+anchor_index",
+      "seed_outer": "202611169000+10000*fi+1000*outer_fold+10*mask_index+anchor_index",
+      "budget_limit": "Three declared anchors, not exhaustive tuning or independently crossed hyperparameters"
+    }
+  },
+  "selection": {
+    "primary": "Pooled inner Brier over all inner query rows, lower better. Candidate must be valid in all three folds. Within1e-12 choose smaller deployable numeric-array state then lexical candidate id. Explicit mean candidate allowed in all menus. No prior clipping or test-label selection.",
+    "G_oneSE_secondary": "Best-candidate pooled risk + sd(three fold means,ddof1)/sqrt3; cheapest outer numeric-state candidate within threshold, then risk/id. Heuristic only, not risk confidence bound.",
+    "G_atU_secondary": "Apply U-selected budget,query-k,prior-alpha to G, without G reselection. If U selects mean, both mean. Equal numeric-state capacity.",
+    "RKNN_native_atSelected_secondary": "Reuse selected pointwise checkpoint and parameters; change only query-batch gamma to upstream policy. Not separately tuned native RKNN."
+  },
+  "failure_policy": "Retain fit errors/warnings and incomplete candidates. Earlier valid checkpoints may survive later training failure. No silent renormalization. Outer failure remains missing, no substitute; comparisons must use common available cases and report counts.",
+  "outputs": "Per case, seven selected policies per mask plus native_atSelected and fixed GG50/UU50 anchors per mask plus shared mean: 21 expected arrays. Freeze all outer predictions before scoring any outer outcome. Store inner predictions, choices, errors, explicit states and indices privately. Publish code/protocol and aggregate results/checksums only.",
+  "planned_analysis": "Seven previous metrics; Brier primary. Summaries distinguish16 known families (average folds then macro families) and Ren single corpus five allocations. Report selected-mean counts, budget/k/alpha, byte/query-feature counts, failures, G_atU-U_min matched contrasts, and selected G-U descriptive contrasts. Preserve E11/E12 original fixed-primary results. No SOTA claim from restricted grid.",
+  "inference_storage_boundary": "Numeric arrays needed for standalone prediction only; excludes Python objects, scalar metadata, execution workspace, selection training cost and hardware peak memory. Mean-only requires q float64 values and zero query features; no learned geometry attribution. Prototype full budget has K=n and unchanged count boundary.",
+  "upstream_code": {
+    "repo": "https://github.com/SpriteMisaka/PyLDL",
+    "commit": "80b2d188c11b640bce7accbc9a88dac89c48a56f",
+    "status": "Third-party toolkit, not verified original-author code",
+    "license": "MIT code; does not authorize raw data redistribution"
+  },
+  "ProLSFEO": "Not part of E16. No verified author implementation found in bounded searches; any future reconstruction must be separately specified and frozen before execution."
+}

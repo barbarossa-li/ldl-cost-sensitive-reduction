@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "Simplex projection agrees with independent constrained quadratic optimization",
+    "Exact-feature duplicate groups stay in one shared inner fold",
+    "Full selection pipeline, including independent RKNN states, reproduces exactly and ignores outer query-label replacement",
+    "Uniform-selected matchedG reference has identical actual state bytes",
+    "Every selected predictor is reconstructed from standalone numeric state",
+    "All64 geometric and uniform budget/neighborhood/prior candidate predictions agree with independent standalone reconstruction"
+  ],
+  "scope": "Synthetic checks with RKNNepochs1/2 only. Real-data protocol uses100/500/1000; no real-data outcomes used here."
+}

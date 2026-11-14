@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "cases": 48,
+  "brier_rows": 15408,
+  "max_absolute_brier_error": 1.1102230246251565e-16,
+  "constructor_capacity_equality_checks": 11520,
+  "fourcell_capacity_equality_checks": 11520,
+  "singleton_endpoint_exact_checks": 3072,
+  "smallK_query_zero_checks": 3072,
+  "smallK_max_prediction_difference": 2.220446049250313e-16,
+  "E09_scoped_exact_prediction_arrays": 5808,
+  "E09_replay_scope": "U diagonal all constructors; G diagonal geometric/paper20; plain mean; G stochastic constructors intentionally excluded because initialization seeds now coupled across construction geometry",
+  "construction_repair_events": 0,
+  "construction_warning_events": 0,
+  "original_outer_test_scored": false,
+  "scope": "Consulted-family development; arithmetic, capacity and scoped replay audit, not independent confirmation"
+}

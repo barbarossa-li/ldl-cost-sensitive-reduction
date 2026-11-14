@@ -1,0 +1,7 @@
+{
+  "source_commit": "13974d8f3e1a2159c9b74bbc3b7632373e185de5",
+  "source_directory": "research_plans/ai_geometry_e10_20261114",
+  "source_manifest_sha256": "c34fd4218d318d8fae62fcea78b3d28bd166ca082a6abc0464a88c29f9b7cd75",
+  "protocol_sha256": "3078fb0f70634007d863c8f4ddd22391131faaf5f4efdd6a2bd5fcb792c01d6f",
+  "scope": "Same16 consulted families and48 training-pool folds; no new original outer-test scoring; descriptive development only"
+}

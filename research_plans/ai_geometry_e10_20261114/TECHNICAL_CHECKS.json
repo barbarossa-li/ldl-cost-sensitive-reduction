@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "scope": "Synthetic implementation invariants, not benchmark evidence",
+  "checks": [
+    "All four geometry cells have equal actual array bytes andK; state formula verified",
+    "Construction has exactly zero effect at singleton endpoint for fixed query geometry",
+    "K5 query contrast is zero within summation tolerance",
+    "NN5 inference does not retain training model",
+    "Constant and repeated features retain valid exactK partitions and probabilities",
+    "Heldout label replacement leaves all321 predictions unchanged"
+  ]
+}

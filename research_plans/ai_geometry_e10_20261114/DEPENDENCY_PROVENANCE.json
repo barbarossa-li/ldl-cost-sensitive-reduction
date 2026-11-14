@@ -1,0 +1,18 @@
+{
+  "source_commit": "7bbf9c2c3d117a3443eba4e80f69774171fee59c",
+  "source_directory": "research_plans/ai_geometry_e09_20261114",
+  "unchanged_code_sha256": {
+    "deps/budget.py": "83128eed195914258e39e0e80eef4ff80e176f34aeb75f443bce3a2fc4bf6544",
+    "deps/prototype.py": "9a1b4a45186a9d4ab502279f300d2e6dd0e20dab5c77a112628365b3f6c5d68a",
+    "deps/frozen_core/granulation_reference.py": "f19b10270e0faa62f7e6beca3b60871cba3b1ebc0f5c2c238763cebf226c0038",
+    "deps/e02/calibrated.py": "7bf6759ed9ea75ad0a88b4e8fc51de19fb22c9c85c92f0443c7aac04947a4ffa",
+    "deps/e0/model.py": "1a8ade51d24f358e735601d2dadb9822ebd14e64bdbbdc199c400702b300f4f1",
+    "deps/frozen_core/stability/fast_granulate.py": "e0f78d26e25d582c70c1cfd430c20be60f1c6961545b0821bad8d8651df13cff",
+    "deps/frozen_core/prediction_interface/directed_predictor.py": "7b85ebecd60e3f02397b7aec4a6028a7a1cf42b7ee3ce2b85f397ccf27699812",
+    "deps/frozen_core/information_reduction/safe_extension.py": "864c79f7c86d08678ff9289f728b6841f6777f8e457c8a4be68e610caf528662",
+    "deps/frozen_core/information_reduction/alternative_seeds.py": "548d32ed3619ba8084598380383305814bc3706c340823e6f05974f7213deef9",
+    "deps/frozen_core/baseline_revision/prediction_evaluation.py": "4675941578c6e4609b8831a4bb52280787e16ef1c599cf3e616528d49854e7fc",
+    "strong.py": "1f77b5d089cd739e0c156f7d39b194ed5f6445372111bd1d6b541825a50a3354"
+  },
+  "excluded": "All historical split JSON/row indices omitted; only code dependencies vendored."
+}

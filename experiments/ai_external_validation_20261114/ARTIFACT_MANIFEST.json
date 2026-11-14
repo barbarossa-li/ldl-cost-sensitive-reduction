@@ -1,0 +1,30 @@
+{
+  "README.md": {
+    "bytes": 3631,
+    "sha256": "e387754184c2b652e6b7489a525f9697071ab12d0f48f578362ca34ccaf23a53"
+  },
+  "REPORT.md": {
+    "bytes": 7859,
+    "sha256": "4e63e85f932bc8b33b3e9527171bcc260cd2f84df8e7d89e495c8a9ffb259bb6"
+  },
+  "EVIDENCE_AUDIT.json": {
+    "bytes": 1572,
+    "sha256": "2edc042694e947259e0fe7ce8bfb688a34dc5ad6044d0aaeb9407332bac18944"
+  },
+  "SUPPLEMENT_AUDIT.json": {
+    "bytes": 1086,
+    "sha256": "f786ddfa1c258bcafbf319f5667fd3d0cdfcd9913e25fff930fb580edd4d2e4b"
+  },
+  "CONVERGENCE_AUDIT.json": {
+    "bytes": 617,
+    "sha256": "59faa03e187dbd2af020c3abd6710c67faef8a9f518960dc35301c81f56547a8"
+  },
+  "PROVENANCE.json": {
+    "bytes": 723,
+    "sha256": "d00052bad27fcf6a268c9fca7e44ced119020c0d2248036794344f0e22f8c183"
+  },
+  "AI_LDL_external_validation_results.zip": {
+    "bytes": 395195,
+    "sha256": "e5e2da690d8a23fb3cd1f4b235f6bfab6fbbf76777e92fac32be10414b7c51f2"
+  }
+}

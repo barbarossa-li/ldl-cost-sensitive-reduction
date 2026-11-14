@@ -1,0 +1,12 @@
+{
+  "source_commits": {
+    "E11_E12": "b03a0d8e7fdf578ab0fc6f39669501784c057bb5",
+    "execution_helper": "17985c3e01ce4f46e72c169b8b415c7faa27820b",
+    "E13": "4b320f0ffd61e1b1e53ed19330dcc68b0218fd71",
+    "E14": "5c9295144302ca65355944a36d4f743105da64fb",
+    "E15": "bdb25d399c028e192a21b8dcc10db8c2d15892c3"
+  },
+  "timing": "E11/E12predictions frozen before scoring;E13/E14pre-outcome supplements;E15post-outcome numericaldiagnostic",
+  "frozen_parent_source_zip_sha256": "ac4d897dc521510d33c88ef8ee4deb0085a6e426f6108c4b88fedad70c27f6b5",
+  "privacy": "Aggregate-only public artifact;code/protocols linked separately;no source matrices,per-object predictions,actualrowallocations,permutations orinferenceweights"
+}

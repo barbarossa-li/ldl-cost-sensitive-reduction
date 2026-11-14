@@ -1,0 +1,40 @@
+{
+  "e13": {
+    "passed": true,
+    "cases": 53,
+    "aggregate_rows": 1272,
+    "metric_values_checked": 8904,
+    "max_absolute_metric_error": {
+      "brier": 2.220446049250313e-16,
+      "chebyshev": 0.0,
+      "clark": 0.0,
+      "canberra": 0.0,
+      "kl": 2.220446049250313e-16,
+      "cosine": 3.3306690738754696e-16,
+      "intersection": 3.3306690738754696e-16
+    },
+    "exact_parent_reference_arrays": 212,
+    "verified_predeclared_permutations": 530,
+    "exact_half_prior_derivations": 0,
+    "independent_new_datasets": 0
+  },
+  "e14": {
+    "passed": true,
+    "cases": 53,
+    "aggregate_rows": 530,
+    "metric_values_checked": 3710,
+    "max_absolute_metric_error": {
+      "brier": 2.220446049250313e-16,
+      "chebyshev": 0.0,
+      "clark": 0.0,
+      "canberra": 0.0,
+      "kl": 2.220446049250313e-16,
+      "cosine": 2.220446049250313e-16,
+      "intersection": 2.220446049250313e-16
+    },
+    "exact_parent_reference_arrays": 0,
+    "verified_predeclared_permutations": 0,
+    "exact_half_prior_derivations": 530,
+    "independent_new_datasets": 0
+  }
+}

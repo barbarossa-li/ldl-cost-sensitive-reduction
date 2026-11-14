@@ -1,0 +1,51 @@
+{
+  "e11": {
+    "passed": true,
+    "cases": 48,
+    "aggregate_prediction_rows": 1296,
+    "metric_values_checked": 9072,
+    "max_absolute_metric_error": {
+      "brier": 1.1102230246251565e-16,
+      "chebyshev": 0.0,
+      "clark": 0.0,
+      "canberra": 0.0,
+      "kl": 8.881784197001252e-16,
+      "cosine": 3.3306690738754696e-16,
+      "intersection": 3.3306690738754696e-16
+    },
+    "maximum_raw_prediction_mass_error": 2.4400651454925537e-07,
+    "explicit_failed_prediction_slots": 0,
+    "E10_exact_reference_arrays": 816,
+    "SABFGS_nonconverged_terminations": 84,
+    "known_original_outer_test_scored": false
+  },
+  "e12": {
+    "passed": true,
+    "cases": 5,
+    "aggregate_prediction_rows": 135,
+    "metric_values_checked": 945,
+    "max_absolute_metric_error": {
+      "brier": 1.1102230246251565e-16,
+      "chebyshev": 0.0,
+      "clark": 0.0,
+      "canberra": 0.0,
+      "kl": 4.440892098500626e-16,
+      "cosine": 1.1102230246251565e-16,
+      "intersection": 1.1102230246251565e-16
+    },
+    "maximum_raw_prediction_mass_error": 2.292095118150428e-07,
+    "explicit_failed_prediction_slots": 0,
+    "E10_exact_reference_arrays": 0,
+    "SABFGS_nonconverged_terminations": 10,
+    "known_original_outer_test_scored": false
+  },
+  "new_corpus_group_verification": {
+    "passed": true,
+    "replicates": 5,
+    "fit_rows": 1920,
+    "test_rows": 2560,
+    "exact_feature_group_fit_test_and_replicate_disjoint": true,
+    "document_author_disjoint_verified": false,
+    "dataset_version": "PyLDL Ren_Cecps32420rows/100features/8labels"
+  }
+}

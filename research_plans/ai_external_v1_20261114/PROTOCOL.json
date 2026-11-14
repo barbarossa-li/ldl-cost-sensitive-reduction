@@ -1,0 +1,326 @@
+{
+  "version": "AI-external-v1-E11-default-baseline-development-and-E12-prospective-Ren-variant",
+  "date": "2026-11-14",
+  "status": "Protocol and source to be committed before any real-data baseline or Ren prediction",
+  "upstream_toolkit": {
+    "repository": "SpriteMisaka/PyLDL",
+    "commit": "80b2d188c11b640bce7accbc9a88dac89c48a56f",
+    "license": "MIT, code only; not permission to redistribute raw datasets",
+    "implementation_status": "Third-party toolkit implementations, not verified original-author code or numerically verified paper reproductions",
+    "RkNN_paper": "https://doi.org/10.1016/j.patcog.2024.111006",
+    "SA_AA_paper": "https://doi.org/10.1109/TKDE.2016.2545658"
+  },
+  "stages": {
+    "e11": {
+      "scope": "Fixed-default external-baseline probe on16 consulted families, same48 E10 training-pool heldout folds. No new original outer-test scoring; no tuned-SOTA superiority claim.",
+      "families": [
+        {
+          "family": "Natural_Scene",
+          "group": "A",
+          "N": 2000,
+          "m": 294,
+          "q": 9,
+          "outer_train": 384,
+          "outer_test": 512,
+          "mat_sha256": "7778ea8f217c07d7f1457361d7bfa97e63f5ca7ef2551e3cc77888c2d9f76d31",
+          "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/Natural_Scene.mat",
+          "X_sha256": "81bdf4190d6fba763f26c557cbcd5e7dbaa10a9f80c0e8bed430beb390639708",
+          "L_sha256": "7e9ee1a7a24f3f8a189c711680fb473c8b884ee5ef92ba2faac2992e478ee27f"
+        },
+        {
+          "family": "SBU_3DFE",
+          "group": "A",
+          "N": 2500,
+          "m": 243,
+          "q": 6,
+          "outer_train": 384,
+          "outer_test": 512,
+          "mat_sha256": "59dec80525aaa859b8400a92e5b94e54b405ce6ed60bfad9ec95e58964e84707",
+          "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/SBU_3DFE.mat",
+          "X_sha256": "598d0d8e7988eb4c1e7130ad0a547c269aa7f93d7c3da14a4b0a145db7c6b75a",
+          "L_sha256": "6979e39c8944adc415af621ccea11609835c3a2c95ce837b5b7058ed7bd0ee7e"
+        },
+        {
+          "family": "Yeast_cold",
+          "group": "A",
+          "N": 2465,
+          "m": 24,
+          "q": 4,
+          "outer_train": 384,
+          "outer_test": 512,
+          "mat_sha256": "7b1f599ec4791052f9549c62cc6c8677af3e982a9f4bddb298c2bb2694811f21",
+          "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/Yeast_cold.mat",
+          "X_sha256": "f8a37ea802b9df9dbed158075b8157f7a36df0aa5441e3e82452355312197e3c",
+          "L_sha256": "f05eba80e4450c7ef240a445123c8940534464d846ad599bc628f91e6178177d"
+        },
+        {
+          "family": "SCUT_FBP",
+          "group": "A",
+          "N": 1500,
+          "m": 300,
+          "q": 5,
+          "outer_train": 384,
+          "outer_test": 512,
+          "mat_sha256": "2851c11a0b98ad84483784230b597eca81108583b60ed3cc8674816ab48c03de",
+          "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/SCUT_FBP.mat",
+          "X_sha256": "d647a2a783dbb69a0d50104c22fc31749af7ab4f4884cd7f712e97143539b0c4",
+          "L_sha256": "ae957aa12e8db1fac87e972adff77b4f7dc92e1487d54159aaa1d76d0d9e23d0"
+        },
+        {
+          "family": "FG-Net",
+          "group": "A",
+          "N": 1002,
+          "m": 251,
+          "q": 70,
+          "outer_train": 384,
+          "outer_test": 512,
+          "mat_sha256": "9b016b9304a2f75a1fa9b41b455dca8c07d779d2580dbb1d4f25f33ff8bf5c33",
+          "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/FG-Net.mat",
+          "X_sha256": "a710c74745e71e085af65d9eec766315fb795f1a9891ef5945976b1f8584e234",
+          "L_sha256": "b818d3275d823092d83ab3f0ec7d464407791574a1e4e577434c871c61b3ba8f"
+        },
+        {
+          "family": "Music",
+          "group": "A",
+          "N": 360,
+          "m": 128,
+          "q": 9,
+          "outer_train": 252,
+          "outer_test": 108,
+          "mat_sha256": "0de6c00768d30a3be522c59543ec4210efab6b1fa65f7973917d97075413c990",
+          "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/Music.mat",
+          "X_sha256": "71836585d0d0907bc8142e4f742a268c65b8d1a6e9922982029197333e5491e7",
+          "L_sha256": "b0aa47a10ee568e61ffdb924bedc8ee3b290ccbb9e20d533ff6440a5baf8d027"
+        },
+        {
+          "family": "Painting",
+          "group": "A",
+          "N": 280,
+          "m": 142,
+          "q": 8,
+          "outer_train": 196,
+          "outer_test": 84,
+          "mat_sha256": "22404e67262707f34005047dfc80aa9763472328f87fff9c2430d972d1c5b796",
+          "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/Painting.mat",
+          "X_sha256": "63e9cbda54f792a2154704a9dd991c80d0250b93c644832ed2c78810fb518564",
+          "L_sha256": "a00775375dd91e57374465593a7f9d3548051f1ae8fc251fc0a089d34e9bfb0a"
+        },
+        {
+          "family": "Human_Gene",
+          "group": "A",
+          "N": 17892,
+          "m": 36,
+          "q": 68,
+          "outer_train": 384,
+          "outer_test": 512,
+          "mat_sha256": "3b067d5412bbc92445e4c3d0c5e445ec4e74470c5cf677ebcf88f6e72f90208c",
+          "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/Human_Gene.mat",
+          "X_sha256": "59f4ece70c83c4a31f67e0486923e8d9aaf5ad6e681f2848a0797e51e119f1b9",
+          "L_sha256": "c0a145cace5481b434dd44a50281e4802fcc9200e8ddc5c76f1e24199d4cc8de"
+        },
+        {
+          "family": "SJAFFE",
+          "group": "B",
+          "N": 213,
+          "m": 243,
+          "q": 6,
+          "outer_train": 149,
+          "outer_test": 64,
+          "mat_sha256": "bdd53fb033a275b39b8fd873809cd69f3cee13234f5aa472aea0f5ad73b8a04b",
+          "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/SJAFFE.mat",
+          "X_sha256": "d3a8102184a83c18e04f05966e3e4cca87438c20fb721d8e02ef5d548cd6f2fb",
+          "L_sha256": "2b7e976aec8e2a6cfd81dbed65222894f402a45c349f857fab67b37104248f7f"
+        },
+        {
+          "family": "fbp5500",
+          "group": "B",
+          "N": 5500,
+          "m": 512,
+          "q": 5,
+          "outer_train": 384,
+          "outer_test": 512,
+          "mat_sha256": "2cf91483f2f4fed37aba1364b81c6a6c9f7643bc99d5d7e9617bfccd4793f17c",
+          "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/fbp5500.mat",
+          "X_sha256": "a14347cd19ff6ec90ef447388a7ac0dafa6596377bee56ef5471a4ac3e281595",
+          "L_sha256": "2ee69df32843316eb086366b37302133fc3aa6d0a011b788c53b66b9488bf92e"
+        },
+        {
+          "family": "emotion6",
+          "group": "B",
+          "N": 1980,
+          "m": 168,
+          "q": 7,
+          "outer_train": 384,
+          "outer_test": 512,
+          "mat_sha256": "2cc3b82d142b5eb27509105540390a8a7de2d6780b898d8e69c29a12a2e409a5",
+          "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/emotion6.mat",
+          "X_sha256": "c06c54bd923658cb5b2fe37c760cb84e3c91111bff8abeb609e853d9b969d7b5",
+          "L_sha256": "ffc529b0c3bf7fb04afa1df6486c48d08458761d55aba92d0405b6256bbf2e8f"
+        },
+        {
+          "family": "RAF_ML",
+          "group": "B",
+          "N": 4908,
+          "m": 200,
+          "q": 6,
+          "outer_train": 384,
+          "outer_test": 512,
+          "mat_sha256": "45755604cb0d65f9c52b21810ab1631b8039b3317706538a896f0a35637f876a",
+          "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/RAF_ML.mat",
+          "X_sha256": "a4d43bdc7a8cef54abaf4889b6600492a12e0a9559fc7475f53a7aa5b3535a48",
+          "L_sha256": "0685a92d50a39c236ad75f5092007e3a7fa2f4b61478265e3c2fba250b4b759e"
+        },
+        {
+          "family": "Movie",
+          "group": "B",
+          "N": 7755,
+          "m": 1869,
+          "q": 5,
+          "outer_train": 384,
+          "outer_test": 512,
+          "mat_sha256": "5c8629905fdf18640410d43b30f1a84c17473df38e48f279f5a2af11019a1bac",
+          "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/Movie.mat",
+          "X_sha256": "2efedf6bee1628725a20e8262ebff3461218936b65ae7f18b993b29174c4e1cc",
+          "L_sha256": "302d9da55dc27285aeeb8254e5ea1666429f66faac7284d758b809dbefa9bfdf"
+        },
+        {
+          "family": "Flickr",
+          "group": "B",
+          "N": 11150,
+          "m": 168,
+          "q": 8,
+          "outer_train": 384,
+          "outer_test": 512,
+          "mat_sha256": "8651f4e93d135c162f3f81a4de7a74bc13c694f31fb6433d69405c55820fc82c",
+          "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/Flickr.mat",
+          "X_sha256": "342969d5635831ee8bc309ce008002526d0a8a061995c6479c45b71e58c9b609",
+          "L_sha256": "b0ff58534d0e8123c5ad1e481830aa18af9a074e8593913d59f08465a0e9be22"
+        },
+        {
+          "family": "Twitter",
+          "group": "B",
+          "N": 10045,
+          "m": 168,
+          "q": 8,
+          "outer_train": 384,
+          "outer_test": 512,
+          "mat_sha256": "f7a91535ada88dd1ba0aeb0d42b2479b8293313bf37f6236aa8e6dfa05db385e",
+          "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/Twitter.mat",
+          "X_sha256": "90956cdaa1d6ead2bd7a37a46e19737a0ffab978d2c9fd7f345b549ad805c964",
+          "L_sha256": "7510f61babef3ca263e3ced59c5393eb9828ba9904019e34821b8165c67fe59d"
+        },
+        {
+          "family": "MOR-PH",
+          "group": "B",
+          "N": 55132,
+          "m": 200,
+          "q": 62,
+          "outer_train": 384,
+          "outer_test": 512,
+          "mat_sha256": "283e09441d077e684d75d38b4c3bcf78c471f9421ecee1c75a7f44d8c54cb9d4",
+          "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/MOR-PH.mat",
+          "X_sha256": "f72f3123651e9d345817b2a7066dcc952f2b081aecfdeb64b7af9b50ec054706",
+          "L_sha256": "458cda1ebdef9ffdd35731f0ada5d2c180dd0b864c55b5c91ab5cb7403b483f3"
+        }
+      ],
+      "source_E10_commit": "13974d8f3e1a2159c9b74bbc3b7632373e185de5",
+      "expected_cases": 48,
+      "prototype_references": "Exact copied E10 geometric diagonal UU/GG, alpha.5, budgets25/50/75/100%; same48 fits/heldout/excluded sets",
+      "E10_protocol_sha256": "3078fb0f70634007d863c8f4ddd22391131faaf5f4efdd6a2bd5fcb792c01d6f",
+      "E10_manifest_sha256": "c34fd4218d318d8fae62fcea78b3d28bd166ca082a6abc0464a88c29f9b7cd75"
+    },
+    "e12": {
+      "scope": "Prospectively frozen evaluation on one previously unscored PyLDL Ren_Cecps packaged variant; five disjoint fit/test feature-group allocations. Not broad independent cross-dataset confirmation.",
+      "family": {
+        "family": "Ren_Cecps",
+        "N": 32420,
+        "m": 100,
+        "q": 8,
+        "source_commit": "80b2d188c11b640bce7accbc9a88dac89c48a56f",
+        "url": "https://raw.githubusercontent.com/SpriteMisaka/PyLDL/80b2d188c11b640bce7accbc9a88dac89c48a56f/datasets/Ren_Cecps.mat",
+        "mat_sha256": "7bc3570e1f29647b9a3f5944228592dbe703eefd1058044074fcd9d9bc4c5a8a",
+        "X_sha256": "3863ed1816e339025ad4f3d1b37ab0c5ba4ddbc3052a18c82e11d43db4000c09",
+        "L_sha256": "0aa5144e916307d9f6ee5cbe62f496f6ec2e4db4394f28fc8ed4a0f18c45795e"
+      },
+      "expected_cases": 5,
+      "fit_rows_per_case": 384,
+      "test_rows_per_case": 512,
+      "allocation": "Unique full-feature vectors define exact-duplicate groups using np.unique(axis=0,return_inverse=True). Permute group IDs with seed202611150012; consume previously unused groups until enough rows for fit384, then test512, repeated5 times. Keep first required rows in original row order from each consumed block; omitted group members never used later. All10 allocations use disjoint groups. No labels used for allocation.",
+      "group_limit": "Only exact feature duplicate groups; document/blog/author IDs absent, so no document-/author-disjoint claim.",
+      "primary_candidate": "GG50, geometric hierarchy, NN5, alpha=.5, zeta=.5, Full; fixed before any Ren prediction. Cost40 is a prespecified secondary view.",
+      "secondary_candidates": "UU/GG at25/50/75/100% in each mask; no choosing best budget after scoring.",
+      "source_caveat": "Actual packaged data is32420x100 with8labels, whereas published DBC-LDL describes35096x100; upstream filtering difference not established. Do not call it the full original corpus.",
+      "prior_use_audit": "No Ren result records found in local paper artifacts; existing26dataset manifest excludes Ren, and only generic dataset-exclusion README mentions other unused files.",
+      "feature_group_audit": {
+        "groups": 32203,
+        "rows": 32420,
+        "largest_group": 10
+      }
+    }
+  },
+  "external_methods": {
+    "AAKNN5": {
+      "class": "AA_KNN",
+      "k": 5
+    },
+    "AAKNN20": {
+      "class": "AA_KNN",
+      "k": 20
+    },
+    "SABFGS": {
+      "class": "SA_BFGS",
+      "max_iterations": 500,
+      "convergence_criterion": 1e-07,
+      "intercept": "none, upstream default",
+      "optimizer_diagnostics": "passthrough wrapper records result, without changing arguments or outputs"
+    },
+    "RKNN_native": {
+      "class": "RKNN_LDL",
+      "k": 20,
+      "alpha": 0.001,
+      "beta": 1e-06,
+      "epochs": 1000,
+      "kernel": true,
+      "sparse": true,
+      "batch_size": "full training batch",
+      "optimizer": "upstream SGD1e-3 for model and rho",
+      "early_stopping": "none except fail model on nonfinite training loss",
+      "native_query_kernel": "Upstream estimates RBF gamma separately from each full query-versus-training distance batch; preserve and disclose query-batch dependence."
+    },
+    "RKNN_train_gamma": {
+      "training": "Same fitted RKNN_native model, no second fit",
+      "prediction": "Explicit adapter fixes query RBF gamma to1/(2*mean(pairwise_euclidean(stored_training_X,stored_training_X))**2), using the exact upstream float32 training state, and the same train matrix for query kernel. Rest identical; not called unmodified upstream/original algorithm."
+    }
+  },
+  "preprocessing": {
+    "external": "Training-only minmax per selected column, no clipping; constant-span columns mapped tozero. AA uses upstream Euclidean neighbors, SA upstream softmax linear model, RKNN above.",
+    "ours": "Inherited Full calibration, beta1,zeta.5,k5, half training-mean shrinkage; fixed exact-budget hierarchy. Cost40 may use Full training calibration, so no full training-acquisition savings claim.",
+    "masks": "E11 inherits E10 design. E12 costs integers1..10 seed202611150013, independent feature order seed202611150014; take cumulative prefix within40percent total and sort selected indices. No cost optimization on labels."
+  },
+  "seed": "External per method/mask: (202611150000+1000*family_index+100*fold+10*mask_index+method_index) modulo2**32; E12 family_index16. torch singleCPU thread, deterministic algorithms enabled, Keras backend torch.",
+  "freezing": "All48 E11 and5 E12 prediction files and failures must be frozen before any new scoring; score command requires both frozen manifests. Already-consulted E10 references do not become new confirmation.",
+  "metrics": {
+    "primary": "Brier=sum_j(pred-target)^2 averaged overobjects, on returned arrays without renormalization",
+    "secondary": [
+      "chebyshev",
+      "clark",
+      "canberra",
+      "KL natural log withprediction floor1e-12 and0log0 convention",
+      "cosine",
+      "intersection"
+    ],
+    "validation": "Finite, nonnegative, mass error<=1e-5 forfloat32 upstream; own controls1e-12. Record maximum mass error, no silent normalization.",
+    "aggregation": "Within family pool all heldout object losses; equalweight16 families for E11. Ren pool5x512 testobjects for one dataset, not5independent datasets.",
+    "comparisons": "Primary GG50 versus each of fiveexternal prediction variants, bothmasks reported. Secondary all prespecifiedbudgets/UU. Negative Brier difference favorsGG. Ties1e-12. No bestpoint, confirmatorypvalue or SOTAclaim."
+  },
+  "failure_policy": "Keep all nonfinite/errors/warnings and optimizer termination diagnostics. No configuration repair or fallback under method name. Failure rows explicitly missing; report complete-family coverage for pairwise comparisons and all failures.",
+  "resources": "Diagnostic walltimes only, not fair full-method resource comparisons; E11 prototype fits are reused, so do not compare their copied timing with freshly fitted baselines.",
+  "privacy": "Public code/protocol/aggregate results/checksums only. Source matrices, row allocations, labels, per-object predictions and detailed logs stay in explicitly authorized private cache.",
+  "pending": [
+    "tuned external comparison",
+    "ProLSFEO author implementation or faithful verified reconstruction",
+    "multiple genuinely independent datasets",
+    "document/subject-disjoint confirmation",
+    "full-method resource benchmark"
+  ]
+}

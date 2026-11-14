@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": [
+    "GG50 andUU50 exactly reproduce parent references",
+    "All controls matchK and actual array bytes",
+    "Weight-only replacement preserves original training labels andprior byobjectidentity",
+    "Permutation seeds reproduce all arrays"
+  ],
+  "scope": "Synthetic checks only"
+}

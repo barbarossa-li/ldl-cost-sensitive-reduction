@@ -1,0 +1,21 @@
+{
+  "version": "E13-label-association-and-axis-permutation-controls-v1",
+  "date": "2026-11-14",
+  "scope": "Same48 consulted-family folds and5 prospective Ren allocations. Added after E12 predictions froze but before any E11/E12 outcomes were scored/inspected. Pre-outcome secondary mechanism supplement, not independent data or replacement primary.",
+  "parent_source_commit": "b03a0d8e7fdf578ab0fc6f39669501784c057bb5",
+  "parent_protocol_sha256": "a34b4bb84932fca54b4553d8d5479fe8bbc3eafc5964bed41754b3ed60929b51",
+  "parent_manifest_sha256": "e37f526902ea76cb663da4eddf5d4e7d4e15b9bb8290521e8c929c0b8bfdc31c",
+  "fixed_configuration": "Geometric50percent,NN5,half-prior,zeta.5;Full primary,cost40secondary",
+  "repeats": 5,
+  "controls": {
+    "GG50": "Original aligned label-derived weights; positive anchor",
+    "UU50": "Uniform geometry; reference anchor",
+    "LP0..4": "Permute fitting labels only for estimatingG. InsertG into original model, keeping original labels/prior/prototype targets; recalibrate.",
+    "AX0..4": "Permute originalG across feature axes, preserving its histogram and original labels/prior;recalibrate."
+  },
+  "seeds": "202611150100+1000*family_index+100*fold+repeat forlabels;+500000 foraxes;Renfamily_index16",
+  "capacity": "All12predictors per mask shareK andactual numeric bytes;24x53=1272aggregate rows",
+  "scoring": "All53 control bundles and both parent manifests freeze before any new scoring.7parent metrics,primaryBrier. Pool folds byobjects per family;average five individual seed risks equally,never prediction ensembles;known16families equalweight. Ren remains onecorpus. No bestseed orconfirmatorypvalue.",
+  "comparisons": "GG50 minus mean LP risk;GG50 minus meanAXrisk;negative favorsoriginal associated aligned weights. Allseeds/rows retained.",
+  "privacy": "Object predictions,permutationindices andsplits remain in authorized private cache;publiccode/protocol/aggregaterisks/checksums only."
+}

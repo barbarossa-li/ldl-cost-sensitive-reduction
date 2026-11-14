@@ -1,0 +1,41 @@
+{
+  "id": "E17-ProLSFEO-explicit-assumption-development-pilot",
+  "status": "Freeze before real-data optimization",
+  "paper": {
+    "doi": "10.3390/app10093089",
+    "url": "https://www.mdpi.com/2076-3417/10/9/3089",
+    "identity": "Own paper-setting reconstruction; not verified original-author code or verified numerical reproduction",
+    "code_search": "Bounded title/ProLSFEO/ProLSFEO-LDL web and GitHub repository searches found no verified author implementation; not a claim that none exists"
+  },
+  "parent_protocol_sha256": "a34b4bb84932fca54b4553d8d5479fe8bbc3eafc5964bed41754b3ed60929b51",
+  "parent_manifest_sha256": "e37f526902ea76cb663da4eddf5d4e7d4e15b9bb8290521e8c929c0b8bfdc31c",
+  "scope": "Exactly Music, Painting and SJAFFE, E11 fold0, Full only. Three already-consulted development cases; single declared seed each. Not full paper benchmark, fresh confirmation, subject-group validation or a substitute for E16 tuned baseline analysis. No changes to earlier primary endpoints.",
+  "paper_settings": {
+    "population": 100,
+    "generations": 500,
+    "stagnation_threshold": 10,
+    "AA_k": 4,
+    "chromosome": "n prototype bits followed by q*d label-specific feature bits",
+    "initialization": "Independent discrete uniform binary genes",
+    "HUX": "Exchange floor(number of different bits/2) randomly selected differing positions; no mutation",
+    "fitness": "Mean KL over predictions pooled from ten-fold inner validation, label-specific AA-kNN components normalized to simplex",
+    "selection": "Best100 from parents+100 offspring",
+    "restart": "At stagnation counter1 preserve best old parent and replace99 with new uniform genomes; reset counter10. Counter decreases on unchanged population and is not otherwise reset, following paper Algorithm1."
+  },
+  "explicit_implementation_assumptions": {
+    "parent_pairing": "Randomly permute100 parents, pair adjacent, emit two HUX offspring per pair. No extra distance-based mating threshold absent from Algorithm1.",
+    "ties": "Stable distance order by original outer-fit order; genome lexical packed-bit order for equal fitness; duplicates allowed. Population equality means multiset of genomes, not only best fitness.",
+    "folds": "Ten folds of exact-full-feature duplicate groups, randomly permuted and assigned greedily to currently smallest fold (lowest-fold tie), seed=optimization seed+1. No subject IDs available.",
+    "validation_exclusion": "For each inner fold, retained prototype pool is T intersect inner-training rows; held fold never supplies a prototype or training label.",
+    "scaling": "Min/max fitted on each inner training fold, constant coordinates zero, no query clipping. Final deployable scaling fitted on whole outer fit set.",
+    "empty_genome": "No retained prototype, no retained prototype in any inner fold, or any label with zero selected features yields infinite unavailable fitness; no genome repair. k=min(4, retained inner-prototype count).",
+    "zero_mass": "Zero-total component prediction invalid in inner fitness. At final inference only, if encountered, fallback to outer-fit mean; retained in state. KL uses predicted floor1e-12 for scoring only; predictions are not smoothed by that floor.",
+    "cache": "Identical genomes cache fitness; counts unique evaluated genomes.",
+    "time_limit": "3600 wall seconds per case, checked at each generation. If not500 generations, mark time_limit_incomplete. Incomplete results remain diagnostics, never presented as complete paper-setting evidence. No reduced-generation restart or hidden replacement."
+  },
+  "seeds": "202611170000+family_index; Music5, Painting6, SJAFFE8",
+  "comparisons": "Native reconstructed predictions primary; half-prior adaptation separately labeled secondary, not original method. Stable-order AA4 on full outer-fit set and its half-prior counterpart. Existing frozen GG50/UU50 anchors and E16 selected policies can be compared descriptively on same three cases after both prediction freezes, with availability counts. No three-case superiority claim.",
+  "planned_outputs": "All three prediction records freeze before outer labels are scored. Aggregate seven metrics, selected prototype count/label feature counts/union features/numeric arrays, generations, runtime, failures and caveats. Private arrays include genome, partitions, standalone state and predictions; public code and aggregates only.",
+  "storage_boundary": "Arrays for standalone inference (union retained features, retained original prototypes/labels, per-label masks, preprocessing and fallback prior). Scalar metadata and software/workspace excluded. Selection cost must be disclosed; this method does not share fixed prototype count with GG50.",
+  "technical_checks": "Synthetic scalar-distance reference, inner-held-label replacement, exact HUX count, deterministic short synthetic search, duplicate-group isolation, exported-state prediction. Reduced synthetic sizes are code checks only."
+}

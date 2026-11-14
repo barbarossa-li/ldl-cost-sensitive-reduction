@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "Ten-fold label-specific fitness predictions agree with independent scalar-distance reference",
+    "Inner held-label replacement cannot affect predictions of that held fold",
+    "HUX swaps floor(half differing bits), preserving paired bit complementarity",
+    "Synthetic optimization is deterministic and reaches declared generation count",
+    "Exported label-specific numeric state gives valid simplex predictions",
+    "Exact-feature duplicate groups stay together"
+  ],
+  "scope": "Synthetic reduced population/generation checks only; not paper-setting benchmark evidence"
+}

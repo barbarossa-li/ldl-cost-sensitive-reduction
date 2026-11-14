@@ -1,0 +1,14 @@
+{
+  "version": "E15-SABFGS-convergence-and-standalone-state-diagnostic-v1",
+  "date": "2026-11-14",
+  "scope": "Post-outcome diagnostic after first E11/E12/E13/E14 scoring revealed94 of106 SA-BFGS fits reached500iteration limit. Same53cases. Not a new prospective result, not replacement original primary or independent data.",
+  "parent_commit": "b03a0d8e7fdf578ab0fc6f39669501784c057bb5",
+  "parent_protocol_sha256": "a34b4bb84932fca54b4553d8d5479fe8bbc3eafc5964bed41754b3ed60929b51",
+  "change": "Only SA-BFGS max_iterations raised from500to20000; same upstream objective,gtol1e-7,default scipyoptions,initialseed andfit/testrows. No selection bytestperformance.",
+  "outputs": "Both raw andhalf-prior predictions, all53cases/twomasks=212aggregate rows. Preserve original500iteration results. Recordoptimizer success,status,iterations,objective,gradient. No fallback if20000stillfails convergence.",
+  "state": "Store explicit standalone selected-index,minmaxlo/span,W arrays;half-prioraddsp. Verify native predictions exactly equal upstreamsoftmax(B@W). Numericbytes8*(d*q+3*d) raw and+8*q half; excludesPython/scalars,serialization,trainingworkandhardwarecosts. This is differentarchitecture,notcapacitymatched withprototypes.",
+  "execution": "Two independent single-threadCPUprocesses;all53predictions freeze before anydiagnostic scoring. No model parameters tuned on testlabels.",
+  "interpretation": "Use to avoid weak numerical baseline. Since dataoutcomesalreadyconsulted,this is fair numerical-developmentdiagnostic,notindependentconfirmation. DirectmethodtuningandProLSFEO remainpending.",
+  "privacy": "Per-object predictions,fit/testindices,inferenceweights remainin authorized privatecache. Publiccode,protocol,aggregate metrics,convergence summaries andchecksums only.",
+  "parent_manifest_sha256": "e37f526902ea76cb663da4eddf5d4e7d4e15b9bb8290521e8c929c0b8bfdc31c"
+}

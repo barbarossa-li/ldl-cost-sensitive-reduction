@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "cases": 48,
+  "brier_rows": 15408,
+  "max_absolute_brier_error": 1.1102230246251565e-16,
+  "matched_capacity_comparisons": 11520,
+  "singleton_exact_checks": 3072,
+  "repair_events_counted_once_per_constructor_slot": 0,
+  "warning_events_counted_once_per_constructor_slot": 0,
+  "original_outer_test_scored": false,
+  "scope": "Arithmetic/provenance audit; consulted-family development, not independent confirmation"
+}

@@ -1,0 +1,22 @@
+{
+  "README.md": {
+    "bytes": 1826,
+    "sha256": "348b9641ffdcf4c50b02959076f017a916a129a02e141adb742e3005afc57501"
+  },
+  "REPORT.md": {
+    "bytes": 6279,
+    "sha256": "ecedbe9456b74572c03fb864c9e0d966e809fa20f86be84672a553350c99bcfb"
+  },
+  "EVIDENCE_AUDIT.json": {
+    "bytes": 442,
+    "sha256": "3b9da90dfb228d4ace85f3642874935341ca3240800db218c91718374da659dc"
+  },
+  "PROVENANCE.json": {
+    "bytes": 597,
+    "sha256": "91e499a46bf23866ba366dfa84d7f7e82e286e1911ced8562995034b433fb488"
+  },
+  "AI_LDL_E09_results.zip": {
+    "bytes": 482674,
+    "sha256": "64be3f52f45a01c193bc020fb787ee10ee759f214bfe871b9060e6ba37773951"
+  }
+}

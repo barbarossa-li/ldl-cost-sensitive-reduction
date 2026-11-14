@@ -1,0 +1,5 @@
+# Execution-only checkpoint scheduling supplement
+
+The E11/E12 model/protocol package remains frozen at b03a0d8e7fdf578ab0fc6f39669501784c057bb5 and is not edited. Before any scores are computed, this helper is separately committed to execute the fixed lastfour E11 families in another single-thread CPU process while the original runner advances from the front. All model settings, seeds, inputs, predictions and failure handling are the identical frozen runner.one_case implementation. No tuning or scoring occurs in the helper. It has no arbitrary configuration or family-selection option.
+
+Helper outputs are written to staging and moved into the original checkpoint layout. Existing concurrent checkpoints must yield exactly equal prediction arrays; a duplicate fit is never counted as new evidence. Only the original runner assembles the48-case frozen manifest. The separate E12 process has completed, so the helper uses the otherwise free CPU. Diagnostic runtime totals are not used for a speed claim or summed as a fair-method benchmark. Source hashes and the global both-studies-frozen scoring gate remain unchanged.

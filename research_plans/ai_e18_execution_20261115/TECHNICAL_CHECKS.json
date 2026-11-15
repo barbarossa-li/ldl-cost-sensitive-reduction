@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "Translation-stabilized simplex projection agrees with independent constrained optimization and extreme-scale analytic result",
+    "Every inner text vocabulary/SVD fit uses exactly its own training rows",
+    "Held-fold canary excluded from its inner vocabulary but present in outer fit",
+    "Outer query-only token absent from every fitted vocabulary",
+    "Portable vocabulary+IDF+SVD state, including JSON/NPZ roundtrip, reproduces query transforms exactly",
+    "All17 standalone predictions reconstruct exactly; fixed CU and selected matched states have equal numeric bytes",
+    "All99 short-checkpoint synthetic CV scores and every selection checked independently",
+    "Complete short-epoch synthetic pipeline repeats bit-exactly"
+  ],
+  "scope": "Synthetic tests only; epochs1/2 for toolkit execution checks. Real protocol remains100/500/1000 and105candidates. No new-task model fitting/scoring."
+}

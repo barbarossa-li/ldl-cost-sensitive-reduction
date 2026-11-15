@@ -1,0 +1,21 @@
+{
+  "id": "E18-execution-v1",
+  "design_commit": "6c60788e205491ec756d213629e777b9760b3a4c",
+  "design_protocol_sha256": "87a5d0c2ae01b2b065270b257f355459dad34ef0f0262f3c5a0fa9d8b231fc4b",
+  "design_source_manifest_sha256": "096e6439a03a9f78cc988bbd8492395b1bfa1ffac2192585091f0818261c99bf",
+  "parent_manifest_sha256": "e37f526902ea76cb663da4eddf5d4e7d4e15b9bb8290521e8c929c0b8bfdc31c",
+  "parent_protocol_sha256": "a34b4bb84932fca54b4553d8d5479fe8bbc3eafc5964bed41754b3ed60929b51",
+  "inherited_E16_learners_sha256": "a3b0bd5bdcd19efc0929b94e610ed76313feac9db91ce426ded60daa739e052a",
+  "numerical_implementation_notes": [
+    "Inherited E16 learners with unchanged model menus, RKNN training/checkpoint state and prototype construction. Warning messages/counts are run-length encoded in original order, avoiding repeated identical JSON strings.",
+    "Ridge Euclidean-simplex projection uses equivalent row-max translation before sorting to avoid cancellation for extreme extrapolated logits. Verified against constrained optimization and analytic large-scale example, synthetic only.",
+    "Every inner encoder is fit on its own training text, with explicit held-fold canary check. Shared fitted text axes have no semantic-token interpretation.",
+    "17policies per case,105real CV candidates,20predeclared cases; all predictions/failures freeze before scoring. No G_oneSE or additional ProLSFEO run.",
+    "Deployment file bytes sum estimator JSON/NPZ and required shared encoder JSON/NPZ. Mean-only model omits encoder. This is not peak runtime memory."
+  ],
+  "state_export": "Portable plain JSON vocabulary plus IDF/SVD NPZ; estimator arrays and scalar metadata separate; no pickled code. SHA checked on resume.",
+  "outer_failure_policy": "Case failures frozen with no alternate split. Complete-family directional criterion cannot be met when primary cases missing. Code assertions abort for diagnosis rather than becoming favorable scientific outcomes.",
+  "technical_test_scope": "Synthetic144objects only, RKNN1/2epoch checkpoints; real study100/500/1000. No new-task feature/model fitting or predictive outcome scored before source freeze.",
+  "environment": "Python3.12, numpy2.3.5, scipy1.17, sklearn1.8, torch2.9.1+cpu/keras3.12.0; one BLAS thread, two process workers.",
+  "pipeline": "Local-only runner -> global20case freeze -> independent encoder/state/CV/metric audit -> aggregate reports/private archives; connector uploads/publication/manuscript edits remain separate authorized steps."
+}

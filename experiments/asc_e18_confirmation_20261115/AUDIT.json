@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "counts": {
+    "frozen_cases": 20,
+    "group_split_cases": 20,
+    "outer_encoder_refits": 20,
+    "inner_encoder_refits": 60,
+    "inner_candidate_scores": 2100,
+    "selection_decisions": 120,
+    "state_predictions": 340,
+    "matched_factorial_cases": 20,
+    "matched_selected_cases": 20,
+    "rater_disjoint_cases": 5
+  },
+  "max_state_reconstruction_error": 0.0,
+  "max_metric_discrepancy": 0.0,
+  "policy_failures": [],
+  "primary_corpora": {
+    "ChaosSNLI": {
+      "complete": true,
+      "GG_minus_UU": -0.003493493555088878
+    },
+    "ChaosMNLI": {
+      "complete": true,
+      "GG_minus_UU": -0.0006577343209840381
+    },
+    "DICES990": {
+      "complete": true,
+      "GG_minus_UU": -0.003548795626309914
+    }
+  },
+  "primary_application_families": {
+    "NLI": {
+      "complete": true,
+      "GG_minus_UU": -0.002075613938036458,
+      "directional_criterion_met": true,
+      "independent_application_families": 1
+    },
+    "ConversationSafety": {
+      "complete": true,
+      "GG_minus_UU": -0.003548795626309914,
+      "directional_criterion_met": true,
+      "independent_application_families": 1
+    }
+  },
+  "scope": "Two related NLI strata and conversation safety; rater transport secondary, not image-subject confirmation. No p-value from repeated folds. Encoder included in serialized deployment totals.",
+  "design_protocol_sha256": "87a5d0c2ae01b2b065270b257f355459dad34ef0f0262f3c5a0fa9d8b231fc4b",
+  "execution_manifest_sha256": "93f00a0da65ce271b13892c64c025c3a27ce6cc77c53f15ad2f848c612eecbba"
+}

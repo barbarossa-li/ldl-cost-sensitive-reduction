@@ -1,0 +1,151 @@
+{
+  "id": "E18-unconsulted-human-vote-task-confirmation-design-v1",
+  "status": "Design freeze before any project-specific new-task model fitting/prediction/risk. Execution runner and its tests must also be frozen before real-data fits; current source implements preflight, grouping and preprocessing, not the complete experiment.",
+  "development_basis": "Methods fixed after E10--E17 and manuscriptv4. No project-specific ChaosNLI/DICES predictive outcomes inspected. Source validity, annotation counts and group feasibility inspected; published source benchmark tables were accessible. Ren and all earlier16 families remain development data.",
+  "scope": "Three new human-vote distribution tasks in TWO text application families (NLI and conversation safety), not three independent domains or cross-modality confirmation. SNLI/MNLI are related strata. This does not resolve missing original image-subject IDs.",
+  "sources": [
+    {
+      "name": "chaos_README.txt",
+      "source_url": "https://huggingface.co/datasets/earino/chaosnli/resolve/eb7cc18dbfa0f161d93a2b22c7856ca0faafcf2b/raw/README.txt",
+      "sha256": "b02af8460b221a1a1a629da0d528a87e820a7d76f2772599360608e51de50f1b",
+      "bytes": 2629
+    },
+    {
+      "name": "chaosNLI_snli.jsonl",
+      "source_url": "https://huggingface.co/datasets/earino/chaosnli/resolve/eb7cc18dbfa0f161d93a2b22c7856ca0faafcf2b/raw/chaosNLI_snli.jsonl",
+      "sha256": "99f9015ddda7d85f66a087452bc30d53974314fe27e7d589e2f41ad44bd509c1",
+      "bytes": 768107
+    },
+    {
+      "name": "chaosNLI_mnli_m.jsonl",
+      "source_url": "https://huggingface.co/datasets/earino/chaosnli/resolve/eb7cc18dbfa0f161d93a2b22c7856ca0faafcf2b/raw/chaosNLI_mnli_m.jsonl",
+      "sha256": "8eb49b589488e7b1a9ec95fb8a864bd50f0509b4f808eed0aed3f8167617664d",
+      "bytes": 871731
+    },
+    {
+      "name": "DICES990.csv",
+      "source_url": "https://raw.githubusercontent.com/google-research-datasets/dices-dataset/b5596d9edd585361967991a591abc7b11fb1f7a3/990/diverse_safety_adversarial_dialog_990.csv",
+      "sha256": "14332b6391cdee80383b765c734de3bebf6d8553141ee7d2f47ef0910a12fcf7",
+      "bytes": 50399432
+    },
+    {
+      "name": "DICES990_README.md",
+      "source_url": "https://raw.githubusercontent.com/google-research-datasets/dices-dataset/b5596d9edd585361967991a591abc7b11fb1f7a3/990/README.md",
+      "sha256": "f4d7431ecca4e96bb503bb4a1ba84cc11a99d83f9a90a3af04f4fbd2546ea19e",
+      "bytes": 9699
+    }
+  ],
+  "tasks": {
+    "ChaosSNLI": {
+      "objects": 1514,
+      "labels": [
+        "entailment",
+        "neutral",
+        "contradiction"
+      ],
+      "target": "label_count/100 in official [E,N,C] order; verify supplied label_dist agrees",
+      "text": "premise: {premise}\nhypothesis: {hypothesis}",
+      "groups": "Connected components of shared original SNLI image ID parsed before .jpg# and exact NFKC/casefold/whitespace-normalized premise. Image-source grouping is not person identity."
+    },
+    "ChaosMNLI": {
+      "objects": 1599,
+      "labels": [
+        "entailment",
+        "neutral",
+        "contradiction"
+      ],
+      "target": "Same native100-annotator label-count proportions",
+      "text": "Same NLI text template",
+      "groups": "Connected components of normalized premise. No document/author-disjoint claim without verified document/author IDs."
+    },
+    "DICES990": {
+      "released_objects": 990,
+      "eligible_objects": 989,
+      "labels": [
+        "No",
+        "Unsure",
+        "Yes"
+      ],
+      "target": "Per-item empirical frequencies of Q_overall across all released rater rows; no category-based/demographic exclusion. Aggregated per-rater safety judgment, not a majority-label one-hot target.",
+      "text": "context: {context}\nresponse: {response}",
+      "groups": "Connected components sharing item_id, normalized nonempty context, or normalized context-response pair. Empty contexts never all merged.",
+      "eligibility": "Exclude every entire item_id mapping to multiple normalized context-response pairs, before label/risk-based decisions. One such item found; excluded ID recorded privately. No duplicated item/rater keys found. Actual file has172 raters and eligible-item annotation counts69--76, differing from repository narrative; use pinned-file facts."
+    }
+  },
+  "partitions": {
+    "outer_folds": 5,
+    "group_assignment": "design.folds: randomly permute complete connected groups, greedily assign least-populated fold, lower-fold tie. Every eligible object queried once.",
+    "seed_outer": "202611180001+100*task_index; task_index0SNLI,1MNLI,2DICES",
+    "fit_cap": 512,
+    "fit_cap_rule": "Whole groups only; in seeded order add group if it fits remaining cap, otherwise skip; no query membership. Minimum128 fitting objects, else mark case unavailable, no alternate split.",
+    "seed_fit": "202611180100+100*task_index+outer_fold",
+    "inner_folds": 3,
+    "seed_inner": "202611180200+100*task_index+outer_fold",
+    "inner_grouping": "Restrict original connected groups to complete capped-fit groups; never regroup only from embedding duplicates. Shared inner folds for all learners.",
+    "allocation_commitment_sha256": "228e2e81f88d066f8c9677169ee4ba64f3c00c64e3cb1a552fe60f61385c2d3b"
+  },
+  "features": {
+    "identity": "Classical shared text representation, not a foundation-language-model/SOTA NLP evaluation. All IDs, old/new labels, annotation counts, raters and demographic/quality metadata excluded from predictor inputs. Geometry acts on latent SVD axes, not original semantic-token importance.",
+    "TFIDF": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 2,
+      "max_df": 1.0,
+      "max_features": 20000,
+      "sublinear_tf": true,
+      "norm": "l2",
+      "lowercase": true,
+      "dtype": "float64",
+      "other_options": "scikit-learn1.8.0 defaults"
+    },
+    "SVD": {
+      "components": "min(128,n_fit-1,vocabulary_size-1)",
+      "minimum_components": 32,
+      "algorithm": "randomized",
+      "n_iter": 7,
+      "seed": 747717187
+    },
+    "isolation": "Refit BOTH TFIDF vocabulary/IDF and SVD on each INNER training fold. Fit-only min/max and geometry after that. Outer queries only transform using outer-fit encoder. Never cache one outer-trained SVD for inner model selection. No query clipping.",
+    "failure": "Empty vocabulary, rank<32, invalid finite transforms or fit failure makes candidate/case unavailable; no post-outcome representation substitute."
+  },
+  "primary": {
+    "estimand": "Mean per-object Brier(GG50)-Brier(UU50), K=floor(n_fit/2), k5, half-prior alpha0.5, geometric bisection and zeta0.5/beta1 profile settings pinned to parent source. Exact same state-array capacity in each paired case.",
+    "hypotheses": "Negative in each of TWO application families. Score each corpus by object-pooled five-fold predictions; NLI family is equal mean of SNLI and MNLI corpus risks. DICES family is its primary all-rater corpus. Show each corpus separately. Do not claim generality across all three if a stratum reverses. Zero or positive family effect fails that family directional criterion.",
+    "reporting": "No repeated folds as independent datasets; no confirmatory p-value from5folds or2families. Any all-family composite is descriptive. Keep all outcomes and ties1e-12."
+  },
+  "secondary": {
+    "fixed_policies": "UU/GU/UG/GG at50% with k5/halfprior; GG andUU at25/75/100%; plain mean. Construction/query conditional contrasts and interactions secondary. No query-cost acquisition claim from latent text coordinates; cost40 not part of E18.",
+    "restricted_selection": "G andU budgets25/50/75/100 xk3/5/10/20 xprior0/.5 plus mean; AA-kNN k4/5/10/20/40 xprior0/.5 plus mean; Ridge+Euclidean simplex projection lambda1e-4/.01/1/100 xprior0/.5 plus mean; pointwise training-gamma RkNN anchors(k5,1e-3,1e-6),(k20,1e-3,1e-6),(k20,1e-2,1e-5), checkpoints100/500/1000, prior0/.5 plus mean. Same limited grids as E16, not exhaustive SOTA tuning.",
+    "selection": "Pooled inner Brier; all3folds valid. Ties1e-12 then smaller outer numeric-array state then lexical candidate ID. Earlier valid RKNN checkpoints may survive later fit failure. Export explicit standalone states.",
+    "paired_selected_control": "Apply U_min-selected budget/k/prior to G (G_atU); if U selects mean, both mean. Independently selected G/U are not capacity matched. Report mean-only counts. G_oneSE optional NOT in this stage, to avoid an additional selection heuristic.",
+    "RKNN_seed_inner": "(202611181000+10000*task_index+1000*outer_fold+100*inner_fold+anchor_index) modulo2**32",
+    "RKNN_seed_outer": "(202611189000+10000*task_index+1000*outer_fold+anchor_index) modulo2**32",
+    "direct_reduction": "E17 remains the declared three-case development reconstruction. No new ProLSFEO outcomes or author-code reproduction claim is created by E18; extending the direct search requires a separately frozen execution/budget plan."
+  },
+  "rater_disjoint_secondary": {
+    "task": "DICES only;5 additional outer cases, same item/context partitions and fitting cap",
+    "cohorts": "Sorted released eligible rater IDs, numpy default_rng202611180700 permutation; floor70%training raters, remaining query raters. Verified120vs52, disjoint. No demographics in assignment.",
+    "targets": "Outer fit and all inner-validation targets from training-rater cohort only. Outer query target from query-rater cohort only. No query-rater labels used in fitting/selection. At least10ratings per target item; unavailable target flagged, never replaced/resplit. Metadata check minimum42training/16query ratings.",
+    "interpretation": "Joint new-conversation/new-annotator-population transport; targets and finite annotation noise change too, so not a pure leakage ablation or a substitute for original image-subject validation."
+  },
+  "metrics_and_gate": "Brier primary, original six secondary measures. Before any E18 scoring, freeze predictions for ALL15primary-task outer cases AND5rater-disjoint secondary cases, with failure records. Do not tune after seeing outer scores, replace seeds/corpora, substitute more favorable feature encoders or relabel Ren as confirmation. Keep original fixed primary unchanged.",
+  "resource_reporting": "Report estimator numeric arrays, common TFIDF/SVD encoder state and serialized full deployable state separately; include vocabulary strings/IDF/SVD in deployment totals. Mean-only predictor can omit text encoder. No total-memory/speed claim from prototype arrays alone. Times on shared hardware descriptive.",
+  "versions": {
+    "python": "3.12",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0",
+    "torch": "2.9.1+cpu",
+    "keras": "3.12.0",
+    "BLAS_threads": 1,
+    "case_workers": 2
+  },
+  "parent_sources": {
+    "E11_source": "b03a0d8e7fdf578ab0fc6f39669501784c057bb5",
+    "E16_source": "ba14687dad09eed7a51b96600c7555b636f4b9e6",
+    "E17_source": "5ad2a08045be1771149c7e14c22d6e68b237e075"
+  },
+  "privacy": "Raw texts/votes/IDs, partitions, derived matrices and per-object predictions in authorized private Drive cache only. GitHub own code/protocol/source checksums/aggregate results only. No author contact or journal submission authorized."
+}

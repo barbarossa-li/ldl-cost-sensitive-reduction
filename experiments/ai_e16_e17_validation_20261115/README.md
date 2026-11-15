@@ -1,0 +1,11 @@
+# E16/E17 audited aggregate development results
+
+E16: shared-inner-fold restricted-grid selection on53 already-consulted cases. E17: explicit-assumption ProLSFEO paper-setting reconstruction on3 consulted Full-feature cases, single seeds,100population/500generations/threshold10/k4; all complete. Not verified author code or a full original-paper reproduction. No new confirmation or SOTA claim.
+
+Frozen sources: ba14687dad09eed7a51b96600c7555b636f4b9e6 (research_plans/ai_e16_nested_20261115) and5ad2a08045be1771149c7e14c22d6e68b237e075 (research_plans/ai_e17_prolsfeo_pilot_20261115). E11/E12 parent source b03a0d8e7fdf578ab0fc6f39669501784c057bb5. E16 averages outer folds within family then16families; Ren is one corpus/five allocations. Historical E11 summaries pooled within-family object losses, causing tiny unequal-fold differences; reused individual predictions are exact.
+
+Full matched G_atU vs U_min: known macro .098659817 vs .102408603 (12families better,4worse); Ren .589251910 vs .592088822. Ren cost40 reverses: .585628456 vs .584655627. Independently selected models are not capacity matched. Ridge obtains lower RenFull risk(.571784490) than selectedG(.585235479), with much smaller numeric-array states. G_oneSE chooses mean-only in28/48 knownFull and2/5RenFull, so compactness is not all geometric compression.
+
+Three-case equal-halfprior pilot favors fixedGG50 only onPainting, notMusic/SJAFFE. Native and adapted outputs are separate. Objective/search cost/state capacity differs; no three-case superiority claim. Scalar array-conversion warnings are retained privately, not interpreted as convergence failures.
+
+The ZIP contains aggregate case metrics, selection identifiers/hyperparameters, audits and post-freeze audit scripts. It excludes raw feature/label matrices, per-object predictions, explicit sample allocations, genomes, model arrays and private cache metadata. Public aggregate fold identifiers are not sample-row allocations. All1113E16outer arrays,11130innercandidate scores,742decisions and212fixedreplays pass; E17 state/fitness audits pass. Seven metrics are in CASE_METRICS files. This package accompanies the19page author-review draft; original78page manuscript/theory/21tables remain preserved. The draft is not approved for submission.

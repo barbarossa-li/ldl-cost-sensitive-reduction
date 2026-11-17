@@ -15,7 +15,7 @@ Sixteen targeted edits reconcile recorded-run versus confirmatory evaluation, ol
 - Fresh Full target-margin certificate count is 1,479 with numerical slack included, matching the saved Full table item.
 - Two pdfLaTeX passes converge without undefined references, duplicate labels or overfull boxes; changed workflow, complexity, archive-map and resource pages rendered and visually inspected.
 
-See [Chinese final audit](../../docs/FINAL_AUDIT_20261113.md), [machine-readable checks](../../docs/FINAL_AUDIT_CHECKS_20261113.json), and source paragraph_inventory.csv. This round audits content/records and does not rerun the expensive original-data experiments. The original reviewer packet and experiment archives remain frozen.
+See [Chinese final audit](https://github.com/barbarossa-li/ldl-cost-sensitive-reduction/blob/3a1ad10a7bd79ba3cdde302db56798c9fca1430c/docs/FINAL_AUDIT_20261113.md), [machine-readable checks](https://github.com/barbarossa-li/ldl-cost-sensitive-reduction/blob/3a1ad10a7bd79ba3cdde302db56798c9fca1430c/docs/FINAL_AUDIT_CHECKS_20261113.json), and source paragraph_inventory.csv. This round audits content/records and does not rerun the expensive original-data experiments. The original reviewer packet and experiment archives remain frozen.
 
 ## Limits and pending author facts
 

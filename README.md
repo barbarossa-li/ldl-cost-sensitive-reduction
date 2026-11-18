@@ -2,9 +2,9 @@
 
 ## Cost-sensitive attribute reduction
 
-Code, protocols and results supporting **Cost-Sensitive Attribute Reduction Using Granular-Ball Computing for Label Distribution Learning with Objectwise Reconstruction Bounds**.
+Code, protocols and results supporting **Objectwise Reconstruction Bounds for Cost-Sensitive Attribute Reduction in Label Distribution Learning via Granular-Ball Computing**.
 
-The authors' current manuscript and consolidated submission package were prepared on 17 November 2026 and are distributed separately. This repository provides the supporting materials below.
+The authors' current manuscript and consolidated submission package were last revised on 18 November 2026 and are distributed separately. This repository provides the supporting materials below.
 
 | Material | Entry point |
 | --- | --- |
